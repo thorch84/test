@@ -1,0 +1,142 @@
+<header></header>
+
+<section class="compare-page">
+
+    <div class="container-fluid">
+    <table class="compare-plans">
+        <thead class="rows">
+            <th></th>
+            <th ng-repeat="plan in selectedPlans" ng-class="{true: 'three-selected', false: 'two-selected'}[selectedPlans.length==3]">
+                <div>{{plan.planName}}</div>
+                <div>{{plan.monthlyPremium}} Monthly premium</div>
+                <!--<button type="button" ng-click="goToPlanDetail()">View Details</button>
+                <a href="#plan-detail/{{heading}}">View Details</a>-->
+                    <a href="#plan-detail/{{plan.planId}}" class="btn btn-default">View Details</a>
+            </th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="table-heading">Summary Information</td>
+                <td style="border:1px solid white;" ng-repeat="plan in selectedPlans" ng-class="{true: 'three-selected', false: 'two-selected'}[selectedPlans.length==3]"> {{plan.planDescription}}</td>
+            </tr>
+            <tr>
+                <td class="table-heading">Coverage</td>
+                <td style="border:1px solid white;" ng-repeat="plan in selectedPlans" ng-class="{true: 'three-selected', false: 'two-selected'}[selectedPlans.length==3]">
+                    <p ng-class="selectPlanCoverageClass(plan.medicalCoverage.oopMax)" class="compare-page-coverage">
+                        Medical coverage
+                    </p>
+                    <p ng-class="selectPlanCoverageClass(plan.prescriptionCoverage)" class="compare-page-coverage">
+                        Prescription Coverage
+                    </p>
+
+                    <p ng-if="!isSupplementEmpty(plan)">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        Supplemental
+                    </p>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="table-heading">Copay and Coinsurance</td>
+
+                <td class="copay-td" ng-repeat="plan in selectedPlans" >
+                  <div ng-if="plan.medicalCoverage.deductible"><p>Deductible:</p>
+                    <div>{{plan.medicalCoverage.deductible}}</div>
+                      </div>
+
+                    <div ng-if="plan.medicalCoverage.oopMax"><p>Out of Pocket Maximum:</p>
+                    <div>{{plan.medicalCoverage.oopMax}}</div>
+                        </div>
+
+                    <div ng-if="plan.medicalCoverage.primaryDrCopay"><p>Primary Doctor Copay:</p>
+                    <div>{{plan.medicalCoverage.primaryDrCopay}} </div>
+                        </div>
+
+                    <div ng-if="plan.medicalCoverage.specialistDrCopay"><p>Specialist Copay:</p>
+                    <div>{{plan.medicalCoverage.specialistDrCopay}} </div>
+                    </div>
+                    <div ng-if="plan.medicalCoverage.rxDeductible"><p>Pharmacy Drug Deductible:</p>
+                    <div>{{plan.prescriptionCoverage.rxDeductible}} </div>
+                        </div>
+
+                    <div ng-if="plan.prescriptionCoverage.gapCoverage"><p>Coverage in the gap:</p>
+                    <div>{{plan.prescriptionCoverage.gapCoverage}}</div>
+                    </div>
+
+                    <div ng-if="plan.prescriptionCoverage.preferredGenericDrugCopay"><p>Preferred generic drug copay:</p>
+                    <div>{{plan.prescriptionCoverage.preferredGenericDrugCopay}}
+                    </div>
+                        </div>
+
+                    <div ng-if="plan.prescriptionCoverage.nonPreferredGenericDrugCopay"><p>Generic drug copay:</p>
+                    <div>{{plan.prescriptionCoverage.nonPreferredGenericDrugCopay}}</div>
+                        </div>
+
+                    <div ng-if="plan.prescriptionCoverage.preferredBrandDrugCopay">
+
+                        <span ng-if="!isTrilliumSNP(plan)">Preferred brand drugs copay:</span><span ng-if="isTrilliumSNP(plan)">Brands drugs copay:</span>
+
+                    <div>{{plan.prescriptionCoverage.preferredBrandDrugCopay}}</div>
+                        </div>
+
+                    <div ng-if="plan.prescriptionCoverage.nonPreferredBrandDrugCopay"><p>Non-preferred brand drug copay:</p>
+                    <div>{{plan.prescriptionCoverage.nonPreferredBrandDrugCopay}} </div>
+                        </div>
+
+                    <div ng-if="plan.prescriptionCoverage.specialtyDrugsCopay"><p>Speciality drug copay:</p>
+                    <div>{{plan.prescriptionCoverage.specialtyDrugsCopay}} </div>
+                        </div>
+
+                    <div ng-if="selectcaredrugscopay==='Y' && plan.prescriptionCoverage.selectCarDrugsCopay"><p>Select care drug copay:</p>
+                    <div>{{plan.prescriptionCoverage.selectCarDrugsCopay}}</div>
+                        </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+        <div class="row" id="bottom-breadcrumb">
+            <div class="col-md-9 hidden-xs">
+                <a href="#/plans"><span class="glyphicon glyphicon-chevron-left"></span>Back to Medicare Advantage Plans</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="compareproducts" ng-show="compare" ng-hide="selectedPlans.length===0">
+        <div ng-repeat="compareItem in selectedPlans">
+            <div class="col-xs-4 col-md-3 productCompare" ng-class="{true: 'three-selected', false: 'two-selected'}[selectedPlans.length==3]">
+                <a href="javascript:void(0);"
+                   ng-click="removeComparePlans(compareItem)"
+                   type="button" style="" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </a>
+
+                <p class="planName">{{compareItem.planName}}</p>
+                <p class="hidden-xs hidden-sm">{{compareItem.monthlyPremium}}</p>
+
+                <a class="btn btn-warning apply-now"
+                   ng-if="!compareItem.applyOnline" ng-disabled="true">Apply Now</a>
+
+                <a class="btn btn-warning apply-now" ng-if="compareItem.applyOnline"
+                   href="{{buildApplyNowUrl(compareItem)}}">Apply Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- HELP Modal -->
+    <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">How to use this page</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="../../../medicareadv/assets/images/{{currentHelpImage}}.png" data-ratio="{{currentImageRatio}}" id="{{currentHelpImage}}" border="0" class="help-img active-help" />
+                    <p id="block-tester"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HELP US Modal -->
+</section>

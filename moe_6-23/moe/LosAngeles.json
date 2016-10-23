@@ -1,0 +1,302 @@
+[
+    {
+        "planId": "41105",
+        "planName": "Health Net Gold Select (HMO)",
+        "planDescription": "Health Net Gold Select (HMO) is a Medicare Advantage Prescription Drug (MAPD) plan that provides comprehensive medical and prescription drug coverage, plus valuable health essentials at low, predictable costs. Health Net Gold Select also includes transportation to plan-approved locations, complementary coverage for gym membership, hearing         aids and preventive and comprehensive dental services as well as medical and Part D prescription drug coverage. This plan is limited to specific providers.",
+        "applyOnline": false,
+        "monthlyPremium": "$0.00",
+        "starRatings": "4",
+        "starRatingsPDF": "ca_hmo_ratings.pdf",
+        "medicalCoverage": {
+            "oopMax": "TBD",
+            "deductible": "N/A",
+            "primaryDrCopay": "$0.00",
+            "specialistDrCopay": "$0.00"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "No deductible",
+            "gapCoverage": "Tier 1, Tier 2, and Tier 6 gap coverage",
+            "preferredGenericDrugCopay": "Standard retail cost-sharing: $5, Preferred retail cost-sharing: $0",
+            "preferredBrandDrugCopay": "Standard retail cost-sharing: $47, Preferred retail cost-sharing: $37",
+            "nonPreferredGenericDrugCopay": "Standard retail cost-sharing: $20, Preferred retail cost-sharing: $10",
+            "nonPreferredBrandDrugCopay": "Standard retail cost-sharing: $100, Preferred retail cost-sharing: $90",
+            "specialtyDrugsCopay": "Standard retail/Preferred retail cost-sharing: 33%",
+            "selectCarDrugsCopay": "Standard retail/Preferred retail cost-sharing:  $0"
+        },
+        "supplementalPlan": {
+            "optSupPkg7": "Eyewear+Chiro/Acupuncture",
+            "optSupCost1": "N/A test12345",
+            "optSupCost7": "$12"
+        },
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_101_001.pdf",
+            "lowIncomeSubsidy": "2017_ca_lis_101_001.pdf",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_101_001.pdf"
+        }
+    },
+    {
+        "planId": "41158",
+        "planName": "Health Net Gold Select (HMO)",
+        "planDescription": "Health Net Gold Select (HMO) is a Medicare Advantage Prescription Drug (MAPD) plan that provides comprehensive medical and prescription drug coverage, plus valuable health essentials at low, predictable costs. Health Net Gold Select also includes transportation to plan-approved locations, complementary coverage for gym membership, hearing aids and preventive and comprehensive dental services as well as medical and Part D prescription drug coverage. This plan is limited to specific providers.",
+        "applyOnline": false,
+        "monthlyPremium": "$0.00",
+        "starRatings": "4",
+        "starRatingsPDF": "ca_hmo_ratings.pdf",
+        "medicalCoverage": {
+            "oopMax": "TBD",
+            "deductible": "N/A",
+            "primaryDrCopay": "$0.00",
+            "specialistDrCopay": "$0.00"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "No deductible",
+            "gapCoverage": "Tier 1, Tier 2, and Tier 6 gap coverage",
+            "preferredGenericDrugCopay": "Standard retail cost-sharing: $5, Preferred retail cost-sharing: $0",
+            "preferredBrandDrugCopay": "Standard retail cost-sharing: $47, Preferred retail cost-sharing: $37",
+            "nonPreferredGenericDrugCopay": "Standard retail cost-sharing: $20, Preferred retail cost-sharing: $10",
+            "nonPreferredBrandDrugCopay": "Standard retail cost-sharing: $100, Preferred retail cost-sharing: $90",
+            "specialtyDrugsCopay": "Standard retail/Preferred retail cost-sharing: 33%",
+            "selectCarDrugsCopay": "Standard retail/Preferred retail cost-sharing:  $0"
+        },
+        "supplementalPlan": {
+            "optSupPkg7": "Eyewear+Chiro/Acupuncture",
+            "optSupCost7": "$12"
+        },
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_101_001.pdf",
+            "lowIncomeSubsidy": "2017_ca_lis_101_001.pdf",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_101_001.pdf"
+        }
+    },
+    {
+        "planId": "41156",
+        "planName": "Health Net Healthy Heart (HMO)",
+        "planDescription": "Health Net Healthy Heart (HMO) is a comprehensive Medicare Advantage Prescription Drug (MAPD) plan that provides a wide range of lifestyle benefits and programs to help reduce risk of cardiovascular disease and stroke, so you live a long, heart-healthy life. Health Net Healthy Heart also gives you access to our extensive group of medical providers and allows you to choose a primary care physician from a network of highly skilled physicians in your area.This plan includes complementary coverage for hearing aids as well as medical and Part D prescription drug coverage. ",
+        "applyOnline": false,
+        "monthlyPremium": "$20.00",
+        "starRatings": "2",
+        "starRatingsPDF": "ca_hmo_ratings.pdf",
+        "medicalCoverage": {
+            "oopMax": "$2,400",
+            "deductible": "N/A",
+            "primaryDrCopay": "$0.00",
+            "specialistDrCopay": "$0.00"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "No deductible",
+            "gapCoverage": "Tier 1, Tier 2, and Tier 6 gap coverage",
+            "preferredGenericDrugCopay": "Standard retail cost-sharing: $10, Preferred retail cost-sharing: $5",
+            "preferredBrandDrugCopay": "Standard retail cost-sharing: $47, Preferred retail cost-sharing: $37",
+            "nonPreferredGenericDrugCopay": "Standard retail cost-sharing: $20, Preferred retail cost-sharing: $10",
+            "nonPreferredBrandDrugCopay": "Standard retail cost-sharing: $100, Preferred retail cost-sharing: $90",
+            "specialtyDrugsCopay": "Standard retail/Preferred retail cost-sharing: 33%",
+            "selectCarDrugsCopay": "Standard retail/Preferred retail cost-sharing:  $0"
+        },
+        "supplementalPlan": {
+            "optSupPkg1": "DHMO+Eyewear+Chiro/Acupuncture+Fitness",
+            "optSupPkg2": "DPPO+Eyewear+Chiro/Acupuncture+Fitness",
+            "optSupCost1": "$25.00",
+            "optSupCost2": "$35"
+        },
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_100_001.pdf",
+            "lowIncomeSubsidy": "2017_ca_lis_100_001.pdf",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_100_001.pdf"
+        }
+    },
+    {
+        "planId": "41153",
+        "planName": "Health Net Jade (HMO SNP)",
+        "planDescription": "Health Net Jade is Health Net's Medicare Advantage Special Needs Plan (HMO SNP) designed to meet the unique needs of patients diagnosed with Diabetes mellitus, chronic heart failure, and/or cardiovascular disorders. Key benefits include $0 copayments for primary care physician office visits, cardiac rehab, diabetic supplies, and routine podiatry visits. This plan also includes transportation to plan-approved locations, complementary coverage for hearing aids, preventive and comprehensive dental services, routine vision exams and eyewear and gym membership.  To be eligible for Jade, you must be eligible for Medicare Part A and be enrolled in Medicare Part B. You must be diagnosed with a cardiovascular disorder, chronic heart failure (CHF) and/or Diabetes either before enrollment or within 30 days of enrollment.",
+        "applyOnline": false,
+        "monthlyPremium": "$0.00",
+        "starRatings": "3",
+        "starRatingsPDF": "ca_hmo_snp_ratings.pdf",
+        "medicalCoverage": {
+            "oopMax": "TBD",
+            "deductible": "N/A",
+            "primaryDrCopay": "$0.00",
+            "specialistDrCopay": "$0.00"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "No deductible",
+            "gapCoverage": "Tier 1, Tier 2, and Tier 6 gap coverage",
+            "preferredGenericDrugCopay": "Standard retail cost-sharing: $5, Preferred retail cost-sharing: $0",
+            "preferredBrandDrugCopay": "Standard retail cost-sharing: $47, Preferred retail cost-sharing: $37",
+            "nonPreferredGenericDrugCopay": "Standard retail cost-sharing: $15, Preferred retail cost-sharing: $10",
+            "nonPreferredBrandDrugCopay": "Standard retail cost-sharing: $100, Preferred retail cost-sharing: $90",
+            "specialtyDrugsCopay": "Standard retail/Preferred retail cost-sharing: 33%",
+            "selectCarDrugsCopay": "Standard retail/Preferred retail cost-sharing:  $0"
+        },
+        "supplementalPlan": {},
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_092.pdf",
+            "lowIncomeSubsidy": "2017_ca_lis_092.pdf",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_092.pdf"
+        }
+    },
+    {
+        "planId": "41148",
+        "planName": "Health Net Seniority Plus Amber I (HMO SNP)",
+        "planDescription": "Health Net Seniority Plus Amber I (HMO SNP) is Health Net's Medicare Advantage Special Needs Plan for people who are entitled to Medicare Part A and enrolled in Medicare Part B and entitled to Medi-Cal. Amber I includes Part D Prescription Drug coverage, and is available to people who have met the financial qualifications as determined by government guidelines. With Amber I, medical and drug coverage is provided at costs that may be greatly reduced or even eliminated.  Amber I also includes complementary coverage for eyewear, hearing aids, preventive and comprehensive dental services, gym membership and transportation to plan-approved locations. This plan is limited to specific providers.",
+        "applyOnline": false,
+        "monthlyPremium": "$0 - $XX.XX",
+        "starRatings": "2",
+        "starRatingsPDF": "ca_hmo_snp_ratings.pdf",
+        "medicalCoverage": {
+            "oopMax": "TBD",
+            "deductible": "N/A",
+            "primaryDrCopay": "$0.00",
+            "specialistDrCopay": "$0.00"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "$0 - $82 (excludes tiers 1 & 6)",
+            "gapCoverage": "No coverage",
+            "preferredGenericDrugCopay": "$0.00",
+            "preferredBrandDrugCopay": "$0.00 - $8.25",
+            "nonPreferredGenericDrugCopay": "$0.00 - $3.30",
+            "nonPreferredBrandDrugCopay": "$0.00 - $8.25",
+            "specialtyDrugsCopay": "$0.00 - $8.25",
+            "selectCarDrugsCopay": "$0.00"
+        },
+        "supplementalPlan": {},
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_055.pdf",
+            "lowIncomeSubsidy": "2017_ca_lis_055.pdf",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_055.pdf"
+        }
+    },
+    {
+        "planId": "41161",
+        "planName": "Health Net Seniority Plus Amber II (HMO SNP)",
+        "planDescription": "Health Net Seniority Plus Amber II (HMOSNP) is Health Net's Medicare Advantage Special Needs Plan for people who are entitled to Medicare Part A and enrolled in Medicare Part B and entitled to Medi-Cal. Amber II includes Part D Prescription Drug coverage, and is available to people who have met the financial qualifications as determined by government guidelines. With Amber II, medical and drug coverage is provided at costs that may be greatly reduced or even eliminated.  Amber II also includes complementary coverage for gym membership, eyewear, hearing aids, preventive and comprehensive dental services and transportation to plan-approved locations. This plan is limited to specific providers.",
+        "applyOnline": false,
+        "monthlyPremium": "$0 - $XX.XX",
+        "starRatings": "1",
+        "starRatingsPDF": "ca_hmo_snp_ratings.pdf",
+        "medicalCoverage": {
+            "oopMax": "$5,000",
+            "deductible": "N/A",
+            "primaryDrCopay": "0% or 20%",
+            "specialistDrCopay": "0% or 20%"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "$0 - $82 (excludes tiers 1 & 6)",
+            "gapCoverage": "No coverage",
+            "preferredGenericDrugCopay": "$0.00",
+            "preferredBrandDrugCopay": "$0.00 - $8.25",
+            "nonPreferredGenericDrugCopay": "$0.00 - $3.30",
+            "nonPreferredBrandDrugCopay": "$0.00 - $8.25",
+            "specialtyDrugsCopay": "$0.00 - $8.25",
+            "selectCarDrugsCopay": "$0.00"
+        },
+        "supplementalPlan": {},
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_110_001.pdf",
+            "lowIncomeSubsidy": "2017_ca_lis_110_001.pdf",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_110_001.pdf"
+        }
+    },
+    {
+        "planId": "41146",
+        "planName": "Health Net Seniority Plus Green (HMO)",
+        "planDescription": "Absolute Total Care (Medicare-Medicaid Plan) is an all in one health plan. You get all of your Medicare and Medicaid benefits. The plan covers medical services, long-term care services and prescription drugs. You can also get extra dental benefits, routin",
+        "applyOnline": false,
+        "monthlyPremium": "$0.00",
+        "starRatings": "0",
+        "starRatingsPDF": "ca_hmo_ratings.pdf",
+        "medicalCoverage": {
+            "oopMax": "TBD",
+            "deductible": "N/A",
+            "primaryDrCopay": "$7.00",
+            "specialistDrCopay": "$10.00"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "N/A",
+            "gapCoverage": "No coverage",
+            "preferredGenericDrugCopay": "N/A",
+            "preferredBrandDrugCopay": "N/A",
+            "nonPreferredGenericDrugCopay": "N/A",
+            "nonPreferredBrandDrugCopay": "N/A",
+            "specialtyDrugsCopay": "N/A",
+            "selectCarDrugsCopay": "N/A"
+        },
+        "supplementalPlan": {},
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_044.pdf",
+            "lowIncomeSubsidy": "N/A",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_044.pdf"
+        }
+    },
+    {
+        "planId": "41164",
+        "planName": "Health Net Seniority Plus Sapphire (HMO)",
+        "planDescription": "Health Net Seniority Plus Sapphire (HMO) is a Medicare Advantage Prescription Drug (MAPD) plan that gives you the convenience of having all your needs Â¿ medical and drug Â¿ coordinated by one company. Health Net Sapphire also gives you access to our extensive group of medical providers and allows you to choose a primary care physician from a network of highly skilled physicians in your area. Sapphire also includes complementary coverage for gym membership eyewear, hearing aids, preventive and comprehensive dental services and transportation to plan-approved locations. ",
+        "applyOnline": false,
+        "monthlyPremium": "$31.00",
+        "starRatings": "3",
+        "starRatingsPDF": "ca_hmo_ratings.pdf",
+        "medicalCoverage": {
+            "oopMax": "TBD",
+            "deductible": "N/A",
+            "primaryDrCopay": "$0",
+            "specialistDrCopay": "20%"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "$140 (excludes tiers 1 & 6)",
+            "gapCoverage": "No coverage",
+            "preferredGenericDrugCopay": "$0.00",
+            "preferredBrandDrugCopay": "$47.00",
+            "nonPreferredGenericDrugCopay": "$20.00",
+            "nonPreferredBrandDrugCopay": "$100.00",
+            "specialtyDrugsCopay": "30%",
+            "selectCarDrugsCopay": "$0.00"
+        },
+        "supplementalPlan": {},
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_111_001.pdf",
+            "lowIncomeSubsidy": "2017_ca_lis_111_001.pdf",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_111_001.pdf"
+        }
+    },
+    {
+        "planId": "41176",
+        "planName": "Health Net Seniority Plus Sapphire Premier (HMO)",
+        "planDescription": "Health Net Seniority Plus Sapphire Premier (HMO) is a Medicare Advantage Prescription Drug (MAPD) plan that gives you the convenience of having all your needs Â¿ medical and drug Â¿ coordinated by one company. Health Net Sapphire Premier also gives you access to our extensive group of medical providers and allows you to choose a primary care physician from a network of highly skilled physicians in your area. Sapphire Premier also includes complementary coverage for eyewear, hearing aids, preventive and comprehensive dental services, gym membership and transportation to plan-approved locations. ",
+        "applyOnline": false,
+        "monthlyPremium": "$31.00",
+        "starRatings": "3",
+        "starRatingsPDF": "N/A",
+        "medicalCoverage": {
+            "oopMax": "TBD",
+            "deductible": "N/A",
+            "primaryDrCopay": "$0",
+            "specialistDrCopay": "$0"
+        },
+        "prescriptionCoverage": {
+            "rxDeductible": "$170 (excludes tiers 1 & 6)",
+            "gapCoverage": "No coverage",
+            "preferredGenericDrugCopay": "$0.00",
+            "preferredBrandDrugCopay": "$47.00",
+            "nonPreferredGenericDrugCopay": "$20.00",
+            "nonPreferredBrandDrugCopay": "$100.00",
+            "specialtyDrugsCopay": "29%",
+            "selectCarDrugsCopay": "$0.00"
+        },
+        "supplementalPlan": {},
+        "resourceURLs": {
+            "summaryOfBenefits": "2017_ca_sb_002.pdf",
+            "lowIncomeSubsidy": "2017_ca_lis_002.pdf",
+            "enrollApp": "2017_ca_enrollapp.pdf",
+            "comparePlans": "2017_ca_bh_002.pdf"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+<div>
+    <p>We're here to help.</p>
+    <p ng-if="state !== 'CA'"><strong>Call us now at {{phone1}}</strong></p>
+    <p ng-if="state === 'CA' && phone2">
+        <span ng-show="{{planTypes.HMO || planTypes.PPO}}">For our <b>HMO / PPO</b> plans call us now at {{phone1}}</span><br /><br />
+        <span ng-show="{{planTypes.SNP}}">For a <b>Special Needs Plan</b> call us now at {{phone2}} </span>
+    </p>
+
+    <p ng-if="state === 'CA' && !phone2">
+        <span><b>Call us now at {{phone1}}</b></span><br /><br />
+    </p>
+
+    <p><small>Our office hours are 8:00 a.m. to 8:00 p.m., 7 days a week (October 1st - February 14th) and Monday through Friday, 8:00 a.m. to 8:00 p.m. (February 15th - September 30th), excluding holidays.</small></p>
+</div>

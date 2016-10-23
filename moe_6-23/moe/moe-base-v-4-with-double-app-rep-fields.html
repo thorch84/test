@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>PST-MOE Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../moe/css/bootstrap.min.css" rel="stylesheet">
+	<!--theme specific-->
+	<link href="../moe/css/pst-moe.css" rel="stylesheet">
+	<link href="../moe/css/moe.css" rel="stylesheet">
+	<!-- FormValidation CSS file -->
+	<link rel="stylesheet" href="../moe/formvalidation/dist/css/formValidation.min.css">
+<!--
+	only include the css for PST when viewing PST pages
+	<link href="/static/moe/css/pst.css" rel="stylesheet">
+-->
+
+  </head>
+  <body class="moe"> <!-- tag for MOE or PST to handle CSS or JS differences -->
+ 	
+  <div id="main-container">
+
+	<!-- Sidebar -->
+        <section id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    
+                </li>
+                <!--NEW KANGAROO: REAL LINKS AND REAL-ISH PLACEHOLDER LINKS FOR MOE -->
+                <li>
+                    <a href="#" target="_blank" title="link to accessibility information on the originating health plan site">Accessibility Information</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to find a doctor / provider search tool on the originating health plan site">Find a Provider</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#glossaryModal">Glossary of Terms</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to summary of benefits PDF for the selected plan">Summary of Benefits (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to language assistance PDF for the selected plan">Language Assistance (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to star ratings info PDF for the selected plan">About Star Ratings (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" title="link to accessibility information on the originating health plan site">Privacy Policy</a>
+                </li>
+                <li>
+                	<p>[content varies by health plan, here is Health Net's]<br />
+      Health Net Medicare Sales is ready to assist you. Call toll-free 1-800-977-6738 TTY 711. Our office hours are 8:00 a.m. to 8:00 p.m., 7 days a week (October 1st - February 14th) and Monday through Friday, 8:00 a.m. to 8:00 p.m. (February 15th - September 30th), excluding holidays.</p>
+                </li>
+            </ul>
+        </section>
+        <!-- /#main-content -->
+
+		<main role="main">
+        <!-- Page Content -->
+        <section id="page-content-wrapper">
+  
+	  <nav class="navbar navbar-default navbar-fixed-top healthnet"><!--add  reversed-out here for dark headers, add plan name here too-->
+		  <div class="container-fluid">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			  <ul class="nav navbar-nav">
+				<li><a href="#" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></li>
+				<li class="logo"><a href="#"></a></li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				  <!--NEW KANGAROO: LINK TO MODAL ADDED TO THE LANGUAGE ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#langModal" id="language-header-link"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> English</a></li>
+				<!--NEW KANGAROO: LINK TO MODAL ADDED TO THE CONTACT ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#contactModal" id="contact-header-link" title="View contact information"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></a></li>
+				<!--NEW KANGAROO: LINK TO MODAL ADDED TO THE HELP ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#helpModal" id="help-header-link" title="View help information"><span>?</span></a></li>
+			  </ul>
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+	<section class="header-section">
+	
+		<article id="header-info-box" class="clearfix">
+		
+<!-- MOE version of header-->
+			<div class="main-box">
+				<div class="text-largest h4" id="moe-tool-info">Medicare Online Enrollment</div>
+				<div class="text-large h1" id="moe-plan-name">Gold Select (HMO)</div>
+				<div class="text-medium h3" id="moe-benefits-info">Optional Benefits Package #1 <a href="#" class="small" id="change-remove-link">Change/Remove</a></div>
+				<div class="text-small h4" id="moe-location-info"><strong>Type:</strong> MAPD <strong>&nbsp;&nbsp;Location:</strong> 92072, San Diego, CA</div>
+			</div>
+			<div class="secondary-box">
+				<div class="text-largest h2" id="moe-cost-info">$<strong>0.00</strong><span class="small"> + $12.00</span><span class="small" id="moe-mobile-cost-type-info"> Monthly Premium</span></div>
+				<div class="text-large h4" id="moe-cost-type-info">Monthly Premium</div>
+			</div>
+
+
+<!-- PST version of header		
+			<div class="main-box">
+				<div class="text-largest h1" id="pst-plan-info">Medicare Advantage</div>
+				<div class="text-large h3" id="pst-location-info">92072, San Diego, CA</div>
+				<button type="button" class="btn btn-default" id="pst-change-zip">Change zip code</button>
+			</div>
+			<div class="secondary-box">
+				<div class="text-largest h5" id="pst-year-info">Plans for Year</div>
+				<div class="text-large h2" id="pst-year-switcher"><a href="#"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 2017</a></div>
+			</div>
+ -->			
+		</article>
+		
+		<article id="breadcrumbs">
+			<!--MOE VERSION OF BREADCRUMBS -->
+			<p class="moe-breadcrumb"><strong>Applicant</strong> / Enrollment Questions / Preferences / Finish Up</p>
+			<div id="moe-progress-bar"><div></div></div><p class="moe-progress-bar-label">Progress:</p>
+			
+		</article>
+	
+  	</section>
+	
+<!-- 	START OF PAGE CONTENT -->
+	
+	
+    <p class="h2" id="content-top">Applicant</p> <!-- first element in content area needs content-top ID -->
+	<p><strong>Note:</strong> by completing and submitting this Online Medicare Enrollment Form you are sending an actual enrollment election to Health Net Gold Select (HMO)</p>
+	<p class="h3">Who is submitting this application?</p>
+	<form id="applicant-form"><!--adding ID to the form on the Applicant page-->
+	<div class="form-group">
+		<select class="form-control" id="whoIsSubmitting">
+			<option selected>I am a(n)...</option>
+		  <option value="100">Applicant</option>
+		  <option value="200">Applicant's Representative / Power Of Attorney / Legal Representative</option>
+		  <option value="300">Applicant assisted by a Sales Producer</option>
+		  <option value="400">Telesales / Fieldsales Representatives</option>
+		</select>
+	</div>
+	
+	<!--fields for rep or power of attorney Rep -->
+	<div id="Rep">
+		<p><strong>If you are an authorized representative, you must provide the following information.</strong></p>
+		<div class="form-group">
+			   <label for="firstName">First Name</label>
+			   <input type="text" name="firstName" id="firstName" size="30" maxlength="50" class="form-control">
+			</div>
+			<div class="form-group">
+			   <label for="mi">Middle Initial</label>
+			   <input type="text" name="mi" id="mi" size="3" maxlength="1" class="form-control"> 
+			</div>
+			<div class="form-group">
+			   <label for="lastName">Last Name</label>
+			   <input type="text" name="lastName" id="lastName" size="30" maxlength="50" class="form-control">
+			</div>
+			<hr class="mini">
+			<div class="form-group">
+			   <label for="streetAdd">Street Address</label>
+			   <input type="text" name="streetAdd" id="streetAdd" maxlength="100" size="30" class="form-control" value="">
+			</div>
+			<div class="form-group">
+			   <label for="city">City</label>
+			   <input type="text" name="city" id="city" maxlength="50" size="30" class="form-control" value="">
+			</div>
+			<div class="form-group">
+			   <label for="city">State</label>
+				<select name="state" id="state" class="form-control" maxlength="8">
+				   <option value="">Select</option>
+				   <option value="AK">AK</option>
+				   <option value="AL">AL</option>
+				   <option value="AR">AR</option>
+				   <option value="AS">AS</option>
+				   <option value="AZ">AZ</option>
+				   <option value="CA">CA</option>
+				   <option value="CO">CO</option>
+				</select>
+			</div>
+			<div class="form-group">
+			   <label for="exampleInputEmail1">Zip Code</label>
+			   <input type="text" maxlength="5" size="6" name="zipCode" id="zipCode" class="form-control" value="">
+			</div>
+			<hr class="mini">
+		<div class="form-inline">
+			<div class="form-group">
+			   <label for="phone1Rep">Phone Number</label>
+			   <input type="text" name="phone1" id="phone1Rep" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('phone1Rep','3','phone2Rep',event);">-
+			</div>
+			<div class="form-group">
+			   <label for="phone2Rep" class="sr-only">Prefix</label>
+			   <input type="text" name="phone2" id="phone2Rep" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('phone2Rep','3','phone3Rep',event);">-
+			</div>
+			<div class="form-group">
+			   <label for="phone3Rep" class="sr-only">Suffix</label>
+			   <input type="text" name="phone3" id="phone3Rep" maxlength="4" size="4" class="form-control">
+			</div>
+		</div>
+		<hr class="mini">
+		<div class="form-group">
+		   <label for="relation">Relationship to Enrollee</label>
+		   <input type="text" name="relation" id="relation" size="30" maxlength="50" class="form-control" value="">
+		</div>
+		<hr class="mini">
+		<p><strong>Note:</strong> You will need to provide a copy of proof of Legal Guardian, Durable Power of Attorney for Health Care (DPAHC), written advance directive, or proof of authorization under state law to complete this enrollment, if requested by Health Net or Medicare upon request.</p>
+	</div>
+	
+	<!--end fields for rep or power of attorney -->
+	
+	<!--fields for sales producer Broker-->
+	
+	<div id="Broker">
+		<p><strong>Is the Applicant with you?</strong></p>
+		<div class="radio">
+		   <label for="Yes">
+		   <input type="radio" name="assistedByInPerson" align="absmiddle" value="true" onclick="javascript:display('RecordingIDSectionOff');">
+		   Yes
+		   </label>
+		</div>
+		<div class="radio">
+		   <label for="No">
+		   <input type="radio" name="assistedByInPerson" align="absmiddle" value="false" onclick="javascript:display('RecordingIDSection');">
+		   No
+		   </label>
+		</div>
+		<p><strong>Please provide the following information.</strong></p>
+		<div class="form-group">
+		   <label for="brokerIdValue">Sales Producer ID</label>
+		   <input type="text" maxlength="50" size="30" name="brokerId" id="brokerIdValue" class="form-control" value="">
+		</div>
+		<div class="form-group">
+		   <label for="salesProducerName">Sales Producer Name</label>
+		   <input type="text" maxlength="50" size="30" name="salesProducerName" id="salesProducerName" class="form-control" value="">
+		</div>
+		<hr class="mini">
+		<!--this set of hidden fields is in the current MOE source code
+		but it is commented out here because these fields are used to carry values from page to page
+		and there are fewer pages
+		<input type="hidden" name="firstName" />
+		<input type="hidden" name="lastName" />
+		<input type="hidden" name="mi" /> -->
+		<div class="form-inline">
+		   <div class="form-group">
+		      <label for="phone1Broker">Phone Number</label>
+		      <input type="text" name="phone1" id="phone1Broker" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('phone1Broker','3','phone2Broker',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="phone2Broker" class="sr-only">Prefix</label>
+		      <input type="text" name="phone2" id="phone2Broker" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('phone2Broker','3','phone3Broker',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="phone3Broker" class="sr-only">Suffix</label>
+		      <input type="text" name="phone3" id="phone3Broker" maxlength="4" size="4" class="form-control">
+		   </div>
+		</div>
+		<hr class="mini">
+		<div class="form-group">
+		   <label for="affiliationId">Affiliation ID(GA, FMO or Agency)</label>
+		   <input type="text" maxlength="50" size="30" name="affiliationId" id="affiliationId" value="" class="form-control">
+		</div>
+		<div class="form-group">
+		   <label for="affiliationName">Affiliation Name</label>
+		   <input type="text" maxlength="50" size="30" name="affiliationName" id="affiliationName" value="" class="form-control">
+		</div>
+		<div class="form-inline">
+		   <div class="form-group">
+		      <label for="affiliationPhoneNumber1">Phone Number</label>
+		      <input type="text" id="affiliationPhoneNumber1" name="affiliationPhoneNumber1" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('affiliationPhoneNumber1','3','affiliationPhoneNumber2',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="affiliationPhoneNumber2" class="sr-only">Prefix</label>
+		      <input type="text" id="affiliationPhoneNumber2" name="affiliationPhoneNumber2" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('affiliationPhoneNumber2','3','affiliationPhoneNumber3',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="affiliationPhoneNumber3" class="sr-only">Suffix</label>
+		      <input type="text" id="affiliationPhoneNumber3" name="affiliationPhoneNumber3" maxlength="4" size="4" class="form-control">
+		   </div>
+		</div>
+		<hr class="mini">
+		<div class="form-group">
+		   <label for="salesRepId">Sales Rep ID</label>
+		   <input type="text" maxlength="50" size="30" name="salesRepId" id="salesRepId" class="form-control">
+		</div>
+		<div class="form-group">
+		   <label for="salesRepName">Sales Rep Name</label>
+		   <input type="text" maxlength="50" size="30" name="salesRepName" id="salesRepName" class="form-control">
+		</div>
+		<div class="form-inline">
+		   <div class="form-group">
+		      <label for="salesRepPhoneNumber1">Sales Rep Phone Number</label>
+		      <input type="text" id="salesRepPhoneNumber1" name="salesRepPhoneNumber1" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('salesRepPhoneNumber1','3','salesRepPhoneNumber2',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="salesRepPhoneNumber2" class="sr-only">Prefix</label>
+		      <input type="text" id="salesRepPhoneNumber2" name="salesRepPhoneNumber2" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('salesRepPhoneNumber2','3','salesRepPhoneNumber3',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="salesRepPhoneNumber3" class="sr-only">Suffix</label>
+		      <input type="text" id="salesRepPhoneNumber3" name="salesRepPhoneNumber3" maxlength="4" size="4" class="form-control">
+		   </div>
+		</div>
+		<hr class="mini">
+		<div class="form-inline">
+		   <div class="form-group">
+		      <label for="effDateMM">Requested Effective Date</label>
+		      <input type="text" name="effDateMM" id="effDateMM" maxlength="2" size="2" class="form-control" onkeyup="javascript:autoTab('effDateMM','2','effDateDD',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="effDateDD" class="sr-only">Prefix</label>
+		      <input type="text" name="effDateDD" id="effDateDD" maxlength="2" size="2" class="form-control" onkeyup="javascript:autoTab('effDateDD','2','effDateYYYY',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="effDateYYYY" class="sr-only">Suffix</label>
+		      <input type="text" name="effDateYYYY" id="effDateYYYY" maxlength="4" size="4" class="form-control">
+		   </div>
+		   <p class="help-block">(MM-DD-YYYY)</p>
+		</div>
+		<p><strong>Enrollment Type</strong></p>
+		<div class="checkbox">
+		   <label for="enrollmentType0">
+		   <input type="checkbox" value="" name="enrollmentType0" id="enrollmentType0">
+		   ICEP/IEP
+		   </label>
+		</div>
+		<div class="checkbox">
+		   <label for="enrollmentType1">
+		   <input type="checkbox" value="" name="enrollmentType1" id="enrollmentType1">
+		   OEP/NEW
+		   </label>
+		</div>
+		<div class="checkbox">
+		   <label for="enrollmentType2">
+		   <input type="checkbox" value="" name="enrollmentType2" id="enrollmentType2">
+		   OEPI
+		   </label>
+		</div>
+		<div class="checkbox">
+		   <label for="enrollmentType3">
+		   <input type="checkbox" value="" name="enrollmentType3" id="enrollmentType3">
+		   AEP
+		   </label>
+		</div>
+		<div class="checkbox">
+		   <label for="enrollmentType4">
+		   <input type="checkbox" value="" name="enrollmentType4" id="enrollmentType4">
+		   SEP
+		   </label>
+		</div>
+		<div class="form-group">
+		   <label for="enrollmentDesc">Type Description</label>
+		   <input type="text" name="enrollmentDesc" id="enrollmentDesc" size="30" maxlength="40" class="form-control"> 
+		</div>
+		<div class="form-group">
+		   <label for="hnSubscriberId">Current Member's Health Net ID Number</label>
+		   <input type="text" maxlength="9" size="30" name="hnSubscriberId" id="hnSubscriberId" class="form-control">
+		</div>
+	</div>
+	<!--fields for sales producer -->
+	
+	<hr>
+	
+	<blockquote class="warning-message">
+	<strong>If you currently have health coverage from an employer or union, joining Health Net Gold Select (HMO) could affect your employer or union health benefits.</strong> You could lose your employer or union health coverage if you join Health Net Gold Select (HMO). Read the communications your employer or union sends you. If you have questions, visit their website, or contact the office listed in their communications. If there isn't any information on whom to contact, your benefits administrator or the office that answers questions about your coverage can help.
+	</blockquote>
+	
+	<hr>
+	
+	
+	<p class="h3">Medicare Information</p>
+	<form id="applicant-form"><!--adding ID to the form on the Applicant page-->
+	
+	<p>Copy the information as it appears on <strong>your Medicare Health Insurance card.</strong></p>
+	<p><a href="#" data-toggle="modal" data-target="#medCardModal">Show example of a Medicare card</a></p>
+	
+	<div class="form-group">
+   <label for="title">Title</label>
+   <select name="title" id="title" class="form-control required">
+      <option value=""></option>
+      <option  value="Mr" >Mr.</option>
+      <option  value="Mrs" >Mrs.</option>
+      <option  value="Ms" >Ms.</option>
+   </select>
+</div>
+<div class="form-group">
+   <label for="firstNameP">First Name</label>
+   <input type="text" id="firstNameP" name="firstNameP" maxlength="50" size="28" class="form-control required" value="" />
+</div>
+<div class="form-group">
+   <label for="miP">Middle Initial</label>
+   <input type="text" class="form-control" id="miP" name="miP" maxlength="25" size="3" value=""/>
+</div>
+<div class="form-group">
+   <label for="lastNameP">Last Name</label>
+   <input type="text" id="lastNameP" name="lastNameP" maxlength="60" size="28" class="form-control required" value="" />
+</div>
+<div class="form-inline">
+   <div class="form-group">
+      <label for="medicareClaim1">Medicare Claim #</label>
+      <input type="text"  name="medicareClaim1" id="medicareClaim1" maxlength="3" size="3" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('medicareClaim1',3,'medicareClaim2',event); changeUpper(this,'medicareClaim1');" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="medicareClaim2" class="sr-only">Medicare Claim # Part 2</label>
+      <input type="text"  name="medicareClaim2" id="medicareClaim2" maxlength="2" size="2" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('medicareClaim2',2,'medicareClaim3',event); changeUpper(this,'medicareClaim2');" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="medicareClaim3" class="sr-only">Medicare Claim # Part 3</label>
+      <input type="text"  name="medicareClaim3" id="medicareClaim3" maxlength="4" size="3" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('medicareClaim3',4,'medicareClaim4',event); changeUpper(this,'medicareClaim3');" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="medicareClaim4" class="sr-only">Medicare Claim # Part 4</label>
+      <input type="text"  name="medicareClaim4" id="medicareClaim4" maxlength="3" size="3" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:changeUpper(this,'medicareClaim4');"/>
+   </div>
+</div>
+<p><strong>Sex</strong></p>
+<div class="radio">
+   <label for="gender-M">
+   <input type="radio" id="gender-M" name="gender" value="M"  />
+   Male
+   </label>
+</div>
+<div class="radio">
+   <label for="gender-F">
+   <input type="radio" id="gender-F" name="gender" value="F"  />
+   Female
+   </label>
+</div>
+<p>You must have Medicare <strong>Part A and Part B</strong> to join a Medicare Advantage Prescription Drug Plan.</p>
+<p><a href="#" data-toggle="modal" data-target="#medCardModal">Show example of a Medicare card</a></p>
+<div class="form-inline">
+   <div class="form-group">
+      <label for="effDateMM">Hospital (Part A) Effective Date</label>
+      <input type="text" name="effDateMM" id="effDateMMA" maxlength="2" size="2" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('effDateMMA','2','effDateDDA',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="effDateDD" class="sr-only">Effective Date Hospital (Part A) Day</label>
+      <input type="text" name="effDateDD" id="effDateDDA" maxlength="2" size="2" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('effDateDDA','2','effDateYYYYA',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="effDateYYYY" class="sr-only">Effective Date Hospital (Part A) Year</label>
+      <input type="text" name="effDateYYYY" id="effDateYYYYA" maxlength="4" size="4" class="form-control required" 
+         value="" 
+         />
+   </div>
+   <span class="description">(MM-DD-YYYY)</span>
+</div>
+<div class="form-inline">
+   <div class="form-group">
+      <label for="effDateMM">Medical (Part B) Effective Date</label>
+      <input type="text" name="effDateMM" id="effDateMMB" maxlength="2" size="2" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('effDateMMB','2','effDateDDB',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="effDateDD" class="sr-only">Medical (Part B) Day</label>
+      <input type="text" name="effDateDD" id="effDateDDB" maxlength="2" size="2" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('effDateDDB','2','effDateYYYYB',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="effDateYYYY" class="sr-only">Medical (Part B) Year</label>
+      <input type="text" name="effDateYYYY" id="effDateYYYYB" maxlength="4" size="4" class="form-control required" 
+         value="" 
+         />
+      <span class="description">(MM-DD-YYYY)</span>
+   </div>
+</div>
+<hr class="mini">
+<p class="h3">Applicant Information</p>
+<div class="form-inline">
+   <div class="form-group">
+      <label for="dobMM">Birth Date</label>
+      <input type="text" name="dobMM" id="dobMM" maxlength="2" size="2"  class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('dobMM','2','dobDD',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="dobDD" class="sr-only">Birth Date Day</label>
+      <input type="text" name="dobDD" id="dobDD" maxlength="2" size="2"  class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('dobDD','2','dobYYYY',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="dobYYYY" class="sr-only">Birth Date Year</label>
+      <input type="text" name="dobYYYY" id="dobYYYY" maxlength="4" size="4"  class="form-control required" 
+         value="" 
+         />
+      <span class="description">(MM-DD-YYYY)</span>
+   </div>
+</div>
+<div class="form-inline">
+   <div class="form-group">
+      <label for="phone1P">Home Phone Number</label>
+      <input type="text" name="phone1P" id="phone1P" maxlength="3" size="3" class="form-control required" onKeyUp="javascript:autoTab('phone1P','3','phone2P',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="phone2P" class="sr-only">Home Phone Number Prefix</label>
+      <input type="text" name="phone2P" id="phone2P" maxlength="3" size="3" class="form-control required" onKeyUp="javascript:autoTab('phone2P','3','phone3P',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="phone3P" class="sr-only">Home Phone Number Suffix</label>
+      <input type="text" name="phone3P" id="phone3P" maxlength="4" size="4" class="form-control required"/>
+   </div>
+</div>
+<div class="form-group">
+   <label for="emailIDP">Email Address</label>
+   <input name="emailIDP" id="emailIDP" type="text" class="form-control" maxlength="256" size="35"/>
+</div>
+<div class="checkbox">
+   <label for="noEmailIDP">
+   <input name="noEmailIDP" type="checkbox" onClick="javascript:displayEMailAddress(this);displayEmailContent(this);" />
+   I do not have an email address
+   </label>
+</div>
+<input type="hidden" name="noEmailIDP" value="off" >
+<input type="hidden" name="tempEmailIDP" id="tempEmailIDP" value="" />
+<p id="no-email">To save this application and return at a later time to complete it OR to enroll in Electronic Document Delivery,you will need to enter an email address.</p>
+<hr class="mini">
+<p class="h3">Permanent Residence Street Address <span class="small">(P.O. Box is not allowed)</span></p>
+<div class="form-group">
+   <label for="stAddressP">Street Address</label>
+   <input type="text" id="stAddressP" name="stAddressP" class="form-control required" maxlength="100" size="55"/>
+</div>
+<div class="form-group">
+   <label for="cityP">City</label>
+   <input class="form-control required" type="text" id="cityP" name="cityP" maxlength="50" size="35"/>
+</div>
+<div class="form-group">
+   <label for="statePDisabled">State</label>
+   <select name="statePDisabled"  id="statePDisabled" class="form-control required" disabled>
+      <option value="CA">CA</option>
+   </select>
+</div>
+<input type="hidden" id="stateP" name="stateP" value="CA" />
+<div class="form-group">
+   <label for="zipCodePDisabled">Zip Code</label>
+   <input type="text" maxlength="5" class="form-control required" size="6" id="zipCodePDisabled" name="zipCodePDisabled" value="90002" disabled/>
+</div>
+<input type="hidden" name="zipCodeP" value="90002" />
+<hr class="mini">
+<p class="h3">Mailing Address</p>
+	<p><strong>Is your mailing address different from permanent residence address?</strong></p>
+	<div class="radio">
+	   <label for="Yes">
+	   <input type="radio" id="diffMailAddress-true" name="diffMailAddress" onClick="javascript:displayMailAddress('Yes');"  value="true" />
+	   Yes
+	   </label>
+	</div>
+	<div class="radio">
+	   <label for="Yes">
+	   <input type="radio" id="diffMailAddress-false" name="diffMailAddress" onClick = "javascript:displayMailAddress('No');" checked value="false" />
+	   No
+	   </label>
+	</div>
+	<div id="mailAddress">
+	<div class="form-group">
+	   <label for="stAddressM">Street Address</label>
+	   <input type="text" id="stAddressM" name="stAddressM" class="form-control required" maxlength="100" size="35" />
+	</div>
+	<div class="form-group">
+	   <label for="mailCity">City</label>
+	   <input type="text" id="mailCity" name="cityM" class="form-control required" maxlength="50" size="35" />
+	</div>
+	<div class="form-group">
+	   <label for="stateM">State</label>
+	   <select name="stateM" id="stateM" class="form-control required">
+		  <option value="">Select</option>
+		  <option value="AK">AK</option>
+		  <option value="AL">AL</option>
+		  <option value="AR">AR</option>
+		  <option value="AS">AS</option>
+		  <option value="AZ">AZ</option>
+		  <option value="CA">CA</option>
+	   </select>
+	</div>
+	<div class="form-group">
+	   <label for="zipCodeM">Zip Code</label>
+	   <input type="text" maxlength="5" size="6" id="zipCodeM" name="zipCodeM" class="form-control required" />
+	</div>
+</div>
+<hr class="mini">
+<div class="checkbox">
+   <label for="showEmergency">
+   <input name="showEmergency" id="showEmergency" type="checkbox" value="Yes" />
+   I would like to include <strong>Emergency Contact information</strong>
+   </label>
+</div>
+<div id="emergencyContact">
+	<p class="h3">Emergency Contact</p>
+	<div class="form-group">
+	   <label for="firstNameE">First Name</label>
+	   <input type="text" id="firstNameE" name="firstNameE" class="form-control" maxlength="35" size="35" value="" />
+	</div>
+	<div class="form-group">
+	   <label for="miE">Middle Initial</label>
+	   <input type="text" id="miE" name="miE" maxlength="25" class="form-control" size="3" value="" />
+	</div>
+	<div class="form-group">
+	   <label for="lastNameE">Last Name</label>
+	   <input type="text" id="lastNameE" name="lastNameE" class="form-control" maxlength="60" size="35" value="" />
+	</div>
+	<div class="form-inline">
+	   <div class="form-group">
+		  <label for="phone1E">Phone Number</label>
+		  <input type="text" name="phone1E" id="phone1E" class="form-control" maxlength="3" size="3" 
+			 value="" 
+			 onKeyUp="javascript:autoTab('phone1E','3','phone2E',event);" />
+		  -
+	   </div>
+	   <div class="form-group">
+		  <label for="phone2E" class="sr-only">Phone Number Prefix</label>
+		  <input type="text" name="phone2E" id="phone2E" class="form-control" maxlength="3" size="3" 
+			 value="" 
+			 onKeyUp="javascript:autoTab('phone2E','3','phone3E',event);" />
+		  -
+	   </div>
+	   <div class="form-group">
+		  <label for="phone3E" class="sr-only">Phone Number Suffix</label>
+		  <input type="text" name="phone3E" id="phone3E" class="form-control" maxlength="4" size="4" 
+			 value="" 
+			 />
+	   </div>
+	</div>
+	<div class="form-group">
+	   <label for="relationship">Relationship to You</label>
+	   <input type="text" maxlength="20" size="35" class="form-control" id="relationship" name="relationship" value="" />
+	</div>
+	<input type="hidden" id="" name="isCaregiverAllowed" value="false" />
+</div>
+<hr class="mini">
+<p class="h3">Applicant's Representative / Power Of Attorney / Legal Representative</p>
+<p><strong>Is information being provided by authorized representative?</strong></p>
+<div class="radio">
+   <label for="Yes">
+   <input type="radio" id="supportedByRep" name="supportedByRep" align="absmiddle" value="true"
+      onClick="javascript:document.getElementById('RepTable').style.display='block';" 
+      />
+   Yes
+   </label>
+</div>
+<div class="radio">
+   <label for="Yes">
+   <input type="radio" id="supportedByRep" name="supportedByRep" align="absmiddle" value="false" 
+      onClick="javascript:document.getElementById('RepTable').style.display='none';" 
+      checked
+      />
+   No
+   </label>
+</div>
+<p><strong>If you are an authorized representative, you must provide the following information.</strong></p>
+<div class="form-group">
+   <label for="caregiverFirstName">First Name</label>
+   <input type="text" id="caregiverFirstName" name="caregiverFirstName" size="30" maxlength="35" class="form-control required" 
+      value="" 
+      />
+</div>
+<div class="form-group">
+   <label for="caregiverMi">Middle Initial</label>
+   <input type="text" id="caregiverMi" class="form-control" name="caregiverMi" size="3" maxlength="25" 
+      value="" 
+      />
+</div>
+<div class="form-group">
+   <label for="caregiverLastName">Last Name</label>
+   <input type="text" id="caregiverLastName" name="caregiverLastName" size="30" maxlength="60" class="form-control required" 
+      value="" 
+      />
+</div>
+<div class="form-group">
+   <label for="caregiverStreetAdd">Street Address</label>
+   <input type="text" id="caregiverStreetAdd" name="caregiverStreetAdd" maxlength="100" size="30" class="form-control required" value="" />
+</div>
+<div class="form-group">
+   <label for="caregiverCity">City</label>
+   <input type="text" id="caregiverCity" name="caregiverCity" maxlength="50" size="30"  class="form-control required" value="" />
+</div>
+<div class="form-group">
+   <label for="caregiverState">State</label>
+   <select name="caregiverState" id="caregiverState" class="form-control required">
+      <option value="">Select</option>
+      <option value="AK"  >AK</option>
+      <option value="AL"  >AL</option>
+      <option value="AR"  >AR</option>
+      <option value="AS"  >AS</option>
+      <option value="AZ"  >AZ</option>
+      <option value="CA"  >CA</option>
+   </select>
+</div>
+<div class="form-group">
+   <label for="caregiverZipCode">Zip Code</label>
+   <input type="text" maxlength="5" size="6" id="caregiverZipCode" name="caregiverZipCode" class="form-control required" value="" />
+</div>
+<div class="form-inline">
+   <div class="form-group">
+      <label for="caregiverPhone1">Phone Number</label>
+      <input type="text" name="caregiverPhone1" id="phone1Rep" maxlength="3" size="3" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('phone1Rep','3','phone2Rep',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="caregiverPhone2" class="sr-only">Phone Number Prefix</label>
+      <input type="text"  name="caregiverPhone2" id="phone2Rep" maxlength="3" size="3" class="form-control required" 
+         value="" 
+         onKeyUp="javascript:autoTab('phone2Rep','3','phone3Rep',event);" />
+      -
+   </div>
+   <div class="form-group">
+      <label for="caregiverPhone3" class="sr-only">Phone Number Suffix</label>
+      <input type="text"  name="caregiverPhone3" id="phone3Rep" maxlength="4" size="4" class="form-control required" 
+         value="" 
+         />
+   </div>
+</div>
+<div class="form-group">
+   <label for="caregiverRelationship">Relationship to Applicant</label>
+   <input type="text" id="caregiverRelationship" name="caregiverRelationship" size="30" maxlength="50" class="form-control required" value="" />
+</div>
+	
+	<button type="button" id="saveButton" class="btn btn-default">Save &amp; Exit</button>
+    <button type="submit" class="btn btn-primary">Continue</button>
+	
+	</form>
+
+
+<!-- 	END OF PAGE CONTENT, BEGINNING OF SHARED FOOTER CONTENT -->	
+
+<!--KANGAROO NEW: MODAL WINDOWS FOR HEADER FUNCTIONALITY -->
+<!-- MODAL WINDOWS -->
+
+<!-- CONTACT US Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+      	<p>Content varies by health plan, should include include phone numbers and other contact info as found on the health plan site. Here's some sample data from Health Net that is probably pretty close to accurate:</p>
+	  	<p class="h4">Medicare Advantage Sales/Enrollment</p>
+	  	<div class="row">
+	        <div class="col-md-6">
+	          <p class="h5">February 15–September 30</P>
+	          <p>Monday through Friday, 8:00 a.m. to 8:00 p.m.<BR />Excluding holidays</p>
+	        </div>
+	        <div class="col-md-6">
+	          <p class="h5">October 1–February 14</P>
+	          <p>7 days a week, 8:00 a.m. to 8:00 p.m.<BR />Excluding holidays</p>	       </div>
+      </div>
+	  <p class="h4">Medicare Advantage Plans</p>
+	  <p>Health Net Amber, Complete, Green, Gold Select, Healthy Heart, Jade, Ruby, Ruby Select, Sapphire, and Violet: 1-800-977-6738<BR />TTY users should call 711.</p>
+	  <P><strong>Mailing Address</strong><br />
+		Attention: Customer Response Center<br />
+		Health Net, Inc.<br />
+		PO Box 10420<br />
+		Van Nuys, CA 91410-0420</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END CONTACT US Modal -->
+<!-- LANGUAGE Modal -->
+<div class="modal fade" id="langModal" tabindex="-1" role="dialog" aria-labelledby="langModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Language Assistance</h4>
+      </div>
+      <div class="modal-body">
+	      <p class="h4"><a href="#" title="link to switch to Spanish version of the site">Ver site in Espa&ntilde;ol</a></p>
+	      <p>&nbsp;</p>
+	      <p class="h4">Need help in your language?</p>
+	      <p><a href="#" title="link to language assistance PDF for Medicare">Language assistance information (PDF)</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END LANGUAGE Modal -->
+<!-- MEDICARE CARD Modal -->
+<div class="modal fade" id="medCardModal" tabindex="-1" role="dialog" aria-labelledby="medCardModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sample Medicare Card</h4>
+      </div>
+      <div class="modal-body">
+	   <img src="/static/moe/images/Medicare-Card.jpg" />  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MEDICARE CARD Modal -->
+
+
+<!-- HELP Modal -->
+<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel">
+    <div id="help-menu" class="help-overlay-content left-help" data-reference="menu-toggle">help for the menu</div>
+	<div id="help-chg" class="help-overlay-content left-help" data-reference="change-remove-link">help for the change remove link</div>
+	<div id="help-progbar" class="help-overlay-content right-help" data-reference="moe-progress-bar">help for the progress bar</div>
+	
+</div>
+<!-- END HELP US Modal -->
+<!-- GLOSSARY Modal -->
+<div class="modal fade" id="glossaryModal" tabindex="-1" role="dialog" aria-labelledby="glossaryModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Glossary of Terms</h4>
+      </div>
+      <div class="modal-body">
+	      <p>Here are some definitions to help you understand the Medicare online enrollment process.</p>
+	      <p class="h4">Term #1</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #2</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #3</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #4</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #5</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #6</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #7</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #8</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #9</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #10</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END GLOSSARY Modal -->
+	
+<!-- END OF MODAL WINDOWS -->	
+	
+	<p class="cms-info">Health Net has a contract with Medicare to offer HMO, PPO and HMO SNP plans. Health Net has a contract with Medicare and Medicaid to offer HMO SNP plans. Enrollment in a Health Net Medicare Advantage plan depends on contract renewal. 
+<br /><br />
+Material ID #Y0035_2016_0036 (H0351, H0562, H5439, H5520, H6815, H3561) CMS Approved 10222015 </p>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../moe/js/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../moe/js/bootstrap.min.js"></script>
+    <!-- code for waypoints -->
+    <script src="../moe/js/jquery.waypoints.min.js"></script>
+    <!-- code for moe and pst -->
+    <script src="../moe/js/pst-moe.js"></script>
+	<!-- code specific to moe -->
+    <script src="../moe/js/moe.js"></script>
+	  <!-- Menu Toggle Script -->
+	  
+	<!-- FormValidation plugin and the class supports validating Bootstrap form -->
+	<script src="../moe/formvalidation/dist/js/formValidation.min.js"></script>
+	<script src="../moe/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+	
+	
+	
+		</section><!-- /#page-content-wrapper -->
+		</main><!-- end of main -->
+
+   </div><!-- end of #main-container -->
+   
+  </body>
+</html>

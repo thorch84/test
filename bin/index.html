@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pstApp" ng-controller="defaultCtrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Enroll in Medicare Advantage</title>
+    <link rel="shortcut icon" ng-href="{{favIcon}}" type="image/ico" sizes="16x16">
+
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/pst-0.0.1.css" />
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="assets/pst-0.0.1.js"></script>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <sidebar></sidebar>
+
+        <main role="main">
+
+            <top-navbar></top-navbar>
+
+            <div ng-view></div>
+
+            <footer></footer>
+
+        </main>
+    </div>
+</body>
+
+</html>

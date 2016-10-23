@@ -1,0 +1,140 @@
+@color_1: #f59331;
+
+/* general styles */
+/*end general styles*/
+/* Applicant page styles*/
+/*end Applicant page styles*/
+blockquote.warning-message{
+	border-left: 0px;
+	&::before{
+		content: "!";
+		color: @color_1;
+		font-weight: bold;
+		font-size: 400%;
+		padding-right: 15px;
+		float: left;
+		height: 100%;
+	}
+}
+
+.form-inline{
+	margin-bottom: 15px;
+}
+
+#change-remove-link{
+	display: inline-block;
+}
+
+#Broker{
+	display: none;
+}
+
+#Rep{
+	display: none;
+}
+
+#no-email{
+	display: none;
+}
+
+#mailAddress{
+	display: none;
+}
+
+#emergencyContact{
+	display: none;
+}
+
+#medCardModal{
+	.modal-body{
+		img{
+			border: 1px solid #f3f3f3;
+			box-shadow: 4px 4px 5px #ccc;
+			margin: 0px auto;
+			width: auto;
+		}
+	}
+}
+
+#header-info-box{
+	#moe-mobile-cost-type-info{
+		display: none;
+	}
+}
+
+.moe-breadcrumb{
+	float: left;
+	max-width: 420px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.moe-progress-bar-label{
+	float: right;
+	max-width: 70px;
+	text-align: right;
+}
+
+#moe-progress-bar{
+	float: right;
+	height: 20px;
+	width: 150px;
+	background-color: #ddd;
+	margin-left: 4px;
+	div{
+		float: left;
+		height: 20px;
+		width: 15px;
+		background-color: #3fb34f;
+	}
+}
+
+.glyphicon-plus{
+	color: @l-blue !important;
+}
+
+#moe-tool-info{
+	display: none !important;
+}
+
+#moe-location-info{
+	display: none !important;
+}
+
+#moe-cost-type-info{
+	display: none !important;
+}
+
+#header-info-box{
+	#moe-mobile-cost-type-info{
+		display: inline;
+	}
+}
+
+#moe-progress-bar{
+	display: none;
+}
+
+.moe-progress-bar-label{
+	display: none;
+}
+
+#medCardModal{
+	.modal-body{
+		img{
+			width: 100%;
+		}
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min){
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min){
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min){
+}

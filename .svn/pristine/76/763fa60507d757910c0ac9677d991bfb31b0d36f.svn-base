@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="App">
+<head>
+    <style>
+        md-tabs.md-default-theme.md-accent > md-tabs-wrapper, md-tabs.md-accent > md-tabs-wrapper {
+            background-color: white;
+        }
+
+        md-tabs-content-wrapper {
+            background-color: #ECECEC;
+        }
+
+        md-pagination-wrapper {
+            height: auto;
+            width: auto;
+        }
+
+        md-tabs-canvas > .md-center-tabs {
+            width: auto;
+        }
+
+        md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active, md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active, md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active md-icon, md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active md-icon, md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused, md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused, md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused md-icon, md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused md-icon {
+            color: #4E8975;
+            border-bottom: 3px solid red;
+        }
+
+        md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+            min-height: 300px;
+        }
+
+        md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]), md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]) {
+            color: #000000;
+        }
+
+        body {
+            margin-top: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        .tab-pane {
+            background: #D3D3D3;
+        }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active {
+            color: #008000;
+            border: none;
+
+        }
+
+        .nav-tabs > li > a {
+            border: none;
+        }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+            border: none;
+        }
+
+        .nav-tabs > li.active {
+            border-bottom: 5px solid #FFA500;
+        }
+    </style>
+    <script type="text/javascript">
+        App.controller('tabController', tabController);
+
+        function tabController($scope) {
+
+        }
+
+    </script>
+
+</head>
+<article id="breadcrumbs">
+    <!--MOE VERSION OF BREADCRUMBS -->
+    <div class="moe-breadcrumb"><a href="moe-base-with-angular-final.html#/default">Back to Medicare Advantage Plans</a>
+    </div>
+    <div id="filter-bar">
+        <div>
+            <button class="btn btn-default filter-results" style="float:right;">Filter Results</button>
+
+        </div>
+    </div>
+
+
+    <!--<div class="moe-progress-bar-label">Progress:</div>-->
+
+</article>
+</section>
+
+<body ng-controller="default-controller" style="margin:20px;" ng-app="firstApplication">
+<div ng-repeat="plan in userInfo">
+    <div id="plans-container">
+        <div style="float:right;position:relative; right:73px;">
+            <div class="monthly-premium-price">
+                {{selectedPlan(plan).monthlyPremium}}
+            </div>
+        </div>
+    </div>
+</div>
+<div style="float:right;position:relative; top: 25px; right:-50px">
+    <div class="monthly-premium-text">
+        monthly premium
+    </div>
+
+    <div class="star-rating">Star Rating:</div>
+    <div class="active-star"
+       style="background:url('../images/star-active.png') repeat-x; display:inline; float:left;width:calc(2*15px); height:20px;"></div>
+    <!-- {{selectedPlan(plan).starRatings}} -->
+    <div class="inactive-star"
+       style="background:url('../images/star-inactive.png') repeat-x; display:inline; float:left;width:calc((-3)*-15px); height:20px;"></div>
+    <!-- {{selectedPlan(plan).starRatings-5}} -->
+
+    <div>
+        <button class="btn btn-warning">
+            Apply Now
+        </button>
+
+    </div>
+</div>
+
+<div>
+
+</div>
+<div ng-repeat="plan in userInfo" style="margin:20px;">
+
+
+    <h3>{{selectedPlan(plan).planName}}</h3>
+
+    <div ng-if="{{plan.planId}} == {{planId}}">{{plan.planName}}</div>
+
+
+    <div>{{selectedPlan(plan).planDescription}}</div>
+
+</div>
+
+<div id="tabContainer" ng-controller="tabController as ctrl" ng-cloak>
+    <md-content class="md-padding">
+        <md-tabs class="md-accent" md-selected="data.selectedIndex" style="border: 1px solid #ECECEC;">
+            <md-tab id="tab1" style="background-color:white; width: 25%;">
+                <md-tab-label>Medical</md-tab-label>
+                <md-tab-body>
+                    <div class="two-column" style="width:100%; border:1px solid #ddd; height:auto; padding:30px;">
+                        <div style="width:48%; border-right: 1px solid #ddd;">
+                            <div><b>Monthly Premium:</b></div>
+                            <div ng-repeat="plan in userInfo" style="margin-left:0;">
+
+                                <div>{{selectedPlan(plan).monthlyPremium}}</div>
+                            </div>
+                            <div><b>Deductible:</b></div>
+                            <div ng-repeat="plan in userInfo">
+
+                                <div>{{selectedPlan(plan).medicalCoverage.deductible}}</div>
+                            </div>
+                            <div><b>Out-of-Pocket maximum:</b></div>
+                            <div ng-repeat="plan in userInfo">
+                                <div>{{selectedPlan(plan).medicalCoverage.oopMax}}</div>
+                            </div>
+                        </div>
+                        <div style="width:48%">
+                            <div><b>Primary doctor copay:</b></div>
+                            <div>
+                                <div ng-repeat="plan in userInfo">
+                            <div>{{selectedPlan(plan).medicalCoverage.oopMax}}</div>
+                        </div>
+                        </div>
+
+                        <div><b>Specialist copay:</b></div>
+                        <div>
+                            <div ng-repeat="plan in userInfo">
+                        <div>{{selectedPlan(plan).medicalCoverage.specialistDrCopay}}</div>
+                    </div>
+                    </div>
+
+                    <div><b>Hospital maximum:</b></div>
+                    <div>
+                        <div ng-repeat="plan in userInfo">
+                    <div>{{selectedPlan(plan).medicalCoverage.oopMax}}</div>
+</div>
+</div>
+
+</div>        </div>
+<!--
+<div><b>Specialist copay:</b></div>
+        <div> <div ng-repeat="plan in userInfo">
+        <div>{{selectedPlan(plan).medicalCoverage.oopMax}}</div>
+    </div></div>
+<div><b>Hospital maximum:</b></div>
+<div> <div ng-repeat="plan in userInfo">
+    <div>{{selectedPlan(plan).medicalCoverage.oopMax}}</div>-->
+
+
+</md-tab-body>
+</md-tab>
+<md-tab id="tab2" style="background-color:white; width: 25%;">
+    <md-tab-label>Prescription</md-tab-label>
+    <md-tab-body>
+        <div class="two-column" style="width:100%; border:1px solid #ddd; height:auto; padding:30px;">
+            <div style="width:48%; border-right: 1px solid #ddd;">
+                <div><b>Pharmacy Drug Deductible:</b></div>
+                <div>
+                    <div ng-repeat="plan in userInfo">
+                <div>{{selectedPlan(plan).prescriptionCoverage.rxDeductible}}</div>
+            </div>
+            </div>
+            <div><b>Coverage in the gap:</b></div>
+            <div>
+                <div ng-repeat="plan in userInfo">
+            <div>{{selectedPlan(plan).prescriptionCoverage.gapCoverage}}</div>
+        </div>
+        </div>
+        <div><b>Preferred generic drugs copay:</b></div>
+        <div>
+            <div ng-repeat="plan in userInfo">
+        <div>{{selectedPlan(plan).prescriptionCoverage.preferredGenericDrugCopay}}</div>
+        </div>
+        </div>
+        </div>
+        <div style="width:48%">
+            <div><b>Non-preferred generic drugs copay:</b></div>
+            <div>
+                <div ng-repeat="plan in userInfo">
+            <div>{{selectedPlan(plan).prescriptionCoverage.gapCoverage}}</div>
+        </div>
+        </div>
+
+        <div><b>Preferred brand drugs copay:</b></div>
+        <div>
+            <div ng-repeat="plan in userInfo">
+        <div>{{selectedPlan(plan).prescriptionCoverage.preferredBrandDrugCopay}}</div>
+        </div>
+        </div>
+
+
+        </div>
+        </div></md-tab-body>
+</md-tab>
+<md-tab id="tab3">
+    <md-tab-label>Supplemental</md-tab-label>
+    <md-tab-body>
+        <div class="two-column" style="width:100%;height:auto; padding:30px;">
+            <div style="width:48%; border-right: 1px solid #ddd;">
+                <div><b>Buy-up Options</b></div>
+                <div><b>Optional Supplemental Package:</b></div>
+
+                <div ng-repeat="plan in userInfo">
+                    <div>{{selectedPlan(plan).supplementalPlan.optSupPkg7}}
+                        {{selectedPlan(plan).supplementalPlan.optSupCost7}} </div>
+                </div>
+
+
+            </div>
+            <div style="width:48%">
+                <div><b>Supplemental Benefits Included With No Additional Cost</b></div>
+                <div ng-repeat="plan in userInfo">
+                    <div>{{selectedPlan(plan).supplementalPlan.optSupPkg1}}</div>
+                    <div>{{selectedPlan(plan).supplementalPlan.optSupPkg2}}</div>
+                </div>
+
+
+            </div>
+        </div>
+    </md-tab-body>
+</md-tab>
+<md-tab id="tab4">
+    <md-tab-label>Resources</md-tab-label>
+    <md-tab-body>
+        <div class="" style="width:100%; height:auto; padding:30px;">
+            <div style="">
+                <div>Enrollment forms and brochures (click to view or print)</div>
+
+                <ul>
+
+                    <li><a href="/'{{selectedPlan(plan).resourceURLs.summaryOfBenefits}}'">View/Print Enrollment
+                        Application (pdf) (English)</a></li>
+                    <li><a href="/'{{selectedPlan(plan).resourceURLs.enrollApp}}'">View/Print Enrollment Application
+                        (pdf) (Chinese)</a></li>
+                    <li><a href="/'{{selectedPlan(plan).resourceURLs.lowIncomeSubsidy}}'">Low Income Subsidy (LIS)
+                        Premium Summary Table for people receiving extra help (pdf)</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </md-tab-body>
+</md-tab>
+</md-tabs>
+</md-content>
+
+</div>
+
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
+
+
+<div style="float:left; width:300px;display:inline;margin-top:10px; margin-left:15px;"><a
+        href="moe-base-with-angular-final.html#/default">Back to Medicare Advantage Plans</a></div>
+<div style="float:right;margin-right:15px;">
+    <button class="btn btn-default" style="margin-right:20px; width:auto;margin-top:10px; margin-right:15px;">
+        Request Information
+    </button>
+    <button class="btn btn-warning">
+        Apply Now
+    </button>
+
+</div>
+</div>
+</body>
+</html>

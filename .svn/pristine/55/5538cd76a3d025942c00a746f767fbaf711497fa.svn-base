@@ -1,0 +1,411 @@
+(function () {
+    'use strict';
+
+    angular
+        .module('pstApp')
+        .controller('defaultCtrl', defaultCtrl);
+
+    defaultCtrl.$inject = ['$scope', '$rootScope', 'urlaestheticservice','needHelpService', 'selectLanguageService',
+        'changeYearService', 'plansService', 'multipleCountyService', '$location', 'comparePlansErrorModalService',
+        'DataService', 'zipCodeSearchService', '$window', 'filterSliderService', 'filterService'];
+
+    function defaultCtrl($scope, $rootScope, urlaestheticservice, needHelpService, selectLanguageService,
+                changeYearService, plansService, multipleCountyService, $location, comparePlansErrorModalService,
+                DataService, zipCodeSearchService, $window, filterSliderService, filterService) {
+
+
+        $scope.userInfo = [];
+        
+        $scope.yearList = [2016, 2017];
+        $scope.searchData = plansService.searchData;
+        $scope.searchData.zipCode = $location.search().zipcode ? $location.search().zipcode : '';
+        $scope.searchData.year = $location.search().year ? $location.search().year : '2017';
+        $scope.searchData.brokerIdFromLink = $location.search().brokerIdFromLink ? $location.search().brokerIdFromLink : '';
+        $scope.searchData.supportRepId = $location.search().supportRepId ? $location.search().supportRepId : '';
+        $scope.searchData.affiliationIdFromLink = $location.search().affiliationIdFromLink ? $location.search().affiliationIdFromLink : '';
+        $scope.isHealthNet = urlaestheticservice.getUrl() === 'healthnet';
+
+        $scope.planType = {
+            HMO: false,
+            PPO: false,
+            SNP: false
+        };
+        
+        $scope.pharmacyCoverage = {
+            value: 'Either'
+        };
+
+        var filterResult = {
+            costPerMonthMinValue: 0,
+            costPerMonthMaxValue: 0,
+            oopMaxMinValue: 0,
+            oopMaxMaxValue: 0,
+            HMO: false,
+            PPO: false,
+            SNP: false,
+            PC: 'Either'
+        };
+
+        var searchData = plansService.searchData;
+
+        $scope.selectYear = function (year) {
+            $scope.searchData.year = year;
+        };
+
+        $scope.selectPlanCoverageClass = function (someValue) {
+            if (angular.equals({},someValue)) {
+                return "coverage-disable";
+            }
+            else {
+                return "coverage-enable";
+            }
+        };
+
+        $scope.updateResults = function(zipCode) {
+            DataService.setLocalStorage('searchData', '');
+            DataService.setLocalStorage('selectedCounty', '');
+            getPlans(zipCode);
+        };
+        
+        function getPlans(zipCode) {
+            if(zipCode) {
+                $scope.searchData.zipCode = zipCode;
+            }
+            var searchData = DataService.getLocalStorage('searchData');
+
+            if(searchData) {
+                $scope.searchData.zipCode = searchData.zipCode;
+                $scope.searchData.county = searchData.county;
+            }
+
+            $scope.message = '';
+            $scope.selectedPlans = [];
+
+            if($scope.searchData.zipCode && _.trim($scope.searchData.zipCode) !== '') {
+                $scope.isLoading = true;
+                plansService.getPlans($scope.searchData.zipCode, $scope.searchData.year, $scope.searchData.county, $scope.searchData.business).success(function(data) {
+
+                    $window.scrollTo(0,0);
+
+                    if(data.length > 0) {
+                        checkMultipleCounties(data);
+
+                    }else {
+                        $scope.userInfo = [];
+                        $scope.userInfoBackup = [];
+                        if(zipCode) {
+                            $scope.message = $rootScope.labels['pst.msg.zipcode.noplans'];
+                        }
+                    }
+                    $location.path('#/plans');
+                }).catch(function(error) {
+                    console.log("Error retrieving plans:" + error);
+                    $location.path('#/plans');
+                }).finally(function() {
+                    $scope.isLoading = false;
+                });
+            }else {
+                zipCodeSearchService.open(function (zipCodeEntered) {
+                    $scope.searchData.zipCode = zipCodeEntered;
+                    getPlans(zipCodeEntered);
+                }, function () {
+                });
+            }
+        }
+
+        function checkMultipleCounties(plans) {
+            var counties = [];
+            var selectedCounty = DataService.getLocalStorage('selectedCounty');
+            if(selectedCounty) {
+                counties.push(selectedCounty);
+                plans = _.filter(plans, {'county': selectedCounty});
+            }else {
+                for (var i = 0; i < plans.length; i++) {
+                    if (counties.indexOf(plans[i].county) < 0) {
+                        counties.push(plans[i].county);
+                    }
+                }
+            }
+
+            if (counties.length > 1) {
+                multipleCountyService.open(counties, function (selectedCounty) {
+                    DataService.setLocalStorage('selectedCounty', selectedCounty);
+                    $scope.searchData.county = selectedCounty;
+                    $scope.userInfo = _.filter(plans, {'county': selectedCounty});
+                    setPlanInfo($scope.userInfo);
+                    $scope.userInfoBackup = $scope.userInfo;
+                }, function () {
+                });
+
+            } else {
+                $scope.searchData.county = counties;
+                $scope.userInfo = plans;
+                setPlanInfo(plans);
+                $scope.userInfoBackup = plans;
+            }
+
+        }
+
+        function setPlanInfo(plans) {
+            $scope.zipCode = $scope.searchData.zipCode;
+            $scope.county = plans[0].county;
+            var searchData =  {
+                zipCode: $scope.zipCode,
+                county: $scope.county
+            };
+            DataService.setLocalStorage('searchData', searchData);
+            $scope.hideYear = hidePreviousYear();
+            $rootScope.$broadcast('state', {state: plans[0].state});
+            setStarRatings();
+            setFilterSliders(plans);
+            setPlanTypes(plans);
+            setSupplementInfo(plans);
+
+        }
+
+        function setStarRatings() {
+            $scope.userInfo = $scope.userInfo.map(function(item) {
+                item.starRatings = item.starRatings.replace(/(\d+(\.\d+)?).*/, "$1");
+                return item;
+            });
+        }
+
+        function setFilterSliders(plans) {
+            $scope.costPerMonth = filterSliderService.getCostPerMonth(plans);
+            $scope.oopMax = filterSliderService.getOopMax(plans);
+            filterResult.costPerMonthMinValue = $scope.costPerMonth.options.floor;
+            filterResult.costPerMonthMaxValue = $scope.costPerMonth.options.ceil;
+            filterResult.oopMaxMinValue = $scope.oopMax.options.floor;
+            filterResult.oopMaxMaxValue = $scope.oopMax.options.ceil;
+        }
+
+        function setPlanTypes(plans) {
+            $scope.planTypes = {};
+
+            var planTypes = {
+                "HMO": false,
+                "PPO": false,
+                "SNP": false
+            };
+            for (var i = 0; i < plans.length; i++) {
+                if (plans[i].planName.indexOf("HMO") > -1) {
+                    planTypes.HMO = true;
+                }
+                if (plans[i].planName.indexOf("PPO") > -1) {
+                    planTypes.PPO = true;
+                }
+                if (plans[i].planName.indexOf("SNP") > -1) {
+                    planTypes.SNP = true;
+                }
+            }
+
+            $scope.planTypes = planTypes;
+        }
+
+        function setSupplementInfo(plans) {
+            $scope.userInfo = plans.map(function (plan) {
+                if(!_.isEmpty(plan.supplementalPlan)){
+                    plan.supplementalPlan.pkgs = {};
+                    plan.supplementalPlan.costs = {};
+                    var supplementalPlanKeys = _.keys(plan.supplementalPlan);
+
+                    for(var i = 0; i < supplementalPlanKeys.length; i++) {
+                        if(supplementalPlanKeys[i].indexOf("optSupPkg") > -1){
+                            plan.supplementalPlan.pkgs[supplementalPlanKeys[i]] = plan.supplementalPlan[supplementalPlanKeys[i]];
+                        }
+                        if(supplementalPlanKeys[i].indexOf("optSupCost") > -1){
+                            plan.supplementalPlan.costs[supplementalPlanKeys[i]] = plan.supplementalPlan[supplementalPlanKeys[i]];
+                        }
+                    }
+                }
+                return plan;
+            });
+        }
+
+        function hidePreviousYear() {
+            if(urlaestheticservice.getUrl() === 'magnoliahealthplan') {
+                return true;
+            }
+
+            var date = new Date($rootScope.config['pst.plan.disable.date']),
+                currentDate = new Date();
+
+            currentDate.setHours(0,0,0,0);
+
+            return date < currentDate ? true : false;
+        }
+
+        $scope.openChangeYearModal = function () {
+            changeYearService.open(function () {
+
+            }, function () {
+                $scope.searchData.year = 2017;
+            });
+        };
+
+        $scope.openNeedHelpModal = function () {
+            needHelpService.open(function () {
+
+            }, function () {
+
+            });
+        };
+
+        $scope.openSelectLanguageModal = function () {
+            selectLanguageService.open(function () {
+
+            }, function () {
+
+            });
+        };
+
+        $scope.openCompareModal = function () {
+            comparePlansErrorModalService.open(function () {
+
+            }, function () {
+
+            });
+        };
+
+        /* $scope.openFilterResultsModal = function () {
+         filterResultsService.open(function(){
+
+         }, function() {
+
+         });
+         };*/
+
+        $scope.$watch('searchData.year', function (value) {
+            if (value && value == 2016) {
+                $scope.openChangeYearModal();
+            } else {
+
+            }
+        });
+
+        $rootScope.$on('configUpdate', function (event, data) {
+            $scope.searchData.business = $rootScope.config['pst.product.service.business.code'];
+            $scope.hideYear = hidePreviousYear();
+            getPlans();
+        });
+        
+        $scope.getHeaderStyle = function() {
+            var url = urlaestheticservice.getUrl();
+            if(url === 'sunshinehealth' || url === 'magnoliahealthplan' || url === 'pshpgeorgia') {
+                return 'pstHeaderInverseOrange';
+            }else if(url === 'buckeyehealthplan') {
+                return 'pstHeaderInverseLimeGreen';
+            }
+            else if(url === 'trilliumadvantage') {
+                return 'pstHeaderInverseGreen';
+            }
+            else {
+                return 'pstHeader';
+            }
+        };
+
+        $scope.currentPage = "";
+        $scope.currentHelpImage = "help-plan-list";
+        $(function(){
+            $('#help-header-link').click(function(){
+                //need a slight pause before working out height to let the overlay appear and establish width
+                $scope.heightTimer = setTimeout(setHelpHeight,500);
+            });
+            $( window ).resize(function() {
+                setHelpHeight();
+            });
+
+        });
+        $scope.currentImageRatio=1.1;
+
+        $scope.correctHeight = "";
+        function setHelpHeight(){
+            $('.help-img').outerWidth($('#block-tester').outerWidth()+"px");
+            $scope.correctHeight = $('#block-tester').outerWidth()*$('.help-img.active-help').data('ratio');
+            $('.help-img').height($scope.correctHeight);
+            if ( $scope.heightTimer  && typeof $scope.heightTimer !== 'undefined' ) { clearTimeout($scope.heightTimer);
+             }
+        }
+
+        $scope.filterResults = function (undoFilterValue) {
+            if (undoFilterValue) {
+                undoFilter(undoFilterValue);
+            }
+
+            $scope.filteredUserInfo = $scope.userInfoBackup;
+            $scope.message = '';
+
+            $scope.userInfo = filterService.getFilteredPlans($scope.filteredUserInfo, $scope.costPerMonth, $scope.oopMax, $scope.planType, $scope.pharmacyCoverage);
+
+            filterResult = filterService.saveFilterResult(filterResult, $scope.costPerMonth, $scope.oopMax, $scope.planType, $scope.pharmacyCoverage);
+
+            if (_.isEmpty($scope.userInfo)) {
+                $scope.message = 'Empty result matching your search filters';
+            }
+        };
+
+        function undoFilter(undoFilterValue) {
+            switch (undoFilterValue) {
+                case 'CPM':
+                    $scope.costPerMonth.minValue = $scope.costPerMonth.options.floor;
+                    $scope.costPerMonth.maxValue = $scope.costPerMonth.options.ceil;
+                    break;
+                case 'OOPMAX':
+                    $scope.oopMax.minValue = $scope.oopMax.options.floor;
+                    $scope.oopMax.maxValue = $scope.oopMax.options.ceil;
+                    break;
+                case 'HMO':
+                    $scope.planType.HMO = false;
+                    break;
+                case 'PPO':
+                    $scope.planType.PPO = false;
+                    break;
+                case 'SN':
+                    $scope.planType.SNP = false;
+                    break;
+                case 'PC':
+                    $scope.pharmacyCoverage.value = 'Either';
+                    break;
+                case 'CANCEL':
+                    $scope.costPerMonth.minValue = filterResult.costPerMonthMinValue;
+                    $scope.costPerMonth.maxValue = filterResult.costPerMonthMaxValue;
+                    $scope.oopMax.minValue = filterResult.oopMaxMinValue;
+                    $scope.oopMax.maxValue = filterResult.oopMaxMaxValue;
+                    $scope.planType.HMO = filterResult.HMO;
+                    $scope.planType.PPO = filterResult.PPO;
+                    $scope.planType.SNP = filterResult.SNP;
+                    $scope.pharmacyCoverage.value = filterResult.PC;
+            }
+        }
+        
+        $scope.favIcon = "assets/images/favicons/" + urlaestheticservice.getUrl() + ".ico";
+
+        $scope.buildApplyNowUrl = function (plan) {
+            var url = "";
+            if (plan && plan.applyOnline) {
+                var baseUrl = $rootScope.config['pst.plan.apply.baseurl'];
+                url = baseUrl + "?planTitle=" + plan.planName +
+                    "&productId=" + plan.planId +
+                    "&quotedState="+plan.state+"&quotedZipCode=" + searchData.zipCode +
+                    "&county=" + searchData.county +
+                    "&year=" + searchData.year +
+                    "&businessId=" + searchData.business +
+                    "&shoppingPortal=true";
+
+                if(searchData.brokerIdFromLink !=='') {
+                    url = url + '&brokerIdFromLink=' + searchData.brokerIdFromLink;
+                }
+                if(searchData.supportRepId !=='') {
+                    url = url + '&supportRepId=' + searchData.supportRepId;
+                }
+                if(searchData.affiliationIdFromLink !=='') {
+                    url = url + '&affiliationIdFromLink=' + searchData.affiliationIdFromLink;
+                }
+
+            }
+
+            return url;
+        };
+
+    }
+})();

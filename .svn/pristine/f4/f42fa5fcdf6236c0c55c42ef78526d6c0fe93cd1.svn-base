@@ -1,0 +1,66 @@
+[
+  {
+    "planId": "41200",
+    "planName": "Peach State Health Plan Medicare Advantage (HMOSNP)",
+    "planDescription": "Peach State Health Plan Medicare Advantage (HMO SNP) is a  Special Needs Plan for people who are entitled to Medicare Part A, enrolled in Medicare Part B and entitled to Medicaid. This plan includes Part D Prescription Drug coverage and is available to people who have met the financial qualifications as determined by government guidelines. With Peach State Health Plan Medicare Advantage, medical and drug coverage is provided at costs that may be greatly reduced or even eliminated. Peach State Health Plan also includes coverage for eyewear, hearing aids, preventive and comprehensive dental services, and transportation to plan-approved locations.",
+    "applyOnline": false,
+    "monthlyPremium": "tbd",
+    "starRatings": "3",
+    "starRatingsPDF": "h7173_snp_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "Medicare defined",
+      "primaryDrCopay": "$0.00",
+      "specialistDrCopay": "$0.00"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "Yes",
+      "gapCoverage": "No coverage",
+      "preferredGenericDrugCopay": "$0.00",
+      "preferredBrandDrugCopay": "$0.00 - $8.25",
+      "nonPreferredGenericDrugCopay": "$0.00 - $8.25",
+      "nonPreferredBrandDrugCopay": "$0.00 - $8.25",
+      "specialtyDrugsCopay": "$0.00 - $8.25",
+      "selectCarDrugsCopay": "$0.00"
+    },
+    "supplementalPlan": {},
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ga_sb_001.pdf",
+      "lowIncomeSubsidy": "N/A",
+      "enrollApp": "2017_ga_cnc_enrollapp.pdf",
+      "comparePlans": "N/A"
+    }
+  },
+  {
+    "planId": "41201",
+    "planName": "Peach State Health Plan Medicare Advantage (HMO)",
+    "planDescription": "Peach State Health Plan Medicare Advantage (HMO) is a Medicare Advantage plan with prescription drug coverage (MAPD), giving you the convenience of all your medical needs (medical and prescription drug) in one plan. Peach State Health Plan Medicare Advantage offers many benefits, including no cost for primary care physician visits, routine eye exams, preventive dental services, fitness, and additional gap coverage for your Part D medications.",
+    "applyOnline": false,
+    "monthlyPremium": "tbd",
+    "starRatings": "2",
+    "starRatingsPDF": "h7173_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "N/A",
+      "primaryDrCopay": "$0.00",
+      "specialistDrCopay": "$40.00"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "$280 (Excludes tiers 1 and 6)",
+      "gapCoverage": "Tier 1,  and Tier 6, gap coverage",
+      "preferredGenericDrugCopay": "Standard retail cost-sharing:  $0",
+      "preferredBrandDrugCopay": "Standard retail cost-sharing: $42",
+      "nonPreferredGenericDrugCopay": "Standard retail cost-sharing:  $16",
+      "nonPreferredBrandDrugCopay": "Standard retail cost-sharing:  $85",
+      "specialtyDrugsCopay": "Standard retail cost-sharing: 25%",
+      "selectCarDrugsCopay": "Standard retail cost-sharing: $0"
+    },
+    "supplementalPlan": {},
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ga_sb_002pdf",
+      "lowIncomeSubsidy": "N/A",
+      "enrollApp": "2017_ga_cnc_enrollapp.pdf",
+      "comparePlans": "N/A"
+    }
+  }
+]

@@ -1,0 +1,44 @@
+/**
+ * These are the variables used throughout the application. This is where 
+ * overwrites that are not specific to components should be maintained.
+ */
+
+/**
+ * Typography-related.
+ */
+
+@white: rgb(255, 255, 255);
+@black: rgb(0, 0, 0);
+@l-green: rgb(126, 191, 75);
+@m-green: rgb(105, 196, 76);
+@d-green: rgb(58, 86, 36);
+@m-turquoise: rgb(51, 204, 204);
+@m-yellow: rgb(255, 200, 0);
+@m-orange: rgb(255, 153, 51);
+@d-orange: rgb(245, 130, 32);
+@header-bg: @d-orange;
+@m-red: rgb(255, 0, 0);
+@l-blue: rgb(17, 176, 219);
+@m-blue: rgb(51, 102, 153);
+@l-gray: rgb(235, 235, 235);
+@m-gray: rgb(204, 204, 204);
+@d-gray: rgb(67, 63, 65);
+@l-black: rgb(54, 54, 54);
+@m-black: rgb(55, 40, 40);
+
+@icon-font-path: '../assets/fonts/';
+@fa-font-path: '../assets/fonts/';
+@imgpath: '../assets/images';
+
+@font-face{
+	font-family: 'Glyphicons Halflings';
+	src: url('../assets/fonts/glyphicons-halflings-regular.eot');
+	src: url('../assets/fonts/glyphicons-halflings-regular.eot?') format('embedded-opentype'),
+	url('../assets/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+	url('../assets/fonts/glyphicons-halflings-regular.woff') format('woff'),
+	url('../assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+	url('../assets/fonts/glyphicons-halflings-regular.svg') format('svg')
+	url('../assets/fonts/fontawesome-webfont.ttf') format('truetype'),
+	url('../assets/fonts/fontawesome-webfont.woff') format('woff'),
+	url('../assets/fonts/fontawesome-webfont.woff2') format('woff2');
+}

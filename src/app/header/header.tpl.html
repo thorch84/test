@@ -1,0 +1,140 @@
+<section class="header-section">
+    <article id="header-info-box" class="clearfix">
+
+        <div class="main-box">
+            <div class="text-largest h1" id="pst-plan-info">Medicare Advantage</div>
+            <div class="text-large h3" id="pst-location-info"><span ng-show="userInfo.length>0">{{zipCode}}, {{county}}, {{state}}</span></div>
+            <div>
+                <form name="zipForm" ng-submit="updateResults(searchData.zipCode)" class="zipForm" zipcode-animate>
+                    <button ng-if="userInfo.length == 0" type="button" >Enter zip code</button>
+                    <button ng-if="userInfo.length > 0" type="button" >Change zip code</button>
+                    <div>
+                        <input type="text" keyh maxlength="5" name="zip" placeholder="Enter zip code" ng-model="searchData.zipCode" autofocus required zipcode-validate/>
+                        <button type="submit" ng-click="updateResults(searchData.zipCode)" ng-show="zipForm.zip.$valid">Go</button>
+                    </div>
+                </form>
+            </div>
+            <div ng-if="userInfo.length>0">
+                <span class="text-danger" ng-show="zipForm.zip.$error.required">Zip code is required</span>
+                <span class="text-danger" ng-show="zipForm.zip.$invalid">Invalid zip code</span>
+            </div>
+
+        </div>
+
+        <div class="secondary-box">
+            <div class="text-largest h5" id="pst-year-info">Plans for Year</div>
+            <div ng-if="hideYear" class="text-large h2">2017</div>
+
+            <div ng-if="!hideYear" class="text-large h2" id="pst-year-switcher" uib-dropdown on-toggle="toggled(open)">
+                <a uib-dropdown-toggle><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 2017</a>
+                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                    <li ng-repeat="year in yearList">
+                        <a href ng-click="selectYear(year)">{{year}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </article>
+
+    <div id="breadcrumbs" ng-if="path==='/plans'">
+        <p class="moe-breadcrumb" ng-if="userInfo.length>1">{{userInfo.length}} Results</p>
+        <p class="moe-breadcrumb" ng-if="userInfo.length<=1">{{userInfo.length}} Result</p>
+
+        <div class="filterOptions"
+             ng-if="costPerMonth.minValue > costPerMonth.options.floor || costPerMonth.maxValue < costPerMonth.options.ceil">
+            <span ng-click="filterResults('CPM')">{{costPerMonth.minValue}}$ - {{costPerMonth.maxValue}}$ Monthly  <span
+                    class="glyphicon glyphicon-remove"></span></span>
+        </div>
+        <div class="filterOptions"
+             ng-if="oopMax.minValue > oopMax.options.floor || oopMax.maxValue < oopMax.options.ceil">
+            <span ng-click="filterResults('OOPMAX')">{{oopMax.minValue}}$ - {{oopMax.maxValue}}$ Out of Pocket  <span
+                    class="glyphicon glyphicon-remove"></span></span>
+        </div>
+
+        <div class="filterOptions" ng-if="planType.HMO">
+            <span ng-click="filterResults('HMO')">HMO  <span class="glyphicon glyphicon-remove"></span></span>
+        </div>
+        <div class="filterOptions" ng-if="planType.PPO">
+            <span ng-click="filterResults('PPO')">PPO  <span class="glyphicon glyphicon-remove"></span></span>
+        </div>
+        <div class="filterOptions" ng-if="planType.SNP">
+            <span ng-click="filterResults('SN')">Special Needs  <span class="glyphicon glyphicon-remove"></span></span>
+        </div>
+
+
+        <div class="filterOptions" ng-if="pharmacyCoverage.value === 'Yes' || pharmacyCoverage.value === 'No'">
+            <span ng-click="filterResults('PC')">Pharmacy Coverage - {{pharmacyCoverage.value}}  <span
+                    class="glyphicon glyphicon-remove"></span></span>
+        </div>
+
+
+        <div ng-if="userInfo.length>0" id="filter-bar">
+            <div>
+                <button id="filterresultsforHelp" class="btn btn-default filter-results" data-toggle="modal"
+                        data-target="#filterresults"
+                        style="float:right;">Filter Results
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="breadcrumbs" ng-if="path!=='/plans'">
+        <!--MOE VERSION OF BREADCRUMBS -->
+        <p class="moe-breadcrumb"><a href="#/plans"><span class="glyphicon glyphicon-chevron-left"></span> Back to Medicare Advantage Plans</a></p>
+    </div>
+</section>
+
+
+<!--Filter Modal -->
+<div class="modal fade" id="filterresults" tabindex="-1" role="dialog" aria-labelledby="filterresultsLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body filter-body">
+                <div><b>Cost Per Month</b></div>
+                <rzslider rz-slider-model="costPerMonth.minValue" rz-slider-high="costPerMonth.maxValue" rz-slider-options="costPerMonth.options"></rzslider>
+
+                <p><b>Maximum Out Of Pocket</b></p>
+                <rzslider rz-slider-model="oopMax.minValue" rz-slider-high="oopMax.maxValue"  rz-slider-options="oopMax.options"></rzslider>
+
+                <br/><br/>
+                <div><b>Plan Type</b></div>
+                <div class="checkbox icheck-orange">
+                    <input type="checkbox" ng-model="planType.HMO" id="HMO">
+                    <label for="HMO">HMO</label>
+                </div>
+                <div class="checkbox icheck-orange">
+                    <input type="checkbox" ng-model="planType.PPO" id="PPO">
+                    <label for="PPO">PPO</label>
+                </div>
+                <div class="checkbox icheck-orange">
+                    <input type="checkbox" ng-model="planType.SNP" id="SNP">
+                    <label for="SNP">Special Needs Plans</label>
+                </div>
+
+                <div><b>Pharmacy Coverage</b></div>
+                <div class="radio icheck-orange">
+                    <input type="radio" ng-model="pharmacyCoverage.value" value="Yes" name="Yes" id="Yes">
+                    <label for="Yes">Yes</label>
+                </div>
+
+                <div class="radio icheck-orange">
+                    <input type="radio" ng-model="pharmacyCoverage.value" value="No" name="No" id="No">
+                    <label for="No">No</label>
+                </div>
+
+                <div class="radio icheck-orange">
+                    <input type="radio" ng-model="pharmacyCoverage.value" value="Either" name="Either" id="Either">
+                    <label for="Either">Either</label>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="filterResults('CANCEL')">Cancel</button>
+                <button type="button" class="btn btn-warning" data-dismiss="modal" ng-click="filterResults()"> Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Filter Modal -->

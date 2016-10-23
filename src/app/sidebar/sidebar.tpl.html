@@ -1,0 +1,47 @@
+<section id="sidebar-wrapper">
+	<ul class="sidebar-nav">
+		<li class="sidebar-brand">
+
+		</li>
+		<!--NEW KANGAROO: REAL LINKS AND REAL-ISH PLACEHOLDER LINKS FOR MOE -->
+		<li ng-if="accessibility === 'Y'">
+			<a href="{{accessabilityInfoUrl}}" target="_blank" title="link to accessibility information on the originating health plan site">Accessibility Information</a>
+		</li>
+		<li>
+			<a href="{{contactUrl}}" target="_blank" title="Contact Us">Contact Us</a>
+		</li>
+		<li>
+			<a href="{{fapUrl}}" target="_blank" title="link to find a doctor / provider search tool on the originating health plan site">{{fapLabel}}</a>
+		</li>
+		<li>
+			<a href ng-click="glossaryOfTerms()">Glossary of Terms</a>
+		</li>
+		<li>
+			<a href="{{languageAssistanceUrl}}" target="_blank" title="link to language assistance PDF for the selected plan">Language Assistance (PDF)</a>
+		</li>
+		<li ng-if="needToFinishUrl!=undefined">
+			<a href="{{needToFinishUrl}}" target="_blank" title="link to Need to finish the application for the selected plan">Need to Finish Your Application?</a>
+		</li>
+		<li>
+			<a href="{{registrationUrl}}" target="_blank">Register</a>
+		</li>
+		<li ng-show="showSummaryOfBenefits">
+			<a href="{{sobPdfBaseUrl + summaryOfBenefitsPdf}}" target="_blank" title="link to summary of benefits PDF for the selected plan">Summary of Benefits (PDF)</a>
+		</li>
+		<li>
+			<a href="{{starRatingsUrl}}" target="_blank" title="link to star ratings info PDF for the selected plan">About Star Ratings</a>
+		</li>
+		<li>
+			<a href="{{privacyPolicyUrl}}" target="_blank">Privacy Policy</a>
+		</li>
+		<li>
+			<a href="{{formsBrochuresUrl}}" target="_blank">Forms & Brochures</a>
+		</li>
+		<li>
+			<p>Need help?<br />
+				{{companyName}}<br />
+				Call toll-free {{phone1}}<br />
+				(Our office hours are 8:00 a.m. to 8:00 p.m., 7 days a week (October 1st - February 14th) and Monday through Friday, 8:00 a.m. to 8:00 p.m. (February 15th - September 30th), excluding holidays.)</p>
+		</li>
+	</ul>
+</section>

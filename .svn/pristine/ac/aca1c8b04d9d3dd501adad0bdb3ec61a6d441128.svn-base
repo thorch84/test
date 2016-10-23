@@ -1,0 +1,44 @@
+<div ng-class="getFooterClass()">
+    <div>{{contractContent}}</div>
+    <div class="remove-bottom-margin"><a data-toggle="modal" data-target="#disclaimerModal" title="Disclaimer Modal" class="disclaimer-link">
+        {{disclaimer}}</a></div>
+    <div>{{materialId}}  |  {{approvedDate}}  |  {{timestamp}}</div>
+</div>
+
+<div class="modal fade clear-right" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <ul>
+                <li>This information is not a complete description of benefits.  Contact the plan for more information.</li>
+                <li>Limitations, copayments and restrictions may apply. Benefits, premiums, and/or co-payments/co-insurance may change on January 1 of each year.</li>
+                <li>These contracts are renewed annually, and availability of coverage beyond the end of the contract year is not guaranteed.</li>
+                    <li>These plans may not be available to Medicare beneficiaries in the following contract year because, by law, plan sponsors, like {{healthplanname}}, can choose not to renew their contract with CMS, or they can reduce their service area, and/or CMS may also refuse to renew the contract, thus resulting in a termination or non‑renewal.</li>
+                	<li>You must live in the service area for the Medicare Advantage Plan.</li>
+                    <li>{{healthplanname}} Online Enrollment is not available for Employer Groups and/or unions. Contact your Benefits Administrator if you currently receive health care benefits through an employer and/or union.</li>
+                    <li>In addition to {{healthplanname}} Online Enrollment, Medicare beneficiaries may also enroll in {{healthplanname}} through the Centers for Medicare & Medicaid Services (CMS) Medicare Online Enrollment Center, located at <a href="http://www.medicare.gov" target="_blank">www.medicare.gov</a>.</li>
+                    <li>Individuals must have both Part A and Part B to enroll. Medicare beneficiaries can only enroll in these plans during certain times of the year and must continue to pay their Medicare Part B premiums. Plan benefits and cost-sharing may vary by plan, county and region. <a href="{{contactusURL}}" target="_blank">Contact us</a>  for more information.</li>
+                    <li>The Formulary, pharmacy network, and/or provider network may change at any time.  You will receive notice when necessary.</li>
+                </ul>
+                <p>DSNP Plans Only:</p>
+                <ul class="remove-bottom-margin">
+                    <li>This plan is available to anyone who has both Medical Assistance from the State and Medicare.</li>
+                    <li>Premiums, co-pays, co-insurance, and deductibles may vary based on the level of Extra Help you receive.  Please contact the plan for further details.</li>
+                    <li>You must continue to pay your Medicare Part B premium. However, for full-dual beneficiaries, the State will cover your Part B premium as long as you retain your Medicaid eligibility.</li>
+                </ul>
+                <div ng-if="additionaldisclaimer=='Y'">
+                    <ul>
+                        <li>Out-of-network/con-contracted providers are under no obligation to treat Trillium Medicare Advantage members, except in emergency situations.  For a decision about whether we will cover an out-of-network service, we encourage you or your provider to ask us for a pre-service organization determination before you receive the service.  Please call our member service number or see your Evidence of Coverage for more information, including the cost-sharing that applies to out-of-network services.</li>
+                    </ul>
+                    <p>For ISNP plans:</p>
+                    <ul><li>This plan is available to anyone with Medicare who meets the Skilled Nursing Facility (SNF) level of care and resides in a nursing home.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

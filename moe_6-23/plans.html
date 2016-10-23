@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="App">
+  <head>
+  	<style>
+    md-tabs.md-default-theme.md-accent > md-tabs-wrapper, md-tabs.md-accent > md-tabs-wrapper{
+      background-color: white;
+    }
+    md-tabs-content-wrapper{
+      background-color: #ECECEC;
+    }
+    md-pagination-wrapper {
+      height: auto;
+      width: auto;
+    }
+    md-tabs-canvas > .md-center-tabs{
+      width: auto;
+    }
+md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active, md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active, md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active md-icon, md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active md-icon, md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused, md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused, md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused md-icon, md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused md-icon {
+  color: #4E8975;
+  border-bottom: 3px solid red;
+}
+md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+  min-height: 300px;
+}
+    md-tabs.md-default-theme.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]), md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]){
+      color: #000000;
+    }
+      body{
+        margin-top:10px;
+      }
+  		.form-group{
+  			margin-bottom: 0;
+  		}
+  		.tab-pane{
+  			background: #D3D3D3;
+  		}
+  		.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active {
+  			color: #008000;
+  			border: none;
+
+  		}
+  		.nav-tabs>li>a {
+  			border: none;
+  		}
+  		.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  			border: none;
+  		}
+		.nav-tabs>li.active {	
+  		  	border-bottom: 5px solid #FFA500;
+  		  }
+  	</style>
+    <script type="text/javascript">
+       App.controller('tabController', tabController);
+
+          function tabController ($scope) {            
+        
+          }   
+
+    </script>
+
+</head>
+    <article id="breadcrumbs">
+      <!--MOE VERSION OF BREADCRUMBS -->
+      <p class="moe-breadcrumb"><a href="moe-base-with-angular-final.html#/default">Back to Medicare Advantage Plans</a></p>
+      <div id="filter-bar"><div>
+          <button class="btn btn-default filter-results" style="float:right;">Filter Results</button>
+
+      </div></div>
+
+
+      <!--<p class="moe-progress-bar-label">Progress:</p>-->
+      
+    </article>
+        </section>
+
+<body ng-controller="default-controller" style="margin:20px;" ng-app="firstApplication"> 
+<div ng-repeat="plan in userInfo"  >
+<div id="plans-container"> <div style="float:right;position:relative; right:73px;">
+            <p class="monthly-premium-price">
+              {{selectedPlan(plan).monthlyPremium}}
+            </p>
+            </div>
+            </div>
+                    </div>
+                    <div style="float:right;position:relative; top: 25px; right:-50px">
+            <p class="monthly-premium-text">
+              monthly premium
+            </p>
+            <p class="star-rating">Star Rating:</p>
+             <p class="active-star" style="background:url('/images/star-active.png') repeat-x; display:inline; float:left;width:calc({{item.starRatings}}*15px); height:20px;"></p>
+            <p class="inactive-star" style="background:url('/images/star-inactive.png') repeat-x; display:inline; float:left;width:calc(({{item.starRatings-5}})*-15px); height:20px;"></p>
+            <p>
+              <button class="btn btn-warning">
+                Apply Now
+              </button>
+            </p>
+
+            </div>
+  
+<div ng-repeat="plan in userInfo" style="margin:20px;">
+
+
+<h3>{{selectedPlan(plan).planName}}</h3> 
+
+   <!-- <div ng-if="{{plan.planId}} == {{planId}}">{{plan.planName}}</div> -->
+
+
+<p>{{selectedPlan(plan).planDesc}}</p>
+
+</div>
+ <div id="tabContainer" ng-controller="tabController as ctrl" ng-cloak>
+         <md-content class="md-padding">
+            <md-tabs class="md-accent" md-selected="data.selectedIndex" style="border: 1px solid #ECECEC;">
+               <md-tab id="tab1" style="background-color:white; width: 25%;">
+                  <md-tab-label>Medical</md-tab-label>
+                  <md-tab-body>
+                          <div class="two-column" style="width:100%; border:1px solid #ddd; height:auto; padding:30px;">
+                    <div style="width:48%; border-right: 1px solid #ddd;">
+                    <p>Monthly Premium:</p>
+                    <p>$0.00</p>
+                    <p>Deductible:</p>
+                    <p>N/A</p>
+                    <p>Out-of-Pocket maximum:</p>
+                    <p>$2200</p>
+                    </div>
+                    <div style="width:48%">
+                      <p>Monthly Premium:</p>
+                    <p>$0.00</p>
+                    <p>Deductible:</p>
+                    <p>N/A</p>
+                    <p>Out-of-Pocket maximum:</p>
+                    <p>$2200</p>
+
+                    </div>
+              </div>
+
+
+                  </md-tab-body>
+               </md-tab>
+               <md-tab id="tab2" style="background-color:white; width: 25%;">
+                  <md-tab-label>Prescription</md-tab-label>
+                  <md-tab-body>                        <div class="two-column" style="width:100%; border:1px solid #ddd; height:auto; padding:30px;">
+                    <div style="width:48%; border-right: 1px solid #ddd;">
+                    <p>Monthly Premium:</p>
+                    <p>$0.00</p>
+                    <p>Deductible:</p>
+                    <p>N/A</p>
+                    <p>Out-of-Pocket maximum:</p>
+                    <p>$2200</p>
+                    </div>
+                    <div style="width:48%">
+                      <p>Monthly Premium:</p>
+                    <p>$0.00</p>
+                    <p>Deductible:</p>
+                    <p>N/A</p>
+                    <p>Out-of-Pocket maximum:</p>
+                    <p>$2200</p>
+
+                    </div>
+              </div></md-tab-body>
+               </md-tab>
+               <md-tab id="tab3">
+                  <md-tab-label>Resources</md-tab-label>
+                  <md-tab-body>                        <div class="two-column" style="width:100%; border:1px solid #ddd; height:auto; padding:30px;">
+                    <div style="width:48%; border-right: 1px solid #ddd;">
+                    <p>Monthly Premium:</p>
+                    <p>$0.00</p>
+                    <p>Deductible:</p>
+                    <p>N/A</p>
+                    <p>Out-of-Pocket maximum:</p>
+                    <p>$2200</p>
+                    </div>
+                    <div style="width:48%">
+                      <p>Monthly Premium:</p>
+                    <p>$0.00</p>
+                    <p>Deductible:</p>
+                    <p>N/A</p>
+                    <p>Out-of-Pocket maximum:</p>
+                    <p>$2200</p>
+
+                    </div>
+              </div></md-tab-body>
+               </md-tab>
+            </md-tabs>
+         </md-content>
+
+      </div>
+
+  <!--
+    <uib-tabset active="activeForm" class="tab-animation" style="border: 1px solid #D3D3D3; margin-top:30px;">
+      <uib-tab index="0" heading="Medical">
+        <ng-form name="nestedForm">
+          <div class="form-group">
+          		<div class="two-column" style="width:100%; border:1px solid #ddd; background-color: #B6B6B4; height:auto; padding:30px;">
+                    <div style="width:48%; border-right: 1px solid #ddd;">
+                    <p>Monthly Premium:</p>
+                    <p>$0.00</p>
+                    <p>Deductible:</p>
+                    <p>N/A</p>
+                    <p>Out-of-Pocket maximum:</p>
+                    <p>$2200</p>
+                    </div>
+                    <div style="width:48%">
+                      <p>Monthly Premium:</p>
+                    <p>$0.00</p>
+                    <p>Deductible:</p>
+                    <p>N/A</p>
+                    <p>Out-of-Pocket maximum:</p>
+                    <p>$2200</p>
+
+                    </div>
+              </div>
+          </div>
+        </ng-form>
+      </uib-tab>
+      <uib-tab index="1" heading="Presciption">
+<ng-form name="nestedForm">
+          <div class="form-group">
+              <div class="two-column" style="width:100%; border:1px solid #ddd; background-color: #B6B6B4; height:auto; padding:30px;">
+                    <div style="width:48%; border-right: 1px solid #ddd;">
+                    <p>Pharmacy Drug Deductible:</p>
+                    <p>$0.00</p>
+                    <p>Coverage in the gap:</p>
+                    <p>Tier 1, Tier 2 and Tier 6 gap coverage</p>
+                    <p>Preferred generic drugs copay:</p>
+                    <p>Standard retail cost-sharing: $5; Preferred retail cost-sharing: $0</p>
+                    </div>
+                    <div style="width:48%">
+                      <p>Non-preferred generic drugs copay:</p>
+                    <p>Standard retail cost sharing: $20; Preferred retail cost-sharing: $10</p>
+                    <p>Preferred brand drugs copay:</p>
+                    <p>Standard retail cost sharing: $47; Preferred retail cost-sharing: $37</p>
+                    
+                    </div>
+              </div>
+          </div>
+        </ng-form>      </uib-tab>
+      <uib-tab index="2" heading="Resources">
+        More Tab Content
+      </uib-tab>
+    </uib-tabset>
+ 
+
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
+   
+</div>
+<p style="float:left; width:300px;display:inline;margin-top:10px; margin-left:15px;"><a href="moe-base-with-angular-final.html#/default">Back to Medicare Advantage Plans</a></p>
+<p style="float:right;margin-right:15px;">
+<button class="btn btn-default" style="margin-right:20px; width:auto;margin-top:10px; margin-right:15px;">
+                Request Information
+              </button><button class="btn btn-warning">
+                Apply Now
+              </button>
+
+              </p>
+</div>
+</body>
+</html>

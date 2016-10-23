@@ -1,0 +1,695 @@
+[
+  {
+    "planId": "41105",
+    "planName": "Health Net Gold Select (HMO)",
+    "applyOnline": false,
+    "monthlyPremium": "$0.00",
+    "starRatings": "4 Stars out of 5",
+    "starRatingsPDF": "ca_hmo_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "N/A",
+      "primaryDrCopay": "$0.00",
+      "specialistDrCopay": "$0.00"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "No deductible",
+      "gapCoverage": "Tier 1, Tier 2, and Tier 6 gap coverage",
+      "preferredGenericDrugCopay": "Standard retail
+      cost-sharing: $5, Preferred retail cost-sharing: $0",
+      "preferredBrandDrugCopay": "Standard retail cost-sharing:
+      $47, Preferred retail cost-sharing: $37",
+      "nonPreferredGenericDrugCopay": "Standard retail
+      cost-sharing: $20, Preferred retail cost-sharing: $10",
+      "nonPreferredBrandDrugCopay": "Standard retail
+      cost-sharing: $100, Preferred retail cost-sharing: $90",
+      "specialtyDrugsCopay": "Standard retail/Preferred retail
+      cost-sharing: 33%",
+      "selectCarDrugsCopay": "Standard retail/Preferred retail
+      cost-sharing:  $0"
+    },
+    "supplementalPlan": {
+      "optSupPkg7": "Eyewear+Chiro/Acupuncture",
+      "optSupCost1": "N/A test12345",
+      "optSupCost7": "$12"
+    },
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_101_001.pdf",
+      "lowIncomeSubsidy": "2017_ca_lis_101_001.pdf",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_101_001.pdf"
+    }
+  },
+  {
+    "planId": "41158",
+    "planName": "Health Net Gold Select (HMO)",
+    "applyOnline": false,
+    "monthlyPremium": "$0.00",
+    "starRatings": "4 Stars out of 5",
+    "starRatingsPDF": "ca_hmo_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "N/A",
+      "primaryDrCopay": "$0.00",
+      "specialistDrCopay": "$0.00"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "No deductible",
+      "gapCoverage": "Tier 1, Tier 2, and Tier 6 gap coverage",
+      "preferredGenericDrugCopay": "Standard retail
+      cost-sharing: $5, Preferred retail cost-sharing: $0",
+      "preferredBrandDrugCopay": "Standard retail cost-sharing:
+      $47, Preferred retail cost-sharing: $37",
+      "nonPreferredGenericDrugCopay": "Standard retail
+      cost-sharing: $20, Preferred retail cost-sharing: $10",
+      "nonPreferredBrandDrugCopay": "Standard retail
+      cost-sharing: $100, Preferred retail cost-sharing: $90",
+      "specialtyDrugsCopay": "Standard retail/Preferred retail
+      cost-sharing: 33%",
+      "selectCarDrugsCopay": "Standard retail/Preferred retail
+      cost-sharing:  $0"
+    },
+    "supplementalPlan": {
+      "optSupPkg7": "Eyewear+Chiro/Acupuncture",
+      "optSupCost7": "$12"
+    },
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_101_001.pdf",
+      "lowIncomeSubsidy": "2017_ca_lis_101_001.pdf",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_101_001.pdf"
+    }
+  },
+  {
+    "planId": "41156",
+    "planName": "Health Net Healthy Heart (HMO)",
+    "applyOnline": false,
+    "monthlyPremium": "$20.00",
+    "starRatings": "4 Stars out of 5",
+    "starRatingsPDF": "ca_hmo_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "$2,400",
+      "deductible": "N/A",
+      "primaryDrCopay": "$0.00",
+      "specialistDrCopay": "$0.00"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "No deductible",
+      "gapCoverage": "Tier 1, Tier 2, and Tier 6 gap coverage",
+      "preferredGenericDrugCopay": "Standard retail
+      cost-sharing: $10, Preferred retail cost-sharing: $5",
+      "preferredBrandDrugCopay": "Standard retail cost-sharing:
+      $47, Preferred retail cost-sharing: $37",
+      "nonPreferredGenericDrugCopay": "Standard retail
+      cost-sharing: $20, Preferred retail cost-sharing: $10",
+      "nonPreferredBrandDrugCopay": "Standard retail
+      cost-sharing: $100, Preferred retail cost-sharing: $90",
+      "specialtyDrugsCopay": "Standard retail/Preferred retail
+      cost-sharing: 33%",
+      "selectCarDrugsCopay": "Standard retail/Preferred retail
+      cost-sharing:  $0"
+    },
+    "supplementalPlan": {
+      "optSupPkg1": "DHMO+Eyewear+Chiro/Acupuncture+Fitness",
+      "optSupPkg2": "DPPO+Eyewear+Chiro/Acupuncture+Fitness",
+      "optSupCost1": "$25.00",
+      "optSupCost2": "$35"
+    },
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_100_001.pdf",
+      "lowIncomeSubsidy": "2017_ca_lis_100_001.pdf",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_100_001.pdf"
+    }
+  },
+  {
+    "planId": "41153",
+    "planName": "Health Net Jade (HMO SNP)",
+    "applyOnline": false,
+    "monthlyPremium": "$0.00",
+    "starRatings": "4 Stars out of 5",
+    "starRatingsPDF": "ca_hmo_snp_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "N/A",
+      "primaryDrCopay": "$0.00",
+      "specialistDrCopay": "$0.00"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "No deductible",
+      "gapCoverage": "Tier 1, Tier 2, and Tier 6 gap coverage",
+      "preferredGenericDrugCopay": "Standard retail
+      cost-sharing: $5, Preferred retail cost-sharing: $0",
+      "preferredBrandDrugCopay": "Standard retail cost-sharing:
+      $47, Preferred retail cost-sharing: $37",
+      "nonPreferredGenericDrugCopay": "Standard retail
+      cost-sharing: $15, Preferred retail cost-sharing: $10",
+      "nonPreferredBrandDrugCopay": "Standard retail
+      cost-sharing: $100, Preferred retail cost-sharing: $90",
+      "specialtyDrugsCopay": "Standard retail/Preferred retail
+      cost-sharing: 33%",
+      "selectCarDrugsCopay": "Standard retail/Preferred retail
+      cost-sharing:  $0"
+    },
+    "supplementalPlan": {},
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_092.pdf",
+      "lowIncomeSubsidy": "2017_ca_lis_092.pdf",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_092.pdf"
+    }
+  },
+  {
+    "planId": "41148",
+    "planName": "Health Net Seniority Plus Amber I (HMO SNP)",
+    "applyOnline": false,
+    "monthlyPremium": "$0 - $XX.XX",
+    "starRatings": "4 Stars out of 5",
+    "starRatingsPDF": "ca_hmo_snp_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "N/A",
+      "primaryDrCopay": "$0.00",
+      "specialistDrCopay": "$0.00"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "$0 - $82 (excludes tiers 1 & 6)",
+      "gapCoverage": "No coverage",
+      "preferredGenericDrugCopay": "$0.00",
+      "preferredBrandDrugCopay": "$0.00 - $8.25",
+      "nonPreferredGenericDrugCopay": "$0.00 - $3.30",
+      "nonPreferredBrandDrugCopay": "$0.00 - $8.25",
+      "specialtyDrugsCopay": "$0.00 - $8.25",
+      "selectCarDrugsCopay": "$0.00"
+    },
+    "supplementalPlan": {},
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_055.pdf",
+      "lowIncomeSubsidy": "2017_ca_lis_055.pdf",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_055.pdf"
+    }
+  },
+  {
+    "planId": "41161",
+    "planName": "Health Net Seniority Plus Amber II (HMO SNP)",
+    "applyOnline": false,
+    "monthlyPremium": "$0 - $XX.XX",
+    "starRatings": "4 Stars out of 5",
+    "starRatingsPDF": "ca_hmo_snp_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "$5,000",
+      "deductible": "N/A",
+      "primaryDrCopay": "0% or 20%",
+      "specialistDrCopay": "0% or 20%"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "$0 - $82 (excludes tiers 1 & 6)",
+      "gapCoverage": "No coverage",
+      "preferredGenericDrugCopay": "$0.00",
+      "preferredBrandDrugCopay": "$0.00 - $8.25",
+      "nonPreferredGenericDrugCopay": "$0.00 - $3.30",
+      "nonPreferredBrandDrugCopay": "$0.00 - $8.25",
+      "specialtyDrugsCopay": "$0.00 - $8.25",
+      "selectCarDrugsCopay": "$0.00"
+    },
+    "supplementalPlan": {},
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_110_001.pdf",
+      "lowIncomeSubsidy": "2017_ca_lis_110_001.pdf",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_110_001.pdf"
+    }
+  },
+  {
+    "planId": "41146",
+    "planName": "Health Net Seniority Plus Green (HMO)",
+    "applyOnline": false,
+    "monthlyPremium": "$0.00",
+    "starRatings": "4 Stars out of 5",
+    "starRatingsPDF": "ca_hmo_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "N/A",
+      "primaryDrCopay": "$7.00",
+      "specialistDrCopay": "$10.00"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "N/A",
+      "gapCoverage": "No coverage",
+      "preferredGenericDrugCopay": "N/A",
+      "preferredBrandDrugCopay": "N/A",
+      "nonPreferredGenericDrugCopay": "N/A",
+      "nonPreferredBrandDrugCopay": "N/A",
+      "specialtyDrugsCopay": "N/A",
+      "selectCarDrugsCopay": "N/A"
+    },
+    "supplementalPlan": {},
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_044.pdf",
+      "lowIncomeSubsidy": "N/A",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_044.pdf"
+    }
+  },
+  {
+    "planId": "41164",
+    "planName": "Health Net Seniority Plus Sapphire (HMO)",
+    "applyOnline": false,
+    "monthlyPremium": "$31.00",
+    "starRatings": "N/A",
+    "starRatingsPDF": "ca_hmo_ratings.pdf",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "N/A",
+      "primaryDrCopay": "$0",
+      "specialistDrCopay": "20%"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "$140 (excludes tiers 1 & 6)",
+      "gapCoverage": "No coverage",
+      "preferredGenericDrugCopay": "$0.00",
+      "preferredBrandDrugCopay": "$47.00",
+      "nonPreferredGenericDrugCopay": "$20.00",
+      "nonPreferredBrandDrugCopay": "$100.00",
+      "specialtyDrugsCopay": "30%",
+      "selectCarDrugsCopay": "$0.00"
+    },
+    "supplementalPlan": {},
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_111_001.pdf",
+      "lowIncomeSubsidy": "2017_ca_lis_111_001.pdf",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_111_001.pdf"
+    }
+  },
+  {
+    "planId": "41176",
+    "planName": "Health Net Seniority Plus Sapphire Premier (HMO)",
+    "applyOnline": false,
+    "monthlyPremium": "$31.00",
+    "starRatings": "N/A",
+    "starRatingsPDF": "N/A",
+    "medicalCoverage": {
+      "oopMax": "TBD",
+      "deductible": "N/A",
+      "primaryDrCopay": "$0",
+      "specialistDrCopay": "$0"
+    },
+    "prescriptionCoverage": {
+      "rxDeductible": "$170 (excludes tiers 1 & 6)",
+      "gapCoverage": "No coverage",
+      "preferredGenericDrugCopay": "$0.00",
+      "preferredBrandDrugCopay": "$47.00",
+      "nonPreferredGenericDrugCopay": "$20.00",
+      "nonPreferredBrandDrugCopay": "$100.00",
+      "specialtyDrugsCopay": "29%",
+      "selectCarDrugsCopay": "$0.00"
+    },
+    "supplementalPlan": {},
+    "resourceURLs": {
+      "summaryOfBenefits": "2017_ca_sb_002.pdf",
+      "lowIncomeSubsidy": "2017_ca_lis_002.pdf",
+      "enrollApp": "2017_ca_enrollapp.pdf",
+      "comparePlans": "2017_ca_bh_002.pdf"
+    }
+  }
+]
+
+
+Trillium   - zipCode=97390 year=2017 county=LANE
+
+[
+{
+"planId": "41183",
+"planName": "Health Net Aqua (PPO)",
+"applyOnline": false,
+"monthlyPremium": "$45.00",
+"starRatings": "4 Stars out of 5",
+"starRatingsPDF": "or_ppo_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "$125",
+"primaryDrCopay": "$12.00",
+"specialistDrCopay": "$25.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "N/A",
+"gapCoverage": "N/A",
+"preferredGenericDrugCopay": "N/A",
+"preferredBrandDrugCopay": "N/A",
+"nonPreferredGenericDrugCopay": "N/A",
+"nonPreferredBrandDrugCopay": "N/A",
+"specialtyDrugsCopay": "N/A",
+"selectCarDrugsCopay": "N/A"
+},
+"supplementalPlan": {
+"optSupPkg5": "Preventive Dental",
+"optSupPkg6": "Comprehensive Dental",
+"optSupCost5": "$15",
+"optSupCost6": "$39"
+},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_001.pdf",
+"lowIncomeSubsidy": "N/A",
+"enrollApp": "2017_or_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41104",
+"planName": "Health Net Aqua (PPO)",
+"applyOnline": false,
+"monthlyPremium": "$45.00",
+"starRatings": "4 Stars out of 5",
+"starRatingsPDF": "or_ppo_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "$125",
+"primaryDrCopay": "$12.00",
+"specialistDrCopay": "$25.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "N/A",
+"gapCoverage": "N/A",
+"preferredGenericDrugCopay": "N/A",
+"preferredBrandDrugCopay": "N/A",
+"nonPreferredGenericDrugCopay": "N/A",
+"nonPreferredBrandDrugCopay": "N/A",
+"specialtyDrugsCopay": "N/A",
+"selectCarDrugsCopay": "N/A"
+},
+"supplementalPlan": {
+"optSupPkg5": "Preventive Dental",
+"optSupPkg6": "Comprehensive Dental",
+"optSupCost5": "$15",
+"optSupCost6": "$39"
+},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_001.pdf",
+"lowIncomeSubsidy": "N/A",
+"enrollApp": "2017_or_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41197",
+"planName": "Health Net Jade (HMO SNP)",
+"applyOnline": false,
+"monthlyPremium": "$0.00",
+"starRatings": "4 Stars out of 5",
+"starRatingsPDF": "or_hmo_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "N/A",
+"primaryDrCopay": "$0.00",
+"specialistDrCopay": "$35.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "No deductible",
+"gapCoverage": "No coverage",
+"preferredGenericDrugCopay": "Standard retail
+cost-sharing:  $8, Preferred retail cost-sharing:  $3",
+"preferredBrandDrugCopay": "Standard retail cost-sharing:
+$47, Preferred retail cost-sharing: $37",
+"nonPreferredGenericDrugCopay": "Standard retail
+cost-sharing: $15, Preferred retail cost-sharing: $8",
+"nonPreferredBrandDrugCopay": "Standard retail
+cost-sharing: $100, Preferred retail cost-sharing: $90",
+"specialtyDrugsCopay": "Standard retail/Preferred retail
+cost-sharing: 33%",
+"selectCarDrugsCopay": "Standard retail/Preferred retail
+cost-sharing:  $0"
+},
+"supplementalPlan": {
+"optSupPkg7": "DPPO Extended Comprehensive Dental",
+"optSupCost7": "$24"
+},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_004_001.pdf",
+"lowIncomeSubsidy": "2017_or_lis_004_001.pdf",
+"enrollApp": "2017_or_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41195",
+"planName": "Health Net Ruby (HMO)",
+"applyOnline": false,
+"monthlyPremium": "$0.00",
+"starRatings": "4 Stars out of 5",
+"starRatingsPDF": "or_hmo_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "N/A",
+"primaryDrCopay": "$0.00",
+"specialistDrCopay": "$35.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "$125 (excludes tiers 1, 2 & 6)",
+"gapCoverage": "No coverage",
+"preferredGenericDrugCopay": "Standard retail
+cost-sharing:  $8, Preferred retail cost-sharing:  $3",
+"preferredBrandDrugCopay": "Standard retail cost-sharing:
+$47, Preferred retail cost-sharing: $37",
+"nonPreferredGenericDrugCopay": "Standard retail
+cost-sharing: $15, Preferred retail cost-sharing: $8",
+"nonPreferredBrandDrugCopay": "Standard retail
+cost-sharing: $100, Preferred retail cost-sharing: $90",
+"specialtyDrugsCopay": "Standard retail/Preferred retail
+cost-sharing: 30%",
+"selectCarDrugsCopay": "Standard retail/Preferred retail
+cost-sharing:  $0"
+},
+"supplementalPlan": {
+"optSupPkg3": "Comprehensive Dental and Hearing Aid",
+"optSupPkg4": "Preventive Dental and Hearing Aid",
+"optSupCost3": "$40",
+"optSupCost4": "$16"
+},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_003_001.pdf",
+"lowIncomeSubsidy": "2017_or_lis_003_001.pdf",
+"enrollApp": "2017_or_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41184",
+"planName": "Health Net Violet Option 1 (PPO)",
+"applyOnline": false,
+"monthlyPremium": "$116.00",
+"starRatings": "4 Stars out of 5",
+"starRatingsPDF": "or_ppo_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "$225",
+"primaryDrCopay": "$12.00",
+"specialistDrCopay": "$25.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "$95 (excludes tiers 1, 2 & 6)",
+"gapCoverage": "No coverage",
+"preferredGenericDrugCopay": "Standard retail
+cost-sharing: $10, Preferred retail cost-sharing: $5",
+"preferredBrandDrugCopay": "Standard retail cost-sharing:
+$47, Preferred retail cost-sharing: $37",
+"nonPreferredGenericDrugCopay": "Standard retail
+cost-sharing: $20, Preferred retail cost-sharing: $10",
+"nonPreferredBrandDrugCopay": "Standard retail
+cost-sharing: $100, Preferred retail cost-sharing: $90",
+"specialtyDrugsCopay": "Standard retail/Preferred retail
+cost-sharing: 31%",
+"selectCarDrugsCopay": "Standard retail/Preferred retail
+cost-sharing:  $0"
+},
+"supplementalPlan": {
+"optSupPkg5": "Preventive Dental",
+"optSupPkg6": "Comprehensive Dental",
+"optSupCost5": "$15",
+"optSupCost6": "$39"
+},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_002.pdf",
+"lowIncomeSubsidy": "2017_or_lis_002.pdf",
+"enrollApp": "2017_or_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41187",
+"planName": "Health Net Violet Option 2 (PPO)",
+"applyOnline": false,
+"monthlyPremium": "$19.00",
+"starRatings": "4 Stars out of 5",
+"starRatingsPDF": "or_ppo_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "$5,550",
+"deductible": "$250",
+"primaryDrCopay": "$15.00",
+"specialistDrCopay": "$30.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "$120 (excludes tiers 1, 2 & 6)",
+"gapCoverage": "No coverage",
+"preferredGenericDrugCopay": "Standard retail
+cost-sharing: $10, Preferred retail cost-sharing: $5",
+"preferredBrandDrugCopay": "Standard retail cost-sharing:
+$47, Preferred retail cost-sharing: $37",
+"nonPreferredGenericDrugCopay": "Standard retail
+cost-sharing: $20, Preferred retail cost-sharing: $15",
+"nonPreferredBrandDrugCopay": "Standard retail
+cost-sharing: $100, Preferred retail cost-sharing: $90",
+"specialtyDrugsCopay": "Standard retail/Preferred retail
+cost-sharing: 30%",
+"selectCarDrugsCopay": "Standard retail/Preferred retail
+cost-sharing:  $0"
+},
+"supplementalPlan": {
+"optSupPkg2": "Routine Vision",
+"optSupPkg5": "Preventive Dental",
+"optSupPkg6": "Comprehensive Dental",
+"optSupCost2": "$6",
+"optSupCost5": "$15",
+"optSupCost6": "$39"
+},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_012_001.pdf",
+"lowIncomeSubsidy": "2017_or_lis_012_001.pdf",
+"enrollApp": "2017_or_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41199",
+"planName": "Trillium Advantage Pioneer Rx (PPO)",
+"applyOnline": false,
+"monthlyPremium": "tbd",
+"starRatings": "N/A",
+"starRatingsPDF": "h6951_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "N/A",
+"primaryDrCopay": "$15.00",
+"specialistDrCopay": "$30.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "125 (excludes tiers 1 and 2)",
+"gapCoverage": "No coverage",
+"preferredGenericDrugCopay": "Standard retail
+cost-sharing:  $3",
+"preferredBrandDrugCopay": "Standard retail cost-sharing:
+$45",
+"nonPreferredGenericDrugCopay": "Standard retail
+cost-sharing:  $12",
+"nonPreferredBrandDrugCopay": "Standard retail
+cost-sharing:  $95",
+"specialtyDrugsCopay": "Standard retail cost-sharing:
+30%",
+"selectCarDrugsCopay": "N/A"
+},
+"supplementalPlan": {
+"optSupPkg1": "Eyewear",
+"optSupCost1": "$9.60"
+},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_002.pdf",
+"lowIncomeSubsidy": "N/A",
+"enrollApp": "2017_or_cnc_ppo_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41172",
+"planName": "Trillium Advantage TLC Community ISNP (HMO SNP)",
+"applyOnline": false,
+"monthlyPremium": "tbd",
+"starRatings": "N/A",
+"starRatingsPDF": "h2174_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "Medicare defined",
+"primaryDrCopay": "$0.00",
+"specialistDrCopay": "$0.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "$400 (Applies to all tiers)",
+"gapCoverage": "No coverage",
+"preferredGenericDrugCopay": "25%",
+"preferredBrandDrugCopay": "N/A",
+"nonPreferredGenericDrugCopay": "N/A",
+"nonPreferredBrandDrugCopay": "N/A",
+"specialtyDrugsCopay": "N/A",
+"selectCarDrugsCopay": "N/A"
+},
+"supplementalPlan": {},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_005.pdf",
+"lowIncomeSubsidy": "N/A",
+"enrollApp": "2017_or_cnc_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41170",
+"planName": "Trillium Medicare Advantage (HMO SNP)",
+"applyOnline": false,
+"monthlyPremium": "tbd",
+"starRatings": "N/A",
+"starRatingsPDF": "h2174_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "Medicare defined",
+"primaryDrCopay": "$0.00",
+"specialistDrCopay": "$0.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "$400 (Applies to all tiers)",
+"gapCoverage": "No coverage",
+"preferredGenericDrugCopay": "25%",
+"preferredBrandDrugCopay": "N/A",
+"nonPreferredGenericDrugCopay": "N/A",
+"nonPreferredBrandDrugCopay": "N/A",
+"specialtyDrugsCopay": "N/A",
+"selectCarDrugsCopay": "N/A"
+},
+"supplementalPlan": {},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_001.pdf",
+"lowIncomeSubsidy": "N/A",
+"enrollApp": "2017_or_cnc_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+},
+{
+"planId": "41171",
+"planName": "Trillium Medicare Advantage TLC ISNP (HMO SNP)",
+"applyOnline": false,
+"monthlyPremium": "tbd",
+"starRatings": "N/A",
+"starRatingsPDF": "h2174_ratings.pdf",
+"medicalCoverage": {
+"oopMax": "TBD",
+"deductible": "Medicare defined",
+"primaryDrCopay": "$0.00",
+"specialistDrCopay": "$0.00"
+},
+"prescriptionCoverage": {
+"rxDeductible": "$400 (Applies to all tiers)",
+"gapCoverage": "No coverage",
+"preferredGenericDrugCopay": "25%",
+"preferredBrandDrugCopay": "N/A",
+"nonPreferredGenericDrugCopay": "N/A",
+"nonPreferredBrandDrugCopay": "N/A",
+"specialtyDrugsCopay": "N/A",
+"selectCarDrugsCopay": "N/A"
+},
+"supplementalPlan": {},
+"resourceURLs": {
+"summaryOfBenefits": "2017_or_sb_003.pdf",
+"lowIncomeSubsidy": "N/A",
+"enrollApp": "2017_or_cnc_enrollapp.pdf",
+"comparePlans": "N/A"
+}
+}
+]

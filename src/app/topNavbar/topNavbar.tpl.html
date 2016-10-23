@@ -1,0 +1,61 @@
+<md-content class="navbar navbar-default navbar-fixed-top pst md-hue-1" ng-class="getHeaderStyle()"><!--add  reversed-out here for dark headers, add plan name here too-->
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a href="#" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></li>
+            <li><a href="#" class="logo hidden-xs"><img ng-src="{{'assets/images/logos/' + url + '.png'}}" /></a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+            <li>
+                <a href="#" data-toggle="modal" data-target="#langModal" id="language-header-link">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> English</a>
+            </li>
+
+            <li ng-show="userInfo.length>0">
+<!--
+                <a uib-popover-template="getContactsUrl()" popover-trigger="focus" popover-append-to-body="true" popover-placement="bottom-right" id="contact-header-link" title="View contact information">
+-->
+                <a data-toggle="modal" data-target="#contactModal" id="contact-header-link" title="View contact information">
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+            </li>
+
+            <li><a href="" data-toggle="modal" data-target="#helpModal" id="help-header-link" title="View help information"><span>?</span></a></li>
+        </ul>
+    </div>
+</md-content>
+
+
+<div class="modal fade clear-right" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+            </div>
+            <div class="modal-body">
+                <p class="h4">Medicare Advantage Sales/Enrollment</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="h5">February 15–September 30</p>
+                        <p>Monday through Friday, 8:00 a.m. to 8:00 p.m.
+                            <BR />Excluding holidays</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="h5">October 1–February 14</p>
+                        <p>7 days a week, 8:00 a.m. to 8:00 p.m.
+                            <BR />Excluding holidays</p>
+                    </div>
+                </div>
+                <p class="h4">Medicare Advantage Plans</p>
+                <p>Call us now at {{phone1}}</p>
+                    <!--<p><BR />TTY users should call 711.</p>
+                    <p><strong>Mailing Address</strong><br /> Attention: Customer Response Center<br /> Health Net,
+                    Inc.<br /> PO Box 10420<br /> Van Nuys, CA 91410-0420</p>-->
+          </div>
+   <div class="modal-footer">
+       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+   </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="App">
+<head>
+    <style>
+        td {
+            border: 1px solid white;
+            padding:10px;
+        }
+        table td p{
+            margin:0;
+        }
+        table thead th {
+            padding-left:20px;
+            color: #4E8975;
+
+        }
+        .table-heading {
+            color:#4E8975;
+        }
+        p.title{
+            margin-top:10px;
+        }
+    </style>
+
+</head>
+<body ng-controller="compare-plans">
+    <section id="">
+
+        <article id="breadcrumbs">
+            <!--MOE VERSION OF BREADCRUMBS -->
+            <p class="moe-breadcrumb"><a href="moe-base-with-angular-final.html#/default">Back to Medicare Advantage Plans</a></p> {{CompareRecords.selectedPlans}}
+        </article>
+            <table style="width:100%; background-color: #D3D3D3;">
+                <thead style="">
+                    <th></th>
+                    <th style="" ng-repeat="heading in selectedPlans">{{findSingleValue(userInfo, heading, "planName")}}
+                        <p>{{findSingleValue(userInfo, heading, "monthlyPremium")}} monthly premium</p>
+                        <button type="button" class="btn btn-default" role="group" aria-label="...">
+                            <a href="#plans/{{heading}}">View Details</a>
+
+                        </button>
+
+                </th>
+
+
+
+                </thead>
+                <tbody>
+                    <tr><td class="table-heading">Summary Information</td>
+                        <td style="border:1px solid white;" ng-repeat="value in selectedPlans"> {{findSingleValue(userInfo, value, "planDescription")}}</td>
+                        </tr>
+                    <tr><td class="table-heading">Coverage</td>
+                        <td style="border:1px solid white;" ng-repeat="value in selectedPlans">    <p ng-class="whatClassisit(value.medicalCoverage.oopMax)">
+                            Medical coverage
+                        </p>
+                            <p ng-class="whatClassisit(value.prescriptionCoverage.rxDeductible)">
+                                Prescription Coverage
+                            </p>
+
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="table-heading">Copay and Coinsurance</td>
+
+                        <td>
+                            <p class="title">Primary Doctor Copay:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[primaryDoctorCopay], "medicalCoverage.primaryDrCopay" )}} Copay per visit
+                            <p class="title">Specialist Copay:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[specialistCopay], "medicalCoverage.specialistDrCopay" )}} Copay per visit
+                            <p class="title">Pharmacy Drug Deductible:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[pharmacyDrugDeductible], "medicalCoverage.deductible" )}} Copay per visit
+                            <p class="title">Coverage in the gap:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[coverageInTheGap], "prescriptionCoverage.gapCoverage" )}}
+                            <p class="title">Preferred generic drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[preferredGenericDrugCopay], "prescriptionCoverage.preferredGenericDrugCopay" )}} Copay per visit
+
+                            <p class="title">Preferred brand drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[preferredBrandDrugCopay], "prescriptionCoverage.preferredBrandDrugCopay" )}} Copay per visit
+
+                            <p class="title">Non-preferred brand drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[nonPreferredBrandDrugCopay], "prescriptionCoverage.nonPreferredBrandDrugCopay" )}} Copay per visit
+
+                            <p class="title">Speciality drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[specialityDrugCopay], "prescriptionCoverage.specialtyDrugsCopay" )}} Copay per visit
+
+                            <p class="title">Select care drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[selectCareDrugCopay], "prescriptionCoverage.selectCarDrugsCopay" )}} Copay per visit
+
+
+
+                            <!-- {{findSingleValue(userInfo, selectedPlans[counterforComparePlans+], "medicalCoverage.primaryDrCopay" )}} Copay per visit
+                                <!-- <p ng-repeat-end="value in selectedPlans" ng-if="!$first">
+                                     {{findSingleValue(userInfo, value, "medicalCoverage.primaryDrCopay" )}} Copay per visit
+
+                                 </p>-->
+                            </td>
+                        <td>
+                            <p class="title">Primary Doctor Copay:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[primaryDoctorCopay+1], "medicalCoverage.primaryDrCopay" )}} Copay per visit
+                            <p class="title">Specialist Copay:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[specialistCopay+1], "medicalCoverage.specialistDrCopay" )}} Copay per visit
+                            <p class="title">Pharmacy Drug Deductible:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[pharmacyDrugDeductible+1], "medicalCoverage.deductible" )}} Copay per visit
+                            <p class="title">Coverage in the gap:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[coverageInTheGap+1], "prescriptionCoverage.gapCoverage" )}}
+                            <p class="title">Preferred generic drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[preferredGenericDrugCopay+1], "prescriptionCoverage.preferredGenericDrugCopay" )}} Copay per visit
+
+                            <p class="title">Preferred brand drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[preferredBrandDrugCopay+1], "prescriptionCoverage.preferredBrandDrugCopay" )}} Copay per visit
+
+                            <p class="title">Non-preferred brand drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[nonPreferredBrandDrugCopay+1], "prescriptionCoverage.nonPreferredBrandDrugCopay" )}} Copay per visit
+
+                            <p class="title">Speciality drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[specialityDrugCopay+1], "prescriptionCoverage.specialtyDrugsCopay" )}} Copay per visit
+
+                            <p class="title">Select care drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[selectCareDrugCopay+1], "prescriptionCoverage.selectCarDrugsCopay" )}} Copay per visit
+
+
+
+                            <!-- {{findSingleValue(userInfo, selectedPlans[counterforComparePlans+], "medicalCoverage.primaryDrCopay" )}} Copay per visit
+                                <!-- <p ng-repeat-end="value in selectedPlans" ng-if="!$first">
+                                     {{findSingleValue(userInfo, value, "medicalCoverage.primaryDrCopay" )}} Copay per visit
+
+                                 </p>-->
+                       </td>
+                        <td ng-show="selectedPlans.length>2">
+                            <p class="heading" style="margin-top:10px;">Primary Doctor Copay:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[primaryDoctorCopay+2], "medicalCoverage.primaryDrCopay" )}} Copay per visit
+                            <p>Specialist Copay:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[specialistCopay+2], "medicalCoverage.specialistDrCopay" )}} Copay per visit
+                            <p>Pharmacy Drug Deductible:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[pharmacyDrugDeductible+2], "medicalCoverage.deductible" )}} Copay per visit
+                            <p>Coverage in the gap:</p>
+
+                            {{findSingleValue(userInfo, selectedPlans[coverageInTheGap+2], "prescriptionCoverage.gapCoverage" )}}
+                            <p>Preferred generic drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[preferredGenericDrugCopay+2], "prescriptionCoverage.preferredGenericDrugCopay" )}} Copay per visit
+
+                            <p>Preferred brand drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[preferredBrandDrugCopay+2], "prescriptionCoverage.preferredBrandDrugCopay" )}} Copay per visit
+
+                            <p>Non-preferred brand drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[nonPreferredBrandDrugCopay+2], "prescriptionCoverage.nonPreferredBrandDrugCopay" )}} Copay per visit
+
+                            <p>Speciality drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[specialityDrugCopay+2], "prescriptionCoverage.specialtyDrugsCopay" )}} Copay per visit
+
+                            <p>Select care drug copay:</p>
+                            {{findSingleValue(userInfo, selectedPlans[selectCareDrugCopay+2], "prescriptionCoverage.selectCarDrugsCopay" )}} Copay per visit
+
+
+                        </td>
+
+
+                    </tr>
+                </tbody>
+
+            </table>
+   <!-- <article id="modal" style="position: fixed; border:1px solid red; width:100%; height: 100px; top: 89%; background-color:#7d7d7d; z-index:10;">
+            <div ng-repeat="modalVal in selectedPlans" style="padding-left:100px;width: 500px;float: left;border-right: 1px solid white;">
+                <p>{{findSingleValue(userInfo, modalVal, "planName")}}</p> <p ng-click="removeComparePlans(modalVal);"><img src="../moe/images/closeIcon.png" style="width:40px; margin-left:90%;"/></p>
+                <p>{{findSingleValue(userInfo, modalVal, "monthlyPremium")}}</p>
+                <p><button class="btn btn-warning">
+                    Apply Now
+                </button></p>
+
+            </div>
+
+
+    </article>-->
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/moe/css/bootstrap.min.css" rel="stylesheet">
+	<!--theme specific-->
+	<link href="/static/moe/css/pst-moe.css" rel="stylesheet">
+	<link href="/static/moe/css/moe.css" rel="stylesheet">
+<!--
+	only include the css for PST when viewing PST pages
+	<link href="/static/moe/css/pst.css" rel="stylesheet">
+-->
+
+  </head>
+  <body class="moe"> <!-- tag for MOE or PST to handle CSS or JS differences -->
+ 	
+  <div id="main-container">
+
+	<!-- Sidebar -->
+        <section id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    
+                </li>
+                <!--NEW KANGAROO: REAL LINKS AND REAL-ISH PLACEHOLDER LINKS FOR MOE -->
+                <li>
+                    <a href="#" target="_blank" title="link to accessibility information on the originating health plan site">Accessibility Information</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to find a doctor / provider search tool on the originating health plan site">Find a Provider</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#glossaryModal">Glossary of Terms</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to summary of benefits PDF for the selected plan">Summary of Benefits (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to language assistance PDF for the selected plan">Language Assistance (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to star ratings info PDF for the selected plan">About Star Ratings (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" title="link to accessibility information on the originating health plan site">Privacy Policy</a>
+                </li>
+                <li>
+                	<p>[content varies by health plan, here is Health Net's]<br />
+      Health Net Medicare Sales is ready to assist you. Call toll-free 1-800-977-6738 TTY 711. Our office hours are 8:00 a.m. to 8:00 p.m., 7 days a week (October 1st - February 14th) and Monday through Friday, 8:00 a.m. to 8:00 p.m. (February 15th - September 30th), excluding holidays.</p>
+                </li>
+            </ul>
+        </section>
+        <!-- /#main-content -->
+
+		<main role="main">
+        <!-- Page Content -->
+        <section id="page-content-wrapper">
+  
+	  <nav class="navbar navbar-default navbar-fixed-top healthnet"><!--add  reversed-out here for dark headers, add plan name here too-->
+		  <div class="container-fluid">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			  <ul class="nav navbar-nav">
+				<li><a href="#" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></li>
+				<li class="logo"><a href="#"></a></li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				  <!--NEW KANGAROO: LINK TO MODAL ADDED TO THE LANGUAGE ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#langModal" id="language-header-link"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> English</a></li>
+				<!--NEW KANGAROO: LINK TO MODAL ADDED TO THE CONTACT ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#contactModal" id="contact-header-link" title="View contact information"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></a></li>
+				<!--NEW KANGAROO: LINK TO MODAL ADDED TO THE HELP ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#helpModal" id="help-header-link" title="View help information"><span>?</span></a></li>
+			  </ul>
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+	<section class="header-section">
+	
+		<article id="header-info-box" class="clearfix">
+		
+<!-- MOE version of header-->
+			<div class="main-box">
+				<div class="text-largest h4" id="moe-tool-info">Medicare Online Enrollment</div>
+				<div class="text-large h1" id="moe-plan-name">Gold Select (HMO)</div>
+				<div class="text-medium h3" id="moe-benefits-info">Optional Benefits Package #1 <a href="#" class="small">Change/Remove</a></div>
+				<div class="text-small h4" id="moe-location-info"><strong>Type:</strong> MAPD <strong>&nbsp;&nbsp;Location:</strong> 92072, San Diego, CA</div>
+			</div>
+			<div class="secondary-box">
+				<div class="text-largest h2" id="moe-cost-info">$<strong>0.00</strong><span class="small"> + $12.00</span><span class="small" id="moe-mobile-cost-type-info"> Monthly Premium</span></div>
+				<div class="text-large h4" id="moe-cost-type-info">Monthly Premium</div>
+			</div>
+
+
+<!-- PST version of header		
+			<div class="main-box">
+				<div class="text-largest h1" id="pst-plan-info">Medicare Advantage</div>
+				<div class="text-large h3" id="pst-location-info">92072, San Diego, CA</div>
+				<button type="button" class="btn btn-default" id="pst-change-zip">Change zip code</button>
+			</div>
+			<div class="secondary-box">
+				<div class="text-largest h5" id="pst-year-info">Plans for Year</div>
+				<div class="text-large h2" id="pst-year-switcher"><a href="#"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 2017</a></div>
+			</div>
+ -->			
+		</article>
+		
+		<article id="breadcrumbs">
+			<!--MOE VERSION OF BREADCRUMBS -->
+			<p class="moe-breadcrumb"><strong>Applicant</strong> / Enrollment Questions / Preferences / Finish Up</p>
+			<div id="moe-progress-bar"><div></div></div><p class="moe-progress-bar-label">Progress:</p>
+			
+		</article>
+	
+  	</section>
+	
+<!-- 	START OF PAGE CONTENT -->
+	
+	
+    <p class="h2" id="content-top">Applicant</p> <!-- first element in content area needs content-top ID -->
+	<p><strong>Note:</strong> by completing and submitting this Online Medicare Enrollment Form you are sending an actual enrollment election to Health Net Gold Select (HMO)</p>
+	<p class="h3">Who is submitting this application?</p>
+	<form id="applicant-form"><!--adding ID to the form on the Applicant page-->
+	<div class="form-group">
+		<select class="form-control" id="whoIsSubmitting">
+			<option selected>I am a(n)...</option>
+		  <option value="100">Applicant</option>
+		  <option value="200">Applicant's Representative / Power Of Attorney / Legal Representative</option>
+		  <option value="300">Applicant assisted by a Sales Producer</option>
+		  <option value="400">Telesales / Fieldsales Representatives</option>
+		</select>
+	</div>
+	
+	<!--fields for rep or power of attorney Rep -->
+	<div id="Rep">
+		<p><strong>If you are an authorized representative, you must provide the following information.</strong></p>
+		<div class="form-group">
+			   <label for="firstName">First Name</label>
+			   <input type="text" name="firstName" id="firstName" size="30" maxlength="50" class="form-control">
+			</div>
+			<div class="form-group">
+			   <label for="mi">Middle Initial</label>
+			   <input type="text" name="mi" id="mi" size="3" maxlength="1" class="form-control"> 
+			</div>
+			<div class="form-group">
+			   <label for="lastName">Last Name</label>
+			   <input type="text" name="lastName" id="lastName" size="30" maxlength="50" class="form-control">
+			</div>
+			<hr class="mini">
+			<div class="form-group">
+			   <label for="streetAdd">Street Address</label>
+			   <input type="text" name="streetAdd" id="streetAdd" maxlength="100" size="30" class="form-control" value="">
+			</div>
+			<div class="form-group">
+			   <label for="city">City</label>
+			   <input type="text" name="city" id="city" maxlength="50" size="30" class="form-control" value="">
+			</div>
+			<div class="form-group">
+			   <label for="city">State</label>
+				<select name="state" id="state" class="form-control" maxlength="8">
+				   <option value="">Select</option>
+				   <option value="AK">AK</option>
+				   <option value="AL">AL</option>
+				   <option value="AR">AR</option>
+				   <option value="AS">AS</option>
+				   <option value="AZ">AZ</option>
+				   <option value="CA">CA</option>
+				   <option value="CO">CO</option>
+				</select>
+			</div>
+			<div class="form-group">
+			   <label for="exampleInputEmail1">Zip Code</label>
+			   <input type="text" maxlength="5" size="6" name="zipCode" id="zipCode" class="form-control" value="">
+			</div>
+			<hr class="mini">
+		<div class="form-inline">
+			<div class="form-group">
+			   <label for="phone1Rep">Phone Number</label>
+			   <input type="text" name="phone1" id="phone1Rep" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('phone1Rep','3','phone2Rep',event);">-
+			</div>
+			<div class="form-group">
+			   <label for="phone2Rep" class="sr-only">Prefix</label>
+			   <input type="text" name="phone2" id="phone2Rep" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('phone2Rep','3','phone3Rep',event);">-
+			</div>
+			<div class="form-group">
+			   <label for="phone3Rep" class="sr-only">Suffix</label>
+			   <input type="text" name="phone3" id="phone3Rep" maxlength="4" size="4" class="form-control">
+			</div>
+		</div>
+		<hr class="mini">
+		<div class="form-group">
+		   <label for="relation">Relationship to Enrollee</label>
+		   <input type="text" name="relation" id="relation" size="30" maxlength="50" class="form-control" value="">
+		</div>
+		<hr class="mini">
+		<p><strong>Note:</strong> You will need to provide a copy of proof of Legal Guardian, Durable Power of Attorney for Health Care (DPAHC), written advance directive, or proof of authorization under state law to complete this enrollment, if requested by Health Net or Medicare upon request.</p>
+	</div>
+	
+	<!--end fields for rep or power of attorney -->
+	
+	<!--fields for sales producer Broker-->
+	
+	<div id="Broker">
+		<p><strong>Is the Applicant with you?</strong></p>
+		<div class="radio">
+		   <label for="Yes">
+		   <input type="radio" name="assistedByInPerson" align="absmiddle" value="true" onclick="javascript:display('RecordingIDSectionOff');">
+		   Yes
+		   </label>
+		</div>
+		<div class="radio">
+		   <label for="No">
+		   <input type="radio" name="assistedByInPerson" align="absmiddle" value="false" onclick="javascript:display('RecordingIDSection');">
+		   No
+		   </label>
+		</div>
+		<p><strong>Please provide the following information.</strong></p>
+		<div class="form-group">
+		   <label for="brokerIdValue">Sales Producer ID</label>
+		   <input type="text" maxlength="50" size="30" name="brokerId" id="brokerIdValue" class="form-control" value="">
+		</div>
+		<div class="form-group">
+		   <label for="salesProducerName">Sales Producer Name</label>
+		   <input type="text" maxlength="50" size="30" name="salesProducerName" id="salesProducerName" class="form-control" value="">
+		</div>
+		<hr class="mini">
+		<input type="hidden" name="firstName" value="">
+		<input type="hidden" name="lastName" value="">
+		<input type="hidden" name="mi" value="">
+		<div class="form-inline">
+		   <div class="form-group">
+		      <label for="phone1Broker">Phone Number</label>
+		      <input type="text" name="phone1" id="phone1Broker" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('phone1Broker','3','phone2Broker',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="phone2Broker" class="sr-only">Prefix</label>
+		      <input type="text" name="phone2" id="phone2Broker" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('phone2Broker','3','phone3Broker',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="phone3Broker" class="sr-only">Suffix</label>
+		      <input type="text" name="phone3" id="phone3Broker" maxlength="4" size="4" class="form-control">
+		   </div>
+		</div>
+		<hr class="mini">
+		<div class="form-group">
+		   <label for="affiliationId">Affiliation ID(GA, FMO or Agency)</label>
+		   <input type="text" maxlength="50" size="30" name="affiliationId" id="affiliationId" value="" class="form-control">
+		</div>
+		<div class="form-group">
+		   <label for="affiliationName">Affiliation Name</label>
+		   <input type="text" maxlength="50" size="30" name="affiliationName" id="affiliationName" value="" class="form-control">
+		</div>
+		<div class="form-inline">
+		   <div class="form-group">
+		      <label for="affiliationPhoneNumber1">Phone Number</label>
+		      <input type="text" id="affiliationPhoneNumber1" name="affiliationPhoneNumber1" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('affiliationPhoneNumber1','3','affiliationPhoneNumber2',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="affiliationPhoneNumber2" class="sr-only">Prefix</label>
+		      <input type="text" id="affiliationPhoneNumber2" name="affiliationPhoneNumber2" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('affiliationPhoneNumber2','3','affiliationPhoneNumber3',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="affiliationPhoneNumber3" class="sr-only">Suffix</label>
+		      <input type="text" id="affiliationPhoneNumber3" name="affiliationPhoneNumber3" maxlength="4" size="4" class="form-control">
+		   </div>
+		</div>
+		<hr class="mini">
+		<div class="form-group">
+		   <label for="salesRepId">Sales Rep ID</label>
+		   <input type="text" maxlength="50" size="30" name="salesRepId" id="salesRepId" class="form-control">
+		</div>
+		<div class="form-group">
+		   <label for="salesRepName">Sales Rep Name</label>
+		   <input type="text" maxlength="50" size="30" name="salesRepName" id="salesRepName" class="form-control">
+		</div>
+		<div class="form-inline">
+		   <div class="form-group">
+		      <label for="salesRepPhoneNumber1">Sales Rep Phone Number</label>
+		      <input type="text" id="salesRepPhoneNumber1" name="salesRepPhoneNumber1" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('salesRepPhoneNumber1','3','salesRepPhoneNumber2',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="salesRepPhoneNumber2" class="sr-only">Prefix</label>
+		      <input type="text" id="salesRepPhoneNumber2" name="salesRepPhoneNumber2" maxlength="3" size="3" class="form-control" onkeyup="javascript:autoTab('salesRepPhoneNumber2','3','salesRepPhoneNumber3',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="salesRepPhoneNumber3" class="sr-only">Suffix</label>
+		      <input type="text" id="salesRepPhoneNumber3" name="salesRepPhoneNumber3" maxlength="4" size="4" class="form-control">
+		   </div>
+		</div>
+		<hr class="mini">
+		<div class="form-inline">
+		   <div class="form-group">
+		      <label for="effDateMM">Requested Effective Date</label>
+		      <input type="text" name="effDateMM" id="effDateMM" maxlength="2" size="2" class="form-control" onkeyup="javascript:autoTab('effDateMM','2','effDateDD',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="effDateDD" class="sr-only">Prefix</label>
+		      <input type="text" name="effDateDD" id="effDateDD" maxlength="2" size="2" class="form-control" onkeyup="javascript:autoTab('effDateDD','2','effDateYYYY',event);">-
+		   </div>
+		   <div class="form-group">
+		      <label for="effDateYYYY" class="sr-only">Suffix</label>
+		      <input type="text" name="effDateYYYY" id="effDateYYYY" maxlength="4" size="4" class="form-control">
+		   </div>
+		   <p class="help-block">(MM-DD-YYYY)</p>
+		</div>
+		<p><strong>Enrollment Type</strong></p>
+		<div class="checkbox">
+		   <label for="enrollmentType0">
+		   <input type="checkbox" value="" name="enrollmentType0" id="enrollmentType0">
+		   ICEP/IEP
+		   </label>
+		</div>
+		<div class="checkbox">
+		   <label for="enrollmentType1">
+		   <input type="checkbox" value="" name="enrollmentType1" id="enrollmentType1">
+		   OEP/NEW
+		   </label>
+		</div>
+		<div class="checkbox">
+		   <label for="enrollmentType2">
+		   <input type="checkbox" value="" name="enrollmentType2" id="enrollmentType2">
+		   OEPI
+		   </label>
+		</div>
+		<div class="checkbox">
+		   <label for="enrollmentType3">
+		   <input type="checkbox" value="" name="enrollmentType3" id="enrollmentType3">
+		   AEP
+		   </label>
+		</div>
+		<div class="checkbox">
+		   <label for="enrollmentType4">
+		   <input type="checkbox" value="" name="enrollmentType4" id="enrollmentType4">
+		   SEP
+		   </label>
+		</div>
+		<div class="form-group">
+		   <label for="enrollmentDesc">Type Description</label>
+		   <input type="text" name="enrollmentDesc" id="enrollmentDesc" size="30" maxlength="40" class="form-control"> 
+		</div>
+		<div class="form-group">
+		   <label for="hnSubscriberId">Current Member's Health Net ID Number</label>
+		   <input type="text" maxlength="9" size="30" name="hnSubscriberId" id="hnSubscriberId" class="form-control">
+		</div>
+	</div>
+	<!--fields for sales producer -->
+	
+	<hr>
+	
+	<blockquote class="warning-message">
+	<strong>If you currently have health coverage from an employer or union, joining Health Net Gold Select (HMO) could affect your employer or union health benefits.</strong> You could lose your employer or union health coverage if you join Health Net Gold Select (HMO). Read the communications your employer or union sends you. If you have questions, visit their website, or contact the office listed in their communications. If there isn't any information on whom to contact, your benefits administrator or the office that answers questions about your coverage can help.
+	</blockquote>
+	
+	<hr>
+	
+	</form>
+	
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	
+
+
+
+<!-- 	END OF PAGE CONTENT, BEGINNING OF SHARED FOOTER CONTENT -->	
+
+<!--KANGAROO NEW: MODAL WINDOWS FOR HEADER FUNCTIONALITY -->
+<!-- MODAL WINDOWS -->
+
+<!-- CONTACT US Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+      	<p>Content varies by health plan, should include include phone numbers and other contact info as found on the health plan site. Here's some sample data from Health Net that is probably pretty close to accurate:</p>
+	  	<p class="h4">Medicare Advantage Sales/Enrollment</p>
+	  	<div class="row">
+	        <div class="col-md-6">
+	          <p class="h5">February 15–September 30</P>
+	          <p>Monday through Friday, 8:00 a.m. to 8:00 p.m.<BR />Excluding holidays</p>
+	        </div>
+	        <div class="col-md-6">
+	          <p class="h5">October 1–February 14</P>
+	          <p>7 days a week, 8:00 a.m. to 8:00 p.m.<BR />Excluding holidays</p>	       </div>
+      </div>
+	  <p class="h4">Medicare Advantage Plans</p>
+	  <p>Health Net Amber, Complete, Green, Gold Select, Healthy Heart, Jade, Ruby, Ruby Select, Sapphire, and Violet: 1-800-977-6738<BR />TTY users should call 711.</p>
+	  <P><strong>Mailing Address</strong><br />
+		Attention: Customer Response Center<br />
+		Health Net, Inc.<br />
+		PO Box 10420<br />
+		Van Nuys, CA 91410-0420</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END CONTACT US Modal -->
+<!-- LANGUAGE Modal -->
+<div class="modal fade" id="langModal" tabindex="-1" role="dialog" aria-labelledby="langModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Language Assistance</h4>
+      </div>
+      <div class="modal-body">
+	      <p class="h4"><a href="#" title="link to switch to Spanish version of the site">Ver site in Espa&ntilde;ol</a></p>
+	      <p>&nbsp;</p>
+	      <p class="h4">Need help in your language?</p>
+	      <p><a href="#" title="link to language assistance PDF for Medicare">Language assistance information (PDF)</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END HELP US Modal -->
+<!-- HELP Modal -->
+<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Need help?</h4>
+      </div>
+      <div class="modal-body">
+      [content varies by health plan, here is Health Net's]<br />
+      Health Net Medicare Sales is ready to assist you. Call toll-free 1-800-977-6738 TTY 711. Our office hours are 8:00 a.m. to 8:00 p.m., 7 days a week (October 1st - February 14th) and Monday through Friday, 8:00 a.m. to 8:00 p.m. (February 15th - September 30th), excluding holidays.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END HELP US Modal -->
+<!-- GLOSSARY Modal -->
+<div class="modal fade" id="glossaryModal" tabindex="-1" role="dialog" aria-labelledby="glossaryModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Glossary of Terms</h4>
+      </div>
+      <div class="modal-body">
+	      <p>Here are some definitions to help you understand the Medicare online enrollment process.</p>
+	      <p class="h4">Term #1</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #2</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #3</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #4</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #5</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #6</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #7</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #8</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #9</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #10</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END GLOSSARY Modal -->
+	
+<!-- END OF MODAL WINDOWS -->	
+	
+	<p class="cms-info">Health Net has a contract with Medicare to offer HMO, PPO and HMO SNP plans. Health Net has a contract with Medicare and Medicaid to offer HMO SNP plans. Enrollment in a Health Net Medicare Advantage plan depends on contract renewal. 
+<br /><br />
+Material ID #Y0035_2016_0036 (H0351, H0562, H5439, H5520, H6815, H3561) CMS Approved 10222015 </p>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/static/moe/js/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/static/moe/js/bootstrap.min.js"></script>
+    <!-- code for waypoints -->
+    <script src="/static/moe/js/jquery.waypoints.min.js"></script>
+    <!-- code for moe and pst -->
+    <script src="/static/moe/js/pst-moe.js"></script>
+	  <!-- Menu Toggle Script -->
+	
+		</section><!-- /#page-content-wrapper -->
+		</main><!-- end of main -->
+
+   </div><!-- end of #main-container -->
+   
+  </body>
+</html>

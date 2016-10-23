@@ -1,0 +1,556 @@
+@color_1: #fff;
+@color_2: #e0e0e0;
+@color_3: #666;
+@color_4: #000;
+@color_5: #999999;
+@color_6: #ccc;
+
+/*Nishant to work on body of page and overlay
+I will work on header/footer and hamburger nav */
+/*
+#main-container .pst – This will be the main container of the application
+	#header .pst .logo.healthnet .navigation .help-icons .language – This structure will get us the layout as per the requirement
+	#pst-breadcrumbs – This section will contain the breadcrumbs
+*/
+/*
+colors:
+orange: f59331;
+blue: 3399ff;
+light green: 3fb34f
+medium grey header: 7d7d7d
+*/
+/* general styles */
+/*end general styles*/
+/* help overlay styles */
+/* end help overlay styles */
+/*header styles */
+/*plan-specific */
+/*reversed out for dark header backgrounds */
+/*override nav stacking on small screens*/
+/*#header-info-box.headshrink {
+		overflow:hidden;
+		height:100px;
+	}*/
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Toggle Styles for sidebar nav */
+/* Sidebar Styles */
+body{
+}
+
+hr{
+	border: 0;
+	border-bottom: 2px dotted #ccc;
+	background: #fff;
+	margin-left: 0px;
+}
+
+hr.mini{
+	border: 0;
+	border-bottom: 1px solid #e0e0e0;
+	background: #fff;
+}
+
+blockquote{
+	font-size: inherit;
+}
+
+.help-overlay-content{
+	width: 105px;
+	min-height: 30px;
+	position: absolute;
+	color: @color_1;
+	font-weight: bold;
+	padding-top: 60px;
+	background: url('../assets/images/help-arrow-left.png') no-repeat top left;
+}
+
+.help-overlay-content.right-help{
+	background: url('../assets/images/help-arrow-right.png') no-repeat top right;
+}
+
+a#contact-header-link{
+	height: 36px;
+	width: 36px;
+	display: block;
+	border: 1px solid #333;
+	border-radius: 18px;
+	padding-left: 0px;
+	span{
+		font-size: 21px;
+		display: inline-block;
+		width: 36px;
+		text-align: center;
+		line-height: 32px;
+	}
+}
+
+a#help-header-link{
+	height: 36px;
+	width: 36px;
+	display: block;
+	border: 1px solid #333;
+	border-radius: 18px;
+	padding-left: 0px;
+	span{
+		font-size: 28px;
+		display: inline-block;
+		width: 36px;
+		text-align: center;
+		line-height: 34px;
+	}
+}
+
+a#language-header-link{
+	font-size: 16px;
+}
+
+.pst{
+	a#language-header-link{
+		display: none;
+	}
+}
+
+a#menu-toggle{
+	padding-left: 0px;
+}
+
+.nav{
+	.glyphicon-menu-hamburger{
+		margin-right: -2.8px;
+		font-size: 16px;
+	}
+	.glyphicon-triangle-bottom{
+		font-size: 12px;
+		margin-right: 3px;
+	}
+}
+
+.navbar-nav{
+	> li{
+		padding-top: 30px;
+		> a{
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		a.logo{
+			margin-top: -20px;
+			min-height: 40px;
+			min-width: 200px;
+			img{
+				height:55px;
+				width:270px;
+			}
+		}
+	}
+}
+
+ul.navbar-nav{
+	height: 85px;
+	&:last-child{
+		margin-right: 0px;
+	}
+}
+
+ul.navbar-right{
+	li{
+		margin-left: 10px;
+	}
+}
+
+/*.healthnet{
+	.navbar-nav{
+		> li.logo{
+			> a{
+				background: url(/assets/images/logo-healthnet-white.png) no-repeat top left;
+			}
+		}
+	}
+}*/
+
+nav{
+	&.menu{
+
+		menu{
+			padding-left: 0px;
+
+			a{
+				color: @white;
+				font-size: 1.250em;
+				font-weight: normal;
+				cursor: pointer;
+				outline: none;
+
+				&:hover{
+					color: @m-green;
+					text-decoration: none;
+
+				}
+			}
+
+			ul{
+				padding-top: 0px !important;
+
+				li{
+					margin: 5px 0px;
+					a{
+						display: block;
+						background-repeat: no-repeat !important;
+						background-size: 28px auto !important;
+						background-position: left top !important;
+						padding-left: 40px !important;
+						margin-left: 15px !important;
+						line-height: 8px !important;
+
+						&:hover{
+							background-position: left bottom !important;
+						}
+					}
+
+					ul{
+						li{
+							margin-left: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.pstHeader{
+	.navbar-nav{
+		> li{
+			> a{
+				color: @color_1;
+			}
+			#contact-header-link, #help-header-link{
+				border-color: @color_1;
+			}
+			> a.hovered{
+				color: @color_2;
+				border-color: @color_2;
+			}
+			#contact-header-link.hovered, #help-header-link.hovered{
+				color: @color_2;
+				border-color: @color_2;
+			}
+		}
+	}
+}
+
+.headerInverse {
+	.navbar-nav{
+		> li{
+			> a{
+				color: @color_3;
+			}
+			#contact-header-link, #help-header-link{
+				border-color: @color_3;
+			}
+			> a.hovered{
+				color: @color_4;
+				border-color: @color_4;
+
+			}
+			#contact-header-link.hovered, #help-header-link.hovered{
+				color: @color_4;
+				border-color: @color_4;
+			}
+		}
+	}
+}
+
+.pstHeaderInverseLimeGreen{
+	.headerInverse;
+	background: #efefef url('../assets/images/logos/header-99c832-limegreen-bar.gif') repeat-x bottom left;
+ }
+
+.pstHeaderInverseGreen{
+	.headerInverse;
+	background: #efefef url('../assets/images/logos/header-35a248-green-bar.gif') repeat-x bottom left;
+}
+
+
+.pstHeaderInverseOrange{
+	.headerInverse;
+	background: #efefef url('../assets/images/logos/header-F58220-orange-bar.gif') repeat-x bottom left;
+}
+
+.header-section{
+	position: fixed;
+	left: 0;
+	top: 85px;
+	background-color: #fff;
+	z-index: 1035;
+	box-shadow: 0px 3px 3px #888888;
+	width: 100%;
+}
+
+#header-info-box{
+	margin: 15px 15px 4px 15px;
+	background-color: @greyBack;
+	> div{
+		float: left;
+	}
+	.main-box{
+		padding-right: 15px;
+		border-right: 1px solid #fff;
+		width: 70%;
+	}
+	.secondary-box{
+		width: 22%;
+		margin-left: 0px;
+	}
+	.h1{
+		font-weight: normal;
+		color: @color_1;
+		margin: 8px 0px;
+		font-size: 30px;
+	}
+	.h2{
+		font-weight: normal;
+		color: @color_1;
+		margin: 8px 0px;
+	}
+	.h3{
+		font-weight: normal;
+		color: #fff;
+		margin: 8px 0px;
+	}
+	.h4{
+		font-weight: normal;
+		color: @color_1;
+		margin: 8px 0px;
+	}
+	.h5{
+		font-weight: normal;
+		color: @color_1;
+		margin: 8px 0px;
+	}
+	.h6{
+		font-weight: normal;
+		color: @color_1;
+		margin: 8px 0px;
+	}
+	.small{
+		font-weight: normal;
+		color: @color_1;
+		margin: 8px 0px;
+	}
+	a{
+		text-decoration: underline;
+		color: @color_1;
+	}
+	.dropdown-menu a{
+		text-decoration: underline;
+		color: @color_3;
+		font-weight: bold;
+	}
+
+}
+
+#main-container{
+	margin-left: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	.navbar{
+		margin-left: 0;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	.menu-icon{
+		display: block;
+		background-image: url('@{imgpath}/menu-icon.png');
+		background-repeat: no-repeat;
+		background-size: 33px auto;
+		background-position: bottom center;
+		width: 33px;
+		height: 38px;
+		margin: 5px 0 5px 0;
+		float: left;
+		color: @white;
+		text-decoration: none;
+		font-size: 0.875em;
+	}
+	.header-section{
+		margin-left: 0;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	#breadcrumbs{
+		margin-left: 0;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+}
+
+#main-container.toggled{
+	margin-left: 250px;
+	.navbar{
+		margin-left: 250px;
+	}
+	.header-section{
+		margin-left: 250px;
+	}
+	#sidebar-wrapper{
+		width: 250px;
+	}
+	#page-content-wrapper{
+		position: absolute;
+		margin-right: -250px;
+	}
+}
+
+#sidebar-wrapper{
+	z-index: 1000;
+	position: fixed;
+	left: 250px;
+	width: 0;
+	height: 100%;
+	margin-left: -250px;
+	overflow-y: auto;
+	background: #000;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.sidebar-nav{
+	position: absolute;
+	top: 0;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li{
+		text-indent: 20px;
+		line-height: 40px;
+		p{
+			line-height: 135%;
+			margin: 10px 20px;
+			text-indent: 0px;
+			color: @color_5;
+		}
+		a{
+			display: block;
+			text-decoration: none;
+			color: @color_5;
+			&:hover{
+				text-decoration: none;
+				color: @color_1;
+				background: rgba(255, 255, 255, 0.2);
+			}
+			&:active{
+				text-decoration: none;
+			}
+			&:focus{
+				text-decoration: none;
+			}
+		}
+	}
+	> .sidebar-brand{
+		height: 65px;
+		padding-top: 19px;
+		font-size: 24px;
+		line-height: 60px;
+		text-align: right;
+		color: @color_6;
+		padding-right: 12px;
+		cursor: pointer;
+		a{
+			color: @color_5;
+			&:hover{
+				color: @color_1;
+				background: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.navbar-nav{
+		> li{
+			float: left;
+		}
+		float: left;
+		margin: 0px;
+		> li.logo{
+			display: none;
+		}
+	}
+
+	.navbar-right{
+		float: right !important;
+		margin-right: -15px;
+	}
+
+	#header-info-box {
+		margin: 5px 15px 2px 15px;
+
+		.h1 {
+			font-weight: normal;
+			color: @color_1;
+			margin: 4px 0px;
+			font-size: 24px;
+		}
+		.h2 {
+			font-weight: normal;
+			color: @color_1;
+			margin: 4px 0px;
+			font-size: 18px;
+
+		}
+		.h3 {
+			font-weight: normal;
+			color: #fff;
+			margin: 4px 0px;
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 607px) {
+	#header-info-box {
+		.main-box {
+			float: none;
+			border-right: none;
+			padding-right: 0px;
+			margin-left: 15px;
+			width: 100%;
+		}
+		.secondary-box {
+			float: none;
+			border-right: none;
+			padding-right: 0px;
+			margin-left: 15px;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 540px){
+	#main-container.toggled{
+		#contact-header-link{
+			display: none;
+		}
+		a#help-header-link{
+			display: none;
+		}
+		a#language-header-link{
+			display: none;
+		}
+	}
+}

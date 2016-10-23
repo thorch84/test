@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "apiGatewayUrl" : "http://devserver/rest/api",
+    "appId" : "1"
+  },
+  "local-dev": {
+    "apiGatewayUrl" : "http://qaserver/rest/api",
+    "appId" : "1"
+  },
+  "test": {
+    "apiGatewayUrl" : "http://qaserver/rest/api",
+    "appId" : "1"
+  },
+  "local-test": {
+    "apiGatewayUrl" : "http://qaserver/rest/api",
+    "appId" : "1"
+  },
+  "prod": {
+    "apiGatewayUrl" : "http://qaserver/rest/api",
+    "appId" : "1"
+  }
+}

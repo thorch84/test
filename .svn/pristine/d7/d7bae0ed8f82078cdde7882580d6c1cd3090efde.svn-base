@@ -1,0 +1,5 @@
+<div ng-if="ngModel" class="loading-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+        <path ng-class="getStroke()" fill="none" d="M46.399135639377576,31.951761926844192A22.5,22.5 0 1,0 20.951689826041456,47.13280788186225"></path>
+    </svg>
+</div>

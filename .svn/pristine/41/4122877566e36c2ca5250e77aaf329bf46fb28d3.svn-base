@@ -1,0 +1,76 @@
+/* general styles */
+blockquote.warning-message {
+	border-left:0px;
+}
+blockquote.warning-message::before { 
+    content: "!";
+    color: #f59331;
+    font-weight: bold;
+    font-size:400%;
+    padding-right:15px;
+    float:left;
+    height:100%;
+}
+.form-inline {
+	margin-bottom:15px;
+}
+#change-remove-link {
+	display:inline-block;	
+}
+/*end general styles*/
+
+/* Applicant page styles*/
+#Broker, #Rep, #no-email, #mailAddress, #emergencyContact {
+	display:none;
+}
+#medCardModal .modal-body img {
+	border:1px solid #f3f3f3;
+	box-shadow: 4px 4px 5px #ccc;
+	margin:0px auto;
+	width:auto;	
+}
+
+/*end Applicant page styles*/
+
+#header-info-box #moe-mobile-cost-type-info {
+	display:none;
+}
+.moe-breadcrumb {
+	float:left;
+	max-width:420px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.moe-progress-bar-label {
+	float:right;
+	max-width:70px;
+	text-align:right
+}
+#moe-progress-bar {
+	float:right;
+	height:20px;
+	width:150px;
+	background-color:#ddd;
+	margin-left:4px;
+}
+	#moe-progress-bar div {
+		float:left;
+		height:20px;
+		width:15px;
+		background-color:#3fb34f;
+	}
+
+@media (max-width: 768px) {
+	#moe-tool-info, #moe-location-info, #moe-cost-type-info {
+		display:none !important;
+	}
+	#header-info-box #moe-mobile-cost-type-info {
+		display:inline;
+	}
+	#moe-progress-bar, .moe-progress-bar-label {
+		display:none;
+	}
+	#medCardModal .modal-body img {
+		width:100%;	
+	}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "angular-rate",
+  "version": "0.1.1",
+  "authors": [
+    {
+      "name": "Gaetan SENN",
+      "email": "gaetan.senn@gmail.com"
+    }
+  ],
+  "main": [
+    "dist/angular-rate.js"
+  ],
+  "ignore": [
+    "src",
+    "test",
+    "gulpfile.js",
+    "karma-*.conf.js",
+    "**/.*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": ">=1.2.0",
+    "angular-scenario": ">=1.2.0",
+    "angular": ">=1.2.0"
+  },
+  "homepage": "https://github.com/gaetansenn/angular-rate",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "54ce950f5ab8621c31e9fb3013323f4d793e0a8d"
+  },
+  "_source": "https://github.com/gaetansenn/angular-rate.git",
+  "_target": "^0.1.1",
+  "_originalSource": "angular-rate"
+}

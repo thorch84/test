@@ -1,0 +1,234 @@
+<header></header>
+
+<div ng-controller="planDetailCtrl" ng-app="firstApplication">
+	<div class="container-fluid">
+		<div class="planDetails">
+			<div ng-if="isLoading">
+				<loading-indicator ng-model="isLoading"></loading-indicator>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-8">
+					<h3>{{selectedPlan.planName}}</h3>
+					<p>{{selectedPlan.planDescription}}</p>
+				</div>
+
+				<div class="col-xs-12 col-md-4 text-xs-left text-md-right">
+					<p class="monthly-premium-price">{{selectedPlan.monthlyPremium}}</p>
+					<p class="monthly-premium-text">monthly premium</p>
+
+					<p ng-show="selectedPlan.starRatings[0]>=0">
+						Star Rating: <a href="{{starRatingsBaseUrl + selectedPlan.starRatingsPDF}}" target="_blank" class="star-ratings">
+						<rate ng-model="selectedPlan.starRatings" icon-empty = "fa-star-o" icon-full = "fa-star" icon-half = "fa-star-half-o" icon-base = "fa" other-class="glyphicon-star" read-only="false"></rate>
+					</a>
+					</p>
+
+					<p>
+						<a class="btn btn-warning apply-now" ng-if="!selectedPlan.applyOnline" ng-disabled="true"
+						   uib-popover="{{applyOnlineDisabledMsg}}" popover-trigger="'mouseenter'">Apply Now</a>
+						<a class="btn btn-warning apply-now" ng-if="selectedPlan.applyOnline" href="{{selectedPlan.applyNowUrl}}">Apply Now</a>
+					</p>
+
+				</div>
+			</div>
+
+			<div class="row" id="tabContainer">
+				<md-content class="md-padding">
+					<md-tabs class="md-accent" md-selected="data.selectedIndex">
+
+						<md-tab id="tab1">
+							<md-tab-label>Medical</md-tab-label>
+							<md-tab-body>
+								<div class="two-column">
+									<div style="width:48%;" class="right-border">
+										<p class="no-margin">
+										<b>Monthly Premium:</b> {{selectedPlan.monthlyPremium}}
+										</p>
+										<p><b>Deductible:</b>
+											<span>
+												{{selectedPlan.medicalCoverage.deductible}}
+											</span>
+										</p>
+
+										<p>
+											<b>Out-of-Pocket maximum:</b>
+											<span style="margin-left:0; display:inline;">
+												{{selectedPlan.medicalCoverage.oopMax}}
+											</span>
+										</p>
+
+										<p>
+											<b>Primary doctor copay:</b>
+											<span>
+												{{selectedPlan.medicalCoverage.primaryDrCopay}}
+											</span>
+										</p>
+
+										<p><b>Specialist copay:</b>
+											<span>
+												{{selectedPlan.medicalCoverage.specialistDrCopay}}
+											</span>
+										</p>
+									</div>
+									<div class="right-col">
+										<p ng-show="selectedPlan.resourceURLs.summaryOfBenefits!='' || selectedPlan.resourceURLs.summaryOfBenefits!='N/A'"><a href="{{sobPdfBaseUrl + selectedPlan.resourceURLs.summaryOfBenefits}}" target="_blank">Summary of
+											Benefits (pdf)</a></p>
+										<p ng-show="selectedPlan.resourceURLs.summaryOfBenefits=='' || selectedPlan.resourceURLs.summaryOfBenefits=='N/A'">Summary of
+											Benefits (pdf)</p>
+										<p><a href="{{eocPdfBaseUrl + selectedPlan.resourceURLs.evidenceOfCoverage}}" target="_blank">Evidence of
+											Coverage (pdf)</a></p>
+										<p><a href="{{fapUrl}}" target="_blank">{{fapLabel}}</a></p>
+
+									</div>
+								</div>
+
+							</md-tab-body>
+						</md-tab>
+
+						<div ng-if="!isEmptyObj(selectedPlan.prescriptionCoverage)">
+
+						<md-tab id="tab2">
+								<md-tab-label>Prescription</md-tab-label>
+							<md-tab-body>
+								<div class="two-column">
+									<div style="width:48%;" class="right-border">
+										<p ng-if="selectedPlan.prescriptionCoverage.rxDeductible"><b>Pharmacy Drug Deductible:</b>
+											<span>
+											{{selectedPlan.prescriptionCoverage.rxDeductible}}
+											</span>
+										</p>
+										<p ng-if="selectedPlan.prescriptionCoverage.gapCoverage">
+											<b>Coverage in the gap:</b>
+											<span>{{selectedPlan.prescriptionCoverage.gapCoverage}}</span><span ng-show="!selectedPlan.prescriptionCoverage.gapCoverage">No Coverage</span>
+										</p>
+										<p ng-if="selectedPlan.prescriptionCoverage.preferredGenericDrugCopay">
+											<b>Preferred generic drugs copay:</b>
+											<span>
+											{{selectedPlan.prescriptionCoverage.preferredGenericDrugCopay}}
+											</span>
+										</p>
+										<p ng-if="selectedPlan.prescriptionCoverage.nonPreferredGenericDrugCopay">
+											<b>Generic drugs copay:</b>
+											<span>
+											 {{selectedPlan.prescriptionCoverage.nonPreferredGenericDrugCopay}}
+											</span>
+										</p>
+										<p ng-if="selectedPlan.prescriptionCoverage.preferredBrandDrugCopay"><span ng-if="!isTrilliumSNP"><b>Preferred brand drugs copay:</b></span><span ng-if="isTrilliumSNP"><b>Brand drugs copay:</b></span>
+											<span>
+											{{selectedPlan.prescriptionCoverage.preferredBrandDrugCopay}}
+											</span>
+										</p>
+										<p ng-if="selectedPlan.prescriptionCoverage.nonPreferredBrandDrugCopay"><b>Non Preferred brand drugs copay:</b>
+											<span>
+											{{selectedPlan.prescriptionCoverage.nonPreferredBrandDrugCopay}}
+											</span>
+										</p>
+										<p ng-if="selectedPlan.prescriptionCoverage.specialtyDrugsCopay"><b>Specialty drugs copay:</b>
+											<span>
+											{{selectedPlan.prescriptionCoverage.specialtyDrugsCopay}}
+											</span>
+										</p>
+										<p ng-if="selectedPlan.prescriptionCoverage.selectCarDrugsCopay"><b>Select care drugs copay:</b>
+											<span>
+											{{selectedPlan.prescriptionCoverage.selectCarDrugsCopay}}
+											</span>
+										</p>
+									</div>
+									<div class="right-col">
+										<p ng-hide="selectedPlan.resourceURLs.summaryOfBenefits=='N/A'"><a href="{{sobPdfBaseUrl + selectedPlan.resourceURLs.summaryOfBenefits}}" target="_blank">Summary of
+											Benefits (pdf)</a></p>
+										<p ng-hide="selectedPlan.resourceURLs.evidenceOfCoverage=='N/A'"><a href="{{eocPdfBaseUrl + selectedPlan.resourceURLs.evidenceOfCoverage}}" target="_blank">Evidence of
+											Coverage (pdf)</a></p>
+										<p><b>Pharmacy Information:</b></p>
+										<p>Visit our <a href="{{drugsFormularyUrl}}" target="_blank">Drug and Pharmacy</a> page for details on this
+									</div>
+								</div>
+							</md-tab-body>
+						</md-tab>
+						</div>
+
+						<div ng-if="!isEmptyObj(selectedPlan.supplementalPlan)">
+
+						<md-tab id="tab3">
+
+							<md-tab-label>Supplemental</md-tab-label>
+
+							<md-tab-body>
+								<div class="two-column">
+                                    <p><b>Buy-up Options</b></p>
+                                    <p><b>Optional Supplemental Package:</b></p>
+									<div class="pull-left">
+										<div ng-repeat="supplementalValue in selectedPlan.supplementalPlan" class="clear-left">
+											<div class="pull-left" ng-if="supplementalValue.indexOf('$') === -1"><p>{{supplementalValue}}</p></div>
+										</div>
+									</div>
+									<div class="pull-left">
+										<div ng-repeat="supplementalValue in selectedPlan.supplementalPlan" class="clear-left">
+											<div  class="pull-left" ng-if="supplementalValue.indexOf('$') > -1"><p>{{supplementalValue}}</p></div>
+										</div>
+									</div>
+                                </div>
+							</md-tab-body>
+						</md-tab>
+						</div>
+
+						<md-tab id="tab4">
+							<md-tab-label>Resources</md-tab-label>
+							<md-tab-body >
+								<div class="two-column">
+									<div style="">
+										<p>Enrollment forms and brochures (click to view or print)</p>
+										<ul>
+											<li ng-hide="selectedPlan.resourceURLs.enrollApp=='N/A'"><a href="{{eaPdfBaseUrl + selectedPlan.resourceURLs.enrollApp}}" target="_blank">View/Print
+												Enrollment
+												Application (pdf) (English)</a></li>
+											<li ng-hide="selectedPlan.resourceURLs.lowIncomeSubsidy=='N/A'"><a href="{{lisPdfBaseUrl + selectedPlan.resourceURLs.lowIncomeSubsidy}}" target="_blank">Low Income
+												Subsidy (LIS) Premium Summary Table for people receiving extra help (pdf)</a>
+											</li>
+											<li ng-hide="selectedPlan.resourceURLs.comparePlans=='N/A'"><a href="{{comparePlansBaseUrl + selectedPlan.resourceURLs.comparePlans}}" target="_blank">Compare Plans</a>
+											</li>
+											<li ng-hide="selectedPlan.starRatingsPDF=='N/A'"><a href="{{starRatingsBaseUrl + selectedPlan.starRatingsPDF}}" target="_blank">Star Ratings (PDF)</a>
+											</li>
+											<li ng-hide="selectedPlan.resourceURLs.healthyDiscounts=='N/A'"><a href="{{healthyDiscountsBaseUrl + selectedPlan.resourceURLs.healthyDiscounts}}" target="_blank">healthyDiscounts (PDF)</a>
+											</li>
+											<li ng-hide="languagePDF==''"><a href="{{languagePDF}}" target="_blank">Language Assistance (PDF)</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</md-tab-body>
+						</md-tab>
+					</md-tabs>
+				</md-content>
+
+			</div>
+			<div class="row" id="bottom-breadcrumb">
+				<div class="col-md-8 hidden-xs hidden-sm">
+					<a href="#/plans"><span class="glyphicon glyphicon-chevron-left"></span>Back to Medicare Advantage Plans</a>
+				</div>
+
+				<div class="col-xs-12 col-md-4 text-xs-left text-md-right">
+					<a class="btn btn-default" ng-if="requestInfo" href="{{requestInfo}}" target="_blank" >Request Information</a>
+					<a class="btn btn-warning apply-now" ng-if="!selectedPlan.applyOnline" ng-disabled="true" uib-popover="{{applyOnlineDisabledMsg}}" popover-trigger="'mouseenter'">Apply Now</a>
+					<a class="btn btn-warning apply-now" ng-if="selectedPlan.applyOnline" href="{{selectedPlan.applyNowUrl}}">Apply Now</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- HELP Modal -->
+	<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">How to use this page</h4>
+				</div>
+				<div class="modal-body">
+					<img src="../../../medicareadv/assets/images/{{currentHelpImagedetails}}.png" data-ratio="{{currentImageRatio}}" id="{{currentHelpImagedetails}}" border="0" class="help-img active-help" />
+					<p id="block-tester"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END HELP US Modal -->
+</div>

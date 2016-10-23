@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../moe/css/bootstrap.min.css" rel="stylesheet">
+	<!--theme specific-->
+	<link href="../moe/css/pst-moe.css" rel="stylesheet">
+	<link href="../moe/css/moe.css" rel="stylesheet">
+<!--
+	only include the css for PST when viewing PST pages -->
+	<link href="../moe/css/pst.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<link src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+
+<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.js"></script>
+ <script data-require="ui-bootstrap@0.11.0" data-semver="0.11.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
+      <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
+
+<script type="text/javascript">
+
+
+</script>
+  
+    <script>
+var App=angular.module('App', ['ngAnimate', 'ui.bootstrap', 'ngRoute','ngMaterial']);
+       /* .service('CompareRecords', function () {
+
+            this.selectedPlans=[];
+
+});*/
+
+App.controller('default-controller', function($scope, $routeParams, CompareRecords) {
+
+    console.log("CompareRecords :" +CompareRecords.selectedPlans);
+    $scope.planId=$routeParams.planId;
+    $scope.message = 'This isangular Add new order screen';
+    $scope.findWithAttr=function(array, attr, value) {
+        for(var i = 0; i < array.length; i += 1) {
+            if(array[i][attr] === value) {
+                return i;
+            }
+        }
+    }
+
+    $scope.findSingleValue=function(array, id, requiredKey){
+        var i;
+        for(i=0;i<=array.length; i++){
+            if(requiredKey=="planName") {
+                if (array[i].planId == id) {
+                    return array[i].planName;
+                }
+            }
+            if(requiredKey=="monthlyPremium") {
+                if (array[i].planId == id) {
+                    return array[i].monthlyPremium;
+                }
+            }
+        }
+
+    }
+    $scope.productCompare=function(planId, planName, checkboxValue){
+        console.log("checkboxValue: " +checkboxValue);
+        console.log("0000:" +CompareRecords.selectedPlans);
+
+        if(checkboxValue) {
+            <!-- $scope.selectedPlans[planId]=planName; -->
+            if(CompareRecords.selectedPlans.length==3){
+                return false;
+            }
+            CompareRecords.selectedPlans.push(planId);
+            console.log(CompareRecords.selectedPlans);
+            console.log("PlanId :" + planId);
+            console.log("PlanName: " + planName);
+
+        }
+        else {
+            // var index=$scope.findWithAttr(CompareRecords.selectedPlans, 'planName', planName);
+            var index=CompareRecords.selectedPlans.indexOf(planId);
+            if(index!==(-1)) {
+                CompareRecords.selectedPlans.splice(index, 1);
+            }
+            console.log("CompareREC:" +CompareRecords.selectedPlans);
+
+
+            /*   Array.prototype.remove = function() {
+             var what, a = arguments, L = a.length, ax;
+             while (L && this.length) {
+             what = a[--L];
+             while ((ax = CompareRecords.selectedPlans.indexOf(what)) !== -1) {
+             CompareRecords.selectedPlans.splice(ax, 1);
+             }
+             }
+             return CompareRecords.selectedPlans;
+             };*/
+
+            /*
+             CompareRecords.selectedPlans=CompareRecords.selectedPlans.remove(planId);
+             <!--$scope.selectedPlans = $filter('filter')($scope.items, {name: planName}); -->
+
+             <!--    delete $scope.selectedPlans[planName];  -->
+             <!-- $scope.selectedPlans.remove(planName); -->
+             console.log(CompareRecords.selectedPlans);
+             if(CompareRecords.selectedPlans.length==0) {
+             CompareRecords.selectedPlans.length=0;
+             }
+             */
+
+
+        }
+    }
+
+    $scope.selectedPlan=function(plan){
+        if(plan.planId==$scope.planId){
+
+            return(plan);
+
+        }
+
+    }
+    /*
+     $scope.additionalPlanDetails=function($scope.userInfo, planId){
+
+     var arr=[];
+     if(userInfo.planId==$scope.planId){
+
+     arr[planName]=userInfo.planName;
+     arr[premium]=userInfo.monthlyPremium;
+
+     }
+
+     return arr;
+
+
+     }
+     */
+
+    $scope.getSelectedPlans = function () {
+        return CompareRecords.selectedPlans;
+    }
+
+
+});
+
+App.controller('compare-plans', function($scope, CompareRecords){
+    $scope.selectedPlans=CompareRecords.selectedPlans;
+    $scope.primaryDoctorCopay=0;
+    $scope.specialistCopay=0;
+    $scope.pharmacyDrugDeductible=0;
+    $scope.coverageInTheGap=0;
+    $scope.preferredGenericDrugCopay=0;
+    $scope.genericDrugCopay=0;
+    $scope.preferredBrandDrugCopay=0;
+    $scope.nonPreferredBrandDrugCopay=0;
+    $scope.specialityDrugCopay=0;
+    $scope.selectCareDrugCopay=0;
+    $scope.removeComparePlans=function(removeVal){
+        console.log(" selectedPlans: " +$scope.selectedPlans);
+        console.log(" removeVal: " +removeVal);
+        var index=$scope.selectedPlans.indexOf(removeVal);
+        console.log("Index:" +index);
+        $scope.selectedPlans.splice(index, 1);
+        console.log(" selectedPlans: " +$scope.selectedPlans);
+
+
+
+
+
+    }
+
+    $scope.findSingleValue=function(array, id, requiredKey){
+        var i=0;
+        var test=array[i].requiredKey;
+        for(i=0;i<=array.length; i++){
+            if(requiredKey=="planName") {
+                if (array[i].planId == id) {
+                    return array[i].planName;
+                }
+            }
+            if(requiredKey=="monthlyPremium") {
+                if (array[i].planId == id) {
+                    return array[i].monthlyPremium;
+                }
+            }
+            if(requiredKey=="planDescription") {
+                if (array[i].planId == id) {
+                    return array[i].planDescription;
+                }
+            }
+            if(requiredKey=="medicalCoverage.oopMax") {
+                if (array[i].planId == id) {
+                    return array[i].medicalCoverage.oopMax;
+                }
+            }
+            if(requiredKey=="medicalCoverage.primaryDrCopay") {
+                if (array[i].planId == id) {
+                    return array[i].medicalCoverage.primaryDrCopay;
+                }
+            }
+
+            if(requiredKey=="medicalCoverage.specialistDrCopay") {
+                if (array[i].planId == id) {
+                    return array[i].medicalCoverage.specialistDrCopay;
+                }
+            }     if(requiredKey=="medicalCoverage.deductible") {
+                if (array[i].planId == id) {
+                    return array[i].medicalCoverage.deductible;
+                }
+            }     if(requiredKey=="prescriptionCoverage.gapCoverage") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.gapCoverage;
+                }
+            }     if(requiredKey=="prescriptionCoverage.preferredGenericDrugCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.preferredGenericDrugCopay;
+                }
+            }     if(requiredKey=="prescriptionCoverage.preferredBrandDrugCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.preferredBrandDrugCopay;
+                }
+            }     if(requiredKey=="prescriptionCoverage.nonPreferredBrandDrugCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.nonPreferredBrandDrugCopay;
+                }
+            }     if(requiredKey=="prescriptionCoverage.specialtyDrugsCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.specialtyDrugsCopay;
+                }
+            }     if(requiredKey=="prescriptionCoverage.selectCarDrugsCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.selectCarDrugsCopay;
+                }
+            }
+
+
+            /*
+             if(requiredKey=="monthlyPremium") {
+             if (array[i].planId == id) {
+             return array[i].monthlyPremium;
+             }
+             }
+             if(requiredKey=="monthlyPremium") {
+             if (array[i].planId == id) {
+             return array[i].monthlyPremium;
+             }
+             }*/
+        }
+
+    }
+    $scope.whatClassisit=function(someValue){
+        if(someValue=="TBD" || someValue=="N/A") return "coverage-disable"
+        else return "coverage-enable";
+    }
+
+
+});
+/*
+App.service('compare-records',function(){
+    var selectedPlans=[{
+        id:0
+    }];
+    this.compare=function(){
+
+    }
+    this.findWithAttr=function(array, attr, value) {
+        for(var i = 0; i < array.length; i += 1) {
+            if(array[i][attr] === value) {
+                return i;
+            }
+        }
+    }
+
+})*/
+App.controller('tabController', tabController);
+        function tabController ($scope) {            
+             $scope.data = {
+                selectedIndex: 0,
+                secondLabel:   "2",
+                bottom:        false
+             };
+             $scope.next = function() {
+                $scope.data.selectedIndex = Math.min($scope.data.selectedIndex + 1, 2) ;
+             };
+             $scope.previous = function() {
+                $scope.data.selectedIndex = Math.max($scope.data.selectedIndex - 1, 0);
+             };
+          }  
+/*
+angular.module('ui.bootstrap.demo').controller('ModalDemoCtrl', function($scope, $uibModal, $log) {
+  $scope.items = ['item1', 'item2', 'item3'];
+  $scope.animationsEnabled = true;
+console.log("Log message from open function test 123" );
+  $scope.open = function(size) {
+  console.log("Log message from open function " );
+
+    var modalInstance = $uibModal.open({
+
+      templateUrl: 'myModalContent.html',
+      controller: 'ModalInstanceCtrl',
+      size: size,
+      resolve: {
+        items: function() {
+          return $scope.items;
+        }
+      }
+    });
+
+    modalInstance.result.then(function(selectedItem) {
+      $scope.selected = selectedItem;  
+    }, function() {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
+  };
+
+
+});
+
+// Please note that $uibModalInstance represents a modal window (instance) dependency.
+// It is not the same as the $uibModal service used above.
+/*angular.module('ui.bootstrap.demo', [])
+App.controller('ModalInstanceCtrl', function($scope, $uibModalInstance, items) {
+
+  $scope.items = items;
+  $scope.selected = {
+    item: $scope.items[0]
+  };
+
+  $scope.ok = function() {
+  console.log(":::" +$scope.selected.item);
+  $uibModalInstance.close($scope.selected.item);
+    
+  };
+
+  $scope.cancel = function() {
+  
+  $uibModalInstance.dismiss('cancel');
+  };
+  
+
+});
+/*
+angular.module('ui.bootstrap.demo', []).controller('getJsonData', function($scope, $https){
+console.log("res");
+  $https.get('productionJson.json')
+    .then(function(res){  
+        console.log(res);
+          $scope.lists=res.data;
+    });
+});
+
+*/
+
+App.config(['$routeProvider',
+
+  function($routeProvider) {
+
+    $routeProvider
+
+
+      .when('/plans/:planId', {
+        
+
+  templateUrl: 'plans.html',
+
+  controller: 'default-controller'
+
+      })
+
+      .when('/plans', {
+        
+
+  templateUrl: 'plans.html',
+
+  controller: 'plan-name'
+
+      })
+
+            .when('/compare', {
+
+
+                templateUrl: 'compare.html',
+
+                controller: 'compare-plans'
+
+            })
+
+      .when('/default', {
+        
+
+  templateUrl: 'default.html',
+
+  controller: 'default-controller'
+
+      })
+      .otherwise('/default');
+
+
+}]);
+
+
+
+
+App.controller('plan-name', function($scope) {
+  
+  $scope.message = 'This isangular Add new order screen';
+
+  
+
+});
+Array.prototype.remove = function() {
+    var what, a = arguments, L = a.length, ax;
+    while (L && this.length) {
+        what = a[--L];
+        while ((ax = this.indexOf(what)) !== -1) {
+            this.splice(ax, 1);
+        }
+    }
+    return this;
+};
+
+/*
+function detail-controller($scope, Page, Model, $routeParams, $location){
+    var id=$scope.planId=$routeParams.planId;
+
+}
+/*
+angular.module('ui.bootstrap.demo', []).config(['$routeProvider', function($routeProvider){
+		$routeProvider
+			.when('/plans', {
+					templateUrl: 'plans.html',
+          controller: 'plan-name'
+			});
+
+
+	}]);
+
+  angular.module('ui.bootstrap.demo').controller('plan-name', function($scope) {
+  
+  $scope.message = 'This is a new Title';
+  
+});
+/*
+var App = angular.module('App', []);
+
+App.controller('TodoCtrl', function($scope, $http) {
+  $http.get('todos.json')
+       .then(function(res){
+          $scope.todos = res.data;                
+        });
+});
+*/
+
+App.controller('TabsDemoCtrl', function ($scope, $window) {
+  $scope.tabs = [
+    { title:'Dynamic Title 1', content:'Dynamic content 1' },
+    { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
+  ];
+
+  $scope.alertMe = function() {
+    setTimeout(function() {
+      $window.alert('You\'ve selected the alert tab!');
+    });
+  };
+
+  $scope.model = {
+    name: 'Tabs'
+  };
+});
+App.controller('PSTCtrl', function ($scope, $http){
+        $scope.zipCode="90001";
+        $scope.whatClassisit=function(someValue){
+            if(someValue=="TBD" || someValue=="N/A") return "coverage-disable"
+            else return "coverage-enable";
+        }
+
+        $scope.updateResults=function(zipCode){
+
+
+            if(zipCode=="90001") {
+
+                $http.get('LosAngeles.json').success(function (data) {
+                    $scope.userInfo = data;
+                    console.log(data);
+                });
+            }
+            else{
+                $http.get('Trillium.json').success(function (data) {
+                $scope.userInfo = data;
+                console.log(data);
+            });
+            }
+
+    }
+    $http.get('LosAngeles.json').success(function (data) {
+        $scope.userInfo = data;
+        console.log(data);
+    });
+
+      });
+
+App.controller('default-controller', function($scope, $routeParams, CompareRecords) {
+
+    console.log("CompareRecords :" +CompareRecords.selectedPlans);
+    $scope.planId=$routeParams.planId;
+    $scope.message = 'This isangular Add new order screen';
+    $scope.findWithAttr=function(array, attr, value) {
+        for(var i = 0; i < array.length; i += 1) {
+            if(array[i][attr] === value) {
+                return i;
+            }
+        }
+    }
+
+    $scope.findSingleValue=function(array, id, requiredKey){
+        var i;
+        for(i=0;i<=array.length; i++){
+            if(requiredKey=="planName") {
+                if (array[i].planId == id) {
+                    return array[i].planName;
+                }
+            }
+            if(requiredKey=="monthlyPremium") {
+                if (array[i].planId == id) {
+                    return array[i].monthlyPremium;
+                }
+            }
+        }
+
+    }
+    $scope.productCompare=function(planId, planName, checkboxValue){
+        console.log("checkboxValue: " +checkboxValue);
+        console.log("0000:" +CompareRecords.selectedPlans);
+
+        if(checkboxValue) {
+            <!-- $scope.selectedPlans[planId]=planName; -->
+            if(CompareRecords.selectedPlans.length==3){
+                return false;
+            }
+            CompareRecords.selectedPlans.push(planId);
+            console.log(CompareRecords.selectedPlans);
+            console.log("PlanId :" + planId);
+            console.log("PlanName: " + planName);
+
+        }
+        else {
+            // var index=$scope.findWithAttr(CompareRecords.selectedPlans, 'planName', planName);
+            var index=CompareRecords.selectedPlans.indexOf(planId);
+            if(index!==(-1)) {
+                CompareRecords.selectedPlans.splice(index, 1);
+            }
+            console.log("CompareREC:" +CompareRecords.selectedPlans);
+
+
+            /*   Array.prototype.remove = function() {
+             var what, a = arguments, L = a.length, ax;
+             while (L && this.length) {
+             what = a[--L];
+             while ((ax = CompareRecords.selectedPlans.indexOf(what)) !== -1) {
+             CompareRecords.selectedPlans.splice(ax, 1);
+             }
+             }
+             return CompareRecords.selectedPlans;
+             };*/
+
+            /*
+             CompareRecords.selectedPlans=CompareRecords.selectedPlans.remove(planId);
+             <!--$scope.selectedPlans = $filter('filter')($scope.items, {name: planName}); -->
+
+             <!--    delete $scope.selectedPlans[planName];  -->
+             <!-- $scope.selectedPlans.remove(planName); -->
+             console.log(CompareRecords.selectedPlans);
+             if(CompareRecords.selectedPlans.length==0) {
+             CompareRecords.selectedPlans.length=0;
+             }
+             */
+
+
+        }
+    }
+
+    $scope.selectedPlan=function(plan){
+        if(plan.planId==$scope.planId){
+
+            return(plan);
+
+        }
+
+    }
+    /*
+     $scope.additionalPlanDetails=function($scope.userInfo, planId){
+
+     var arr=[];
+     if(userInfo.planId==$scope.planId){
+
+     arr[planName]=userInfo.planName;
+     arr[premium]=userInfo.monthlyPremium;
+
+     }
+
+     return arr;
+
+
+     }
+     */
+
+    $scope.getSelectedPlans = function () {
+        return CompareRecords.selectedPlans;
+    }
+
+
+});
+App.controller('compare-plans', function($scope, CompareRecords){
+    $scope.selectedPlans=CompareRecords.selectedPlans;
+    $scope.primaryDoctorCopay=0;
+    $scope.specialistCopay=0;
+    $scope.pharmacyDrugDeductible=0;
+    $scope.coverageInTheGap=0;
+    $scope.preferredGenericDrugCopay=0;
+    $scope.genericDrugCopay=0;
+    $scope.preferredBrandDrugCopay=0;
+    $scope.nonPreferredBrandDrugCopay=0;
+    $scope.specialityDrugCopay=0;
+    $scope.selectCareDrugCopay=0;
+    $scope.removeComparePlans=function(removeVal){
+        console.log(" selectedPlans: " +$scope.selectedPlans);
+        console.log(" removeVal: " +removeVal);
+        var index=$scope.selectedPlans.indexOf(removeVal);
+        console.log("Index:" +index);
+        $scope.selectedPlans.splice(index, 1);
+        console.log(" selectedPlans: " +$scope.selectedPlans);
+
+
+
+
+
+    }
+
+    $scope.findSingleValue=function(array, id, requiredKey){
+        var i=0;
+        var test=array[i].requiredKey;
+        for(i=0;i<=array.length; i++){
+            if(requiredKey=="planName") {
+                if (array[i].planId == id) {
+                    return array[i].planName;
+                }
+            }
+            if(requiredKey=="monthlyPremium") {
+                if (array[i].planId == id) {
+                    return array[i].monthlyPremium;
+                }
+            }
+            if(requiredKey=="planDescription") {
+                if (array[i].planId == id) {
+                    return array[i].planDescription;
+                }
+            }
+            if(requiredKey=="medicalCoverage.oopMax") {
+                if (array[i].planId == id) {
+                    return array[i].medicalCoverage.oopMax;
+                }
+            }
+            if(requiredKey=="medicalCoverage.primaryDrCopay") {
+                if (array[i].planId == id) {
+                    return array[i].medicalCoverage.primaryDrCopay;
+                }
+            }
+
+            if(requiredKey=="medicalCoverage.specialistDrCopay") {
+                if (array[i].planId == id) {
+                    return array[i].medicalCoverage.specialistDrCopay;
+                }
+            }     if(requiredKey=="medicalCoverage.deductible") {
+                if (array[i].planId == id) {
+                    return array[i].medicalCoverage.deductible;
+                }
+            }     if(requiredKey=="prescriptionCoverage.gapCoverage") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.gapCoverage;
+                }
+            }     if(requiredKey=="prescriptionCoverage.preferredGenericDrugCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.preferredGenericDrugCopay;
+                }
+            }     if(requiredKey=="prescriptionCoverage.preferredBrandDrugCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.preferredBrandDrugCopay;
+                }
+            }     if(requiredKey=="prescriptionCoverage.nonPreferredBrandDrugCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.nonPreferredBrandDrugCopay;
+                }
+            }     if(requiredKey=="prescriptionCoverage.specialtyDrugsCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.specialtyDrugsCopay;
+                }
+            }     if(requiredKey=="prescriptionCoverage.selectCarDrugsCopay") {
+                if (array[i].planId == id) {
+                    return array[i].prescriptionCoverage.selectCarDrugsCopay;
+                }
+            }
+
+            if(requiredKey=="starRatings") {
+                if (array[i].planId == id) {
+                    return array[i].starRatings;
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+            /*
+             if(requiredKey=="monthlyPremium") {
+             if (array[i].planId == id) {
+             return array[i].monthlyPremium;
+             }
+             }
+             if(requiredKey=="monthlyPremium") {
+             if (array[i].planId == id) {
+             return array[i].monthlyPremium;
+             }
+             }*/
+        }
+
+    }
+    $scope.whatClassisit=function(someValue){
+        if(someValue=="TBD" || someValue=="N/A") return "coverage-disable"
+        else return "coverage-enable";
+    }
+
+
+});
+
+
+
+</script>
+
+  </head>
+  <body class="moe" ng-controller="PSTCtrl"> <!-- tag for MOE or PST to handle CSS or JS differences -->
+  <div id="main-container">
+
+	<!-- Sidebar -->
+        <section id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    
+                </li>
+                <!--NEW KANGAROO: REAL LINKS AND REAL-ISH PLACEHOLDER LINKS FOR MOE -->
+                <li>
+                    <a href="#" target="_blank" title="link to accessibility information on the originating health plan site">Accessibility Information</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to find a doctor / provider search tool on the originating health plan site">Find a Provider</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#glossaryModal">Glossary of Terms</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to summary of benefits PDF for the selected plan">Summary of Benefits (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to language assistance PDF for the selected plan">Language Assistance (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="link to star ratings info PDF for the selected plan">About Star Ratings (PDF)</a>
+                </li>
+                <li>
+                    <a href="#" title="link to accessibility information on the originating health plan site">Privacy Policy</a>
+                </li>
+                <li>
+                	<p>[content varies by health plan, here is Health Net's]<br />
+      Health Net Medicare Sales is ready to assist you. Call toll-free 1-800-977-6738 TTY 711. Our office hours are 8:00 a.m. to 8:00 p.m., 7 days a week (October 1st - February 14th) and Monday through Friday, 8:00 a.m. to 8:00 p.m. (February 15th - September 30th), excluding holidays.</p>
+                </li>
+            </ul>
+        </section>
+        <!-- /#main-content -->
+
+		<main role="main">
+        <!-- Page Content -->
+        <section id="page-content-wrapper">
+  
+	  <nav class="navbar navbar-default navbar-fixed-top healthnet"><!--add  reversed-out here for dark headers, add plan name here too-->
+		  <div class="container-fluid">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			  <ul class="nav navbar-nav">
+				<li><a href="#" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></li>
+				<li class="logo"><a href="#"></a></li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				  <!--NEW KANGAROO: LINK TO MODAL ADDED TO THE LANGUAGE ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#langModal" id="language-header-link"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> English</a></li>
+				<!--NEW KANGAROO: LINK TO MODAL ADDED TO THE CONTACT ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#contactModal" id="contact-header-link" title="View contact information"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></a></li>
+				<!--NEW KANGAROO: LINK TO MODAL ADDED TO THE HELP ICON-->
+				<li><a href="#" data-toggle="modal" data-target="#helpModal" id="help-header-link" title="View help information"><span>?</span></a></li>
+			  </ul>
+		  </div><!-- /.container-fluid -->
+		</nav>
+            <span id="content-top"></span>
+
+	<section class="header-section">
+	
+		<article id="header-info-box" class="clearfix">
+		
+<!-- MOE version of header
+			<div class="main-box">
+				<div class="text-largest h4" id="moe-tool-info">Medicare Online Enrollment</div>
+				<div class="text-large h1" id="moe-plan-name">Gold Select (HMO)</div>
+				<div class="text-medium h3" id="moe-benefits-info">Optional Benefits Package #1 <a href="#" class="small">Change/Remove</a></div>
+				<div class="text-small h4" id="moe-location-info"><strong>Type:</strong> MAPD <strong>&nbsp;&nbsp;Location:</strong> 92072, San Diego, CA</div>
+			</div>
+			<div class="secondary-box">
+				<div class="text-largest h2" id="moe-cost-info">$<strong>0.00</strong><span class="small"> + $12.00</span><span class="small" id="moe-mobile-cost-type-info"> Monthly Premium</span></div>
+				<div class="text-large h4" id="moe-cost-type-info">Monthly Premium</div>
+			</div>
+-->
+
+<!-- PST version of header -->
+			<div class="main-box">
+				<div class="text-largest h1" id="pst-plan-info">Medicare Advantage</div>
+				<div class="text-large h3" id="pst-location-info">92072, San Diego, CA</div>
+                <span class="editrow" child-scope>
+                  <span ng-hide="editing">
+                    Enter Zip Code:<input type="text" ng-model="zipCode" /><button type="button" ng-click="updateResults(zipCode)" ng-show="zipCode">Go</button>
+                  </span>
+
+                </span>
+                <!--
+				<input type="button" ng-click="changeZipCode()" class="btn btn-default" ng-bind="zipCode" id="pst-change-zip"><a href="">{{zipCode}}</a></input> -->
+			</div>
+			<div class="secondary-box">
+				<div class="text-largest h5" id="pst-year-info">Plans for Year</div>
+				<div class="text-large h2" id="pst-year-switcher"><a href="#"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 2017</a></div>
+			</div>
+		</article></section>
+
+<span id="content-top"></span>
+
+
+            <div ng-view>
+
+
+
+
+            </div>
+ 
+		<!--
+		<article id="breadcrumbs">
+			<!--MOE VERSION OF BREADCRUMBS -->
+			<!-- <p class="moe-breadcrumb"><strong>Applicant</strong> / Enrollment Questions / Preferences / Finish Up</p>
+			<div id="filter-bar"><div>
+          <button class="btn btn-default filter-results" style="float:right;">Filter Results</button>
+
+      </div></div>
+
+
+      <!--<p class="moe-progress-bar-label">Progress:</p>
+			
+		</article>
+	-->
+
+
+<!-- 	END OF PAGE CONTENT, BEGINNING OF SHARED FOOTER CONTENT -->	
+
+<!--KANGAROO NEW: MODAL WINDOWS FOR HEADER FUNCTIONALITY -->
+<!-- MODAL WINDOWS -->
+
+<!-- CONTACT US Modal -->
+<div class="modal fade clear-right" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+      	<p>Content varies by health plan, should include include phone numbers and other contact info as found on the health plan site. Here's some sample data from Health Net that is probably pretty close to accurate:</p>
+	  	<p class="h4">Medicare Advantage Sales/Enrollment</p>
+	  	<div class="row">
+	        <div class="col-md-6">
+	          <p class="h5">February 15–September 30</p>
+	          <p>Monday through Friday, 8:00 a.m. to 8:00 p.m.<BR />Excluding holidays</p>
+	        </div>
+	        <div class="col-md-6">
+	          <p class="h5">October 1–February 14</p>
+	          <p>7 days a week, 8:00 a.m. to 8:00 p.m.<BR />Excluding holidays</p>	       </div>
+      </div>
+	  <p class="h4">Medicare Advantage Plans</p>
+	  <p>Health Net Amber, Complete, Green, Gold Select, Healthy Heart, Jade, Ruby, Ruby Select, Sapphire, and Violet: 1-800-977-6738<BR />TTY users should call 711.</p>
+	  <p><strong>Mailing Address</strong><br />
+		Attention: Customer Response Center<br />
+		Health Net, Inc.<br />
+		PO Box 10420<br />
+		Van Nuys, CA 91410-0420</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END CONTACT US Modal -->
+<!-- LANGUAGE Modal -->
+<div class="modal fade" id="langModal" tabindex="-1" role="dialog" aria-labelledby="langModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Language Assistance</h4>
+      </div>
+      <div class="modal-body">
+	      <p class="h4"><a href="#" title="link to switch to Spanish version of the site">Ver site in Espa&ntilde;ol</a></p>
+	      <p>&nbsp;</p>
+	      <p class="h4">Need help in your language?</p>
+	      <p><a href="#" title="link to language assistance PDF for Medicare">Language assistance information (PDF)</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END HELP US Modal -->
+<!-- HELP Modal -->
+<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Need help?</h4>
+      </div>
+      <div class="modal-body">
+      [content varies by health plan, here is Health Net's]<br />
+      Health Net Medicare Sales is ready to assist you. Call toll-free 1-800-977-6738 TTY 711. Our office hours are 8:00 a.m. to 8:00 p.m., 7 days a week (October 1st - February 14th) and Monday through Friday, 8:00 a.m. to 8:00 p.m. (February 15th - September 30th), excluding holidays.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END HELP US Modal -->
+<!-- GLOSSARY Modal -->
+<div class="modal fade" id="glossaryModal" tabindex="-1" role="dialog" aria-labelledby="glossaryModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Glossary of Terms</h4>
+      </div>
+      <div class="modal-body">
+	      <p>Here are some definitions to help you understand the Medicare online enrollment process.</p>
+	      <p class="h4">Term #1</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #2</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #3</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #4</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #5</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #6</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #7</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #8</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #9</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+	      <p class="h4">Term #10</p>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ex id diam consectetur consectetur vel aliquet metus. Donec lacinia, urna id placerat accumsan, nisl tellus maximus quam, a rutrum orci orci luctus urna.</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END GLOSSARY Modal -->
+	
+<!-- END OF MODAL WINDOWS -->	
+	<p class="cms-info clear-both">Health Net has a contract with Medicare to offer HMO, PPO and HMO SNP plans. Health Net has a contract with Medicare and Medicaid to offer HMO SNP plans. Enrollment in a Health Net Medicare Advantage plan depends on contract renewal. 
+<br /><br />
+Material ID #Y0035_2016_0036 (H0351, H0562, H5439, H5520, H6815, H3561) CMS Approved 10222015 </p>
+ 
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../moe/js/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../moe/js/bootstrap.min.js"></script>
+    <!-- code for waypoints -->
+    <script src="../moe/js/jquery.waypoints.min.js"></script>
+    <!-- code for moe and pst -->
+    <script src="../moe/js/pst-moe.js"></script>
+	  <!-- Menu Toggle Script -->
+	
+		</section><!-- /#page-content-wrapper -->
+		</main><!-- end of main -->
+
+   </div><!-- end of #main-container -->
+   
+  </body>
+</html>

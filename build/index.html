@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pstApp" ng-controller="defaultCtrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Enroll in Medicare Advantage</title>
+    <link rel="shortcut icon" ng-href="{{favIcon}}" type="image/ico" sizes="16x16">
+
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/pst-0.0.1.css" />
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="vendor/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="vendor/angular-aria/angular-aria.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-messages/angular-messages.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="vendor/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-material/angular-material.js"></script>
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="vendor/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script type="text/javascript" src="vendor/angularjs-slider/dist/rzslider.min.js"></script>
+    <script type="text/javascript" src="vendor/lodash/dist/lodash.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-rate/dist/js/angular-rate.min.js"></script>
+    <script type="text/javascript" src="src/app/app.js"></script>
+    <script type="text/javascript" src="src/app/components/apploader/apploader.module.js"></script>
+    <script type="text/javascript" src="src/app/components/apploader/apploader.service.js"></script>
+    <script type="text/javascript" src="src/app/components/directives/loading.indicator.directive.js"></script>
+    <script type="text/javascript" src="src/app/components/directives/zipcode.animate.directive.js"></script>
+    <script type="text/javascript" src="src/app/components/directives/zipcode.validate.directive.js"></script>
+    <script type="text/javascript" src="src/app/components/labelwidget/labelwidget.directive.js"></script>
+    <script type="text/javascript" src="src/app/components/labelwidget/labelwidget.module.js"></script>
+    <script type="text/javascript" src="src/app/components/labelwidget/labelwidget.service.js"></script>
+    <script type="text/javascript" src="src/app/components/webl/webl.module.js"></script>
+    <script type="text/javascript" src="src/app/components/webl/webl.service.js"></script>
+    <script type="text/javascript" src="src/app/components/webl/weblDirective.js"></script>
+    <script type="text/javascript" src="src/app/footer/footer.directive.js"></script>
+    <script type="text/javascript" src="src/app/footer/footer.module.js"></script>
+    <script type="text/javascript" src="src/app/header/header.directive.js"></script>
+    <script type="text/javascript" src="src/app/header/header.module.js"></script>
+    <script type="text/javascript" src="src/app/routes/changeyear/changeyear.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/changeyear/changeyear.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/compareplans/compareplans.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/comparePlansErrorModal/comparePlansErrorModal.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/comparePlansErrorModal/comparePlansErrorModal.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/contactus/contactus.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/contactus/contactus.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/default/default.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/default/main.module.js"></script>
+    <script type="text/javascript" src="src/app/routes/filterresults/filter.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/filterresults/filterSave.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/leavesite/leavesite.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/leavesite/leavesite.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/menu/pst-moe.js"></script>
+    <script type="text/javascript" src="src/app/routes/multipleCounty/multipleCounty.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/multipleCounty/multipleCounty.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/needhelp/needhelp.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/needhelp/needhelp.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/plandetail/plandetail.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/plandetail/plandetail.route.js"></script>
+    <script type="text/javascript" src="src/app/routes/plans/plans.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/plans/plans.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/selectlanguage/selectlanguage.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/selectlanguage/selectlanguage.service.js"></script>
+    <script type="text/javascript" src="src/app/routes/zipCodeSearch/zipCodeSearch.controller.js"></script>
+    <script type="text/javascript" src="src/app/routes/zipCodeSearch/zipCodeSearch.service.js"></script>
+    <script type="text/javascript" src="src/app/services/comparerecords.service.js"></script>
+    <script type="text/javascript" src="src/app/services/data/data.module.js"></script>
+    <script type="text/javascript" src="src/app/services/data/data.service.js"></script>
+    <script type="text/javascript" src="src/app/services/urlaestheticservice/urlaestheticservice.module.js"></script>
+    <script type="text/javascript" src="src/app/services/urlaestheticservice/urlaestheticservice.service.js"></script>
+    <script type="text/javascript" src="src/app/services/urlenviornmentservice/urlenvironment.module.js"></script>
+    <script type="text/javascript" src="src/app/services/urlenviornmentservice/urlenvironment.service.js"></script>
+    <script type="text/javascript" src="src/app/sidebar/sidebar.directive.js"></script>
+    <script type="text/javascript" src="src/app/theming.js"></script>
+    <script type="text/javascript" src="src/app/topNavbar/topNavbar.directive.js"></script>
+    <script type="text/javascript" src="templates-components.js"></script>
+    <script type="text/javascript" src="templates-app.js"></script>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <sidebar></sidebar>
+
+        <main role="main">
+
+            <top-navbar></top-navbar>
+
+            <div ng-view></div>
+
+            <footer></footer>
+
+        </main>
+    </div>
+</body>
+
+</html>

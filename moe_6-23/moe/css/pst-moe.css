@@ -1,0 +1,344 @@
+body {
+	/* need to set this based on size of top nav and header-section */
+	padding-top:295px;
+}
+/*Nishant to work on body of page and overlay
+I will work on header/footer and hamburger nav */
+/*
+#main-container .pst – This will be the main container of the application
+	#header .pst .logo.healthnet .navigation .help-icons .language – This structure will get us the layout as per the requirement
+	#pst-breadcrumbs – This section will contain the breadcrumbs
+*/
+
+/*
+colors:
+orange: f59331;
+blue: 3399ff;
+light green: 3fb34f
+medium grey header: 7d7d7d
+*/
+
+/* general styles */
+hr {
+    border: 0;
+    border-bottom: 2px dotted #ccc;
+    background: #fff;
+    margin-left:0px;
+}
+hr.mini {
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+}
+blockquote {
+	font-size:inherit;
+}
+.btn-primary {
+    /*background-color: #3399ff;*/
+}
+/*end general styles*/
+
+/* help overlay styles */
+.help-overlay-content {
+	width:105px;
+	min-height:30px;
+	position:absolute;
+	
+	color:#fff;
+	font-weight:bold;
+	padding-top:60px;
+	background:url('/static/moe/images/help-arrow-left.png') no-repeat top left;
+}
+.help-overlay-content.left-help {
+	
+}
+.help-overlay-content.right-help {
+	background:url('/static/moe/images/help-arrow-right.png') no-repeat top right;
+}
+/* end help overlay styles */
+
+/*header styles */
+
+a#contact-header-link, a#help-header-link {
+	height:36px;
+	width:36px;
+	display:block;
+	border:1px solid #333;
+	border-radius:18px;
+	padding-left:0px;
+}
+a#contact-header-link span {
+	font-size:21px;
+	top: 2px;
+    left: 7px;
+}
+a#help-header-link span {
+	font-size:28px;
+	font-weight:500;
+	position:relative;
+	top:-2px;
+	left:9px;
+}
+a#language-header-link {
+	font-size:16px;	
+}
+	.pst a#language-header-link { /*no language switcher in PST*/
+		display:none;
+	}
+a#menu-toggle {
+	padding-left:0px;	
+}
+.nav .glyphicon-menu-hamburger {
+	margin-right:-5px;	
+}
+.nav .glyphicon-triangle-bottom {
+	font-size:12px;
+	margin-right:3px;
+}
+
+.navbar-nav>li {
+	padding-top:30px;	
+}
+.navbar-nav>li>a {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.navbar-nav>li.logo>a {
+	min-height:40px;
+	min-width:200px;
+	background-color:#ccc;
+}
+ul.navbar-nav {
+	height:85px;
+}
+ul.navbar-nav:last-child {
+	margin-right:0px;
+}
+ul.navbar-right li {
+	margin-left:10px;
+}
+
+/*plan-specific */
+	.healthnet .navbar-nav>li.logo>a {
+		background:url(/static/moe/images/logo-healthnet-white.png) no-repeat top left;
+	}
+	.navbar-default.healthnet {
+		background-color:#007e7a;
+	}
+	
+	/*reversed out for dark header backgrounds */
+	.navbar-default.healthnet .navbar-nav>li>a span, .navbar-default.healthnet .navbar-nav>li>a {
+		color:#fff;
+	}
+	.navbar-default.healthnet a#contact-header-link, .navbar-default.healthnet a#help-header-link {
+		border-color:#fff;
+	}
+		.navbar-default.healthnet .navbar-nav>li>a.hovered,
+		.navbar-default.healthnet .navbar-nav>li>a.hovered span,
+		.navbar-default.healthnet a#contact-header-link.hovered,
+		.navbar-default.healthnet a#help-header-link.hovered {
+			color:#e0e0e0;
+			border-color:#e0e0e0;
+		}
+
+/*override nav stacking on small screens*/
+@media (max-width: 768px) {
+	.navbar-nav>li, .navbar-nav {
+		float: left;
+	}
+	.navbar-nav {
+		margin:0px;
+	}
+	.navbar-nav>li.logo {
+		display:none;
+	}
+	.navbar-right {
+		float: right!important;
+		margin-right: -15px;
+	}
+}
+@media (max-width: 540px) {
+	#main-container.toggled #contact-header-link, #main-container.toggled a#help-header-link, #main-container.toggled a#language-header-link {
+		display:none;
+	}
+}
+
+.header-section {
+	position: fixed;
+	left: 0;
+	top:85px;
+	background-color:#fff;
+	z-index: 1035;
+/*	box-shadow: 0px 3px 3px #888888; Commenting Box Shadow for PST-Header */
+	width:100%;
+}
+#header-info-box {
+	margin:15px;
+	background-color:#7d7d7d;
+	/* margin-bottom: 8px; */
+/*     transition: height 2s; */
+}
+	/*#header-info-box.headshrink {
+		overflow:hidden;
+		height:100px;
+	}*/
+	#header-info-box>div {
+		float:left;
+		margin:15px;
+	}
+		#header-info-box .main-box {
+			padding-right:15px;
+			border-right:1px solid #fff;
+			width:60%;
+		}
+		#header-info-box .secondary-box {
+			width:30%;
+			margin-left:0px;
+		}
+		@media (max-width: 768px) {
+			#header-info-box .main-box, #header-info-box .secondary-box {
+				float: none;
+				border-right:none;
+				padding-right:0px;
+				margin-left:15px;
+				width:100%;
+			}
+		}
+		
+	#header-info-box .h1,
+	#header-info-box .h2,
+	#header-info-box .h3,
+	#header-info-box .h4,
+	#header-info-box .h5,
+	#header-info-box .h6,
+	#header-info-box .small {
+		font-weight: normal;
+		color:#fff;
+		margin:8px 0px;
+	}
+		#header-info-box a {
+			text-decoration: underline;
+			color:#fff;
+		}
+		#header-info-box .text-block {
+		}
+#breadcrumbs {
+	height:38px;
+	margin:0px 0px 5px 0px;
+}
+.cms-info {
+	margin-top:50px;
+	font-size:90%;
+	color:#666;
+	margin: 20px;
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles for sidebar nav */
+
+#main-container, #main-container .navbar, #main-container .header-section {
+    margin-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#main-container.toggled, #main-container.toggled .navbar, #main-container.toggled .header-section {
+    margin-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#main-container.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+/*    padding: 15px; Commenting for aligning the breadcrumbs in PST */
+}
+
+#main-container.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+	.sidebar-nav li p {
+		line-height: 135%;
+		margin: 10px 20px;
+		text-indent: 0px;
+		color:#999;	
+	}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    padding-top: 19px;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: right;
+    color: #ccc;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}

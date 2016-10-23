@@ -1,0 +1,145 @@
+
+<article id="breadcrumbs">
+  <!--MOE VERSION OF BREADCRUMBS -->
+  <p class="moe-breadcrumb">{{userInfo.length}} Results</p>
+  <div id="filter-bar"><div>
+    <button class="btn btn-default filter-results" style="float:right;">Filter Results</button>
+
+  </div></div>
+
+
+  <!--<p class="moe-progress-bar-label">Progress:</p>-->
+
+</article>
+
+<!-- 	START OF PAGE CONTENT -->
+	
+    <section id="pst-results" style="margin:20px;">
+        
+        <div ng-repeat="item in userInfo">      
+
+          <article class="result">
+                  <h3><a href="#plans/{{item.planId}}">{{item.planName}}</a></h3>
+           <div class="two-column">
+              <div class="right-border">
+                <p ng-class="whatClassisit(item.medicalCoverage.oopMax)">
+                Medical coverage
+              </p>
+              <p>
+                Deductible: {{item.medicalCoverage.deductible}}
+              </p>
+              <p>
+                Max out of Pocket:  {{item.medicalCoverage.oopMax}}</p> <!--<span ng-repeat="val in item.medicalCoverageDetails | filter:name='Out Network Out of Pocket Maximum">
+                        {{val.value }}
+                      </span>       -->
+
+            </div>
+            <div class="right-border">
+              <p ng-class="whatClassisit(item.prescriptionCoverage[0].rxDeductible)">
+                Prescription Coverage
+              </p>
+              <p style="margin-left:28px;" ng-show="item.prescriptionCoverage[0].Coverage='No Coverage'">
+                Deductible: {{item.prescriptionCoverage.rxDeductible}}
+              </p>
+              <p  style="margin-left:28px;" ng-show="item.prescriptionCoverage[2].preferredBrandDrugCopay='No Coverage'">
+                Copay:  {{item.prescriptionCoverage.preferredBrandDrugCopay}}
+              </p>
+            </div>
+               <div class="">
+                   <p class="supplemental">Supplemental</p>
+                   <p style="margin-left:60px">{{item.supplementalPlan.optSupPkg7}}</p>
+                   </div>
+
+          </div>
+        
+          <div class="pricing-section">
+            <p class="monthly-premium-price">
+              {{item.monthlyPremium}}
+            </p>
+            <p class="monthly-premium-text">
+              monthly premium
+            </p>
+           
+            <p class="star-rating">Star Rating:</p>
+            <p class="active-star" style="background:url('../images/star-active.png') repeat-x; display:inline; float:left;width:calc({{item.starRatings}}*15px); height:20px;"></p>
+            <p class="inactive-star" style="background:url('../images/star-inactive.png') repeat-x; display:inline; float:left;width:calc(({{item.starRatings-5}})*-15px); height:20px;"></p>
+            
+            <p>
+              <button class="btn btn-warning">
+                Apply Now
+              </button>
+            </p>
+            <p>
+              <button class="btn btn-default">
+                Details </button>
+            </p>
+            <p>
+
+            </p>
+          </div>
+          <!--<div ng-controller="ModalDemoCtrl" style="position:relative; top:-40px;">
+           <script type="text/ng-template" id="myModalContent.html">
+            <div class="modal-header">
+                <h3 class="modal-title">Would you like to add optional benefits?</h3>
+            </div>
+             <div class="modal-body">
+        	<p>Health Net offers the following at a minimal additional cost. If you would like to enroll, please select the package you wish to add.</p>
+            <ul style="list-style-type:none;">
+                <li>
+      						<input type="radio" name="optional-benefits" ng-click="enableButton()" ng-model="opt1" value="1">$12 Optional Supplementary Benefits Pkg Plan 9 </input>
+                  <ul><li>Eyewear</li>
+                  <li>Chiro/Accupuncture</li>
+                  <li>Health/Fitness Club</li></ul>
+                </li>
+                  <li>
+      						<input type="radio" name="optional-benefits" ng-click="enableButton()" ng-model="opt1" value="2">$18 Optional Supplementary Benefits Pkg Plan 11 </input>
+                  <ul><li>Eyewear</li>
+                  <li>Chiro/Accupuncture</li>
+                  <li>Health/Fitness Club</li><li>Free Dog Walking Service</li></ul>
+                </li>
+            </ul>
+        </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" type="button" ng-click="ok()">No Thanks</button>
+                <button class="btn btn-default" type="button" ng-click="ok()" disabled ng-disabled="!item">Add Benefits</button>
+              <p>{{item.selectedValue}}</p>
+            </div>
+        </script>
+            <p>
+              $0.00
+            </p>
+            <p>
+              monthly premium
+            </p>
+            <p>
+              <button type="button" class="btn btn-lg btn-primary" data-animation="am-fade-and-scale" data-placement="center" bs-modal="modal" ng-click="open('lg')">
+                Apply Now
+              </button>
+            </p>
+            <p>
+              <button>
+                Details </button>
+            </p>
+            <p>
+
+            </p>
+          </div> -->
+
+        <p class="select-to-compare">
+            <input type="checkbox" value="Select to compare" ng-change="productCompare(item.planId, item.planName, compare);" ng-model="compare"/><a href="#">Select to compare </a>(up to three plans)
+          </p>
+             <div class="compareproducts" ng-show="compare" style="width:100%; height: 100px; background: #D3D3D3; position:fixed; bottom:0; left: 0px; z-index: 10000;" >
+
+                    <div ng-repeat="compareitem in getSelectedPlans()">
+                        <div style="width: 25%;border-right: 1px solid #FFFFFF;height: 80px;padding: 2% 0 0 2%;margin-top: 10px;color: #FFFFFF;font-weight: bold; float:left;"> <div><p style="margin-bottom:0;">{{findSingleValue(userInfo, compareitem, "planName")}}</p><p>{{findSingleValue(userInfo, compareitem, "monthlyPremium")}}</p></div><!--{{findSingleValue(userInfo, compareitem.planId, "planName")}} {{findSingleValue(userInfo, compareitem.planId, "monthlyPremium")}} -->
+                    </div>
+                    </div><div ng-show="getSelectedPlans().length>=2" style="border: 1px solid rgb(255, 255, 255);background: rgb(0, 179, 238);width: 104px;height: 36px;display: inline;float: right;padding: 8px 17px;margin: 30px;"><a href="#/compare">COMPARE</a></div>
+
+            </div>
+        </article>
+
+            </div>
+ 
+        </div>
+      </section>
+

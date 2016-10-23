@@ -1,0 +1,143 @@
+<header></header>
+
+
+<!-- 	START OF PAGE CONTENT -->
+<div class="container-fluid">
+
+    <section id="pst-results" >
+        <b class="text-danger">{{message}}</b>
+        <div ng-if="isLoading">
+            <loading-indicator ng-model="isLoading"></loading-indicator>
+        </div>
+        <div ng-repeat="item in userInfo" ng-model="userInfo">
+
+            <article class="result">
+                <div class="row">
+                    <div class="col-xs-12 col-md-9">
+                        <h3><a href="#plan-detail/{{item.planId}}">{{item.planName}}</a>
+                        </h3>
+                    </div>
+                    <div class="col-xs-12 col-md-3 text-xs-left text-md-right">
+                        <p class="monthly-premium-price">
+                            {{item.monthlyPremium}} <span class="monthly-premium-text">monthly premium</span>
+                        </p>
+                        <div ng-show="item.starRatings[0]>=0">
+                            <span>Star Rating: <a href="{{starRatingsBaseUrl + item.starRatingsPDF}}" target="_blank" class="star-ratings">
+                            <rate ng-model="item.starRatings" icon-empty = "fa-star-o" icon-full = "fa-star" icon-half = "fa-star-half-o" icon-base = "fa" other-class="glyphicon-star" read-only=false></rate>
+                        </a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3 right-border">
+                        <p class="coverage-enable">
+                            <span>Medical Coverage</span>
+                        </p>
+                        <p>
+                            Deductible: {{item.medicalCoverage.deductible}}
+                        </p>
+                        <p>
+                            Max out of Pocket: {{item.medicalCoverage.oopMax}}
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-3 right-border">
+                        <p ng-class="selectPlanCoverageClass(item.prescriptionCoverage)">
+                            Prescription Coverage
+                        </p>
+                        <p ng-if="item.prescriptionCoverage.rxDeductibl">
+                            Deductible: {{item.prescriptionCoverage.rxDeductible}}
+                        </p>
+                        <p ng-if="item.prescriptionCoverage.preferredGenericDrugCopay && !isTrilliumSNP(item)">
+                            <span>Preferred Generic Drug Copay:</span>{{item.prescriptionCoverage.preferredGenericDrugCopay}}
+                        </p>
+                        <p ng-if="item.prescriptionCoverage.preferredBrandDrugCopay && isTrilliumSNP(item)">
+                            <span>Brand Drugs Copay:</span> {{item.prescriptionCoverage.preferredBrandDrugCopay}}
+                        </p>
+                        <p ng-if="item.prescriptionCoverage.nonPreferredGenericDrugCopay">
+                            Generic drug copay: {{item.prescriptionCoverage.nonPreferredGenericDrugCopay}}
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                         <p class="supplemental">
+                            <span class="glyphicon glyphicon-plus"></span>Supplemental
+                         </p>
+                        <div ng-hide="!item.supplementalPlan.pkgs">
+                        <div ng-repeat="pkg in item.supplementalPlan.pkgs" class="supplementalPackages">
+                            <p>{{pkg}}</p>
+                        </div>
+                        <div ng-repeat="cost in item.supplementalPlan.costs" class="supplementalCost">
+                            <p>{{cost}}</p>
+                        </div>
+                            </div>
+                        <div ng-hide="item.supplementalPlan.pkgs">
+                            <p>There is no supplemental coverage for this plan.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 pricing-selection text-right floatright">
+
+                        <!--Fix to disable the apply now button-->
+
+                        <p>
+                            <a ng-if="!item.applyOnline" ng-disabled="true" uib-popover="{{applyOnlineDisabledMsg}}" popover-trigger="'mouseenter'"  class="btn btn-warning apply-now">Apply Now</a>
+                            <a ng-if="item.applyOnline" class="btn btn-warning apply-now" href="{{buildApplyNowUrl(item)}}" target="_self">Apply Now</a>
+                        </p>
+                        <p>
+                            <a class="btn btn-default details-btn" id="detailsButton{{$index}}" href="#/plan-detail/{{item.planId}}">Details</a>
+                        </p>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div ng-if="userInfo.length > 1" class="select-to-compare checkbox">
+					<span ng-click="productCompare(item, !isPlanSelected(item.planId));">
+                        <i class="fa fa-lg" ng-class="{'fa-square-o': !isPlanSelected(item.planId), 'fa-check-square-o': isPlanSelected(item.planId) }"></i>
+                        Select to compare (up to three plans)</span>
+                </div>
+            </article>
+        </div><span id="content-top"></span>
+        <div class="compareproducts" ng-hide="selectedPlans.length===0">
+
+            <div ng-repeat="compareItem in selectedPlans">
+                <div class="col-xs-4 col-md-3 product">
+                    <a href="javascript:void(0);"
+                       ng-click="productCompare(compareItem, false)"
+                       type="button" style="" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </a>
+
+                    <p class="planName">{{compareItem.planName}}</p>
+                    <p class="hidden-xs hidden-sm">{{compareItem.monthlyPremium}}</p>
+
+                    <a class="btn btn-warning apply-now"
+                       ng-if="!compareItem.applyOnline" ng-disabled="true">Apply Now</a>
+
+                    <a class="btn btn-warning apply-now" ng-if="compareItem.applyOnline"
+                       href="{{buildApplyNowUrl(compareItem)}}">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 compare" ng-show="selectedPlans.length>=2">
+                <a href="#/compare-plans">COMPARE</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HELP Modal -->
+    <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                   <h4 class="modal-title" id="myModalLabel">How to use this page</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="../../../medicareadv/assets/images/{{currentHelpImage}}.png" data-ratio="{{currentImageRatio}}" id="{{currentHelpImage}}" border="0" class="help-img active-help" />
+
+                    <p id="block-tester"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="content-top"></span>
+    <!-- END HELP US Modal -->
+</div>

@@ -1,0 +1,203 @@
+[{
+    "county":"Los Angeles",
+    "planId": "40765",
+    "planDesc": "123Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "planName": "Health Net Seniority Plus Green (HMO)",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "starRatings":"4",
+    "prescription-coverage":"yes",
+    "monthlyPremium": "$149.00",
+    "medicalCoverageDetails": [{
+        "monthlyPremium": "$199.00"
+    }, {
+        "MaxOutOfPocket": "$2300"
+    }, {
+        "Deductible": "$0.00"
+    }],
+    "prescriptionCoverageDetails": [{
+            "Coverage": "No Coverage"
+        }, {
+            "Deductible": " "
+        }, {
+            "Copay": " "
+        }, {
+            "Pharmacy Drug Deducible": "$0.00"
+        }, {
+            "Coverage in the gap": "Tier 1, Tier 2 and Tier 6 gap coverage"
+        }, {
+            "Preferred generic drugs copay": "Standard retail cost-sharing: $5; Preferred retail cost sharing: $0"
+        }, {
+            "Non-preferred generic drugs copay": "Standard retail cost-sharing: $20; Preferred retail cost sharing: $10"
+        }, {
+            "Preferred brand drugs copay": "Standard retail cost-sharing: $47; Preferred retail cost sharing: $37"
+        }
+
+    ]},{
+    "county":"ABC",
+
+    "planId": "40775",
+    "planDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "planName": "Health Net Healthy Heart (HMO)",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "starRatings":"3",
+    "monthlyPremium": "$149.00",
+    "medicalCoverageDetails": [{
+        "monthlyPremium": "$30.00"
+    }, {
+        "MaxOutOfPocket": "$0.00"
+    }, {
+        "Deductible": "N/A"
+    }],
+    "prescriptionCoverageDetails": [{
+        "Coverage": "Coverage"
+    }, {
+        "Deductible": "$290"
+    }, {
+        "Copay": "$10.00"
+    }, {
+        "Pharmacy Drug Deducible": "$0.00"
+    }, {
+        "Coverage in the gap": "Tier 1, Tier 2 and Tier 6 gap coverage"
+    }, {
+        "Preferred generic drugs copay": "Standard retail cost-sharing: $5; Preferred retail cost sharing: $0"
+    }, {
+        "Non-preferred generic drugs copay": "Standard retail cost-sharing: $20; Preferred retail cost sharing: $10"
+    }, {
+        "Preferred brand drugs copay": "Standard retail cost-sharing: $47; Preferred retail cost sharing: $37"
+    }]},{
+    "county":"Los Angeles",
+
+    "planId": "40786",
+    "planDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "planName": "Health Net Ruby Select (HMO)",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "starRatings":"4",
+    "monthlyPremium": "$149.00",
+    "medicalCoverageDetails": [{
+        "monthlyPremium": "$0.00"
+    }, {
+        "MaxOutOfPocket": "$3,400"
+    }, {
+        "Deductible": "N/A"
+    }],
+    "prescriptionCoverageDetails": [{
+        "Coverage": "Coverage"
+    }, {
+        "Deductible": "$280"
+    }, {
+        "Copay": "$0.00"
+    }, {
+        "Pharmacy Drug Deducible": "$0.00"
+    }, {
+        "Coverage in the gap": "Tier 1, Tier 2 and Tier 6 gap coverage"
+    }, {
+        "Preferred generic drugs copay": "Standard retail cost-sharing: $5; Preferred retail cost sharing: $0"
+    }, {
+        "Non-preferred generic drugs copay": "Standard retail cost-sharing: $20; Preferred retail cost sharing: $10"
+    }, {
+        "Preferred brand drugs copay": "Standard retail cost-sharing: $47; Preferred retail cost sharing: $37"
+    }]
+
+},{
+    "county":"Los Angeles",
+
+    "planId": "40786",
+    "planDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "planName": "Health Net Ruby Select (HMO)",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "starRatings":"4",
+    "monthlyPremium": "$149.00",
+    "medicalCoverageDetails": [{
+        "monthlyPremium": "$0.00"
+    }, {
+        "MaxOutOfPocket": "$3,400"
+    }, {
+        "Deductible": "N/A"
+    }],
+    "prescriptionCoverageDetails": [{
+        "Coverage": "Coverage"
+    }, {
+        "Deductible": "$280"
+    }, {
+        "Copay": "$0.00"
+    }, {
+        "Pharmacy Drug Deducible": "$0.00"
+    }, {
+        "Coverage in the gap": "Tier 1, Tier 2 and Tier 6 gap coverage"
+    }, {
+        "Preferred generic drugs copay": "Standard retail cost-sharing: $5; Preferred retail cost sharing: $0"
+    }, {
+        "Non-preferred generic drugs copay": "Standard retail cost-sharing: $20; Preferred retail cost sharing: $10"
+    }, {
+        "Preferred brand drugs copay": "Standard retail cost-sharing: $47; Preferred retail cost sharing: $37"
+    }]
+
+},{
+    "county":"Los Angeles",
+
+    "planId": "40786",
+    "planDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "planName": "Health Net Ruby Select (HMO)",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "starRatings":"4",
+    "monthlyPremium": "$149.00",
+    "medicalCoverageDetails": [{
+        "monthlyPremium": "$0.00"
+    }, {
+        "MaxOutOfPocket": "$3,400"
+    }, {
+        "Deductible": "N/A"
+    }],
+    "prescriptionCoverageDetails": [{
+        "Coverage": "Coverage"
+    }, {
+        "Deductible": "$280"
+    }, {
+        "Copay": "$0.00"
+    }, {
+        "Pharmacy Drug Deducible": "$0.00"
+    }, {
+        "Coverage in the gap": "Tier 1, Tier 2 and Tier 6 gap coverage"
+    }, {
+        "Preferred generic drugs copay": "Standard retail cost-sharing: $5; Preferred retail cost sharing: $0"
+    }, {
+        "Non-preferred generic drugs copay": "Standard retail cost-sharing: $20; Preferred retail cost sharing: $10"
+    }, {
+        "Preferred brand drugs copay": "Standard retail cost-sharing: $47; Preferred retail cost sharing: $37"
+    }]
+
+},{
+    "county":"ABC",
+
+    "planId": "40786",
+    "planDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "planName": "Health Net Ruby Select (HMO)",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "starRatings":"4",
+    "monthlyPremium": "$149.00",
+    "medicalCoverageDetails": [{
+        "monthlyPremium": "$0.00"
+    }, {
+        "MaxOutOfPocket": "$3,400"
+    }, {
+        "Deductible": "N/A"
+    }],
+    "prescriptionCoverageDetails": [{
+        "Coverage": "Coverage"
+    }, {
+        "Deductible": "$280"
+    }, {
+        "Copay": "$0.00"
+    }, {
+        "Pharmacy Drug Deducible": "$0.00"
+    }, {
+        "Coverage in the gap": "Tier 1, Tier 2 and Tier 6 gap coverage"
+    }, {
+        "Preferred generic drugs copay": "Standard retail cost-sharing: $5; Preferred retail cost sharing: $0"
+    }, {
+        "Non-preferred generic drugs copay": "Standard retail cost-sharing: $20; Preferred retail cost sharing: $10"
+    }, {
+        "Preferred brand drugs copay": "Standard retail cost-sharing: $47; Preferred retail cost sharing: $37"
+    }]
+
+}]

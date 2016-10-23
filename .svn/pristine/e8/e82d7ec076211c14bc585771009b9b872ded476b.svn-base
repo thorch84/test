@@ -1,0 +1,181 @@
+[{
+    "planId": "40765",
+    "planName": "Health Net Seniority Plus Green (HMO)",
+    "applyOnline": false,
+    "monthlyPremium": "$139.00",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "medicalCoverageDetails": [{
+        "name": "Monthly Premium ",
+        "value": "$139.00"
+    }, {
+        "name": "Out Network Out of Pocket Maximum",
+        "value": "$0"
+    }, {
+        "name": "In Network Out of Pocket Maximum",
+        "value": "$3,400"
+    }],
+    "prescriptionCoverageDetails": [{
+        "name": "Non preferred brand drug copay",
+        "value": "N/A"
+    }, {
+        "name": "Preferred generic drug copay",
+        "value": "N/A"
+    }, {
+        "name": "Pharmacy drug deductible",
+        "value": "N/A"
+    }],
+    "supplementalDetails": [{
+        "name": "Optional Supplemental Premium Package #2 Description",
+        "value": "Buy-Up #2: DPPO+Eyewear+Chiro/Acupuncture+Fitness"
+    }, {
+        "name": "Optional Supplemental +Eyewear+Premium Package #2 Premium",
+        "value": "$35"
+    }, {
+        "name": "Optional Supplemental Premium Package #3 Description",
+        "value": "N/A"
+    }, {
+        "name": "Optional Supplemental Premium Package #1 Description",
+        "value": "Buy-Up #1: DHMO+Eyewear+Chiro/Acupuncture+Fitness"
+    }, {
+        "name": "Optional Supplemental Premium +Package #1 Premium",
+        "value": "$25.00"
+    }, {
+        "name": "Optional Supplemental Premium Package #3 Premium",
+        "value": "$25.00"
+    }],
+    "resourceDetails": [{
+        "name": "Healthy Discounts PDF",
+        "value": "N/A"
+    }, {
+        "name": "Compare Plans PDF",
+        "value": "2017_ca_bh_045.pdf"
+    }, {
+        "name": "Enrollment Application PDF",
+        "value": "2017_ca_enrollapp.pdf"
+    }, {
+        "name": "Summary Of Benefits PDF",
+        "value": "2017_ca_sb_045.pdf"
+    }, {
+        "name": "Low Income Subsidy PDF",
+        "value": "N/A"
+    }]
+}, {
+    "planId": "40775",
+    "planName": "Health Net Healthy Heart (HMO)",
+    "applyOnline": false,
+    "monthlyPremium": "$30.00",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "medicalCoverageDetails": [{
+        "name": "Monthly Premium",
+        "value": "$30.00"
+    }, {
+        "name": "In Network Out of Pocket Maximum",
+        "value": "$2,400"
+    }, {
+        "name": "Out Network Out of Pocket Maximum",
+        "value": "$0"
+    }],
+    "prescriptionCoverageDetails": [{
+        "name": "Non preferred brand drug copay",
+        "value": "N/A"
+    }, {
+        "name": "Preferred generic drug copay",
+        "value": "N/A"
+    }, {
+        "name": "Pharmacy drug deductible",
+        "value": "No deductible"
+    }],
+    "supplementalDetails": [{
+        "name": "Optional Supplemental Premium Package #2 Description",
+        "value": "DPPO+Eyewear+Chiro/Acupuncture +Fitness"
+    }, {
+        "name": "Optional Supplemental Premium Package #1 Description",
+        "value": "DHMO+Eyewear+Chiro/Acupuncture +Fitness"
+    }, {
+        "name": "Optional Supplemental Premium Package #1 Premium",
+        "value": "$25.00"
+    }, {
+        "name": "Optional Supplemental Premium Package #3 Premium",
+        "value": "$25.00"
+    }, {
+        "name": "Optional Supplemental Premium Package #3 Description",
+        "value": "N/A"
+    }, {
+        "name": "Optional Supplemental Premium Package #2 Premium",
+        "value": "$35"
+    }],
+    "resourceDetails": [{
+        "name": "Healthy Discounts PDF",
+        "value": "N/A"
+    }, {
+        "name": "Enrollment Application PDF",
+        "value": "2017_ca_enrollapp.pdf"
+    }, {
+        "name": "Low Income Subsidy PDF",
+        "value": "2017_ca_lis_100_002.pdf"
+    }, {
+        "name": "Compare Plans PDF",
+        "value": "2017_ca_bh_hh_100_002.pdf"
+    }, {
+        "name": "Summary Of Benefits PDF",
+        "value": "2017_ca_sb_100_002.pdf"
+    }]
+}, {
+    "planId": "40786",
+    "planName": "Health Net Ruby Select (HMO)",
+    "applyOnline": false,
+    "starRatings": "N/A",
+    "startRatingsPDF": "ca_hmo_ratings.pdf",
+    "medicalCoverageDetails": [{
+        "namem": "In Network Out of Pocket Maximum ",
+        "value": "$6,700"
+    }, {
+        "name": "Out Network Out of Pocket Maximum",
+        "value": "$0"
+    }],
+    "prescriptionCoverageDetails": [{
+        "name": "Pharmacy drug deductible",
+        "value": "No Deductible"
+    }, {
+        "name": "Preferred generic drug copay",
+        "value": "N/A"
+    }, {
+        "name": "Non preferred brand drug copay",
+        "value": "N/A"
+    }],
+    "supplementalDetails": [{
+        "name": "Optional Supplemental Premium Package #2 Premium",
+        "value": "N/A"
+    }, {
+        "name": "Optional Supplemental Premium Package# 1 Description ",
+        "value": "Buy-Up #1: DHMO +Eyewear+Chiro/Acupuncture+Fitness"
+    }, {
+        "name": "Optional Supplemental +Eyewear+Premium Package #1 Premium",
+        "value": "N/A"
+    }, {
+        "name": "Optional Supplemental Premium Package #3 Premium",
+        "value": "N/A"
+    }, {
+        "name": "Optional Supplemental Premium Package #2 Description",
+        "value": "Buy-Up #2: DPPO+Eyewear+Chiro/Acupuncture +Fitness"
+    }, {
+        "name": "Optional Supplemental Premium Package #3 Description",
+        "value": "N/A"
+    }],
+    "resourceDetails": [{
+        "name": "Low Income Subsidy PDF",
+        "value": "2017_ca_lis_113.pdf"
+    }, {
+        "name": "Enrollment Application PDF",
+        "value": "2017_ca_enrollapp.pdf"
+    }, {
+        "name": "Summary Of Be nefits PDF",
+        "value": "2017_ca_sb_113.pdf"
+    }, {
+        "name": "Healthy Discounts PDF",
+        "value": "N/A"
+    }, {
+        "name": "Compare Plans PDF",
+        "value": "2017_ca_bh_113.pdf"
+    }]
+}]

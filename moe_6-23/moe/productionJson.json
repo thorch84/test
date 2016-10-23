@@ -1,0 +1,5384 @@
+{
+    "year": "2016",
+    "seminarList": "sacramentoseminar.pdf",
+    "comparison": "2016_ca_bh_045.pdf",
+    "zipCode": "95742",
+    "plans": [{
+        "id": "39930",
+        "name": "Health Net Healthy Heart (HMO)",
+        "code": "Health Net Healthy Heart (HMO)",
+        "complementaryFlag": false,
+        "topSeller": false,
+        "type": "MAPD_HMO",
+        "productDetails": [{
+            "typeId": "12920",
+            "name": "Preventative Dental Deductible Amount",
+            "value": "NULL"
+        }, {
+            "typeId": "12951",
+            "name": "Comprehensive Dental Diagnostic Services unlimited?",
+            "value": "Yes"
+        }, {
+            "typeId": "19003",
+            "name": "Enrollment Kit Address",
+            "value": "Health Net Enrollment Services|PO Box 10420|Van Nuys, CA 91410-0420"
+        }, {
+            "typeId": "19004",
+            "name": "Plan Color",
+            "value": "HH"
+        }, {
+            "typeId": "19019",
+            "name": "Summary Of Benefits PDF",
+            "value": "2016_ca_sb_084.pdf"
+        }, {
+            "typeId": "19026",
+            "name": "Low-income Subsidy PDF",
+            "value": "2016_ca_lis_084.pdf"
+        }, {
+            "typeId": "12037",
+            "name": "Eye Wear (Routine Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "15001",
+            "name": "Type of drug benefit",
+            "value": "Enhanced Alternative"
+        }, {
+            "typeId": "15004",
+            "name": "Do any drugs in your formulary require a step therapy plan?",
+            "value": "Yes"
+        }, {
+            "typeId": "15014",
+            "name": "Tier #1: OONP Copay 1M",
+            "value": "$8.00"
+        }, {
+            "typeId": "15029",
+            "name": "Tier #2: LTCP Copay 1M",
+            "value": "$18.00"
+        }, {
+            "typeId": "15035",
+            "name": "Tier #3: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15038",
+            "name": "Tier #3: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15039",
+            "name": "Tier #3: LTCP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15041",
+            "name": "Tier #4: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15043",
+            "name": "Tier #4: OONP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15044",
+            "name": "Tier #4: MOPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19044",
+            "name": "Optional Supplemental Package 1 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19090",
+            "name": "Healthy Discounts PDF",
+            "value": "2016_healthydiscounts.pdf"
+        }, {
+            "typeId": "19093",
+            "name": "Electronic Funds Transfer PDF",
+            "value": "2016_abd.pdf"
+        }, {
+            "typeId": "11856",
+            "name": "Preventative Dental: Do you offer any Mandatory or Optional Supplemental Benefits?",
+            "value": "Yes"
+        }, {
+            "typeId": "12141",
+            "name": "Hearing Aid Max Plan Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "19043",
+            "name": "Catastrophic all other drugs cost share",
+            "value": "$7.40 or 5%"
+        }, {
+            "typeId": "10481",
+            "name": "Worldwide Coverage Maximum Plan Benefit (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "10533",
+            "name": "Urgent Care Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "10564",
+            "name": "Partial Hospital Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11652",
+            "name": "Colorectal Screening Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11683",
+            "name": "Bone Mass Measurement Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11723",
+            "name": "Mammography Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11803",
+            "name": "Part B Drugs Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11904",
+            "name": "Routine Preventive Dental Oral Exams Visit Limit",
+            "value": "N/A"
+        }, {
+            "typeId": "11906",
+            "name": "Preventive Dental Cleaning Coinsurance",
+            "value": "$0"
+        }, {
+            "typeId": "11925",
+            "name": "Comprehensive Dental - Maximum Plan Benefit Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "19120",
+            "name": "Nutrition Therapy Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "19504",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Medicare-covered plan services? (In-Network)",
+            "value": "Yes"
+        }, {
+            "typeId": "19588",
+            "name": "Opt Sup Package 8 Premium Product",
+            "value": "N/A"
+        }, {
+            "typeId": "19591",
+            "name": "Opt Sup Package 9 PDF Names Product",
+            "value": "2016_ca_optsup_enroll.pdf"
+        }, {
+            "typeId": "10130",
+            "name": "Inpatient Hospital Benefit Period Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10501",
+            "name": "Emergency Room Copay",
+            "value": "$75"
+        }, {
+            "typeId": "10561",
+            "name": "Partial Hospital",
+            "value": "$0"
+        }, {
+            "typeId": "10661",
+            "name": "Chiropractic (Routine) Copay",
+            "value": "$10 (Routine)"
+        }, {
+            "typeId": "10701",
+            "name": "Specialist Copay",
+            "value": "$20.00"
+        }, {
+            "typeId": "10990",
+            "name": "Outpatient Hospital Notes",
+            "value": "No charge for Medicare-covered epidural injections performed in an outpatient hospital facility."
+        }, {
+            "typeId": "11130",
+            "name": "Transportation",
+            "value": "No Plan-approved Location"
+        }, {
+            "typeId": "11160",
+            "name": "DME",
+            "value": "20%"
+        }, {
+            "typeId": "11231",
+            "name": "End Stage Renal Disease Copayment",
+            "value": "N/A"
+        }, {
+            "typeId": "11232",
+            "name": "End Stage Renal Disease Coinsurance",
+            "value": "20%"
+        }, {
+            "typeId": "11260",
+            "name": "Blood Copayment (Yes/No)",
+            "value": "$0"
+        }, {
+            "typeId": "11270",
+            "name": "Acupuncture limit for number of treatments",
+            "value": "routine chiropractic per year."
+        }, {
+            "typeId": "11470",
+            "name": "Immunizations (Medicare Covered) Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11822",
+            "name": "Part B Epoetin/ Osteoporosis Drugs Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11840",
+            "name": "Part C Home Infusion Drugs ",
+            "value": "No"
+        }, {
+            "typeId": "11851",
+            "name": "Preventative Dental Benefit Description",
+            "value": ": Oral Exams : Prophylaxis (Cleaning) : Fluoride Treatment : Dental X-Rays"
+        }, {
+            "typeId": "11862",
+            "name": "Preventative Dental X-Ray Visit Limit",
+            "value": "1 Every year"
+        }, {
+            "typeId": "11903",
+            "name": "Preventative Dental X-Rays Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11921",
+            "name": "Comprehensive Dental Benefit Type",
+            "value": "Mandatory"
+        }, {
+            "typeId": "11930",
+            "name": "Comprehensive Dental - Restorative Services Benefit Type",
+            "value": "Mandatory"
+        }, {
+            "typeId": "11960",
+            "name": "Comprehensive Dental Restorative Services Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11970",
+            "name": "Comprehensive Dental Deductible Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "11981",
+            "name": "Comprehensive Dental Copay (Diagnostic Services)",
+            "value": "$0 - $15"
+        }, {
+            "typeId": "11983",
+            "name": "Comprehensive Dental Copay (Endodontics/Periodontics/Extractions Services)",
+            "value": "$0 - $375"
+        }, {
+            "typeId": "12250",
+            "name": "OON Inpatient Psychiatric Hospital Deductible",
+            "value": "NaN"
+        }, {
+            "typeId": "12260",
+            "name": "OON SNF Stay Coinsurance Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "12371",
+            "name": "OON Group 5 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12751",
+            "name": "INN (Medicare Covered) Benefit Categories that apply to the deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12780",
+            "name": "Optional Supplemental - Label and Premium Package #1",
+            "value": "001"
+        }, {
+            "typeId": "12782",
+            "name": "Optional Supplemental - Label and Premium Package #1 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "12880",
+            "name": "Preventative Dental Benefit Description",
+            "value": ": Oral Exams : Prophylaxis (Cleaning) : Fluoride Treatment : Dental X-Rays"
+        }, {
+            "typeId": "12890",
+            "name": "Preventative Dental X-Rays benefit unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "12950",
+            "name": "Comprehensive Dental enhanced benefits",
+            "value": ": Non-routine Services : Diagnostic Services : Restorative Services : Endodontics/Periodontics/Extractions : Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services"
+        }, {
+            "typeId": "13330",
+            "name": "Non-Preferred (Generic & Brand) Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "13370",
+            "name": "Injectables Coinsurance",
+            "value": "%"
+        }, {
+            "typeId": "13440",
+            "name": "Gap Coverage Offered?",
+            "value": "No coverage"
+        }, {
+            "typeId": "10113",
+            "name": "Inpatient Hospital (additional days)",
+            "value": "$0"
+        }, {
+            "typeId": "15008",
+            "name": "Do you offer reduced Part D cost sharing as part of your supplemental coverage?",
+            "value": "Yes"
+        }, {
+            "typeId": "15011",
+            "name": "Tier #1: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15034",
+            "name": "Tier #3: OONP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15061",
+            "name": "Do you offer Gap Coverage?",
+            "value": "No"
+        }, {
+            "typeId": "19047",
+            "name": "Optional Supplemental Package 2 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19083",
+            "name": "Prescription Drug Tier 6 Value",
+            "value": "Standard retail/Preferred retail cost-sharing: $0"
+        }, {
+            "typeId": "19092",
+            "name": "Amber Call Centers PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "10151",
+            "name": "Inpatient Hospital OOPM",
+            "value": "N/A"
+        }, {
+            "typeId": "11866",
+            "name": "Preventative Dental Fluoride Treatment Visit Limit",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "11923",
+            "name": "Comprehensive Dental: Do you offer any Mandatory or Optional Supplemental Benefits?",
+            "value": "Yes"
+        }, {
+            "typeId": "11564",
+            "name": "Pap / Pelvic Exams Coinsurance ",
+            "value": "N/A"
+        }, {
+            "typeId": "11654",
+            "name": "Colorectal Screening Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19501",
+            "name": "Medicare-covered Service Categories to which the Plan Deductible applies (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "12865",
+            "name": "Optional Supplemental - Label and Premium Package #5 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "19054",
+            "name": "Optional Supplemental Package 5 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "10390",
+            "name": "SNF Copay required",
+            "value": "Yes"
+        }, {
+            "typeId": "10500",
+            "name": "Worldwide Coverage Copayment Amount",
+            "value": "NaN"
+        }, {
+            "typeId": "10570",
+            "name": "Home Health",
+            "value": "Yes"
+        }, {
+            "typeId": "11131",
+            "name": "Transportation Benefit Description",
+            "value": "NULL"
+        }, {
+            "typeId": "11801",
+            "name": "Part B Chemotherapy Drugs Coinsurance",
+            "value": "20%"
+        }, {
+            "typeId": "11821",
+            "name": "Part B Chemotherapy Drugs Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "12121",
+            "name": "Hearing Exams (Routine Covered) Copay",
+            "value": "$20"
+        }, {
+            "typeId": "12140",
+            "name": "Hearing Aid Coverage?",
+            "value": "No"
+        }, {
+            "typeId": "12330",
+            "name": "OON Group 3 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12801",
+            "name": "INN (Medicare Covered) Benefits that apply to the INN OOPM",
+            "value": "NULL"
+        }, {
+            "typeId": "12802",
+            "name": "INN Benefits (Routine) that apply to the INN OOPM",
+            "value": "NULL"
+        }, {
+            "typeId": "11603",
+            "name": "Prostrate Screening Copay",
+            "value": "NaN"
+        }, {
+            "typeId": "11653",
+            "name": "Colorectal Screening Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11907",
+            "name": "Preventive Dental X-Rays Coinsurance",
+            "value": "$0"
+        }, {
+            "typeId": "19514",
+            "name": "EOC Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19513",
+            "name": "SB Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "12867",
+            "name": "Optional Supplemental - Label and Premium Package #6 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "100",
+            "name": "Plan Summary",
+            "value": "Health Net Healthy Heart (HMO) is a comprehensive Medicare Advantage Prescription Drug (MAPD) plan that provides a wide range of lifestyle benefits and programs to help reduce the risk of cardiovascular disease and stroke, so you live a long, heart-healthy life. This plan also provides complementary coverage for preventive and comprehensive dental services and includes medical and Part D prescription drug coverage."
+        }, {
+            "typeId": "10042",
+            "name": "Chronic or Disabling Conditions",
+            "value": "NULL"
+        }, {
+            "typeId": "10480",
+            "name": "Worldwide Coverage",
+            "value": "N/A"
+        }, {
+            "typeId": "10530",
+            "name": "Urgent Care",
+            "value": "$20"
+        }, {
+            "typeId": "10781",
+            "name": "Podiatry (Routine)",
+            "value": "Not Covered"
+        }, {
+            "typeId": "10911",
+            "name": "Lab Services Copay amount",
+            "value": "$0"
+        }, {
+            "typeId": "11020",
+            "name": "ASC Services Note",
+            "value": "No charge for Medicare-covered epidural injections performed in an ambulatory surgical center."
+        }, {
+            "typeId": "11221",
+            "name": "Diabetes Monitoring and Supplies",
+            "value": "$0"
+        }, {
+            "typeId": "11390",
+            "name": "Health Education, Wellness or Fitness Benefits available?",
+            "value": "NULL"
+        }, {
+            "typeId": "11440",
+            "name": "Health Ed / Wellness / Fitness",
+            "value": "NULL"
+        }, {
+            "typeId": "11600",
+            "name": "Prostate Screening Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11864",
+            "name": "Preventative Dental Maximum Plan Limit (Combined for prevenative and comprehensive services)",
+            "value": "N/A"
+        }, {
+            "typeId": "12000",
+            "name": "Eye Exams Coverage",
+            "value": "1 Every year"
+        }, {
+            "typeId": "12030",
+            "name": "Routine Eye Wear Coverage (Yes / No)?",
+            "value": "No, indicate number 1"
+        }, {
+            "typeId": "12091",
+            "name": "Hearing Exams (Routine) Coverage",
+            "value": "1 Every year"
+        }, {
+            "typeId": "12230",
+            "name": "OON Inpatient Psychiatric Hospital Stay",
+            "value": "NULL"
+        }, {
+            "typeId": "12290",
+            "name": "OON Group 1 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12291",
+            "name": "Out of Network Group 1 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12350",
+            "name": "OON Group 4 Copay",
+            "value": "NULL"
+        }, {
+            "typeId": "12750",
+            "name": "INN Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "12881",
+            "name": "Preventative Dental Oral Exams benefit unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "19013",
+            "name": "Health Net Plan Code",
+            "value": "CHX, CJM"
+        }, {
+            "typeId": "10503",
+            "name": "OON Emergency Room Copay",
+            "value": "$75"
+        }, {
+            "typeId": "10953",
+            "name": "OON Diagnostic Radiological Services",
+            "value": "N/A"
+        }, {
+            "typeId": "11392",
+            "name": "Fitness/Health Club Membership",
+            "value": "NULL"
+        }, {
+            "typeId": "11512",
+            "name": "Welcome to Medicare Physical Exam",
+            "value": "$0"
+        }, {
+            "typeId": "12864",
+            "name": "Optional Supplemental - Label and Premium Package #4 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "15002",
+            "name": "Are there quantity limits on certain prescription drugs?",
+            "value": "Yes"
+        }, {
+            "typeId": "15007",
+            "name": "Indicate the Out-of-Network cost sharing structure for this plan:",
+            "value": "Standard Retail Copay/Coinsurance (No Differential)*"
+        }, {
+            "typeId": "15013",
+            "name": "Tier #1: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15022",
+            "name": "Tier #2: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15023",
+            "name": "Tier #2: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15027",
+            "name": "Tier #2: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15037",
+            "name": "Tier #3: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15046",
+            "name": "Tier #4: LTCP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15054",
+            "name": "Tier #5: MOPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19080",
+            "name": "Prescription Drug Tier 5 Label",
+            "value": "SpecialtyÂ drugs copay"
+        }, {
+            "typeId": "19085",
+            "name": "Prescription Drug Tier 7 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19087",
+            "name": "Part D Deductible",
+            "value": "No deductible"
+        }, {
+            "typeId": "11924",
+            "name": "Comprehensive Dental Notes",
+            "value": "Section B - 16A  Base 6: Comprehensive Dental Refer to document DHMO Dental Plan\"."
+        }, {
+            "typeId": "10535",
+            "name": "Urgent Care Copay Waived Time Period",
+            "value": "0 Hours"
+        }, {
+            "typeId": "10563",
+            "name": "Partial Hospital Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "10592",
+            "name": "Home Health Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "10663",
+            "name": "Chiropractic (Routine) Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11262",
+            "name": "Blood Coinsurance (Yes/No)",
+            "value": "0%"
+        }, {
+            "typeId": "11562",
+            "name": "Pap / Pelvic Exams Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11604",
+            "name": "Prostrate Screening Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11682",
+            "name": "Bone Mass Measurement Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11684",
+            "name": "Bone Mass Measurement Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11724",
+            "name": "Mammography Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11987",
+            "name": "Comprehensive Dental Coinsurance (Diagnostic Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "19507",
+            "name": "Medicare-covered service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19509",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Non-Medicare-covered plan services? (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19511",
+            "name": "Non-Medicare-covered Service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19519",
+            "name": "Silver & Fit PDF Chinese Marketing (CA)",
+            "value": "N/A"
+        }, {
+            "typeId": "19517",
+            "name": "Optional Benefits PDF Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19515",
+            "name": "Enrollment App PDF Chinese Marketing ",
+            "value": "N/A"
+        }, {
+            "typeId": "19589",
+            "name": "Opt Sup Package 8 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "15060",
+            "name": "Do you apply the Medicare-defined Part D Standard Initial Coverage Limit (ICL) Amount?",
+            "value": "Yes"
+        }, {
+            "typeId": "19053",
+            "name": "Optional Supplemental Package 4 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "11865",
+            "name": "Preventative Dental Fluoride Treatment",
+            "value": "$0"
+        }, {
+            "typeId": "12142",
+            "name": "Hearing Aid Max Plan Period",
+            "value": "N/A"
+        }, {
+            "typeId": "11234",
+            "name": "Renal Dialysis Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11905",
+            "name": "Preventative Dental Oral Exams Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19506",
+            "name": "Medicare-covered service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19508",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Non-Medicare-covered plan services? (In-Network)",
+            "value": "No"
+        }, {
+            "typeId": "19510",
+            "name": "Non-Medicare-covered Service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (In-Network)",
+            "value": "1a;4c;9d;14b;17a;18a;"
+        }, {
+            "typeId": "11735",
+            "name": "Physician Attestation Form Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "11223",
+            "name": "Medicare-covered Diabetic Therapeutic Shoes or Inserts",
+            "value": "20%"
+        }, {
+            "typeId": "19516",
+            "name": "Compare_Plans Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19518",
+            "name": "Healthy Discounts PDF Chinese Marketing (CA)",
+            "value": "N/A"
+        }, {
+            "typeId": "19056",
+            "name": "Opt Sup Package 7 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "19590",
+            "name": "Opt Sup Package 9 Premium Product",
+            "value": "$12"
+        }, {
+            "typeId": "10150",
+            "name": "Inpatient Hospital Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10611",
+            "name": "PCP Copay",
+            "value": "$15.00"
+        }, {
+            "typeId": "10660",
+            "name": "Chiropractic (Medicare Covered) Copay",
+            "value": "$10"
+        }, {
+            "typeId": "10700",
+            "name": "Specialist copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10980",
+            "name": "Outpatient Hospital Copay?",
+            "value": "Yes"
+        }, {
+            "typeId": "10981",
+            "name": "Outpatient Hospital Services",
+            "value": "$275"
+        }, {
+            "typeId": "11170",
+            "name": "DME Note",
+            "value": "N/A"
+        }, {
+            "typeId": "11250",
+            "name": "Blood Enhanced Benefit",
+            "value": "NULL"
+        }, {
+            "typeId": "11280",
+            "name": "Acupuncture Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11720",
+            "name": "Mammography Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11800",
+            "name": "Part B Drugs Coinsurance required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11853",
+            "name": "Preventative Dental - Oral Exams benefit is unlimited?",
+            "value": "Yes"
+        }, {
+            "typeId": "11854",
+            "name": "Preventative Dental Cleaning number of exams",
+            "value": "2 Every year"
+        }, {
+            "typeId": "11860",
+            "name": "Preventative Dental X-Rays Type of Benefit",
+            "value": "Mandatory"
+        }, {
+            "typeId": "11920",
+            "name": "Comprehensive Dental Benefit Description",
+            "value": ": Non-routine Services : Diagnostic Services : Restorative Services : Endodontics/Periodontics/Extractions : Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services"
+        }, {
+            "typeId": "11931",
+            "name": "Comprehensive Dental - Restorative Services Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "11932",
+            "name": "Comprehensive Dental - Endodontics/Periodontics/Extractions Benefit Type",
+            "value": "Mandatory"
+        }, {
+            "typeId": "11940",
+            "name": "Comprehensive Dental Maximum Plan Enrollment Amount",
+            "value": "No"
+        }, {
+            "typeId": "11950",
+            "name": "Comprehensive Dental Medicare Covered coinsurance amount (Medicare Covered)",
+            "value": "N/A"
+        }, {
+            "typeId": "12010",
+            "name": "Eye Exams (Medicare Covered) Copay",
+            "value": "$0 - $20"
+        }, {
+            "typeId": "12033",
+            "name": "Eye Wear - Contact Lens Coverage",
+            "value": "1 Every two years"
+        }, {
+            "typeId": "12120",
+            "name": "Hearing Exams (Medicare Covered) Copay",
+            "value": "$20"
+        }, {
+            "typeId": "12280",
+            "name": "Number of OON Group Offerings",
+            "value": "NULL"
+        }, {
+            "typeId": "12391",
+            "name": "OON Group 6 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12761",
+            "name": "OON Benefits (Medicare Covered) that apply to the OON Deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "13220",
+            "name": "Preferred Generics",
+            "value": "NULL"
+        }, {
+            "typeId": "13501",
+            "name": "Preferred Generic Gap Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "19015",
+            "name": "Timestamp",
+            "value": "05/21/2015"
+        }, {
+            "typeId": "19018",
+            "name": "Effective Year",
+            "value": "2016"
+        }, {
+            "typeId": "15016",
+            "name": "Tier #1: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15018",
+            "name": "Tier #1: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15028",
+            "name": "Tier #2: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "19029",
+            "name": "Customer Service Prospect Phone Number",
+            "value": "(800)977-6738"
+        }, {
+            "typeId": "19040",
+            "name": "Decision Power",
+            "value": "No Charge"
+        }, {
+            "typeId": "19050",
+            "name": "Optional Supplemental Package 3 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19070",
+            "name": "Prescription Drug Tier 1 Label",
+            "value": "Preferred generic drug copay"
+        }, {
+            "typeId": "19071",
+            "name": "Prescription Drug Tier 1 Value",
+            "value": "Standard retail cost-sharing: $8; Preferred retail cost-sharing: $3"
+        }, {
+            "typeId": "19073",
+            "name": "Prescription Drug Tier 2 Label",
+            "value": "Non-preferred generic drug copay"
+        }, {
+            "typeId": "19074",
+            "name": "Prescription Drug Tier 2 Value",
+            "value": "Standard retail cost-sharing: $18; Preferred retail cost-sharing: $13"
+        }, {
+            "typeId": "19075",
+            "name": "Prescription Drug Tier 2 Gap Coverage",
+            "value": "N/A"
+        }, {
+            "typeId": "11181",
+            "name": "Prosthesis (replacing body parts) notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11867",
+            "name": "Preventative Dental Fluoride Treatment Visit Limit",
+            "value": "1 Every year"
+        }, {
+            "typeId": "12001",
+            "name": "Eye Exams Benefits (Mandatory/Optional)?",
+            "value": "Mandatory"
+        }, {
+            "typeId": "12753",
+            "name": "Combined Annual Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "10152",
+            "name": "OON Inpatient Hospital",
+            "value": "N/A"
+        }, {
+            "typeId": "10534",
+            "name": "Urgent Care Copay Waived if Admitted to Hospital?",
+            "value": "Yes"
+        }, {
+            "typeId": "10591",
+            "name": "Home Health Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11212",
+            "name": "Diabetes Monitoring Copay (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "11472",
+            "name": "Immunizations (Medicare Covered) Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "12760",
+            "name": "OON Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "12800",
+            "name": "INN Out of Pocket Max",
+            "value": "$5,000"
+        }, {
+            "typeId": "12810",
+            "name": "OON Out of Pocket Maximum",
+            "value": "$0"
+        }, {
+            "typeId": "12891",
+            "name": "Preventative Dental Maximum Plan Benefit Coverage amount:",
+            "value": "NULL"
+        }, {
+            "typeId": "12940",
+            "name": "Preventative Dental Notes",
+            "value": "Section B - 16A  Base 5: Preventive Dental Refer to document DHMO Dental Plan\"."
+        }, {
+            "typeId": "19023",
+            "name": "Enrollment Kit PDF",
+            "value": "2016_ca_enrollapp.pdf"
+        }, {
+            "typeId": "10252",
+            "name": "Inpatient Psychiatric (per day)",
+            "value": "NULL"
+        }, {
+            "typeId": "15015",
+            "name": "Tier #1: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15026",
+            "name": "Tier #2: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15031",
+            "name": "Tier #3: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15036",
+            "name": "Tier #3: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15053",
+            "name": "Tier #5: OONP Coinsurance 1M",
+            "value": "33%"
+        }, {
+            "typeId": "15055",
+            "name": "Tier #5: MONPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19076",
+            "name": "Prescription Drug Tier 3 Label",
+            "value": "Preferred brand drug copay"
+        }, {
+            "typeId": "19079",
+            "name": "Prescription Drug Tier 4 Value",
+            "value": "Standard retail cost-sharing: $100; Preferred retail cost-sharing: $90"
+        }, {
+            "typeId": "19081",
+            "name": "Prescription Drug Tier 5 Value",
+            "value": "Standard retail/Preferred retail cost-sharing: 33%"
+        }, {
+            "typeId": "19089",
+            "name": "Silver Sneakers PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "11985",
+            "name": "Comprehensive Dental Emergency Services Copay",
+            "value": "$20"
+        }, {
+            "typeId": "11282",
+            "name": "Complementary Routine Acupuncture Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11473",
+            "name": "Immunizations (Medicare Covered) Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11474",
+            "name": "Immunizations (Medicare Covered) Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11602",
+            "name": "Prostrate Screening Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "19122",
+            "name": "Nutrition Therapy Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "19500",
+            "name": "Medicare-covered Service Categories to which the Plan Deductible applies (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19503",
+            "name": "Non-Medicare-covered Service Categories to which the Plan Deductible applies (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "10391",
+            "name": "SNF Copay",
+            "value": "No Charge"
+        }, {
+            "typeId": "10610",
+            "name": "PCP Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10910",
+            "name": "Lab Services",
+            "value": "Yes"
+        }, {
+            "typeId": "11110",
+            "name": "Ambulance",
+            "value": "$230"
+        }, {
+            "typeId": "11391",
+            "name": "Health Education, Wellness or Fitness",
+            "value": "NULL"
+        }, {
+            "typeId": "11480",
+            "name": "Immunization Note",
+            "value": "Section B - 14B - Base 3: Annual Physical Exam The Routine Physical Exam includes a comprehensive review of systems and physical examination, which allows flexibility for the physician to manage chronic conditions in addition to evaluation and/or treatment of new or prior existing problems. The availability of the Routine Physical Exam allows members to seek a separate visit with their physician to discuss general health questions or issues without presentation of a specific chief complaint. This flexibility serves to further support the bond between patient and primary care physician while enabling the physician with an additional opportunity to detect undiagnosed conditions and deliver care in a timely manner. This physical exam could include all or some of the following components as applicable: History, Vital Signs, General Appearance, Heart Exam, Lung Exam, Head and Neck Exam, Abdominal Exam, Neurological Exam, Dermatological Exam, Extremities Exam."
+        }, {
+            "typeId": "11560",
+            "name": "Pap / Pelvic Exams Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11750",
+            "name": "Diabetes Monitoring",
+            "value": "NULL"
+        }, {
+            "typeId": "11861",
+            "name": "Preventative Dental X-Rays benefit is unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "11901",
+            "name": "Preventative Dental Oral Exams Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11902",
+            "name": "Preventative Dental Cleaning Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11922",
+            "name": "Comprehensive Dental Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "12080",
+            "name": "Eye Wear Notes",
+            "value": "Section B - 17B  Base 6: Eye Wear Refer to document HMO Eyewear Plan.\""
+        }, {
+            "typeId": "12090",
+            "name": "Hearing Exams Benefit Type (Optional or Supplemental).",
+            "value": "Yes"
+        }, {
+            "typeId": "12331",
+            "name": "OON Benefit Description Categories (Group 3)",
+            "value": "NULL"
+        }, {
+            "typeId": "12332",
+            "name": "OON Benefit Copay (Group 3)",
+            "value": "NULL"
+        }, {
+            "typeId": "12373",
+            "name": "OON Group 5 Copayment",
+            "value": "NULL"
+        }, {
+            "typeId": "12393",
+            "name": "OON Group 6 Copay Required?",
+            "value": "NULL"
+        }, {
+            "typeId": "12832",
+            "name": "Optional Supplemental - Label and Premium Package #2 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "12840",
+            "name": "Optional Supplemental Package # 2 Routine Chiropractic and Acupuncture",
+            "value": ": Routine Care/Other"
+        }, {
+            "typeId": "12860",
+            "name": "Optional Supplemental Package #2 - Routine Chiropractic and Acupuncture Copay",
+            "value": "10.00"
+        }, {
+            "typeId": "12882",
+            "name": "Preventative Dental Cleaning number of exams",
+            "value": "2 Every year"
+        }, {
+            "typeId": "13090",
+            "name": "ICL Coverage Limit",
+            "value": "$3,310"
+        }, {
+            "typeId": "13190",
+            "name": "Prescription Drug Tier Label",
+            "value": "NULL"
+        }, {
+            "typeId": "13230",
+            "name": "Preferred Generic Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "13331",
+            "name": "Non-Preferred (Generic & Brand) Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "19001",
+            "name": "Monthly Premium",
+            "value": "$167.00"
+        }, {
+            "typeId": "19016",
+            "name": "Marketing Name",
+            "value": "Health Net of California"
+        }, {
+            "typeId": "19021",
+            "name": "Evidence Of Coverage PDF",
+            "value": "H0562_2016_084_EOC.pdf"
+        }, {
+            "typeId": "19027",
+            "name": "Plan Id",
+            "value": "084"
+        }, {
+            "typeId": "19028",
+            "name": "Optional Benefit PDF",
+            "value": "2016_ca_optsup_enroll.pdf"
+        }, {
+            "typeId": "10111",
+            "name": "OON Inpatient Hospital",
+            "value": "N/A"
+        }, {
+            "typeId": "10394",
+            "name": "SNF Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "15003",
+            "name": "Is prior authorization required for certain prescription drugs?",
+            "value": "Yes"
+        }, {
+            "typeId": "15012",
+            "name": "Tier #1: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15032",
+            "name": "Tier #3: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15042",
+            "name": "Tier #4: INP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15051",
+            "name": "Tier #5: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15056",
+            "name": "Tier #5: LTCP Coinsurance 1M",
+            "value": "33%"
+        }, {
+            "typeId": "10041",
+            "name": "Special Needs Plan Type?",
+            "value": "NULL"
+        }, {
+            "typeId": "10393",
+            "name": "SNF Copay / Benefit PeriodNote:  If SNF Copay required = \"\"no\"\", then SNF =$0.00",
+            "value": "N/A"
+        }, {
+            "typeId": "10502",
+            "name": "ER Copay Waiver",
+            "value": "Yes, if admitted within 0 Hours"
+        }, {
+            "typeId": "10571",
+            "name": "Home Health benefit description",
+            "value": "Note: Limited to 80 hours per year."
+        }, {
+            "typeId": "10681",
+            "name": "Rehab Copay",
+            "value": "$0"
+        }, {
+            "typeId": "10931",
+            "name": "OUTPATIENT DIAG/THERAPEUTIC RAD SERVICES Coinsurance",
+            "value": "NULL"
+        }, {
+            "typeId": "10940",
+            "name": "Diagnostic Radiological Service (Medicare Covered)",
+            "value": "%"
+        }, {
+            "typeId": "10951",
+            "name": "Diagnostic Radiological Services",
+            "value": "$60"
+        }, {
+            "typeId": "11150",
+            "name": "Transporation Copay",
+            "value": "NULL"
+        }, {
+            "typeId": "11271",
+            "name": "Acupuncture Benefit Description (Optional / Mandatory)",
+            "value": "NULL"
+        }, {
+            "typeId": "11510",
+            "name": "Annual Routine Physical Exams",
+            "value": "$0"
+        }, {
+            "typeId": "11530",
+            "name": "Periodic Health Evaluations",
+            "value": "NULL"
+        }, {
+            "typeId": "11660",
+            "name": "Colorectal Screening Note",
+            "value": "NULL"
+        }, {
+            "typeId": "11852",
+            "name": "Preventative Dental - Oral exams benefit Type (Mandatory or Optional)",
+            "value": "Mandatory"
+        }, {
+            "typeId": "11890",
+            "name": "Preventative Dental - Plan Deductible",
+            "value": "$0"
+        }, {
+            "typeId": "11934",
+            "name": "Comprehensive Dental - Oral/Maxillofacial Surgery Benefit Type",
+            "value": "Mandatory"
+        }, {
+            "typeId": "11980",
+            "name": "Comprehensive Dental (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "11984",
+            "name": "Comprehensive Dental Copay  (Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services)",
+            "value": "$0 - $2,250"
+        }, {
+            "typeId": "12032",
+            "name": "Eye Wear Benefit Type (Optional or Mandatory)",
+            "value": "Optional"
+        }, {
+            "typeId": "12040",
+            "name": "Eye Wear - Eye Glass Lenses Coverage Period",
+            "value": "$250; 1 Every two years"
+        }, {
+            "typeId": "12041",
+            "name": "Eye Wear - Eye Glass Frames Coverage Period",
+            "value": "1 Every two years"
+        }, {
+            "typeId": "12190",
+            "name": "Out of Network Benefits Offered?",
+            "value": "NULL"
+        }, {
+            "typeId": "12310",
+            "name": "OON Group 2 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12312",
+            "name": "OON Benefit Copay (Group 2)",
+            "value": "NULL"
+        }, {
+            "typeId": "12390",
+            "name": "OON Group 6 Label",
+            "value": "NULL"
+        }, {
+            "typeId": "12392",
+            "name": "OON Group 6 Coinsurance Required?",
+            "value": "NULL"
+        }, {
+            "typeId": "12394",
+            "name": "OON Group 6 Copay Amount?",
+            "value": "NULL"
+        }, {
+            "typeId": "12833",
+            "name": "Optional Supplemental - Label and Premium Package Benefit Coverage",
+            "value": "NULL"
+        }, {
+            "typeId": "13130",
+            "name": "Formulary Tiers",
+            "value": "6"
+        }, {
+            "typeId": "13170",
+            "name": "Medicare-defined Part D Deductible charged?",
+            "value": "No Deductible"
+        }, {
+            "typeId": "13280",
+            "name": "Preferred Brand Copay ",
+            "value": "N/A"
+        }, {
+            "typeId": "13281",
+            "name": "Preferred Brand Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "19025",
+            "name": "Compare Grid PDF",
+            "value": "2016_ca_bh_084.pdf"
+        }, {
+            "typeId": "12036",
+            "name": "Eye Wear (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "15025",
+            "name": "Tier #2: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15033",
+            "name": "Tier #3: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15045",
+            "name": "Tier #4: MONPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19072",
+            "name": "Prescription Drug Tier 1 Gap Coverage",
+            "value": "No coverage"
+        }, {
+            "typeId": "19078",
+            "name": "Prescription Drug Tier 4 Label",
+            "value": "Non-preferred brand copay"
+        }, {
+            "typeId": "19094",
+            "name": "Eligibility Verification PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "10783",
+            "name": "Podiatry Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10593",
+            "name": "Home Health Coinsurance ",
+            "value": "N/A"
+        }, {
+            "typeId": "11213",
+            "name": "Diabetes Monitoring Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11722",
+            "name": "Mammography Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11989",
+            "name": "Comprehensive Dental Coinsurance (Endodontics/Periodontics/Extractions Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "19099",
+            "name": "Health Net Customer Service Phone Number",
+            "value": "Call: 1-800-275-4737, TTY: 711"
+        }, {
+            "typeId": "19502",
+            "name": "Non-Medicare-covered Service Categories to which the Plan Deductible applies (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19505",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Medicare-covered plan services? (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19055",
+            "name": "Optional Supplemental Package 6 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "12868",
+            "name": "Opt Sup Package 7 Premium Product ",
+            "value": "N/A"
+        }, {
+            "typeId": "10040",
+            "name": "Special Needs Plan?",
+            "value": "No"
+        }, {
+            "typeId": "10590",
+            "name": "Home Health Copay",
+            "value": "$0"
+        }, {
+            "typeId": "10641",
+            "name": "Chiropractic Services Benefit Description (Mandatory / Optional)",
+            "value": "Optional"
+        }, {
+            "typeId": "10780",
+            "name": "Podiatry (Medicare)",
+            "value": "$20"
+        }, {
+            "typeId": "10952",
+            "name": "Therapeutic Radiological Services",
+            "value": "$60"
+        }, {
+            "typeId": "11060",
+            "name": "Outpatient Substance Abuse Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11061",
+            "name": "Outpatient Substance Abuse Copay",
+            "value": "NaN"
+        }, {
+            "typeId": "11120",
+            "name": "Ambulance Notes",
+            "value": "No charge for Medicare-covered epidural injections performed in an ambulatory surgical center."
+        }, {
+            "typeId": "11210",
+            "name": "Diabetes Monitoring Coinsurance (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "12011",
+            "name": "Eye Exams (Routine) Copay",
+            "value": "$20"
+        }, {
+            "typeId": "12031",
+            "name": "Eye Wear Benefit Description",
+            "value": ": Contact lenses : Eyeglasses (lenses and frames) : Eyeglass lenses : Eyeglass frames"
+        }, {
+            "typeId": "12231",
+            "name": "OON Inpatient Psychiatric Hospital Stay Coverage Period",
+            "value": "-"
+        }, {
+            "typeId": "12261",
+            "name": "OON SNF Stay Coverage Period",
+            "value": "-"
+        }, {
+            "typeId": "12370",
+            "name": "OON Group 5 Label",
+            "value": "NULL"
+        }, {
+            "typeId": "10131",
+            "name": "Inpatient Hospital Benefit Period",
+            "value": "NaN per day for Days  -"
+        }, {
+            "typeId": "10531",
+            "name": "Urgent Care Waiver",
+            "value": "Yes, if admitted within 0 Hours"
+        }, {
+            "typeId": "10640",
+            "name": "Chiropractic Routine Visit Limit",
+            "value": "30 per year combined with acupuncture"
+        }, {
+            "typeId": "10680",
+            "name": "Rehab Therapy Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10750",
+            "name": "Outpatient Mental Health Visit",
+            "value": "NaN"
+        }, {
+            "typeId": "10850",
+            "name": "Outpatient Mental Health visit with a psychiatrist",
+            "value": "NaN"
+        }, {
+            "typeId": "10950",
+            "name": " X-ray (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "10960",
+            "name": "OUTPATIENT DIAG/THERAPEUTIC RAD SERVICES Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11010",
+            "name": "ASC Services Copay Required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11011",
+            "name": "ASC Services",
+            "value": "$125"
+        }, {
+            "typeId": "11180",
+            "name": "Prosthetic Devices",
+            "value": "20%"
+        }, {
+            "typeId": "11220",
+            "name": "Diabetes Monitoring and Supplies Copayment",
+            "value": "Yes"
+        }, {
+            "typeId": "11650",
+            "name": "Colorectal Screening Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11680",
+            "name": "Bone Mass Measurement Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11810",
+            "name": "Part B Epoetin / Osteoporosis Drugs",
+            "value": "20%"
+        }, {
+            "typeId": "11933",
+            "name": "Comprehensive Dental - Endodontics/Periodontics/Extractions Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "11935",
+            "name": "Comprehensive Dental - Oral Maxillofacial Surgery Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "11982",
+            "name": "Comprehensive Dental Copay (Restorative Services)",
+            "value": "$0 - $300"
+        }, {
+            "typeId": "12292",
+            "name": "Out of Network Coinsurance Amount (Group 1)",
+            "value": "NULL"
+        }, {
+            "typeId": "12311",
+            "name": "Out of Network Benefit Categories (Group 2)",
+            "value": "NULL"
+        }, {
+            "typeId": "12372",
+            "name": "OON Group 5 Coinsurance",
+            "value": "NULL"
+        }, {
+            "typeId": "12530",
+            "name": "Cost Share Reduction?  (PPO Only)",
+            "value": "NULL"
+        }, {
+            "typeId": "12752",
+            "name": "INN (Routine) Benefit Categories that apply to the deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12762",
+            "name": "OON Benefits (Routine) that apply to the OON Deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12781",
+            "name": "Optional Supplemental - Label and Premium Package #1 Description",
+            "value": "Buy Up #9: Eyewear+Chiro/Acupuncture+fitness"
+        }, {
+            "typeId": "12783",
+            "name": "Optional Supplemental - Label and Premium Package #1 Services",
+            "value": "7b;13a;14c;17b;"
+        }, {
+            "typeId": "12830",
+            "name": "Optional Supplemental - Label and Premium Package",
+            "value": "001"
+        }, {
+            "typeId": "12831",
+            "name": "Optional Supplemental - Label and Premium Package #2 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "12841",
+            "name": "Optional Supplemental Package # 2 Routine Chiropractic and Acupuncture number of visits",
+            "value": "30 Every year"
+        }, {
+            "typeId": "13231",
+            "name": "Preferred Generic Mail Order (90 days supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "13260",
+            "name": "Medicare-defined Part D Standard Initial Coverage Limit (ICL) Amount applied?",
+            "value": "Yes"
+        }, {
+            "typeId": "13420",
+            "name": "Specialty Drugs Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19011",
+            "name": "Group ID",
+            "value": "00411A, 0041B, 00411C, 00411D, 00411E, 00411F, 00411G, 00411H, 00411I, 00411J, 00411K, 00411L, 00440F, 00440A, 00440H, 00440J, 00440B, 00440C, 00440P, 00440Q, 00440I, 00440D, 00440T, 00440E"
+        }, {
+            "typeId": "19017",
+            "name": "Contract Number",
+            "value": "H0562"
+        }, {
+            "typeId": "10112",
+            "name": "Inpatient Hospital (per day)",
+            "value": "$275 per day for Days 1 - 4;$0 per day for Days 5 - 90"
+        }, {
+            "typeId": "10532",
+            "name": "OON Urgent Care",
+            "value": "$20"
+        }, {
+            "typeId": "12861",
+            "name": "Optional Supplemental - Label and Premium Package #3 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "12862",
+            "name": "Optional Supplemental - Label and Premium Package #3 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "12863",
+            "name": "Optional Supplemental - Label and Premium Package #4 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "15005",
+            "name": "Are there any drugs on your formulary for which access is limited to certain pharmacies?",
+            "value": "N/A"
+        }, {
+            "typeId": "15006",
+            "name": "Do you charge the Medicare-defined Part D Deductible amount?",
+            "value": "NULL"
+        }, {
+            "typeId": "15017",
+            "name": "Tier #1: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15019",
+            "name": "Tier #1: LTCP Copay 1M",
+            "value": "$8.00"
+        }, {
+            "typeId": "15021",
+            "name": "Tier #2: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15024",
+            "name": "Tier #2: OONP Copay 1M",
+            "value": "$18.00"
+        }, {
+            "typeId": "15052",
+            "name": "Tier #5: INP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19039",
+            "name": "TrOOP - Catastrophic Coverage Limit",
+            "value": "$4,850"
+        }, {
+            "typeId": "19077",
+            "name": "Prescription Drug Tier 3 Value",
+            "value": "Standard retail cost-sharing: $47; Preferred retail cost-sharing: $37"
+        }, {
+            "typeId": "19082",
+            "name": "Prescription Drug Tier 6 Label",
+            "value": "Select Care drugs copay"
+        }, {
+            "typeId": "19084",
+            "name": "Prescription Drug Tier 7 Label",
+            "value": "N/A"
+        }, {
+            "typeId": "19091",
+            "name": "Silver & Fit PDF",
+            "value": "2016_silversneakers.pdf"
+        }, {
+            "typeId": "19042",
+            "name": "Catastrophic generic drugs cost share",
+            "value": "$2.95 or 5%"
+        }, {
+            "typeId": "10504",
+            "name": "Emergency Room Copay Waived if Admitted to Hospital?",
+            "value": "Yes"
+        }, {
+            "typeId": "10505",
+            "name": "Emergency Room Copay Waived Time Period",
+            "value": "0 Hours"
+        }, {
+            "typeId": "11214",
+            "name": "Diabetes Monitoring Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11263",
+            "name": "Blood Copayment",
+            "value": "N/A"
+        }, {
+            "typeId": "11264",
+            "name": "Blood Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11563",
+            "name": "Pap / Pelvic Exams Copay",
+            "value": "NaN / NaN"
+        }, {
+            "typeId": "11991",
+            "name": "Comprehensive Dental Emergency Services Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19121",
+            "name": "Nutrition Therapy Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "19123",
+            "name": "Nutrition Therapy Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11990",
+            "name": "Comprehensive Dental Coinsurance (Prosthodontics; Other Oral/Maxillofacial Surgery; Other Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "12866",
+            "name": "Optional Supplemental - Label and Premium Package #5 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "19512",
+            "name": "Multi-Language Insert",
+            "value": "2016_multi_language_insert.pdf"
+        }],
+        "stateCode": "CA",
+        "county": "Sacramento",
+        "zipCode": "95742",
+        "allowEnrollment": false,
+        "updatedDate": 1440687672000,
+        "rate": 0.0
+    }, {
+        "id": "39967",
+        "name": "Health Net Medicare Supplement Plan (MS)",
+        "code": "Health Net Medicare Supplement Plan (MS)",
+        "complementaryFlag": false,
+        "topSeller": false,
+        "type": "MEDSUP",
+        "productDetails": [{
+            "typeId": "19081",
+            "name": "Prescription Drug Tier 5 Value",
+            "value": "Standard retail/Preferred retail cost-sharing:  33%"
+        }, {
+            "typeId": "19082",
+            "name": "Prescription Drug Tier 6 Label",
+            "value": "Select Care Drugs Copay"
+        }, {
+            "typeId": "19091",
+            "name": "Silver & Fit PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "12866",
+            "name": "Optional Supplemental - Label and Premium Package #5 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "19519",
+            "name": "Silver & Fit PDF Chinese Marketing (CA)",
+            "value": "N/A"
+        }, {
+            "typeId": "19517",
+            "name": "Optional Benefits PDF Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19588",
+            "name": "Opt Sup Package 8 Premium Product",
+            "value": "N/A"
+        }, {
+            "typeId": "19017",
+            "name": "Contract Number",
+            "value": "M1234"
+        }, {
+            "typeId": "19025",
+            "name": "Compare Grid PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19026",
+            "name": "Low-income Subsidy PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19028",
+            "name": "Optional Benefit PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19090",
+            "name": "Healthy Discounts PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19092",
+            "name": "Amber Call Centers PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19094",
+            "name": "Eligibility Verification PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19099",
+            "name": "Health Net Customer Service Phone Number",
+            "value": "N/A"
+        }, {
+            "typeId": "10113",
+            "name": "Inpatient Hospital (additional days)",
+            "value": "$0"
+        }, {
+            "typeId": "12862",
+            "name": "Optional Supplemental - Label and Premium Package #3 Premium",
+            "value": "$40"
+        }, {
+            "typeId": "19044",
+            "name": "Optional Supplemental Package 1 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19073",
+            "name": "Prescription Drug Tier 2 Label",
+            "value": "Non Preferred Generic Drugs Copay"
+        }, {
+            "typeId": "19076",
+            "name": "Prescription Drug Tier 3 Label",
+            "value": "Preferred Brand Drugs Copay"
+        }, {
+            "typeId": "12868",
+            "name": "Opt Sup Package 7 Premium Product ",
+            "value": "N/A"
+        }, {
+            "typeId": "19590",
+            "name": "Opt Sup Package 9 Premium Product",
+            "value": "N/A"
+        }, {
+            "typeId": "13440",
+            "name": "Gap Coverage Offered?",
+            "value": "No Coverage"
+        }, {
+            "typeId": "19011",
+            "name": "Group ID",
+            "value": "00NWS1~ 00NWS2"
+        }, {
+            "typeId": "19019",
+            "name": "Summary Of Benefits PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19070",
+            "name": "Prescription Drug Tier 1 Label",
+            "value": "Preferred Generic Drugs Copay"
+        }, {
+            "typeId": "19072",
+            "name": "Prescription Drug Tier 1 Gap Coverage",
+            "value": "No Coverage"
+        }, {
+            "typeId": "19077",
+            "name": "Prescription Drug Tier 3 Value",
+            "value": "Standard retail cost-sharing:  $47.00,Preferred retail cost-sharing:  $37.00"
+        }, {
+            "typeId": "19043",
+            "name": "Catastrophic all other drugs cost share",
+            "value": "$7.40 or 5%"
+        }, {
+            "typeId": "19514",
+            "name": "EOC Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19513",
+            "name": "SB Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19055",
+            "name": "Optional Supplemental Package 6 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19001",
+            "name": "Monthly Premium",
+            "value": "$0.00"
+        }, {
+            "typeId": "19003",
+            "name": "Enrollment Kit Address",
+            "value": "N/A"
+        }, {
+            "typeId": "19050",
+            "name": "Optional Supplemental Package 3 PDF",
+            "value": "2016_or_optsup.pdf"
+        }, {
+            "typeId": "19071",
+            "name": "Prescription Drug Tier 1 Value",
+            "value": "Standard retail cost-sharing:  $8.00, Preferred retail cost-sharing:  $3.00"
+        }, {
+            "typeId": "19042",
+            "name": "Catastrophic generic drugs cost share",
+            "value": "$2.95 or 5%"
+        }, {
+            "typeId": "11735",
+            "name": "Physician Attestation Form Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19053",
+            "name": "Optional Supplemental Package 4 PDF",
+            "value": "2016_or_optsup.pdf"
+        }, {
+            "typeId": "19075",
+            "name": "Prescription Drug Tier 2 Gap Coverage",
+            "value": "No Coverage"
+        }, {
+            "typeId": "19080",
+            "name": "Prescription Drug Tier 5 Label",
+            "value": "SpecialtyÂ Drugs Copay"
+        }, {
+            "typeId": "19054",
+            "name": "Optional Supplemental Package 5 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19512",
+            "name": "Multi-Language Insert",
+            "value": "N/A"
+        }, {
+            "typeId": "12750",
+            "name": "INN Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "12782",
+            "name": "Optional Supplemental - Label and Premium Package #1 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "12832",
+            "name": "Optional Supplemental - Label and Premium Package #2 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "19074",
+            "name": "Prescription Drug Tier 2 Value",
+            "value": "Standard retail cost-sharing:  $15.00,Preferred retail cost-sharing:  $8.00"
+        }, {
+            "typeId": "19083",
+            "name": "Prescription Drug Tier 6 Value",
+            "value": "Standard retail/Preferred retail cost-sharing:  $0"
+        }, {
+            "typeId": "19516",
+            "name": "Compare_Plans Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19518",
+            "name": "Healthy Discounts PDF Chinese Marketing (CA)",
+            "value": "N/A"
+        }, {
+            "typeId": "19056",
+            "name": "Opt Sup Package 7 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "19589",
+            "name": "Opt Sup Package 8 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "19591",
+            "name": "Opt Sup Package 9 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "13090",
+            "name": "ICL Coverage Limit",
+            "value": "$3~310 "
+        }, {
+            "typeId": "19004",
+            "name": "Plan Color",
+            "value": "Brown"
+        }, {
+            "typeId": "19013",
+            "name": "Health Net Plan Code",
+            "value": "VYD"
+        }, {
+            "typeId": "19018",
+            "name": "Effective Year",
+            "value": "2016"
+        }, {
+            "typeId": "19023",
+            "name": "Enrollment Kit PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19027",
+            "name": "Plan Id",
+            "value": "500"
+        }, {
+            "typeId": "12864",
+            "name": "Optional Supplemental - Label and Premium Package #4 Premium",
+            "value": "$16"
+        }, {
+            "typeId": "19047",
+            "name": "Optional Supplemental Package 2 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19087",
+            "name": "Part D Deductible",
+            "value": "No Deductible"
+        }, {
+            "typeId": "19089",
+            "name": "Silver Sneakers PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19093",
+            "name": "Electronic Funds Transfer PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19515",
+            "name": "Enrollment App PDF Chinese Marketing ",
+            "value": "N/A"
+        }, {
+            "typeId": "12867",
+            "name": "Optional Supplemental - Label and Premium Package #6 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "19021",
+            "name": "Evidence Of Coverage PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19039",
+            "name": "TrOOP - Catastrophic Coverage Limit",
+            "value": "$4~850 "
+        }, {
+            "typeId": "19040",
+            "name": "Decision Power",
+            "value": "N/A"
+        }, {
+            "typeId": "19078",
+            "name": "Prescription Drug Tier 4 Label",
+            "value": "Non Preferred Brand Copay"
+        }, {
+            "typeId": "19079",
+            "name": "Prescription Drug Tier 4 Value",
+            "value": "Standard retail cost-sharing:  $100,Preferred retail cost-sharing:  $90"
+        }],
+        "stateCode": "CA",
+        "county": "SACRAMENTO",
+        "zipCode": "95742",
+        "allowEnrollment": false,
+        "updatedDate": 1440688411000,
+        "rate": 0.0
+    }, {
+        "id": "39940",
+        "name": "Health Net Ruby Select (HMO)",
+        "code": "Health Net Ruby Select (HMO)",
+        "complementaryFlag": false,
+        "topSeller": false,
+        "type": "MAPD_HMO",
+        "productDetails": [{
+            "typeId": "10042",
+            "name": "Chronic or Disabling Conditions",
+            "value": "NULL"
+        }, {
+            "typeId": "10611",
+            "name": "PCP Copay",
+            "value": "$5.00"
+        }, {
+            "typeId": "10700",
+            "name": "Specialist copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10701",
+            "name": "Specialist Copay",
+            "value": "$20.00"
+        }, {
+            "typeId": "10780",
+            "name": "Podiatry (Medicare)",
+            "value": "$20"
+        }, {
+            "typeId": "11160",
+            "name": "DME",
+            "value": "20%"
+        }, {
+            "typeId": "11232",
+            "name": "End Stage Renal Disease Coinsurance",
+            "value": "20%"
+        }, {
+            "typeId": "11390",
+            "name": "Health Education, Wellness or Fitness Benefits available?",
+            "value": "NULL"
+        }, {
+            "typeId": "11800",
+            "name": "Part B Drugs Coinsurance required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11851",
+            "name": "Preventative Dental Benefit Description",
+            "value": ": Oral Exams : Prophylaxis (Cleaning) : Fluoride Treatment : Dental X-Rays"
+        }, {
+            "typeId": "11853",
+            "name": "Preventative Dental - Oral Exams benefit is unlimited?",
+            "value": "Yes"
+        }, {
+            "typeId": "11890",
+            "name": "Preventative Dental - Plan Deductible",
+            "value": "$0"
+        }, {
+            "typeId": "11935",
+            "name": "Comprehensive Dental - Oral Maxillofacial Surgery Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "11960",
+            "name": "Comprehensive Dental Restorative Services Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11970",
+            "name": "Comprehensive Dental Deductible Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "12011",
+            "name": "Eye Exams (Routine) Copay",
+            "value": "$20"
+        }, {
+            "typeId": "12033",
+            "name": "Eye Wear - Contact Lens Coverage",
+            "value": "1 Every two years"
+        }, {
+            "typeId": "12090",
+            "name": "Hearing Exams Benefit Type (Optional or Supplemental).",
+            "value": "Yes"
+        }, {
+            "typeId": "12190",
+            "name": "Out of Network Benefits Offered?",
+            "value": "NULL"
+        }, {
+            "typeId": "12350",
+            "name": "OON Group 4 Copay",
+            "value": "NULL"
+        }, {
+            "typeId": "12372",
+            "name": "OON Group 5 Coinsurance",
+            "value": "NULL"
+        }, {
+            "typeId": "12761",
+            "name": "OON Benefits (Medicare Covered) that apply to the OON Deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12783",
+            "name": "Optional Supplemental - Label and Premium Package #1 Services",
+            "value": "7b;13a;14c;16a;16b;17b;"
+        }, {
+            "typeId": "12800",
+            "name": "INN Out of Pocket Max",
+            "value": "$5,500"
+        }, {
+            "typeId": "12881",
+            "name": "Preventative Dental Oral Exams benefit unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "13130",
+            "name": "Formulary Tiers",
+            "value": "6"
+        }, {
+            "typeId": "13170",
+            "name": "Medicare-defined Part D Deductible charged?",
+            "value": "No Deductible"
+        }, {
+            "typeId": "13330",
+            "name": "Non-Preferred (Generic & Brand) Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "13420",
+            "name": "Specialty Drugs Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19001",
+            "name": "Monthly Premium",
+            "value": "$0.00"
+        }, {
+            "typeId": "19003",
+            "name": "Enrollment Kit Address",
+            "value": "Health Net Enrollment Services|PO Box 10420|Van Nuys, CA 91410-0420"
+        }, {
+            "typeId": "19018",
+            "name": "Effective Year",
+            "value": "2016"
+        }, {
+            "typeId": "19021",
+            "name": "Evidence Of Coverage PDF",
+            "value": "H0562_2016_102_EOC.pdf"
+        }, {
+            "typeId": "12864",
+            "name": "Optional Supplemental - Label and Premium Package #4 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "15005",
+            "name": "Are there any drugs on your formulary for which access is limited to certain pharmacies?",
+            "value": "N/A"
+        }, {
+            "typeId": "15029",
+            "name": "Tier #2: LTCP Copay 1M",
+            "value": "$20.00"
+        }, {
+            "typeId": "15031",
+            "name": "Tier #3: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15055",
+            "name": "Tier #5: MONPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19053",
+            "name": "Optional Supplemental Package 4 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19076",
+            "name": "Prescription Drug Tier 3 Label",
+            "value": "Preferred brand drug copay"
+        }, {
+            "typeId": "11865",
+            "name": "Preventative Dental Fluoride Treatment",
+            "value": "$0"
+        }, {
+            "typeId": "19043",
+            "name": "Catastrophic all other drugs cost share",
+            "value": "$7.40 or 5%"
+        }, {
+            "typeId": "10505",
+            "name": "Emergency Room Copay Waived Time Period",
+            "value": "0 Hours"
+        }, {
+            "typeId": "10591",
+            "name": "Home Health Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "10663",
+            "name": "Chiropractic (Routine) Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11213",
+            "name": "Diabetes Monitoring Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11563",
+            "name": "Pap / Pelvic Exams Copay",
+            "value": "NaN / NaN"
+        }, {
+            "typeId": "11724",
+            "name": "Mammography Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11987",
+            "name": "Comprehensive Dental Coinsurance (Diagnostic Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "19120",
+            "name": "Nutrition Therapy Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "19121",
+            "name": "Nutrition Therapy Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "19506",
+            "name": "Medicare-covered service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "12865",
+            "name": "Optional Supplemental - Label and Premium Package #5 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "19054",
+            "name": "Optional Supplemental Package 5 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19588",
+            "name": "Opt Sup Package 8 Premium Product",
+            "value": "N/A"
+        }, {
+            "typeId": "10500",
+            "name": "Worldwide Coverage Copayment Amount",
+            "value": "NaN"
+        }, {
+            "typeId": "10570",
+            "name": "Home Health",
+            "value": "Yes"
+        }, {
+            "typeId": "10590",
+            "name": "Home Health Copay",
+            "value": "$0"
+        }, {
+            "typeId": "10641",
+            "name": "Chiropractic Services Benefit Description (Mandatory / Optional)",
+            "value": "Optional"
+        }, {
+            "typeId": "10940",
+            "name": "Diagnostic Radiological Service (Medicare Covered)",
+            "value": "%"
+        }, {
+            "typeId": "10952",
+            "name": "Therapeutic Radiological Services",
+            "value": "$60"
+        }, {
+            "typeId": "11061",
+            "name": "Outpatient Substance Abuse Copay",
+            "value": "NaN"
+        }, {
+            "typeId": "11150",
+            "name": "Transporation Copay",
+            "value": "NULL"
+        }, {
+            "typeId": "11391",
+            "name": "Health Education, Wellness or Fitness",
+            "value": "NULL"
+        }, {
+            "typeId": "11440",
+            "name": "Health Ed / Wellness / Fitness",
+            "value": "NULL"
+        }, {
+            "typeId": "11750",
+            "name": "Diabetes Monitoring",
+            "value": "NULL"
+        }, {
+            "typeId": "11801",
+            "name": "Part B Chemotherapy Drugs Coinsurance",
+            "value": "20%"
+        }, {
+            "typeId": "11840",
+            "name": "Part C Home Infusion Drugs ",
+            "value": "No"
+        }, {
+            "typeId": "11862",
+            "name": "Preventative Dental X-Ray Visit Limit",
+            "value": "1 Every year"
+        }, {
+            "typeId": "11903",
+            "name": "Preventative Dental X-Rays Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11922",
+            "name": "Comprehensive Dental Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "12010",
+            "name": "Eye Exams (Medicare Covered) Copay",
+            "value": "$0 - $20"
+        }, {
+            "typeId": "12120",
+            "name": "Hearing Exams (Medicare Covered) Copay",
+            "value": "$0"
+        }, {
+            "typeId": "12231",
+            "name": "OON Inpatient Psychiatric Hospital Stay Coverage Period",
+            "value": "-"
+        }, {
+            "typeId": "12331",
+            "name": "OON Benefit Description Categories (Group 3)",
+            "value": "NULL"
+        }, {
+            "typeId": "12370",
+            "name": "OON Group 5 Label",
+            "value": "NULL"
+        }, {
+            "typeId": "12752",
+            "name": "INN (Routine) Benefit Categories that apply to the deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12762",
+            "name": "OON Benefits (Routine) that apply to the OON Deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12781",
+            "name": "Optional Supplemental - Label and Premium Package #1 Description",
+            "value": "DHMO+Eyewear+Chiro/Acupuncture+Fitness"
+        }, {
+            "typeId": "12782",
+            "name": "Optional Supplemental - Label and Premium Package #1 Premium",
+            "value": "$22.00"
+        }, {
+            "typeId": "12860",
+            "name": "Optional Supplemental Package #2 - Routine Chiropractic and Acupuncture Copay",
+            "value": "10.00"
+        }, {
+            "typeId": "12951",
+            "name": "Comprehensive Dental Diagnostic Services unlimited?",
+            "value": "Yes"
+        }, {
+            "typeId": "13501",
+            "name": "Preferred Generic Gap Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "19025",
+            "name": "Compare Grid PDF",
+            "value": "2016_ca_bh_102.pdf"
+        }, {
+            "typeId": "19026",
+            "name": "Low-income Subsidy PDF",
+            "value": "2016_ca_lis_102.pdf"
+        }, {
+            "typeId": "10252",
+            "name": "Inpatient Psychiatric (per day)",
+            "value": "NULL"
+        }, {
+            "typeId": "10532",
+            "name": "OON Urgent Care",
+            "value": "$20"
+        }, {
+            "typeId": "15012",
+            "name": "Tier #1: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15013",
+            "name": "Tier #1: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15022",
+            "name": "Tier #2: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15026",
+            "name": "Tier #2: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15027",
+            "name": "Tier #2: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15032",
+            "name": "Tier #3: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15033",
+            "name": "Tier #3: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15037",
+            "name": "Tier #3: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15039",
+            "name": "Tier #3: LTCP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15044",
+            "name": "Tier #4: MOPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15061",
+            "name": "Do you offer Gap Coverage?",
+            "value": "No"
+        }, {
+            "typeId": "19040",
+            "name": "Decision Power",
+            "value": "No Charge"
+        }, {
+            "typeId": "19083",
+            "name": "Prescription Drug Tier 6 Value",
+            "value": "Standard retail/Preferred retail cost-sharing: $0"
+        }, {
+            "typeId": "19085",
+            "name": "Prescription Drug Tier 7 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19093",
+            "name": "Electronic Funds Transfer PDF",
+            "value": "2016_abd.pdf"
+        }, {
+            "typeId": "11181",
+            "name": "Prosthesis (replacing body parts) notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11924",
+            "name": "Comprehensive Dental Notes",
+            "value": "Section B - 16B  Base 6: Comprehensive Dental Minimum copayment: $0 for Medicare covered Services and for some services under diagnostic, restorative, endodontics/periodontics/extractions, prosthodontics, oral/maxillofacial surgery service categories. Maximum copayment: $2250 for Orthodontics under Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services category."
+        }, {
+            "typeId": "10783",
+            "name": "Podiatry Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10535",
+            "name": "Urgent Care Copay Waived Time Period",
+            "value": "0 Hours"
+        }, {
+            "typeId": "10592",
+            "name": "Home Health Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11991",
+            "name": "Comprehensive Dental Emergency Services Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19508",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Non-Medicare-covered plan services? (In-Network)",
+            "value": "No"
+        }, {
+            "typeId": "11735",
+            "name": "Physician Attestation Form Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "10130",
+            "name": "Inpatient Hospital Benefit Period Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10640",
+            "name": "Chiropractic Routine Visit Limit",
+            "value": "30 per year combined with acupuncture"
+        }, {
+            "typeId": "10981",
+            "name": "Outpatient Hospital Services",
+            "value": "$345"
+        }, {
+            "typeId": "11180",
+            "name": "Prosthetic Devices",
+            "value": "20%"
+        }, {
+            "typeId": "11271",
+            "name": "Acupuncture Benefit Description (Optional / Mandatory)",
+            "value": "NULL"
+        }, {
+            "typeId": "11480",
+            "name": "Immunization Note",
+            "value": "Section B - 14B - Base 3: Annual Physical Exam The Routine Physical Exam includes a comprehensive review of systems and physical examination, which allows flexibility for the physician to manage chronic conditions in addition to evaluation and/or treatment of new or prior existing problems. The availability of the Routine Physical Exam allows members to seek a separate visit with their physician to discuss general health questions or issues without presentation of a specific chief complaint. This flexibility serves to further support the bond between patient and primary care physician while enabling the physician with an additional opportunity to detect undiagnosed conditions and deliver care in a timely manner. This physical exam could include all or some of the following components as applicable: History, Vital Signs, General Appearance, Heart Exam, Lung Exam, Head and Neck Exam, Abdominal Exam, Neurological Exam, Dermatological Exam, Extremities Exam."
+        }, {
+            "typeId": "11861",
+            "name": "Preventative Dental X-Rays benefit is unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "11902",
+            "name": "Preventative Dental Cleaning Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11930",
+            "name": "Comprehensive Dental - Restorative Services Benefit Type",
+            "value": "Optional"
+        }, {
+            "typeId": "11980",
+            "name": "Comprehensive Dental (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "11984",
+            "name": "Comprehensive Dental Copay  (Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services)",
+            "value": "$0 - $2,250"
+        }, {
+            "typeId": "12041",
+            "name": "Eye Wear - Eye Glass Frames Coverage Period",
+            "value": "1 Every two years"
+        }, {
+            "typeId": "12261",
+            "name": "OON SNF Stay Coverage Period",
+            "value": "-"
+        }, {
+            "typeId": "12290",
+            "name": "OON Group 1 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12291",
+            "name": "Out of Network Group 1 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12311",
+            "name": "Out of Network Benefit Categories (Group 2)",
+            "value": "NULL"
+        }, {
+            "typeId": "12332",
+            "name": "OON Benefit Copay (Group 3)",
+            "value": "NULL"
+        }, {
+            "typeId": "12830",
+            "name": "Optional Supplemental - Label and Premium Package",
+            "value": "001"
+        }, {
+            "typeId": "12833",
+            "name": "Optional Supplemental - Label and Premium Package Benefit Coverage",
+            "value": "16a;16b;"
+        }, {
+            "typeId": "19011",
+            "name": "Group ID",
+            "value": "004108, 004109, 004110, 004111, 004112, 004113, 00440X, 00440A, 00440B, 00440G, 00440H, 00440J"
+        }, {
+            "typeId": "19013",
+            "name": "Health Net Plan Code",
+            "value": "CHN"
+        }, {
+            "typeId": "19019",
+            "name": "Summary Of Benefits PDF",
+            "value": "2016_ca_sb_102.pdf"
+        }, {
+            "typeId": "19027",
+            "name": "Plan Id",
+            "value": "102"
+        }, {
+            "typeId": "10112",
+            "name": "Inpatient Hospital (per day)",
+            "value": "$345 per day for Days 1 - 5;$0 per day for Days 6 - 90"
+        }, {
+            "typeId": "10953",
+            "name": "OON Diagnostic Radiological Services",
+            "value": "N/A"
+        }, {
+            "typeId": "15003",
+            "name": "Is prior authorization required for certain prescription drugs?",
+            "value": "Yes"
+        }, {
+            "typeId": "15014",
+            "name": "Tier #1: OONP Copay 1M",
+            "value": "$10.00"
+        }, {
+            "typeId": "15016",
+            "name": "Tier #1: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15018",
+            "name": "Tier #1: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15023",
+            "name": "Tier #2: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "19029",
+            "name": "Customer Service Prospect Phone Number",
+            "value": "(800)977-6738"
+        }, {
+            "typeId": "19039",
+            "name": "TrOOP - Catastrophic Coverage Limit",
+            "value": "$4,850"
+        }, {
+            "typeId": "19071",
+            "name": "Prescription Drug Tier 1 Value",
+            "value": "Standard retail cost-sharing: $10; Preferred retail cost-sharing: $5"
+        }, {
+            "typeId": "19073",
+            "name": "Prescription Drug Tier 2 Label",
+            "value": "Non-preferred generic drug copay"
+        }, {
+            "typeId": "19078",
+            "name": "Prescription Drug Tier 4 Label",
+            "value": "Non-preferred brand copay"
+        }, {
+            "typeId": "19084",
+            "name": "Prescription Drug Tier 7 Label",
+            "value": "N/A"
+        }, {
+            "typeId": "12141",
+            "name": "Hearing Aid Max Plan Amount",
+            "value": "$1,000"
+        }, {
+            "typeId": "10504",
+            "name": "Emergency Room Copay Waived if Admitted to Hospital?",
+            "value": "Yes"
+        }, {
+            "typeId": "10533",
+            "name": "Urgent Care Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "10564",
+            "name": "Partial Hospital Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11473",
+            "name": "Immunizations (Medicare Covered) Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11654",
+            "name": "Colorectal Screening Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11683",
+            "name": "Bone Mass Measurement Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11684",
+            "name": "Bone Mass Measurement Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11989",
+            "name": "Comprehensive Dental Coinsurance (Endodontics/Periodontics/Extractions Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "11223",
+            "name": "Medicare-covered Diabetic Therapeutic Shoes or Inserts",
+            "value": "20%"
+        }, {
+            "typeId": "10150",
+            "name": "Inpatient Hospital Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10502",
+            "name": "ER Copay Waiver",
+            "value": "Yes, if admitted within 0 Hours"
+        }, {
+            "typeId": "10960",
+            "name": "OUTPATIENT DIAG/THERAPEUTIC RAD SERVICES Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "10980",
+            "name": "Outpatient Hospital Copay?",
+            "value": "Yes"
+        }, {
+            "typeId": "11110",
+            "name": "Ambulance",
+            "value": "$250"
+        }, {
+            "typeId": "11231",
+            "name": "End Stage Renal Disease Copayment",
+            "value": "N/A"
+        }, {
+            "typeId": "11270",
+            "name": "Acupuncture limit for number of treatments",
+            "value": "routine chiropractic per year."
+        }, {
+            "typeId": "11530",
+            "name": "Periodic Health Evaluations",
+            "value": "NULL"
+        }, {
+            "typeId": "11650",
+            "name": "Colorectal Screening Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11860",
+            "name": "Preventative Dental X-Rays Type of Benefit",
+            "value": "Optional"
+        }, {
+            "typeId": "11933",
+            "name": "Comprehensive Dental - Endodontics/Periodontics/Extractions Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "12040",
+            "name": "Eye Wear - Eye Glass Lenses Coverage Period",
+            "value": "$250; 1 Every two years"
+        }, {
+            "typeId": "12250",
+            "name": "OON Inpatient Psychiatric Hospital Deductible",
+            "value": "NaN"
+        }, {
+            "typeId": "12394",
+            "name": "OON Group 6 Copay Amount?",
+            "value": "NULL"
+        }, {
+            "typeId": "12760",
+            "name": "OON Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "12810",
+            "name": "OON Out of Pocket Maximum",
+            "value": "$0"
+        }, {
+            "typeId": "12882",
+            "name": "Preventative Dental Cleaning number of exams",
+            "value": "2 Every year"
+        }, {
+            "typeId": "12920",
+            "name": "Preventative Dental Deductible Amount",
+            "value": "NULL"
+        }, {
+            "typeId": "13090",
+            "name": "ICL Coverage Limit",
+            "value": "$3,310"
+        }, {
+            "typeId": "13281",
+            "name": "Preferred Brand Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "19016",
+            "name": "Marketing Name",
+            "value": "Health Net of California"
+        }, {
+            "typeId": "10503",
+            "name": "OON Emergency Room Copay",
+            "value": "$75"
+        }, {
+            "typeId": "12037",
+            "name": "Eye Wear (Routine Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "12861",
+            "name": "Optional Supplemental - Label and Premium Package #3 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "15007",
+            "name": "Indicate the Out-of-Network cost sharing structure for this plan:",
+            "value": "Standard Retail Copay/Coinsurance (No Differential)*"
+        }, {
+            "typeId": "15008",
+            "name": "Do you offer reduced Part D cost sharing as part of your supplemental coverage?",
+            "value": "Yes"
+        }, {
+            "typeId": "15017",
+            "name": "Tier #1: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15021",
+            "name": "Tier #2: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15024",
+            "name": "Tier #2: OONP Copay 1M",
+            "value": "$20.00"
+        }, {
+            "typeId": "15038",
+            "name": "Tier #3: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15042",
+            "name": "Tier #4: INP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15043",
+            "name": "Tier #4: OONP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15053",
+            "name": "Tier #5: OONP Coinsurance 1M",
+            "value": "33%"
+        }, {
+            "typeId": "19072",
+            "name": "Prescription Drug Tier 1 Gap Coverage",
+            "value": "No coverage"
+        }, {
+            "typeId": "19079",
+            "name": "Prescription Drug Tier 4 Value",
+            "value": "Standard retail cost-sharing: $100; Preferred retail cost-sharing: $90"
+        }, {
+            "typeId": "19081",
+            "name": "Prescription Drug Tier 5 Value",
+            "value": "Standard retail/Preferred retail cost-sharing: 33%"
+        }, {
+            "typeId": "10151",
+            "name": "Inpatient Hospital OOPM",
+            "value": "N/A"
+        }, {
+            "typeId": "12753",
+            "name": "Combined Annual Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "19042",
+            "name": "Catastrophic generic drugs cost share",
+            "value": "$2.95 or 5%"
+        }, {
+            "typeId": "10534",
+            "name": "Urgent Care Copay Waived if Admitted to Hospital?",
+            "value": "Yes"
+        }, {
+            "typeId": "10563",
+            "name": "Partial Hospital Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11234",
+            "name": "Renal Dialysis Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11603",
+            "name": "Prostrate Screening Copay",
+            "value": "NaN"
+        }, {
+            "typeId": "11604",
+            "name": "Prostrate Screening Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11652",
+            "name": "Colorectal Screening Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11803",
+            "name": "Part B Drugs Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11905",
+            "name": "Preventative Dental Oral Exams Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11906",
+            "name": "Preventive Dental Cleaning Coinsurance",
+            "value": "$0"
+        }, {
+            "typeId": "19504",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Medicare-covered plan services? (In-Network)",
+            "value": "Yes"
+        }, {
+            "typeId": "19509",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Non-Medicare-covered plan services? (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19510",
+            "name": "Non-Medicare-covered Service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (In-Network)",
+            "value": "1a;4c;7f;9d;14b;17a;18a;"
+        }, {
+            "typeId": "11990",
+            "name": "Comprehensive Dental Coinsurance (Prosthodontics; Other Oral/Maxillofacial Surgery; Other Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "12866",
+            "name": "Optional Supplemental - Label and Premium Package #5 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "19512",
+            "name": "Multi-Language Insert",
+            "value": "2016_multi_language_insert.pdf"
+        }, {
+            "typeId": "19519",
+            "name": "Silver & Fit PDF Chinese Marketing (CA)",
+            "value": "N/A"
+        }, {
+            "typeId": "19056",
+            "name": "Opt Sup Package 7 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "10131",
+            "name": "Inpatient Hospital Benefit Period",
+            "value": "NaN per day for Days  -"
+        }, {
+            "typeId": "10391",
+            "name": "SNF Copay",
+            "value": "No Charge"
+        }, {
+            "typeId": "10480",
+            "name": "Worldwide Coverage",
+            "value": "N/A"
+        }, {
+            "typeId": "10681",
+            "name": "Rehab Copay",
+            "value": "$0"
+        }, {
+            "typeId": "10850",
+            "name": "Outpatient Mental Health visit with a psychiatrist",
+            "value": "NaN"
+        }, {
+            "typeId": "10950",
+            "name": " X-ray (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "11220",
+            "name": "Diabetes Monitoring and Supplies Copayment",
+            "value": "Yes"
+        }, {
+            "typeId": "11822",
+            "name": "Part B Epoetin/ Osteoporosis Drugs Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11940",
+            "name": "Comprehensive Dental Maximum Plan Enrollment Amount",
+            "value": "No"
+        }, {
+            "typeId": "11950",
+            "name": "Comprehensive Dental Medicare Covered coinsurance amount (Medicare Covered)",
+            "value": "N/A"
+        }, {
+            "typeId": "11983",
+            "name": "Comprehensive Dental Copay (Endodontics/Periodontics/Extractions Services)",
+            "value": "$0 - $375"
+        }, {
+            "typeId": "12310",
+            "name": "OON Group 2 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12390",
+            "name": "OON Group 6 Label",
+            "value": "NULL"
+        }, {
+            "typeId": "12392",
+            "name": "OON Group 6 Coinsurance Required?",
+            "value": "NULL"
+        }, {
+            "typeId": "12530",
+            "name": "Cost Share Reduction?  (PPO Only)",
+            "value": "NULL"
+        }, {
+            "typeId": "12832",
+            "name": "Optional Supplemental - Label and Premium Package #2 Premium",
+            "value": "$32"
+        }, {
+            "typeId": "12840",
+            "name": "Optional Supplemental Package # 2 Routine Chiropractic and Acupuncture",
+            "value": ": Routine Care/Other"
+        }, {
+            "typeId": "12841",
+            "name": "Optional Supplemental Package # 2 Routine Chiropractic and Acupuncture number of visits",
+            "value": "30 Every year"
+        }, {
+            "typeId": "13231",
+            "name": "Preferred Generic Mail Order (90 days supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "13260",
+            "name": "Medicare-defined Part D Standard Initial Coverage Limit (ICL) Amount applied?",
+            "value": "Yes"
+        }, {
+            "typeId": "13280",
+            "name": "Preferred Brand Copay ",
+            "value": "N/A"
+        }, {
+            "typeId": "19017",
+            "name": "Contract Number",
+            "value": "H0562"
+        }, {
+            "typeId": "10394",
+            "name": "SNF Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11512",
+            "name": "Welcome to Medicare Physical Exam",
+            "value": "$0"
+        }, {
+            "typeId": "12036",
+            "name": "Eye Wear (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "15028",
+            "name": "Tier #2: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15036",
+            "name": "Tier #3: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15041",
+            "name": "Tier #4: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15045",
+            "name": "Tier #4: MONPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15052",
+            "name": "Tier #5: INP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15054",
+            "name": "Tier #5: MOPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19044",
+            "name": "Optional Supplemental Package 1 PDF",
+            "value": "2016_ca_optsup_enroll.pdf"
+        }, {
+            "typeId": "19091",
+            "name": "Silver & Fit PDF",
+            "value": "2016_silversneakers.pdf"
+        }, {
+            "typeId": "19094",
+            "name": "Eligibility Verification PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "11856",
+            "name": "Preventative Dental: Do you offer any Mandatory or Optional Supplemental Benefits?",
+            "value": "Yes"
+        }, {
+            "typeId": "11867",
+            "name": "Preventative Dental Fluoride Treatment Visit Limit",
+            "value": "1 Every year"
+        }, {
+            "typeId": "11214",
+            "name": "Diabetes Monitoring Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11562",
+            "name": "Pap / Pelvic Exams Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11653",
+            "name": "Colorectal Screening Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "19099",
+            "name": "Health Net Customer Service Phone Number",
+            "value": "Call: 1-800-275-4737, TTY: 711"
+        }, {
+            "typeId": "19501",
+            "name": "Medicare-covered Service Categories to which the Plan Deductible applies (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19502",
+            "name": "Non-Medicare-covered Service Categories to which the Plan Deductible applies (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19505",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Medicare-covered plan services? (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "12867",
+            "name": "Optional Supplemental - Label and Premium Package #6 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "19055",
+            "name": "Optional Supplemental Package 6 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "12868",
+            "name": "Opt Sup Package 7 Premium Product ",
+            "value": "N/A"
+        }, {
+            "typeId": "19589",
+            "name": "Opt Sup Package 8 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "10040",
+            "name": "Special Needs Plan?",
+            "value": "No"
+        }, {
+            "typeId": "10393",
+            "name": "SNF Copay / Benefit PeriodNote:  If SNF Copay required = \"\"no\"\", then SNF =$0.00",
+            "value": "N/A"
+        }, {
+            "typeId": "10501",
+            "name": "Emergency Room Copay",
+            "value": "$75"
+        }, {
+            "typeId": "10571",
+            "name": "Home Health benefit description",
+            "value": "Note: Limited to 80 hours per year."
+        }, {
+            "typeId": "10610",
+            "name": "PCP Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10660",
+            "name": "Chiropractic (Medicare Covered) Copay",
+            "value": "$10"
+        }, {
+            "typeId": "10661",
+            "name": "Chiropractic (Routine) Copay",
+            "value": "$10 (Routine)"
+        }, {
+            "typeId": "10910",
+            "name": "Lab Services",
+            "value": "Yes"
+        }, {
+            "typeId": "10911",
+            "name": "Lab Services Copay amount",
+            "value": "$0"
+        }, {
+            "typeId": "11010",
+            "name": "ASC Services Copay Required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11060",
+            "name": "Outpatient Substance Abuse Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11131",
+            "name": "Transportation Benefit Description",
+            "value": "NULL"
+        }, {
+            "typeId": "11470",
+            "name": "Immunizations (Medicare Covered) Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11600",
+            "name": "Prostate Screening Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11720",
+            "name": "Mammography Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11854",
+            "name": "Preventative Dental Cleaning number of exams",
+            "value": "2 Every year"
+        }, {
+            "typeId": "11901",
+            "name": "Preventative Dental Oral Exams Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11931",
+            "name": "Comprehensive Dental - Restorative Services Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "11932",
+            "name": "Comprehensive Dental - Endodontics/Periodontics/Extractions Benefit Type",
+            "value": "Optional"
+        }, {
+            "typeId": "11981",
+            "name": "Comprehensive Dental Copay (Diagnostic Services)",
+            "value": "$0 - $15"
+        }, {
+            "typeId": "12080",
+            "name": "Eye Wear Notes",
+            "value": "NULL"
+        }, {
+            "typeId": "12121",
+            "name": "Hearing Exams (Routine Covered) Copay",
+            "value": "$0"
+        }, {
+            "typeId": "12260",
+            "name": "OON SNF Stay Coinsurance Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "12330",
+            "name": "OON Group 3 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12373",
+            "name": "OON Group 5 Copayment",
+            "value": "NULL"
+        }, {
+            "typeId": "12393",
+            "name": "OON Group 6 Copay Required?",
+            "value": "NULL"
+        }, {
+            "typeId": "12801",
+            "name": "INN (Medicare Covered) Benefits that apply to the INN OOPM",
+            "value": "NULL"
+        }, {
+            "typeId": "12891",
+            "name": "Preventative Dental Maximum Plan Benefit Coverage amount:",
+            "value": "NULL"
+        }, {
+            "typeId": "13220",
+            "name": "Preferred Generics",
+            "value": "NULL"
+        }, {
+            "typeId": "13230",
+            "name": "Preferred Generic Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "13440",
+            "name": "Gap Coverage Offered?",
+            "value": "No coverage"
+        }, {
+            "typeId": "19028",
+            "name": "Optional Benefit PDF",
+            "value": "2016_ca_optsup_enroll.pdf"
+        }, {
+            "typeId": "10111",
+            "name": "OON Inpatient Hospital",
+            "value": "N/A"
+        }, {
+            "typeId": "11392",
+            "name": "Fitness/Health Club Membership",
+            "value": "NULL"
+        }, {
+            "typeId": "15019",
+            "name": "Tier #1: LTCP Copay 1M",
+            "value": "$10.00"
+        }, {
+            "typeId": "15060",
+            "name": "Do you apply the Medicare-defined Part D Standard Initial Coverage Limit (ICL) Amount?",
+            "value": "Yes"
+        }, {
+            "typeId": "19047",
+            "name": "Optional Supplemental Package 2 PDF",
+            "value": "2016_ca_optsup_enroll.pdf"
+        }, {
+            "typeId": "19070",
+            "name": "Prescription Drug Tier 1 Label",
+            "value": "Preferred generic drug copay"
+        }, {
+            "typeId": "19082",
+            "name": "Prescription Drug Tier 6 Label",
+            "value": "Select Care drugs copay"
+        }, {
+            "typeId": "19092",
+            "name": "Amber Call Centers PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "11866",
+            "name": "Preventative Dental Fluoride Treatment Visit Limit",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "11923",
+            "name": "Comprehensive Dental: Do you offer any Mandatory or Optional Supplemental Benefits?",
+            "value": "Yes"
+        }, {
+            "typeId": "11985",
+            "name": "Comprehensive Dental Emergency Services Copay",
+            "value": "$20"
+        }, {
+            "typeId": "11282",
+            "name": "Complementary Routine Acupuncture Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "12001",
+            "name": "Eye Exams Benefits (Mandatory/Optional)?",
+            "value": "Mandatory"
+        }, {
+            "typeId": "10481",
+            "name": "Worldwide Coverage Maximum Plan Benefit (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "11212",
+            "name": "Diabetes Monitoring Copay (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "11262",
+            "name": "Blood Coinsurance (Yes/No)",
+            "value": "0%"
+        }, {
+            "typeId": "11904",
+            "name": "Routine Preventive Dental Oral Exams Visit Limit",
+            "value": "N/A"
+        }, {
+            "typeId": "11907",
+            "name": "Preventive Dental X-Rays Coinsurance",
+            "value": "$0"
+        }, {
+            "typeId": "11925",
+            "name": "Comprehensive Dental - Maximum Plan Benefit Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "19123",
+            "name": "Nutrition Therapy Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19503",
+            "name": "Non-Medicare-covered Service Categories to which the Plan Deductible applies (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19514",
+            "name": "EOC Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19517",
+            "name": "Optional Benefits PDF Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19591",
+            "name": "Opt Sup Package 9 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "100",
+            "name": "Plan Summary",
+            "value": "Health Net Ruby Select (HMO) is a Medicare Advantage Prescription Drug (MAPD) plan that gives you the convenience of having all your needs (medical and drug) coordinated by one company. Health Net Ruby Select also allows you to choose a primary care physician from a network of highly skilled physicians in your area. This plan also includes complementary coverage for hearing aids as well as medical and Part D prescription drug coverage. This plan is limited to specific providers."
+        }, {
+            "typeId": "10041",
+            "name": "Special Needs Plan Type?",
+            "value": "NULL"
+        }, {
+            "typeId": "10390",
+            "name": "SNF Copay required",
+            "value": "Yes"
+        }, {
+            "typeId": "10530",
+            "name": "Urgent Care",
+            "value": "$20"
+        }, {
+            "typeId": "10531",
+            "name": "Urgent Care Waiver",
+            "value": "Yes, if admitted within 0 Hours"
+        }, {
+            "typeId": "10750",
+            "name": "Outpatient Mental Health Visit",
+            "value": "NaN"
+        }, {
+            "typeId": "10781",
+            "name": "Podiatry (Routine)",
+            "value": "$20"
+        }, {
+            "typeId": "10951",
+            "name": "Diagnostic Radiological Services",
+            "value": "$60"
+        }, {
+            "typeId": "11011",
+            "name": "ASC Services",
+            "value": "$150"
+        }, {
+            "typeId": "11020",
+            "name": "ASC Services Note",
+            "value": "No charge for Medicare-covered epidural injections performed in an ambulatory surgical center."
+        }, {
+            "typeId": "11170",
+            "name": "DME Note",
+            "value": "N/A"
+        }, {
+            "typeId": "11250",
+            "name": "Blood Enhanced Benefit",
+            "value": "NULL"
+        }, {
+            "typeId": "11680",
+            "name": "Bone Mass Measurement Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11810",
+            "name": "Part B Epoetin / Osteoporosis Drugs",
+            "value": "20%"
+        }, {
+            "typeId": "11982",
+            "name": "Comprehensive Dental Copay (Restorative Services)",
+            "value": "$0 - $300"
+        }, {
+            "typeId": "12000",
+            "name": "Eye Exams Coverage",
+            "value": "1 Every year"
+        }, {
+            "typeId": "12091",
+            "name": "Hearing Exams (Routine) Coverage",
+            "value": "1 Every year"
+        }, {
+            "typeId": "12230",
+            "name": "OON Inpatient Psychiatric Hospital Stay",
+            "value": "NULL"
+        }, {
+            "typeId": "12750",
+            "name": "INN Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "12780",
+            "name": "Optional Supplemental - Label and Premium Package #1",
+            "value": "001"
+        }, {
+            "typeId": "12831",
+            "name": "Optional Supplemental - Label and Premium Package #2 Description",
+            "value": "DPPO+Eyewear+Chiro/Acupuncture+Fitness"
+        }, {
+            "typeId": "13190",
+            "name": "Prescription Drug Tier Label",
+            "value": "NULL"
+        }, {
+            "typeId": "12863",
+            "name": "Optional Supplemental - Label and Premium Package #4 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "15002",
+            "name": "Are there quantity limits on certain prescription drugs?",
+            "value": "Yes"
+        }, {
+            "typeId": "15004",
+            "name": "Do any drugs in your formulary require a step therapy plan?",
+            "value": "Yes"
+        }, {
+            "typeId": "15011",
+            "name": "Tier #1: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15015",
+            "name": "Tier #1: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15034",
+            "name": "Tier #3: OONP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15035",
+            "name": "Tier #3: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15056",
+            "name": "Tier #5: LTCP Coinsurance 1M",
+            "value": "33%"
+        }, {
+            "typeId": "19050",
+            "name": "Optional Supplemental Package 3 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19074",
+            "name": "Prescription Drug Tier 2 Value",
+            "value": "Standard retail cost-sharing: $20; Preferred retail cost-sharing: $15"
+        }, {
+            "typeId": "19080",
+            "name": "Prescription Drug Tier 5 Label",
+            "value": "SpecialtyÂ drugs copay"
+        }, {
+            "typeId": "12142",
+            "name": "Hearing Aid Max Plan Period",
+            "value": "Every three years"
+        }, {
+            "typeId": "10593",
+            "name": "Home Health Coinsurance ",
+            "value": "N/A"
+        }, {
+            "typeId": "11263",
+            "name": "Blood Copayment",
+            "value": "N/A"
+        }, {
+            "typeId": "11264",
+            "name": "Blood Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11564",
+            "name": "Pap / Pelvic Exams Coinsurance ",
+            "value": "N/A"
+        }, {
+            "typeId": "11602",
+            "name": "Prostrate Screening Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11723",
+            "name": "Mammography Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "19500",
+            "name": "Medicare-covered Service Categories to which the Plan Deductible applies (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19507",
+            "name": "Medicare-covered service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19511",
+            "name": "Non-Medicare-covered Service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19516",
+            "name": "Compare_Plans Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19515",
+            "name": "Enrollment App PDF Chinese Marketing ",
+            "value": "N/A"
+        }, {
+            "typeId": "19590",
+            "name": "Opt Sup Package 9 Premium Product",
+            "value": "N/A"
+        }, {
+            "typeId": "10561",
+            "name": "Partial Hospital",
+            "value": "$0"
+        }, {
+            "typeId": "10680",
+            "name": "Rehab Therapy Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10931",
+            "name": "OUTPATIENT DIAG/THERAPEUTIC RAD SERVICES Coinsurance",
+            "value": "NULL"
+        }, {
+            "typeId": "10990",
+            "name": "Outpatient Hospital Notes",
+            "value": "No charge for Medicare-covered epidural injections performed in an outpatient hospital facility."
+        }, {
+            "typeId": "11120",
+            "name": "Ambulance Notes",
+            "value": "No charge for Medicare-covered epidural injections performed in an ambulatory surgical center."
+        }, {
+            "typeId": "11130",
+            "name": "Transportation",
+            "value": "No Plan-approved Location"
+        }, {
+            "typeId": "11210",
+            "name": "Diabetes Monitoring Coinsurance (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "11221",
+            "name": "Diabetes Monitoring and Supplies",
+            "value": "$0"
+        }, {
+            "typeId": "11260",
+            "name": "Blood Copayment (Yes/No)",
+            "value": "$0"
+        }, {
+            "typeId": "11280",
+            "name": "Acupuncture Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11510",
+            "name": "Annual Routine Physical Exams",
+            "value": "$0"
+        }, {
+            "typeId": "11560",
+            "name": "Pap / Pelvic Exams Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11660",
+            "name": "Colorectal Screening Note",
+            "value": "NULL"
+        }, {
+            "typeId": "11821",
+            "name": "Part B Chemotherapy Drugs Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11852",
+            "name": "Preventative Dental - Oral exams benefit Type (Mandatory or Optional)",
+            "value": "Optional"
+        }, {
+            "typeId": "11864",
+            "name": "Preventative Dental Maximum Plan Limit (Combined for prevenative and comprehensive services)",
+            "value": "N/A"
+        }, {
+            "typeId": "11920",
+            "name": "Comprehensive Dental Benefit Description",
+            "value": ": Non-routine Services : Diagnostic Services : Restorative Services : Endodontics/Periodontics/Extractions : Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services"
+        }, {
+            "typeId": "11921",
+            "name": "Comprehensive Dental Benefit Type",
+            "value": "Optional"
+        }, {
+            "typeId": "11934",
+            "name": "Comprehensive Dental - Oral/Maxillofacial Surgery Benefit Type",
+            "value": "Optional"
+        }, {
+            "typeId": "12030",
+            "name": "Routine Eye Wear Coverage (Yes / No)?",
+            "value": "No, indicate number 1"
+        }, {
+            "typeId": "12031",
+            "name": "Eye Wear Benefit Description",
+            "value": ": Contact lenses : Eyeglasses (lenses and frames) : Eyeglass lenses : Eyeglass frames"
+        }, {
+            "typeId": "12032",
+            "name": "Eye Wear Benefit Type (Optional or Mandatory)",
+            "value": "Optional"
+        }, {
+            "typeId": "12140",
+            "name": "Hearing Aid Coverage?",
+            "value": "Yes"
+        }, {
+            "typeId": "12280",
+            "name": "Number of OON Group Offerings",
+            "value": "NULL"
+        }, {
+            "typeId": "12292",
+            "name": "Out of Network Coinsurance Amount (Group 1)",
+            "value": "NULL"
+        }, {
+            "typeId": "12312",
+            "name": "OON Benefit Copay (Group 2)",
+            "value": "NULL"
+        }, {
+            "typeId": "12371",
+            "name": "OON Group 5 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12391",
+            "name": "OON Group 6 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12751",
+            "name": "INN (Medicare Covered) Benefit Categories that apply to the deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12802",
+            "name": "INN Benefits (Routine) that apply to the INN OOPM",
+            "value": "NULL"
+        }, {
+            "typeId": "12880",
+            "name": "Preventative Dental Benefit Description",
+            "value": ": Oral Exams : Prophylaxis (Cleaning) : Fluoride Treatment : Dental X-Rays"
+        }, {
+            "typeId": "12890",
+            "name": "Preventative Dental X-Rays benefit unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "12940",
+            "name": "Preventative Dental Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "12950",
+            "name": "Comprehensive Dental enhanced benefits",
+            "value": ": Non-routine Services : Diagnostic Services : Restorative Services : Endodontics/Periodontics/Extractions : Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services"
+        }, {
+            "typeId": "13331",
+            "name": "Non-Preferred (Generic & Brand) Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "13370",
+            "name": "Injectables Coinsurance",
+            "value": "%"
+        }, {
+            "typeId": "19004",
+            "name": "Plan Color",
+            "value": "Ruby"
+        }, {
+            "typeId": "19015",
+            "name": "Timestamp",
+            "value": "07/30/2015"
+        }, {
+            "typeId": "19023",
+            "name": "Enrollment Kit PDF",
+            "value": "2016_ca_enrollapp.pdf"
+        }, {
+            "typeId": "10113",
+            "name": "Inpatient Hospital (additional days)",
+            "value": "$0"
+        }, {
+            "typeId": "12862",
+            "name": "Optional Supplemental - Label and Premium Package #3 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "15001",
+            "name": "Type of drug benefit",
+            "value": "Enhanced Alternative"
+        }, {
+            "typeId": "15006",
+            "name": "Do you charge the Medicare-defined Part D Deductible amount?",
+            "value": "NULL"
+        }, {
+            "typeId": "15025",
+            "name": "Tier #2: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15046",
+            "name": "Tier #4: LTCP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15051",
+            "name": "Tier #5: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "19075",
+            "name": "Prescription Drug Tier 2 Gap Coverage",
+            "value": "N/A"
+        }, {
+            "typeId": "19077",
+            "name": "Prescription Drug Tier 3 Value",
+            "value": "Standard retail cost-sharing: $47; Preferred retail cost-sharing: $37"
+        }, {
+            "typeId": "19087",
+            "name": "Part D Deductible",
+            "value": "No deductible"
+        }, {
+            "typeId": "19089",
+            "name": "Silver Sneakers PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19090",
+            "name": "Healthy Discounts PDF",
+            "value": "2016_healthydiscounts.pdf"
+        }, {
+            "typeId": "10152",
+            "name": "OON Inpatient Hospital",
+            "value": "N/A"
+        }, {
+            "typeId": "11472",
+            "name": "Immunizations (Medicare Covered) Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11474",
+            "name": "Immunizations (Medicare Covered) Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11682",
+            "name": "Bone Mass Measurement Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11722",
+            "name": "Mammography Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "19122",
+            "name": "Nutrition Therapy Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "19518",
+            "name": "Healthy Discounts PDF Chinese Marketing (CA)",
+            "value": "N/A"
+        }, {
+            "typeId": "19513",
+            "name": "SB Chinese Marketing",
+            "value": "N/A"
+        }],
+        "stateCode": "CA",
+        "county": "Sacramento",
+        "zipCode": "95742",
+        "allowEnrollment": false,
+        "updatedDate": 1440687693000,
+        "rate": 0.0
+    }, {
+        "id": "39926",
+        "name": "Health Net Seniority Plus Green (HMO)",
+        "code": "Health Net Seniority Plus Green (HMO)",
+        "complementaryFlag": false,
+        "topSeller": false,
+        "type": "MA_HMO",
+        "productDetails": [{
+            "typeId": "12032",
+            "name": "Eye Wear Benefit Type (Optional or Mandatory)",
+            "value": "Optional"
+        }, {
+            "typeId": "12140",
+            "name": "Hearing Aid Coverage?",
+            "value": "No"
+        }, {
+            "typeId": "12260",
+            "name": "OON SNF Stay Coinsurance Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "12310",
+            "name": "OON Group 2 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12392",
+            "name": "OON Group 6 Coinsurance Required?",
+            "value": "NULL"
+        }, {
+            "typeId": "12831",
+            "name": "Optional Supplemental - Label and Premium Package #2 Description",
+            "value": "Buy-Up #2: DPPO+Eyewear+Chiro/Acupuncture+Fitness"
+        }, {
+            "typeId": "12881",
+            "name": "Preventative Dental Oral Exams benefit unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "13330",
+            "name": "Non-Preferred (Generic & Brand) Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "19015",
+            "name": "Timestamp",
+            "value": "05/21/2015"
+        }, {
+            "typeId": "19023",
+            "name": "Enrollment Kit PDF",
+            "value": "2016_ca_enrollapp.pdf"
+        }, {
+            "typeId": "19028",
+            "name": "Optional Benefit PDF",
+            "value": "2016_ca_optsup_enroll.pdf"
+        }, {
+            "typeId": "10113",
+            "name": "Inpatient Hospital (additional days)",
+            "value": "$0"
+        }, {
+            "typeId": "11392",
+            "name": "Fitness/Health Club Membership",
+            "value": "NULL"
+        }, {
+            "typeId": "15005",
+            "name": "Are there any drugs on your formulary for which access is limited to certain pharmacies?",
+            "value": "N/A"
+        }, {
+            "typeId": "15011",
+            "name": "Tier #1: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15012",
+            "name": "Tier #1: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15027",
+            "name": "Tier #2: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15031",
+            "name": "Tier #3: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15034",
+            "name": "Tier #3: OONP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15037",
+            "name": "Tier #3: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15043",
+            "name": "Tier #4: OONP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19077",
+            "name": "Prescription Drug Tier 3 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19080",
+            "name": "Prescription Drug Tier 5 Label",
+            "value": "SpecialtyÂ drugs copay"
+        }, {
+            "typeId": "11924",
+            "name": "Comprehensive Dental Notes",
+            "value": "Section B - 16B  Base 6: Comprehensive Dental Refer to document \"DHMO Dental Plan.\""
+        }, {
+            "typeId": "12142",
+            "name": "Hearing Aid Max Plan Period",
+            "value": "N/A"
+        }, {
+            "typeId": "10534",
+            "name": "Urgent Care Copay Waived if Admitted to Hospital?",
+            "value": "Yes"
+        }, {
+            "typeId": "11234",
+            "name": "Renal Dialysis Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11603",
+            "name": "Prostrate Screening Copay",
+            "value": "NaN"
+        }, {
+            "typeId": "11653",
+            "name": "Colorectal Screening Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "19511",
+            "name": "Non-Medicare-covered Service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "11223",
+            "name": "Medicare-covered Diabetic Therapeutic Shoes or Inserts",
+            "value": "20%"
+        }, {
+            "typeId": "19514",
+            "name": "EOC Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19513",
+            "name": "SB Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19515",
+            "name": "Enrollment App PDF Chinese Marketing ",
+            "value": "N/A"
+        }, {
+            "typeId": "11213",
+            "name": "Diabetes Monitoring Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11473",
+            "name": "Immunizations (Medicare Covered) Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11564",
+            "name": "Pap / Pelvic Exams Coinsurance ",
+            "value": "N/A"
+        }, {
+            "typeId": "11602",
+            "name": "Prostrate Screening Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11654",
+            "name": "Colorectal Screening Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11722",
+            "name": "Mammography Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11724",
+            "name": "Mammography Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19122",
+            "name": "Nutrition Therapy Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "19500",
+            "name": "Medicare-covered Service Categories to which the Plan Deductible applies (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19503",
+            "name": "Non-Medicare-covered Service Categories to which the Plan Deductible applies (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19509",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Non-Medicare-covered plan services? (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "11735",
+            "name": "Physician Attestation Form Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "19055",
+            "name": "Optional Supplemental Package 6 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19588",
+            "name": "Opt Sup Package 8 Premium Product",
+            "value": "N/A"
+        }, {
+            "typeId": "10530",
+            "name": "Urgent Care",
+            "value": "$10"
+        }, {
+            "typeId": "10781",
+            "name": "Podiatry (Routine)",
+            "value": "$10"
+        }, {
+            "typeId": "10940",
+            "name": "Diagnostic Radiological Service (Medicare Covered)",
+            "value": "%"
+        }, {
+            "typeId": "10990",
+            "name": "Outpatient Hospital Notes",
+            "value": "No charge for Medicare-covered epidural injections performed in an outpatient hospital facility."
+        }, {
+            "typeId": "11210",
+            "name": "Diabetes Monitoring Coinsurance (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "11280",
+            "name": "Acupuncture Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11440",
+            "name": "Health Ed / Wellness / Fitness",
+            "value": "NULL"
+        }, {
+            "typeId": "11650",
+            "name": "Colorectal Screening Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11680",
+            "name": "Bone Mass Measurement Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11821",
+            "name": "Part B Chemotherapy Drugs Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11852",
+            "name": "Preventative Dental - Oral exams benefit Type (Mandatory or Optional)",
+            "value": "Optional"
+        }, {
+            "typeId": "11902",
+            "name": "Preventative Dental Cleaning Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11970",
+            "name": "Comprehensive Dental Deductible Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "12120",
+            "name": "Hearing Exams (Medicare Covered) Copay",
+            "value": "$10"
+        }, {
+            "typeId": "12390",
+            "name": "OON Group 6 Label",
+            "value": "NULL"
+        }, {
+            "typeId": "12762",
+            "name": "OON Benefits (Routine) that apply to the OON Deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12880",
+            "name": "Preventative Dental Benefit Description",
+            "value": ": Oral Exams : Prophylaxis (Cleaning) : Fluoride Treatment : Dental X-Rays"
+        }, {
+            "typeId": "12951",
+            "name": "Comprehensive Dental Diagnostic Services unlimited?",
+            "value": "Yes"
+        }, {
+            "typeId": "13281",
+            "name": "Preferred Brand Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "19029",
+            "name": "Customer Service Prospect Phone Number",
+            "value": "(800)977-6738"
+        }, {
+            "typeId": "19039",
+            "name": "TrOOP - Catastrophic Coverage Limit",
+            "value": "N/A"
+        }, {
+            "typeId": "19076",
+            "name": "Prescription Drug Tier 3 Label",
+            "value": "Preferred brand drug copay"
+        }, {
+            "typeId": "19084",
+            "name": "Prescription Drug Tier 7 Label",
+            "value": "N/A"
+        }, {
+            "typeId": "11865",
+            "name": "Preventative Dental Fluoride Treatment",
+            "value": "$0"
+        }, {
+            "typeId": "11282",
+            "name": "Complementary Routine Acupuncture Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "10563",
+            "name": "Partial Hospital Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "10663",
+            "name": "Chiropractic (Routine) Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11562",
+            "name": "Pap / Pelvic Exams Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11723",
+            "name": "Mammography Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11904",
+            "name": "Routine Preventive Dental Oral Exams Visit Limit",
+            "value": "N/A"
+        }, {
+            "typeId": "11906",
+            "name": "Preventive Dental Cleaning Coinsurance",
+            "value": "$0"
+        }, {
+            "typeId": "19502",
+            "name": "Non-Medicare-covered Service Categories to which the Plan Deductible applies (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19512",
+            "name": "Multi-Language Insert",
+            "value": "2016_multi_language_insert.pdf"
+        }, {
+            "typeId": "19516",
+            "name": "Compare_Plans Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "10041",
+            "name": "Special Needs Plan Type?",
+            "value": "NULL"
+        }, {
+            "typeId": "10571",
+            "name": "Home Health benefit description",
+            "value": "Note: Limited to 80 hours per year."
+        }, {
+            "typeId": "11010",
+            "name": "ASC Services Copay Required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11020",
+            "name": "ASC Services Note",
+            "value": "No charge for Medicare-covered epidural injections performed in an ambulatory surgical center."
+        }, {
+            "typeId": "11131",
+            "name": "Transportation Benefit Description",
+            "value": "NULL"
+        }, {
+            "typeId": "11160",
+            "name": "DME",
+            "value": "20%"
+        }, {
+            "typeId": "11180",
+            "name": "Prosthetic Devices",
+            "value": "20%"
+        }, {
+            "typeId": "11232",
+            "name": "End Stage Renal Disease Coinsurance",
+            "value": "20%"
+        }, {
+            "typeId": "11250",
+            "name": "Blood Enhanced Benefit",
+            "value": "NULL"
+        }, {
+            "typeId": "11391",
+            "name": "Health Education, Wellness or Fitness",
+            "value": "NULL"
+        }, {
+            "typeId": "11801",
+            "name": "Part B Chemotherapy Drugs Coinsurance",
+            "value": "20%"
+        }, {
+            "typeId": "11810",
+            "name": "Part B Epoetin / Osteoporosis Drugs",
+            "value": "20%"
+        }, {
+            "typeId": "11920",
+            "name": "Comprehensive Dental Benefit Description",
+            "value": ": Non-routine Services : Diagnostic Services : Restorative Services : Endodontics/Periodontics/Extractions : Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services"
+        }, {
+            "typeId": "11922",
+            "name": "Comprehensive Dental Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "11930",
+            "name": "Comprehensive Dental - Restorative Services Benefit Type",
+            "value": "Optional"
+        }, {
+            "typeId": "11981",
+            "name": "Comprehensive Dental Copay (Diagnostic Services)",
+            "value": "$0 - $15"
+        }, {
+            "typeId": "10564",
+            "name": "Partial Hospital Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11214",
+            "name": "Diabetes Monitoring Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11474",
+            "name": "Immunizations (Medicare Covered) Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11604",
+            "name": "Prostrate Screening Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11907",
+            "name": "Preventive Dental X-Rays Coinsurance",
+            "value": "$0"
+        }, {
+            "typeId": "11989",
+            "name": "Comprehensive Dental Coinsurance (Endodontics/Periodontics/Extractions Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "19120",
+            "name": "Nutrition Therapy Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "19054",
+            "name": "Optional Supplemental Package 5 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19519",
+            "name": "Silver & Fit PDF Chinese Marketing (CA)",
+            "value": "N/A"
+        }, {
+            "typeId": "19517",
+            "name": "Optional Benefits PDF Chinese Marketing",
+            "value": "N/A"
+        }, {
+            "typeId": "10390",
+            "name": "SNF Copay required",
+            "value": "Yes"
+        }, {
+            "typeId": "10393",
+            "name": "SNF Copay / Benefit PeriodNote:  If SNF Copay required = \"\"no\"\", then SNF =$0.00",
+            "value": "N/A"
+        }, {
+            "typeId": "10480",
+            "name": "Worldwide Coverage",
+            "value": "N/A"
+        }, {
+            "typeId": "10501",
+            "name": "Emergency Room Copay",
+            "value": "$75"
+        }, {
+            "typeId": "10531",
+            "name": "Urgent Care Waiver",
+            "value": "Yes, if admitted within 0 Hours"
+        }, {
+            "typeId": "10561",
+            "name": "Partial Hospital",
+            "value": "$0"
+        }, {
+            "typeId": "10570",
+            "name": "Home Health",
+            "value": "Yes"
+        }, {
+            "typeId": "10641",
+            "name": "Chiropractic Services Benefit Description (Mandatory / Optional)",
+            "value": "Optional"
+        }, {
+            "typeId": "10700",
+            "name": "Specialist copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10701",
+            "name": "Specialist Copay",
+            "value": "$10.00"
+        }, {
+            "typeId": "10931",
+            "name": "OUTPATIENT DIAG/THERAPEUTIC RAD SERVICES Coinsurance",
+            "value": "NULL"
+        }, {
+            "typeId": "10980",
+            "name": "Outpatient Hospital Copay?",
+            "value": "Yes"
+        }, {
+            "typeId": "11150",
+            "name": "Transporation Copay",
+            "value": "NULL"
+        }, {
+            "typeId": "11510",
+            "name": "Annual Routine Physical Exams",
+            "value": "$0"
+        }, {
+            "typeId": "11984",
+            "name": "Comprehensive Dental Copay  (Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services)",
+            "value": "$0 - $2,250"
+        }, {
+            "typeId": "12000",
+            "name": "Eye Exams Coverage",
+            "value": "1 Every year"
+        }, {
+            "typeId": "12010",
+            "name": "Eye Exams (Medicare Covered) Copay",
+            "value": "$0 - $10"
+        }, {
+            "typeId": "12031",
+            "name": "Eye Wear Benefit Description",
+            "value": ": Contact lenses : Eyeglasses (lenses and frames) : Eyeglass lenses : Eyeglass frames"
+        }, {
+            "typeId": "12090",
+            "name": "Hearing Exams Benefit Type (Optional or Supplemental).",
+            "value": "Yes"
+        }, {
+            "typeId": "12250",
+            "name": "OON Inpatient Psychiatric Hospital Deductible",
+            "value": "NaN"
+        }, {
+            "typeId": "12261",
+            "name": "OON SNF Stay Coverage Period",
+            "value": "-"
+        }, {
+            "typeId": "12330",
+            "name": "OON Group 3 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12332",
+            "name": "OON Benefit Copay (Group 3)",
+            "value": "NULL"
+        }, {
+            "typeId": "12372",
+            "name": "OON Group 5 Coinsurance",
+            "value": "NULL"
+        }, {
+            "typeId": "12761",
+            "name": "OON Benefits (Medicare Covered) that apply to the OON Deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12781",
+            "name": "Optional Supplemental - Label and Premium Package #1 Description",
+            "value": "Buy-Up #1: DHMO+Eyewear+Chiro/Acupuncture+Fitness"
+        }, {
+            "typeId": "12833",
+            "name": "Optional Supplemental - Label and Premium Package Benefit Coverage",
+            "value": "16a;16b;"
+        }, {
+            "typeId": "12840",
+            "name": "Optional Supplemental Package # 2 Routine Chiropractic and Acupuncture",
+            "value": ": Routine Care/Other"
+        }, {
+            "typeId": "12890",
+            "name": "Preventative Dental X-Rays benefit unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "12940",
+            "name": "Preventative Dental Notes",
+            "value": "Section B - 16A Base 5: Preventive Dental Refer to document \"DHMO Dental Plan.\""
+        }, {
+            "typeId": "13260",
+            "name": "Medicare-defined Part D Standard Initial Coverage Limit (ICL) Amount applied?",
+            "value": "NULL"
+        }, {
+            "typeId": "13331",
+            "name": "Non-Preferred (Generic & Brand) Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "13440",
+            "name": "Gap Coverage Offered?",
+            "value": "No coverage"
+        }, {
+            "typeId": "19016",
+            "name": "Marketing Name",
+            "value": "Health Net of California"
+        }, {
+            "typeId": "19025",
+            "name": "Compare Grid PDF",
+            "value": "2016_ca_bh_045.pdf"
+        }, {
+            "typeId": "19027",
+            "name": "Plan Id",
+            "value": "045"
+        }, {
+            "typeId": "12036",
+            "name": "Eye Wear (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "12863",
+            "name": "Optional Supplemental - Label and Premium Package #4 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "15013",
+            "name": "Tier #1: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15032",
+            "name": "Tier #3: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15036",
+            "name": "Tier #3: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15052",
+            "name": "Tier #5: INP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15056",
+            "name": "Tier #5: LTCP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19047",
+            "name": "Optional Supplemental Package 2 PDF",
+            "value": "2016_ca_optsup_enroll.pdf"
+        }, {
+            "typeId": "19071",
+            "name": "Prescription Drug Tier 1 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19074",
+            "name": "Prescription Drug Tier 2 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19075",
+            "name": "Prescription Drug Tier 2 Gap Coverage",
+            "value": "N/A"
+        }, {
+            "typeId": "11867",
+            "name": "Preventative Dental Fluoride Treatment Visit Limit",
+            "value": "1 Every year"
+        }, {
+            "typeId": "11985",
+            "name": "Comprehensive Dental Emergency Services Copay",
+            "value": "$20"
+        }, {
+            "typeId": "10783",
+            "name": "Podiatry Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10481",
+            "name": "Worldwide Coverage Maximum Plan Benefit (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "10504",
+            "name": "Emergency Room Copay Waived if Admitted to Hospital?",
+            "value": "Yes"
+        }, {
+            "typeId": "10593",
+            "name": "Home Health Coinsurance ",
+            "value": "N/A"
+        }, {
+            "typeId": "11212",
+            "name": "Diabetes Monitoring Copay (Yes/No)",
+            "value": "N/A"
+        }, {
+            "typeId": "19081",
+            "name": "Prescription Drug Tier 5 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19091",
+            "name": "Silver & Fit PDF",
+            "value": "2016_silversneakers.pdf"
+        }, {
+            "typeId": "11856",
+            "name": "Preventative Dental: Do you offer any Mandatory or Optional Supplemental Benefits?",
+            "value": "Yes"
+        }, {
+            "typeId": "12753",
+            "name": "Combined Annual Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "10152",
+            "name": "OON Inpatient Hospital",
+            "value": "N/A"
+        }, {
+            "typeId": "10592",
+            "name": "Home Health Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11262",
+            "name": "Blood Coinsurance (Yes/No)",
+            "value": "0%"
+        }, {
+            "typeId": "11803",
+            "name": "Part B Drugs Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11925",
+            "name": "Comprehensive Dental - Maximum Plan Benefit Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "19123",
+            "name": "Nutrition Therapy Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19504",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Medicare-covered plan services? (In-Network)",
+            "value": "Yes"
+        }, {
+            "typeId": "19510",
+            "name": "Non-Medicare-covered Service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "11990",
+            "name": "Comprehensive Dental Coinsurance (Prosthodontics; Other Oral/Maxillofacial Surgery; Other Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "12865",
+            "name": "Optional Supplemental - Label and Premium Package #5 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "19589",
+            "name": "Opt Sup Package 8 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "19590",
+            "name": "Opt Sup Package 9 Premium Product",
+            "value": "N/A"
+        }, {
+            "typeId": "10150",
+            "name": "Inpatient Hospital Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10681",
+            "name": "Rehab Copay",
+            "value": "$0"
+        }, {
+            "typeId": "10750",
+            "name": "Outpatient Mental Health Visit",
+            "value": "NaN"
+        }, {
+            "typeId": "10911",
+            "name": "Lab Services Copay amount",
+            "value": "$0"
+        }, {
+            "typeId": "11231",
+            "name": "End Stage Renal Disease Copayment",
+            "value": "N/A"
+        }, {
+            "typeId": "11390",
+            "name": "Health Education, Wellness or Fitness Benefits available?",
+            "value": "NULL"
+        }, {
+            "typeId": "11530",
+            "name": "Periodic Health Evaluations",
+            "value": "NULL"
+        }, {
+            "typeId": "11750",
+            "name": "Diabetes Monitoring",
+            "value": "NULL"
+        }, {
+            "typeId": "11851",
+            "name": "Preventative Dental Benefit Description",
+            "value": ": Oral Exams : Prophylaxis (Cleaning) : Fluoride Treatment : Dental X-Rays"
+        }, {
+            "typeId": "11854",
+            "name": "Preventative Dental Cleaning number of exams",
+            "value": "2 Every year"
+        }, {
+            "typeId": "11862",
+            "name": "Preventative Dental X-Ray Visit Limit",
+            "value": "1 Every year"
+        }, {
+            "typeId": "11921",
+            "name": "Comprehensive Dental Benefit Type",
+            "value": "Optional"
+        }, {
+            "typeId": "11960",
+            "name": "Comprehensive Dental Restorative Services Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11983",
+            "name": "Comprehensive Dental Copay (Endodontics/Periodontics/Extractions Services)",
+            "value": "$0 - $375"
+        }, {
+            "typeId": "12312",
+            "name": "OON Benefit Copay (Group 2)",
+            "value": "NULL"
+        }, {
+            "typeId": "12373",
+            "name": "OON Group 5 Copayment",
+            "value": "NULL"
+        }, {
+            "typeId": "12391",
+            "name": "OON Group 6 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12802",
+            "name": "INN Benefits (Routine) that apply to the INN OOPM",
+            "value": "NULL"
+        }, {
+            "typeId": "12810",
+            "name": "OON Out of Pocket Maximum",
+            "value": "$0"
+        }, {
+            "typeId": "12860",
+            "name": "Optional Supplemental Package #2 - Routine Chiropractic and Acupuncture Copay",
+            "value": "10.00"
+        }, {
+            "typeId": "13130",
+            "name": "Formulary Tiers",
+            "value": "NULL"
+        }, {
+            "typeId": "13190",
+            "name": "Prescription Drug Tier Label",
+            "value": "NULL"
+        }, {
+            "typeId": "13230",
+            "name": "Preferred Generic Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "13280",
+            "name": "Preferred Brand Copay ",
+            "value": "N/A"
+        }, {
+            "typeId": "19001",
+            "name": "Monthly Premium",
+            "value": "$139.00"
+        }, {
+            "typeId": "19004",
+            "name": "Plan Color",
+            "value": "Green"
+        }, {
+            "typeId": "19017",
+            "name": "Contract Number",
+            "value": "H0562"
+        }, {
+            "typeId": "10252",
+            "name": "Inpatient Psychiatric (per day)",
+            "value": "NULL"
+        }, {
+            "typeId": "10532",
+            "name": "OON Urgent Care",
+            "value": "$10"
+        }, {
+            "typeId": "11512",
+            "name": "Welcome to Medicare Physical Exam",
+            "value": "$0"
+        }, {
+            "typeId": "12037",
+            "name": "Eye Wear (Routine Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "15001",
+            "name": "Type of drug benefit",
+            "value": "N/A"
+        }, {
+            "typeId": "15007",
+            "name": "Indicate the Out-of-Network cost sharing structure for this plan:",
+            "value": "N/A"
+        }, {
+            "typeId": "15028",
+            "name": "Tier #2: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15029",
+            "name": "Tier #2: LTCP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15035",
+            "name": "Tier #3: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15045",
+            "name": "Tier #4: MONPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15046",
+            "name": "Tier #4: LTCP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15054",
+            "name": "Tier #5: MOPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19040",
+            "name": "Decision Power",
+            "value": "No Charge"
+        }, {
+            "typeId": "19072",
+            "name": "Prescription Drug Tier 1 Gap Coverage",
+            "value": "No coverage"
+        }, {
+            "typeId": "19083",
+            "name": "Prescription Drug Tier 6 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19093",
+            "name": "Electronic Funds Transfer PDF",
+            "value": "2016_abd.pdf"
+        }, {
+            "typeId": "11866",
+            "name": "Preventative Dental Fluoride Treatment Visit Limit",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "12001",
+            "name": "Eye Exams Benefits (Mandatory/Optional)?",
+            "value": "Mandatory"
+        }, {
+            "typeId": "12141",
+            "name": "Hearing Aid Max Plan Amount",
+            "value": "N/A"
+        }, {
+            "typeId": "10505",
+            "name": "Emergency Room Copay Waived Time Period",
+            "value": "0 Hours"
+        }, {
+            "typeId": "10535",
+            "name": "Urgent Care Copay Waived Time Period",
+            "value": "0 Hours"
+        }, {
+            "typeId": "13370",
+            "name": "Injectables Coinsurance",
+            "value": "%"
+        }, {
+            "typeId": "19003",
+            "name": "Enrollment Kit Address",
+            "value": "Health Net Enrollment Services|PO Box 10420|Van Nuys, CA 91410-0420"
+        }, {
+            "typeId": "10112",
+            "name": "Inpatient Hospital (per day)",
+            "value": "$275 per day for Days 1 - 7;$0 per day for Days 8 - 90"
+        }, {
+            "typeId": "12861",
+            "name": "Optional Supplemental - Label and Premium Package #3 Description",
+            "value": "N/A"
+        }, {
+            "typeId": "12864",
+            "name": "Optional Supplemental - Label and Premium Package #4 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "15004",
+            "name": "Do any drugs in your formulary require a step therapy plan?",
+            "value": "N/A"
+        }, {
+            "typeId": "15014",
+            "name": "Tier #1: OONP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15015",
+            "name": "Tier #1: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15021",
+            "name": "Tier #2: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15038",
+            "name": "Tier #3: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15039",
+            "name": "Tier #3: LTCP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15044",
+            "name": "Tier #4: MOPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "19053",
+            "name": "Optional Supplemental Package 4 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19070",
+            "name": "Prescription Drug Tier 1 Label",
+            "value": "Preferred generic drug copay"
+        }, {
+            "typeId": "19082",
+            "name": "Prescription Drug Tier 6 Label",
+            "value": "Select Care drugs copay"
+        }, {
+            "typeId": "19085",
+            "name": "Prescription Drug Tier 7 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19087",
+            "name": "Part D Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "19089",
+            "name": "Silver Sneakers PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19092",
+            "name": "Amber Call Centers PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "11181",
+            "name": "Prosthesis (replacing body parts) notes",
+            "value": "N/A"
+        }, {
+            "typeId": "10533",
+            "name": "Urgent Care Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "10591",
+            "name": "Home Health Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11263",
+            "name": "Blood Copayment",
+            "value": "N/A"
+        }, {
+            "typeId": "11472",
+            "name": "Immunizations (Medicare Covered) Coinsurance (Yes/No)",
+            "value": "No"
+        }, {
+            "typeId": "11652",
+            "name": "Colorectal Screening Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11684",
+            "name": "Bone Mass Measurement Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19507",
+            "name": "Medicare-covered service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19508",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Non-Medicare-covered plan services? (In-Network)",
+            "value": "Yes"
+        }, {
+            "typeId": "19518",
+            "name": "Healthy Discounts PDF Chinese Marketing (CA)",
+            "value": "N/A"
+        }, {
+            "typeId": "12868",
+            "name": "Opt Sup Package 7 Premium Product ",
+            "value": "N/A"
+        }, {
+            "typeId": "10611",
+            "name": "PCP Copay",
+            "value": "$10.00"
+        }, {
+            "typeId": "10640",
+            "name": "Chiropractic Routine Visit Limit",
+            "value": "30 per year combined with acupuncture"
+        }, {
+            "typeId": "10680",
+            "name": "Rehab Therapy Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10910",
+            "name": "Lab Services",
+            "value": "Yes"
+        }, {
+            "typeId": "11060",
+            "name": "Outpatient Substance Abuse Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11061",
+            "name": "Outpatient Substance Abuse Copay",
+            "value": "NaN"
+        }, {
+            "typeId": "11560",
+            "name": "Pap / Pelvic Exams Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11901",
+            "name": "Preventative Dental Oral Exams Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11932",
+            "name": "Comprehensive Dental - Endodontics/Periodontics/Extractions Benefit Type",
+            "value": "Optional"
+        }, {
+            "typeId": "11940",
+            "name": "Comprehensive Dental Maximum Plan Enrollment Amount",
+            "value": "No"
+        }, {
+            "typeId": "11982",
+            "name": "Comprehensive Dental Copay (Restorative Services)",
+            "value": "$0 - $300"
+        }, {
+            "typeId": "12091",
+            "name": "Hearing Exams (Routine) Coverage",
+            "value": "1 Every year"
+        }, {
+            "typeId": "12290",
+            "name": "OON Group 1 Label Name",
+            "value": "NULL"
+        }, {
+            "typeId": "12292",
+            "name": "Out of Network Coinsurance Amount (Group 1)",
+            "value": "NULL"
+        }, {
+            "typeId": "12331",
+            "name": "OON Benefit Description Categories (Group 3)",
+            "value": "NULL"
+        }, {
+            "typeId": "12393",
+            "name": "OON Group 6 Copay Required?",
+            "value": "NULL"
+        }, {
+            "typeId": "12750",
+            "name": "INN Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "12783",
+            "name": "Optional Supplemental - Label and Premium Package #1 Services",
+            "value": "7b;13a;14c;16a;16b;17b;"
+        }, {
+            "typeId": "12800",
+            "name": "INN Out of Pocket Max",
+            "value": "$3,400"
+        }, {
+            "typeId": "12801",
+            "name": "INN (Medicare Covered) Benefits that apply to the INN OOPM",
+            "value": "NULL"
+        }, {
+            "typeId": "12832",
+            "name": "Optional Supplemental - Label and Premium Package #2 Premium",
+            "value": "$32"
+        }, {
+            "typeId": "12920",
+            "name": "Preventative Dental Deductible Amount",
+            "value": "NULL"
+        }, {
+            "typeId": "13501",
+            "name": "Preferred Generic Gap Mail Order Copay (90 day supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "19021",
+            "name": "Evidence Of Coverage PDF",
+            "value": "H0562_2016_045_EOC.pdf"
+        }, {
+            "typeId": "10111",
+            "name": "OON Inpatient Hospital",
+            "value": "N/A"
+        }, {
+            "typeId": "10503",
+            "name": "OON Emergency Room Copay",
+            "value": "$75"
+        }, {
+            "typeId": "15002",
+            "name": "Are there quantity limits on certain prescription drugs?",
+            "value": "N/A"
+        }, {
+            "typeId": "15003",
+            "name": "Is prior authorization required for certain prescription drugs?",
+            "value": "N/A"
+        }, {
+            "typeId": "15016",
+            "name": "Tier #1: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15019",
+            "name": "Tier #1: LTCP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15042",
+            "name": "Tier #4: INP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15051",
+            "name": "Tier #5: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "19044",
+            "name": "Optional Supplemental Package 1 PDF",
+            "value": "2016_ca_optsup_enroll.pdf"
+        }, {
+            "typeId": "19078",
+            "name": "Prescription Drug Tier 4 Label",
+            "value": "Non-preferred brand copay"
+        }, {
+            "typeId": "11950",
+            "name": "Comprehensive Dental Medicare Covered coinsurance amount (Medicare Covered)",
+            "value": "N/A"
+        }, {
+            "typeId": "11980",
+            "name": "Comprehensive Dental (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "12030",
+            "name": "Routine Eye Wear Coverage (Yes / No)?",
+            "value": "No, indicate number 1"
+        }, {
+            "typeId": "12040",
+            "name": "Eye Wear - Eye Glass Lenses Coverage Period",
+            "value": "$250; 1 Every two years"
+        }, {
+            "typeId": "12190",
+            "name": "Out of Network Benefits Offered?",
+            "value": "NULL"
+        }, {
+            "typeId": "12311",
+            "name": "Out of Network Benefit Categories (Group 2)",
+            "value": "NULL"
+        }, {
+            "typeId": "12530",
+            "name": "Cost Share Reduction?  (PPO Only)",
+            "value": "NULL"
+        }, {
+            "typeId": "12760",
+            "name": "OON Plan Deductible",
+            "value": "N/A"
+        }, {
+            "typeId": "12780",
+            "name": "Optional Supplemental - Label and Premium Package #1",
+            "value": "001"
+        }, {
+            "typeId": "12782",
+            "name": "Optional Supplemental - Label and Premium Package #1 Premium",
+            "value": "$22.00"
+        }, {
+            "typeId": "12882",
+            "name": "Preventative Dental Cleaning number of exams",
+            "value": "2 Every year"
+        }, {
+            "typeId": "12950",
+            "name": "Comprehensive Dental enhanced benefits",
+            "value": ": Non-routine Services : Diagnostic Services : Restorative Services : Endodontics/Periodontics/Extractions : Prosthodontics, Other Oral/Maxillofacial Surgery, Other Services"
+        }, {
+            "typeId": "13090",
+            "name": "ICL Coverage Limit",
+            "value": "N/A"
+        }, {
+            "typeId": "13170",
+            "name": "Medicare-defined Part D Deductible charged?",
+            "value": "NULL"
+        }, {
+            "typeId": "19011",
+            "name": "Group ID",
+            "value": "00ST01, 00ST02, 00ST03, 00ST04, 00ST05, 00ST06, 00SN01, OOSN02, 00SN03, 00AL01, 00AL02, 00AL03, OOAL04, 00AL05, 00ALO6, 00AL07, 00PC01, 00PC02, 00PC03, 00PC04, 00PC05, 00PC06, 00SAC1, 00SAC2, 00SAC3, 00SAC4, 00SAC5, 00SAC6"
+        }, {
+            "typeId": "19013",
+            "name": "Health Net Plan Code",
+            "value": "CHR, CHS, CJH"
+        }, {
+            "typeId": "19018",
+            "name": "Effective Year",
+            "value": "2016"
+        }, {
+            "typeId": "19026",
+            "name": "Low-income Subsidy PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "10953",
+            "name": "OON Diagnostic Radiological Services",
+            "value": "N/A"
+        }, {
+            "typeId": "15008",
+            "name": "Do you offer reduced Part D cost sharing as part of your supplemental coverage?",
+            "value": "N/A"
+        }, {
+            "typeId": "15017",
+            "name": "Tier #1: MONPP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15023",
+            "name": "Tier #2: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15025",
+            "name": "Tier #2: MOPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15026",
+            "name": "Tier #2: MONPP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15061",
+            "name": "Do you offer Gap Coverage?",
+            "value": "N/A"
+        }, {
+            "typeId": "19050",
+            "name": "Optional Supplemental Package 3 PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "19073",
+            "name": "Prescription Drug Tier 2 Label",
+            "value": "Non-preferred generic drug copay"
+        }, {
+            "typeId": "11923",
+            "name": "Comprehensive Dental: Do you offer any Mandatory or Optional Supplemental Benefits?",
+            "value": "Yes"
+        }, {
+            "typeId": "11264",
+            "name": "Blood Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11563",
+            "name": "Pap / Pelvic Exams Copay",
+            "value": "NaN / NaN"
+        }, {
+            "typeId": "11682",
+            "name": "Bone Mass Measurement Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11905",
+            "name": "Preventative Dental Oral Exams Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "11987",
+            "name": "Comprehensive Dental Coinsurance (Diagnostic Services)",
+            "value": "N/A"
+        }, {
+            "typeId": "11991",
+            "name": "Comprehensive Dental Emergency Services Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19121",
+            "name": "Nutrition Therapy Coinsurance (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "19501",
+            "name": "Medicare-covered Service Categories to which the Plan Deductible applies (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19591",
+            "name": "Opt Sup Package 9 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "10040",
+            "name": "Special Needs Plan?",
+            "value": "No"
+        }, {
+            "typeId": "10131",
+            "name": "Inpatient Hospital Benefit Period",
+            "value": "NaN per day for Days  -"
+        }, {
+            "typeId": "10952",
+            "name": "Therapeutic Radiological Services",
+            "value": "$60"
+        }, {
+            "typeId": "10960",
+            "name": "OUTPATIENT DIAG/THERAPEUTIC RAD SERVICES Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "11011",
+            "name": "ASC Services",
+            "value": "$125"
+        }, {
+            "typeId": "11110",
+            "name": "Ambulance",
+            "value": "$125"
+        }, {
+            "typeId": "11130",
+            "name": "Transportation",
+            "value": "No Plan-approved Location"
+        }, {
+            "typeId": "11220",
+            "name": "Diabetes Monitoring and Supplies Copayment",
+            "value": "Yes"
+        }, {
+            "typeId": "11271",
+            "name": "Acupuncture Benefit Description (Optional / Mandatory)",
+            "value": "NULL"
+        }, {
+            "typeId": "11660",
+            "name": "Colorectal Screening Note",
+            "value": "NULL"
+        }, {
+            "typeId": "11840",
+            "name": "Part C Home Infusion Drugs ",
+            "value": "NULL"
+        }, {
+            "typeId": "11860",
+            "name": "Preventative Dental X-Rays Type of Benefit",
+            "value": "Optional"
+        }, {
+            "typeId": "11864",
+            "name": "Preventative Dental Maximum Plan Limit (Combined for prevenative and comprehensive services)",
+            "value": "N/A"
+        }, {
+            "typeId": "11890",
+            "name": "Preventative Dental - Plan Deductible",
+            "value": "$0"
+        }, {
+            "typeId": "11935",
+            "name": "Comprehensive Dental - Oral Maxillofacial Surgery Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "12041",
+            "name": "Eye Wear - Eye Glass Frames Coverage Period",
+            "value": "1 Every two years"
+        }, {
+            "typeId": "12080",
+            "name": "Eye Wear Notes",
+            "value": "\"Section B - 17B  Base 6: Eye Wear Refer to document HMO Eyewear Plan.\"\"\""
+        }, {
+            "typeId": "12121",
+            "name": "Hearing Exams (Routine Covered) Copay",
+            "value": "$10"
+        }, {
+            "typeId": "12231",
+            "name": "OON Inpatient Psychiatric Hospital Stay Coverage Period",
+            "value": "-"
+        }, {
+            "typeId": "12280",
+            "name": "Number of OON Group Offerings",
+            "value": "NULL"
+        }, {
+            "typeId": "12350",
+            "name": "OON Group 4 Copay",
+            "value": "NULL"
+        }, {
+            "typeId": "12370",
+            "name": "OON Group 5 Label",
+            "value": "NULL"
+        }, {
+            "typeId": "12830",
+            "name": "Optional Supplemental - Label and Premium Package",
+            "value": "001"
+        }, {
+            "typeId": "12841",
+            "name": "Optional Supplemental Package # 2 Routine Chiropractic and Acupuncture number of visits",
+            "value": "30 Every year"
+        }, {
+            "typeId": "12891",
+            "name": "Preventative Dental Maximum Plan Benefit Coverage amount:",
+            "value": "NULL"
+        }, {
+            "typeId": "13220",
+            "name": "Preferred Generics",
+            "value": "NULL"
+        }, {
+            "typeId": "13231",
+            "name": "Preferred Generic Mail Order (90 days supply)",
+            "value": "N/A"
+        }, {
+            "typeId": "10130",
+            "name": "Inpatient Hospital Benefit Period Note",
+            "value": "NULL"
+        }, {
+            "typeId": "10391",
+            "name": "SNF Copay",
+            "value": "No Charge"
+        }, {
+            "typeId": "10500",
+            "name": "Worldwide Coverage Copayment Amount",
+            "value": "NaN"
+        }, {
+            "typeId": "10590",
+            "name": "Home Health Copay",
+            "value": "$0"
+        }, {
+            "typeId": "10610",
+            "name": "PCP Copay required?",
+            "value": "Yes"
+        }, {
+            "typeId": "10660",
+            "name": "Chiropractic (Medicare Covered) Copay",
+            "value": "$10"
+        }, {
+            "typeId": "10661",
+            "name": "Chiropractic (Routine) Copay",
+            "value": "$10 (Routine)"
+        }, {
+            "typeId": "10850",
+            "name": "Outpatient Mental Health visit with a psychiatrist",
+            "value": "NaN"
+        }, {
+            "typeId": "10981",
+            "name": "Outpatient Hospital Services",
+            "value": "$275"
+        }, {
+            "typeId": "11120",
+            "name": "Ambulance Notes",
+            "value": "No charge for Medicare-covered epidural injections performed in an ambulatory surgical center."
+        }, {
+            "typeId": "11170",
+            "name": "DME Note",
+            "value": "N/A"
+        }, {
+            "typeId": "11221",
+            "name": "Diabetes Monitoring and Supplies",
+            "value": "$0"
+        }, {
+            "typeId": "11480",
+            "name": "Immunization Note",
+            "value": "Section B - 14B - Base 3: Annual Physical Exam The Routine Physical Exam includes a comprehensive review of systems and physical examination, which allows flexibility for the physician to manage chronic conditions in addition to evaluation and/or treatment of new or prior existing problems. The availability of the Routine Physical Exam allows members to seek a separate visit with their physician to discuss general health questions or issues without presentation of a specific chief complaint. This flexibility serves to further support the bond between patient and primary care physician while enabling the physician with an additional opportunity to detect undiagnosed conditions and deliver care in a timely manner. This physical exam could include all or some of the following components as applicable: History, Vital Signs, General Appearance, Heart Exam, Lung Exam, Head and Neck Exam, Abdominal Exam, Neurological Exam, Dermatological Exam, Extremities Exam."
+        }, {
+            "typeId": "11800",
+            "name": "Part B Drugs Coinsurance required?",
+            "value": "Yes"
+        }, {
+            "typeId": "11861",
+            "name": "Preventative Dental X-Rays benefit is unlimited?",
+            "value": "No, indicate number"
+        }, {
+            "typeId": "11931",
+            "name": "Comprehensive Dental - Restorative Services Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "11933",
+            "name": "Comprehensive Dental - Endodontics/Periodontics/Extractions Benefit Limit",
+            "value": "Yes"
+        }, {
+            "typeId": "12011",
+            "name": "Eye Exams (Routine) Copay",
+            "value": "$10"
+        }, {
+            "typeId": "12033",
+            "name": "Eye Wear - Contact Lens Coverage",
+            "value": "1 Every two years"
+        }, {
+            "typeId": "12230",
+            "name": "OON Inpatient Psychiatric Hospital Stay",
+            "value": "NULL"
+        }, {
+            "typeId": "12291",
+            "name": "Out of Network Group 1 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12371",
+            "name": "OON Group 5 Benefit Description Categories",
+            "value": "NULL"
+        }, {
+            "typeId": "12394",
+            "name": "OON Group 6 Copay Amount?",
+            "value": "NULL"
+        }, {
+            "typeId": "12751",
+            "name": "INN (Medicare Covered) Benefit Categories that apply to the deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "12752",
+            "name": "INN (Routine) Benefit Categories that apply to the deductible",
+            "value": "NULL"
+        }, {
+            "typeId": "13420",
+            "name": "Specialty Drugs Coinsurance",
+            "value": "N/A"
+        }, {
+            "typeId": "19019",
+            "name": "Summary Of Benefits PDF",
+            "value": "2016_ca_sb_045.pdf"
+        }, {
+            "typeId": "10394",
+            "name": "SNF Notes",
+            "value": "N/A"
+        }, {
+            "typeId": "12862",
+            "name": "Optional Supplemental - Label and Premium Package #3 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "15006",
+            "name": "Do you charge the Medicare-defined Part D Deductible amount?",
+            "value": "N/A"
+        }, {
+            "typeId": "15018",
+            "name": "Tier #1: MONPP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15022",
+            "name": "Tier #2: INP Copay 3M",
+            "value": "N/A"
+        }, {
+            "typeId": "15024",
+            "name": "Tier #2: OONP Copay 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15033",
+            "name": "Tier #3: INP Copay Other",
+            "value": "N/A"
+        }, {
+            "typeId": "15041",
+            "name": "Tier #4: Reference-based pricing that affects cost sharing?",
+            "value": "N/A"
+        }, {
+            "typeId": "15053",
+            "name": "Tier #5: OONP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15055",
+            "name": "Tier #5: MONPP Coinsurance 1M",
+            "value": "N/A"
+        }, {
+            "typeId": "15060",
+            "name": "Do you apply the Medicare-defined Part D Standard Initial Coverage Limit (ICL) Amount?",
+            "value": "N/A"
+        }, {
+            "typeId": "19079",
+            "name": "Prescription Drug Tier 4 Value",
+            "value": "N/A"
+        }, {
+            "typeId": "19090",
+            "name": "Healthy Discounts PDF",
+            "value": "2016_healthydiscounts.pdf"
+        }, {
+            "typeId": "19094",
+            "name": "Eligibility Verification PDF",
+            "value": "N/A"
+        }, {
+            "typeId": "10151",
+            "name": "Inpatient Hospital OOPM",
+            "value": "N/A"
+        }, {
+            "typeId": "11683",
+            "name": "Bone Mass Measurement Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "19099",
+            "name": "Health Net Customer Service Phone Number",
+            "value": "Call: 1-800-275-4737, TTY: 711"
+        }, {
+            "typeId": "19505",
+            "name": "Does the Maximum Enrollee Out-of-Pocket Cost apply to all Medicare-covered plan services? (Out-of-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "19506",
+            "name": "Medicare-covered service Categories that are EXCLUDED from the Maximum Enrollee Out-of-Pocket Cost amount (In-Network)",
+            "value": "N/A"
+        }, {
+            "typeId": "12866",
+            "name": "Optional Supplemental - Label and Premium Package #5 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "12867",
+            "name": "Optional Supplemental - Label and Premium Package #6 Premium",
+            "value": "N/A"
+        }, {
+            "typeId": "19056",
+            "name": "Opt Sup Package 7 PDF Names Product",
+            "value": "N/A"
+        }, {
+            "typeId": "100",
+            "name": "Plan Summary",
+            "value": "Health Net Seniority Plus Green (HMO) is a Medicare Advantage medical-only plan that does not include prescription drug coverage. This is a cost-conscious plan for people with creditable Medicare Part D prescription drug coverage, such as offered under a group retiree plan, or who have chosen not to have drug coverage."
+        }, {
+            "typeId": "10042",
+            "name": "Chronic or Disabling Conditions",
+            "value": "NULL"
+        }, {
+            "typeId": "10502",
+            "name": "ER Copay Waiver",
+            "value": "Yes, if admitted within 0 Hours"
+        }, {
+            "typeId": "10780",
+            "name": "Podiatry (Medicare)",
+            "value": "$10"
+        }, {
+            "typeId": "10950",
+            "name": " X-ray (Medicare Covered)",
+            "value": "$0"
+        }, {
+            "typeId": "10951",
+            "name": "Diagnostic Radiological Services",
+            "value": "$60"
+        }, {
+            "typeId": "11260",
+            "name": "Blood Copayment (Yes/No)",
+            "value": "$0"
+        }, {
+            "typeId": "11270",
+            "name": "Acupuncture limit for number of treatments",
+            "value": "routine chiropractic per year."
+        }, {
+            "typeId": "11470",
+            "name": "Immunizations (Medicare Covered) Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11600",
+            "name": "Prostate Screening Copay (Yes/No)",
+            "value": "Yes"
+        }, {
+            "typeId": "11720",
+            "name": "Mammography Copay (Yes/No)",
+            "value": "NULL"
+        }, {
+            "typeId": "11822",
+            "name": "Part B Epoetin/ Osteoporosis Drugs Copay",
+            "value": "N/A"
+        }, {
+            "typeId": "11853",
+            "name": "Preventative Dental - Oral Exams benefit is unlimited?",
+            "value": "Yes"
+        }, {
+            "typeId": "11903",
+            "name": "Preventative Dental X-Rays Copay",
+            "value": "$0"
+        }, {
+            "typeId": "11934",
+            "name": "Comprehensive Dental - Oral/Maxillofacial Surgery Benefit Type",
+            "value": "Optional"
+        }],
+        "stateCode": "CA",
+        "county": "Sacramento",
+        "zipCode": "95742",
+        "allowEnrollment": false,
+        "updatedDate": 1440687662000,
+        "rate": 0.0
+    }],
+    "state": "CA",
+    "regionCode": 200,
+    "hasMedicarePlans": true,
+    "county": "Sacramento",
+    "enrollmentAllowed": true
+}

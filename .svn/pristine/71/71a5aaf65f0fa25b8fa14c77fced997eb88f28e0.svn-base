@@ -1,0 +1,17 @@
+(function () {
+    'use strict';
+
+    angular
+        .module('pstApp')
+        .controller('changeYearCtrl', changeYearCtrl);
+
+    changeYearCtrl.$inject = ['$scope', '$uibModalInstance'];
+    /* @ngInject */
+    function changeYearCtrl($scope, $uibModalInstance) {
+        var self = this;
+
+        self.close = function () {
+            $uibModalInstance.dismiss();
+        };
+    }
+})();

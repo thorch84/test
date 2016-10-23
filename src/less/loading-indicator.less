@@ -1,0 +1,73 @@
+.loading-container {
+  display: block;
+  text-align: center;
+  padding-top:400px;
+  margin: auto;
+  opacity: 0.6;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1500;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+@-webkit-keyframes indeterminate-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+}
+
+@keyframes indeterminate-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+}
+
+.loading-container svg {
+  -webkit-animation: indeterminate-rotate 2.9s linear infinite;
+  animation: indeterminate-rotate 2.9s linear infinite;
+  opacity: 0.9;
+  z-index: 1600;
+  width: 50px;
+  height: 50px;
+  transform-origin: 25px 25px 25px;
+  path {
+    stroke-width: 5px;
+  }
+}
+
+.cyanStroke {
+  stroke: #007e7a;
+}
+
+.greenStroke {
+  stroke: #35a248;
+}
+
+.limeGreenStroke {
+  stroke: #99c832;
+}
+
+.orangeStroke {
+  stroke: #f58220;
+}
+
+.pinkStroke {
+  stroke: #cb177d;
+}
+
+
+/*Bridgeway, Superior Healthplan, MHS Wisconsin: cb177d
+Sunshine health, Peach State, Magnolia: F58220
+Trillium: 35a248
+Buckeye: 99c832*/
+

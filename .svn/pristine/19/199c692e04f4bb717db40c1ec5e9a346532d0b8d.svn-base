@@ -1,0 +1,14 @@
+<!-- CHANGE YR Modal -->
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="leaveSiteCtrl.close()"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">You are now leaving {{leaveSiteCtrl.siteAddress}}</h4>
+    </div>
+    <div class="modal-body">
+        <p>{{leaveSiteCtrl.message}}</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="leaveSiteCtrl.close()">Cancel</button>
+        <a href="{{leaveSiteCtrl.glossaryOfTermsUrl}}" target="_blank" class="btn btn-success" >Continue</a>        
+    </div>
+</div>
