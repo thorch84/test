@@ -9213,6 +9213,10 @@ article.result {
 article p {
   margin-left: 33px;
 }
+article.result .text-xs-left {
+  padding-left: 100px;
+  text-align: left;
+}
 .modal-backdrop.am-fade {
   opacity: .5;
   transition: opacity .15s linear;

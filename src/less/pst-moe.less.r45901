@@ -116,12 +116,11 @@ a#language-header-link{
 
 a#menu-toggle{
 	padding-left: 0px;
-	margin-top: 8px;
 }
 
 .nav{
 	.glyphicon-menu-hamburger{
-		margin-right: -3.8px;
+		margin-right: -2.8px;
 		font-size: 16px;
 	}
 	.glyphicon-triangle-bottom{
@@ -132,27 +131,25 @@ a#menu-toggle{
 
 .navbar-nav{
 	> li{
-		padding-top: 12px;
+		padding-top: 30px;
 		> a{
 			padding-top: 0px;
 			padding-bottom: 0px;
 		}
 		a.logo{
+			margin-top: -20px;
 			min-height: 40px;
 			min-width: 200px;
-<<<<<<< .mine
 			img{
-				height:30px;
+				height:55px;
 				width:270px;
 			}
-=======
->>>>>>> .r45950
 		}
 	}
 }
 
 ul.navbar-nav{
-	height: 60px;
+	height: 85px;
 	&:last-child{
 		margin-right: 0px;
 	}
@@ -161,9 +158,6 @@ ul.navbar-nav{
 ul.navbar-right{
 	li{
 		margin-left: 10px;
-		a{
-			cursor:pointer;
-		}
 	}
 }
 
@@ -289,7 +283,7 @@ nav{
 .header-section{
 	position: fixed;
 	left: 0;
-	top: 60px;
+	top: 85px;
 	background-color: #fff;
 	z-index: 1035;
 	box-shadow: 0px 3px 3px #888888;

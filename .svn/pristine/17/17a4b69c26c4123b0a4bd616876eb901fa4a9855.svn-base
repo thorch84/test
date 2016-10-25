@@ -52,10 +52,10 @@
                     <!--<p><BR />TTY users should call 711.</p>
                     <p><strong>Mailing Address</strong><br /> Attention: Customer Response Center<br /> Health Net,
                     Inc.<br /> PO Box 10420<br /> Van Nuys, CA 91410-0420</p>-->
-          </div>
-   <div class="modal-footer">
-       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-   </div>
-</div>
-</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>

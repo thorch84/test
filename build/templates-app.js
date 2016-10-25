@@ -933,20 +933,20 @@ angular.module("routes/zipCodeSearch/zipCodeSearch.tpl.html", []).run(["$templat
   $templateCache.put("routes/zipCodeSearch/zipCodeSearch.tpl.html",
     "<div class=\"modal-content\">\n" +
     "    <div class=\"modal-header\">\n" +
-    "        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\" ng-click=\"zipCodeSearchCtrl.close()\"><span aria-hidden=\"true\">&times;</span></button>\n" +
+    "       <!-- <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\" ng-click=\"zipCodeSearchCtrl.close()\"><span aria-hidden=\"true\">&times;</span></button>-->\n" +
     "        <h4 class=\"modal-title\" id=\"myModalLabel\"> Welcome To Medicare Online Enrollment</h4>\n" +
     "    </div>\n" +
     "    <form name=\"zipForm\" ng-submit=\"updateResults(zipCode)\" >\n" +
     "        <div class=\"modal-body\">\n" +
     "            <h5>To get started, please enter your zip code in the field below and click 'Go'.</h5>\n" +
     "                <div>\n" +
-    "                    <input type=\"text\" keyh maxlength=\"5\" name=\"zip\" placeholder=\"Enter zip code\" ng-model=\"zipCodeSearchCtrl.zipCode\" autofocus required zipcode-validate/>\n" +
+    "                    <input type=\"text\" keyh maxlength=\"5\" name=\"zip\" placeholder=\"Zip code\" ng-model=\"zipCodeSearchCtrl.zipCode\" autofocus required zipcode-validate/>\n" +
     "                </div>\n" +
     "                <div>\n" +
     "                </div>\n" +
     "        </div>\n" +
     "        <div class=\"modal-footer\">\n" +
-    "            <button type=\"submit\" class=\"btn btn-warning\" data-dismiss=\"modal\" ng-click=\"zipCodeSearchCtrl.Go()\">Go</button>\n" +
+    "            <button type=\"submit\" class=\"btn btn-warning\" data-dismiss=\"modal\" ng-click=\"zipCodeSearchCtrl.Go()\">Search Zip Code</button>\n" +
     "        </div>\n" +
     "    </form>\n" +
     "</div>");
@@ -1009,7 +1009,7 @@ angular.module("topNavbar/topNavbar.tpl.html", []).run(["$templateCache", functi
     "    <div class=\"container-fluid\">\n" +
     "        <ul class=\"nav navbar-nav\">\n" +
     "            <li><a href=\"#\" id=\"menu-toggle\"><span class=\"glyphicon glyphicon-menu-hamburger\" aria-hidden=\"true\"></span><span class=\"glyphicon glyphicon-menu-hamburger\" aria-hidden=\"true\"></span></a></li>\n" +
-    "            <li><a href=\"#\" class=\"logo hidden-xs\"><img ng-src=\"{{'assets/images/logos/' + url + '.png'}}\" /></a></li>\n" +
+    "            <li><a href=\"#\" class=\"logo hidden-xs\"><img ng-src=\"{{'assets/images/logos/' + url + '_40.png'}}\" /></a></li>\n" +
     "        </ul>\n" +
     "\n" +
     "        <ul class=\"nav navbar-nav navbar-right\">\n" +
